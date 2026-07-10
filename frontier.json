@@ -12,13 +12,13 @@
     "how": "node tools/census.mjs --freeze (rule pinned in artifact/CENSUS.json and tools/census.mjs EXCLUSIONS); coverage-debt re-derived by node tools/coverage.mjs against artifact/LEXICON.lexon.md"
   },
   "best": {
-    "metric": 211,
-    "leverIds": [],
-    "evidence": "fit state: LEXICON has zero folded entries; node tools/coverage.mjs prints coverage-debt = 211"
+    "metric": 201,
+    "leverIds": ["seed-fold-1"],
+    "evidence": "keystone seed-fold 2026-07-10: 10 entries (T-001,006,009,010,011,013,042,055,073,074) derived from the convergence run's three gate-verified texts; node tools/coverage.mjs prints coverage-debt = 201, 0 failed entries. Keystone fold, not a loop round: no Gap draw, no held-out gate; the first VALIDATED loop lever remains OT-1."
   },
   "openTarget": {
     "id": "OT-1",
-    "statement": "first VALIDATED grammar-pattern lever covering >= 5 census terms at full 8/8 gate; Phase B convergence outputs (three-clause MyTerms sketch, escrow triple decomposition) are the seed candidates",
+    "statement": "first VALIDATED grammar-pattern lever through the full loop (Gap-drawn 5 held-out + 3 regression, 8/8) covering >= 5 census terms; seed entries exist, the loop has not yet run",
     "status": "OPEN"
   }
 }
