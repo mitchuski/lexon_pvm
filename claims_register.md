@@ -1,0 +1,17 @@
+# Claims register
+
+Every load-bearing claim gets a CR-id and a tier (GR-2). Prose elsewhere may
+assert nothing that does not resolve to a CR-id here. Keystone-only writes;
+other seats return proposed entries.
+
+Tiers: **PROVEN** (executed here, re-runnable) · **DERIVED** (follows from a
+PROVEN claim, derivation cited) · **REPORTED** (external, slug-cited via
+SOURCES.md) · **OPEN** (must state what would settle it) · **MYTH**
+(chronicles only).
+
+| id | claim | tier | evidence | status |
+|---|---|---|---|---|
+| CR-1 | Baseline coverage-debt is 211 by node tools/census.mjs --freeze + node tools/coverage.mjs; census is deterministic (byte-identical across runs, md5 637a0e6cbad9ca74e519be3a331ae850) | PROVEN | frontier.json baseline.how; runs of 2026-07-10 | accepted |
+| CR-2 | The spec-checker accepts all 3 golden fixtures (escrow 8, license 15, statement 21 triples, all promise-typed) and rejects all 5 mutants | PROVEN | node tools/lexon_check.mjs --selftest, 2026-07-10 | accepted |
+| CR-3 | The real Lexon compiler cannot run here: macOS-only binary, source unpublished (github.com/lexys/lexon is a placeholder) | REPORTED | SOURCES.md lexon-compiler-status | accepted |
+| CR-4 | A Lexon action sentence round-trips losslessly through subject-predicate-object triples within the attested subset | PROVEN | checker roundTrip stage green on 44 golden triples, 2026-07-10 | accepted |

@@ -1,0 +1,172 @@
+{
+  "project": "lexon-agentprivacy-overlap-convergence",
+  "version": "1.0.0",
+  "date": "2026-07-03",
+  "operator": "privacymage",
+  "mission": "Map the convergence surface between the Lexon computational law stack (Diedrich, lexon.org) and the 0xagentprivacy architecture (Privacy Value Model, dual-agent Swordsman/Mage, VRC/RPP, MyTerms contractual privacy paradigm). Load-bearing thesis: Lexon controlled grammar is a deterministic knowledge-graph grammar (AST = subject-predicate-object triples); contracts compile to subgraphs; gates/commitments/promises are typed edges forming promise graphs across contracts. Produce one convergence chronicle per letter, a synthesis, and three artefacts feeding (1) a working session with Diedrich, (2) the Privacy is Value register pipeline, (3) a bonfires.ai adoption note.",
+  "voice_constraints": {
+    "register": "privacymage: compressed, declarative, present tense",
+    "forbidden": [
+      "em dashes"
+    ],
+    "preferred_terms": [
+      "agreement ceremony",
+      "machine-readable terms",
+      "contractual privacy paradigm",
+      "consent-theatre paradigm",
+      "notice and consent"
+    ],
+    "numerics": "exact or Fibonacci-anchored numbers, never round hyperbole"
+  },
+  "corpus_counts": {
+    "letters": 5,
+    "convergence_axes": 8,
+    "phases": 3,
+    "artefacts": 3
+  },
+  "letters": [
+    {
+      "id": "L01",
+      "title": "The Holy Grail of Computational Law",
+      "author": "Henning Diedrich",
+      "year": 2023,
+      "url": "https://www.lexon.org/docs/Lexon%20Whitepaper%202023%20-%20The%20Holy%20Grail%20of%20Computational%20Law.pdf",
+      "status": "in_hand",
+      "brief": "letters/L01_holy_grail_2023.md",
+      "primary_axes": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A8"
+      ],
+      "output": "out/L01_convergence.md"
+    },
+    {
+      "id": "L02",
+      "title": "Lexon - Legal Smart Contracts (2017 Whitepaper)",
+      "author": "Henning Diedrich",
+      "year": 2017,
+      "url": "https://www.lexon.org/docs/Lexon%20Whitepaper%202017%20-%20Legal%20Smart%20Contracts.pdf",
+      "status": "fetch",
+      "brief": "letters/L02_legal_smart_contracts_2017.md",
+      "primary_axes": [
+        "A6",
+        "A7"
+      ],
+      "output": "out/L02_convergence.md"
+    },
+    {
+      "id": "L03",
+      "title": "Creating Cryptolaw for the Uniform Commercial Code",
+      "author": "Carla L. Reyes (SMU)",
+      "year": 2021,
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3809901",
+      "status": "fetch",
+      "brief": "letters/L03_reyes_ucc_cryptolaw.md",
+      "primary_axes": [
+        "A5",
+        "A7"
+      ],
+      "output": "out/L03_convergence.md"
+    },
+    {
+      "id": "L04",
+      "title": "Languages for Smart and Computable Contracts",
+      "author": "Christopher C. Clack (UCL)",
+      "year": 2021,
+      "url": "https://arxiv.org/ftp/arxiv/papers/2104/2104.03764.pdf",
+      "status": "fetch",
+      "brief": "letters/L04_clack_contract_languages.md",
+      "primary_axes": [
+        "A1",
+        "A5"
+      ],
+      "output": "out/L04_convergence.md"
+    },
+    {
+      "id": "L05",
+      "title": "Merging traditional contracts (or law) and (smart) e-contracts",
+      "author": "Florian Idelberger (EUI)",
+      "year": null,
+      "url": "https://www.lexon.org/docs/Merging%20traditional%20contracts%20(or%20law)%20and%20(smart)%20e-contracts%20%E2%80%93%20a%20novel%20approach.pdf",
+      "status": "fetch",
+      "brief": "letters/L05_idelberger_merging_contracts.md",
+      "primary_axes": [
+        "A1",
+        "A5"
+      ],
+      "output": "out/L05_convergence.md"
+    }
+  ],
+  "axes": [
+    {
+      "id": "A1",
+      "name": "Performative agreement",
+      "map": "Lexon felicitous speech-act on unstoppable substrate (Austin, fn.7 Bovill) <-> agreement ceremony; words that become true by uttering them are ceremonies that bind"
+    },
+    {
+      "id": "A2",
+      "name": "Gates as promises",
+      "map": "Lexon gates, commitments, promises (voluntary per-account obligations) <-> Promise Theory + polarity, VRC-as-promise-bundle; obligation expressed voluntarily, never imposed"
+    },
+    {
+      "id": "A3",
+      "name": "Topology of trust and promise graphs",
+      "map": "Lexon star-to-web decentralisation (Fig. 5/6) <-> bilateral VRC graph vs issuer-centric credentials; gate/commitment/promise primitives as typed-polarity edges; corpus of contracts as a promise graph spanning contract boundaries; stratum-weighted network value"
+    },
+    {
+      "id": "A4",
+      "name": "Private evidence chains",
+      "map": "Lexon micro blockchain (hash-chained signed logs, perfectly private state) <-> ceremony records, reconstruction ceiling R < 1, contractual privacy without public disclosure"
+    },
+    {
+      "id": "A5",
+      "name": "Grammar to graph (keystone)",
+      "map": "Lexon nouns as neutral markers, meaning in relations (Wittgenstein); AST as deterministic subject-predicate-object triples: readable contract, executable code, and lossless graph serialisation at once <-> RPP proverbs as opaque bilateral edges; public-legible subgraphs with opaque edges = reconstruction ceiling drawn as topology"
+    },
+    {
+      "id": "A6",
+      "name": "Accountable reversibility",
+      "map": "Lexon forum-key conditional reversibility <-> Accountable Wallet, Watcher Network, Privacy Pools association sets; discretion anchored to a designated neutral"
+    },
+    {
+      "id": "A7",
+      "name": "Terms as executable law",
+      "map": "Reyes U.C.C. model law and Lexon-as-legalese <-> MyTerms IEEE P7012 machine-readable terms; the contractual privacy paradigm needs an execution layer, Lexon is a candidate"
+    },
+    {
+      "id": "A8",
+      "name": "Anchoring below the agent",
+      "map": "Lexon token-layer obligations (what the substrate does not provide, the language cannot support) <-> three-axis separation, Swordsman constraints beneath the Mage; Robotic Laws as boundary inscriptions"
+    }
+  ],
+  "phases": [
+    {
+      "id": "P1",
+      "name": "Letters",
+      "action": "For each letter: fetch (unless in_hand), read brief, produce convergence chronicle to output path"
+    },
+    {
+      "id": "P2",
+      "name": "Synthesis",
+      "action": "Merge five chronicles along eight axes into out/SYNTHESIS.md; verdict per axis: structural convergence, terminological convergence (false friend), or divergence"
+    },
+    {
+      "id": "P3",
+      "name": "Artefacts",
+      "action": "Produce out/HENNING_BRIEF.md (technical overlap brief, three collaboration probes, analysis-led), out/PVM_QUEUE.md (CTR-LEX candidate entries for register consideration; no C-series numbers, no confidence percentages), out/BONFIRES_NOTE.md (Lexon as deterministic write-path and promise-graph overlay for Bonfire knowledge graphs, with worked Lexon-to-triples example)"
+    }
+  ],
+  "downstream": {
+    "pvm_register": {
+      "rule": "Agent proposes CTR-LEX candidates only. The live conjecture register (C-series) is the single source of truth; the agent never assigns C-series IDs or confidence percentages. Every candidate carries claim, evidence pointer, falsification condition, suggested V6 claim-cluster fit.",
+      "id_prefix": "CTR-LEX-"
+    },
+    "bonfires": {
+      "url": "https://bonfires.ai",
+      "stack": "Graphiti over Neo4j (entities, relationships, episodes), Weaviate vectors, MongoDB chunks, shared graph per Bonfire, episode-write API, automatic conversation capture",
+      "proposal": "Lexon controlled grammar as deterministic authoring/write-path alongside probabilistic extraction; promise primitives as typed promise-graph overlay; zero extraction loss for agreements, decisions, commitments"
+    }
+  }
+}

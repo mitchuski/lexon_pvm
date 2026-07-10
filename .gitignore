@@ -1,0 +1,12 @@
+# scratch (manifest.yaml scratch_dir; per-round seat writes)
+runs/
+
+# vendored third-party corpus — NOT redistributed in this public repo.
+# SOURCES.md documents every item and its fetch path; refetch to rebuild.
+sources/letters/
+sources/lexon/site/
+sources/lexon/site_text/
+sources/lexon/lexon-compiler/
+
+# generated (rebuild: node <skeleton>/tools/bundle.mjs harness.config.mjs harness.workflow.mjs)
+harness.workflow.mjs

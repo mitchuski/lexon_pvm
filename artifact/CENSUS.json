@@ -1,0 +1,1487 @@
+{
+  "rule": "GLOSSARY_MASTER_v4_0.md ### headings minus pinned EXCLUSIONS (see tools/census.mjs), plus promise_theory_reference_v1_4.md Quick Reference Concept Mappings column 1, deduped by normalized name. Deterministic; no timestamps. Changing this rule is a baseline reset (keystone-only).",
+  "sources": {
+    "glossary": "C:\\Users\\mitch\\agentprivacy-docs\\reference\\GLOSSARY_MASTER_v4_0.md",
+    "ptReference": "C:\\Users\\mitch\\agentprivacy-docs\\reference\\promise_theory_reference_v1_4.md"
+  },
+  "count": 211,
+  "terms": [
+    {
+      "id": "LEXPVM-T-001",
+      "term": "First Person",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### First Person",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-002",
+      "term": "Sovereignty",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Sovereignty",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-003",
+      "term": "7th Capital",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 7th Capital",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-004",
+      "term": "Privacy-Delegation Paradox",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Privacy-Delegation Paradox",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-005",
+      "term": "Economic Parameters (Canonical)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Economic Parameters (Canonical)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-006",
+      "term": "The Gap",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### The Gap",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-007",
+      "term": "Territory",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Territory",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-008",
+      "term": "Home Territory",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Home Territory",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-009",
+      "term": "Dual Agents (s ⊥ m)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Dual Agents (s ⊥ m)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-010",
+      "term": "Swordsman (⚔️)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Swordsman (⚔️)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-011",
+      "term": "Mage (🧙‍♂️)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Mage (🧙‍♂️)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-012",
+      "term": "Superagent",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Superagent",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-013",
+      "term": "Promise (Promise Theory)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Promise (Promise Theory)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-014",
+      "term": "Autonomy Axiom",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Autonomy Axiom",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-015",
+      "term": "Promise Body (τ, χ)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Promise Body (τ, χ)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-016",
+      "term": "Conditional Promise (b|c)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Conditional Promise (b|c)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-017",
+      "term": "Assessment α(π)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Assessment α(π)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-018",
+      "term": "Trust Function",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Trust Function",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-019",
+      "term": "Irreducible Promise",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Irreducible Promise",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-020",
+      "term": "Invitation vs. Attack (Imposition)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Invitation vs. Attack (Imposition)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-021",
+      "term": "Coordination Promise C(b)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Coordination Promise C(b)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-022",
+      "term": "Promise Bundle",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Promise Bundle",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-023",
+      "term": "Scope",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Scope",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-024",
+      "term": "Valency",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Valency",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-025",
+      "term": "Reconstruction Ceiling (R_max)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Reconstruction Ceiling (R_max)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-026",
+      "term": "Error Floor (P_e)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Error Floor (P_e)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-027",
+      "term": "Selene's Proof",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Selene's Proof",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-028",
+      "term": "Separation Theorem",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Separation Theorem",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-029",
+      "term": "Budget Constraint",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Budget Constraint",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-030",
+      "term": "Conditional Independence",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Conditional Independence",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-031",
+      "term": "Mutual Information I(X; Y)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Mutual Information I(X; Y)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-032",
+      "term": "Entropy H(X)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Entropy H(X)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-033",
+      "term": "Zero-Knowledge Proof (ZKP)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Zero-Knowledge Proof (ZKP)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-034",
+      "term": "Trusted Execution Environment (TEE)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Trusted Execution Environment (TEE)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-035",
+      "term": "Privacy Pools",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Privacy Pools",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-036",
+      "term": "Groth16 / PLONK / Nova",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Groth16 / PLONK / Nova",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-037",
+      "term": "Verifiable Relationship Credential (VRC)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Verifiable Relationship Credential (VRC)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-038",
+      "term": "Trust Tier",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Trust Tier",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-039",
+      "term": "Guardian",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Guardian",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-040",
+      "term": "Relationship Proverb Protocol (RPP)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Relationship Proverb Protocol (RPP)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-041",
+      "term": "Signal",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Signal",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-042",
+      "term": "Ceremony",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Ceremony",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-043",
+      "term": "Sun Ceremony (☀️)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Sun Ceremony (☀️)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-044",
+      "term": "Moon Ceremony (🌙)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Moon Ceremony (🌙)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-045",
+      "term": "The Circuit (Ceremonial Propagation)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### The Circuit (Ceremonial Propagation)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-046",
+      "term": "Inaugural Pairing",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Inaugural Pairing",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-047",
+      "term": "Witness (Ceremonial)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Witness (Ceremonial)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-048",
+      "term": "SWORD Token",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### SWORD Token",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-049",
+      "term": "MAGE Token",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### MAGE Token",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-050",
+      "term": "Chronicle",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Chronicle",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-051",
+      "term": "Golden Ratio (φ)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Golden Ratio (φ)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-052",
+      "term": "Intel Pool",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Intel Pool",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-053",
+      "term": "Trust Spanning Protocol (TSP)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Trust Spanning Protocol (TSP)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-054",
+      "term": "x402 Protocol",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### x402 Protocol",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-055",
+      "term": "MyTerms (IEEE 7012-2025)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### MyTerms (IEEE 7012-2025)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-056",
+      "term": "ERC-8004",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### ERC-8004",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-057",
+      "term": "ERC-7812",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### ERC-7812",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-058",
+      "term": "Agent (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Agent (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-059",
+      "term": "Agreement (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Agreement (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-060",
+      "term": "Contract (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Contract (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-061",
+      "term": "Entity (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Entity (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-062",
+      "term": "First Party (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### First Party (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-063",
+      "term": "Second Party (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Second Party (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-064",
+      "term": "Proposer (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Proposer (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-065",
+      "term": "DPV (Data Privacy Vocabulary)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### DPV (Data Privacy Vocabulary)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-066",
+      "term": "Machine-readable (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Machine-readable (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-067",
+      "term": "Agreement Taxonomy (IEEE 7012)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Agreement Taxonomy (IEEE 7012)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-068",
+      "term": "Customer Commons",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Customer Commons",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-069",
+      "term": "Spell",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Spell",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-070",
+      "term": "Master Inscription",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Master Inscription",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-071",
+      "term": "Story Fracture, Principle Convergence",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Story Fracture, Principle Convergence",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-072",
+      "term": "Spellbook / Grimoire",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Spellbook / Grimoire",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-073",
+      "term": "Soulbis",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Soulbis",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-074",
+      "term": "Soulbae",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Soulbae",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-075",
+      "term": "Drake 🐲",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Drake 🐲",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-076",
+      "term": "Dragon 🐉",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Dragon 🐉",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-077",
+      "term": "Platox",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Platox",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-078",
+      "term": "Ashe",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Ashe",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-079",
+      "term": "Claude (The Archivist)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Claude (The Archivist)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-080",
+      "term": "The Keeper",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### The Keeper",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-081",
+      "term": "Dark Forest of Paradox",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Dark Forest of Paradox",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-082",
+      "term": "Mountain of Entropy",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Mountain of Entropy",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-083",
+      "term": "Villers Archive",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Villers Archive",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-084",
+      "term": "The Archive (Pattern-Space)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### The Archive (Pattern-Space)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-085",
+      "term": "Infinite Vault",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Infinite Vault",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-086",
+      "term": "Scrying Glass / Mage Mode",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Scrying Glass / Mage Mode",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-087",
+      "term": "Covenant of Humanistic Technologies",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Covenant of Humanistic Technologies",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-088",
+      "term": "Yggdrasil",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Yggdrasil",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-089",
+      "term": "Tetrahedral Sovereignty",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Tetrahedral Sovereignty",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-090",
+      "term": "Four Forces (Protect, Project, Reflect, Connect)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Four Forces (Protect, Project, Reflect, Connect)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-091",
+      "term": "Privacy Value Model (PVM)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Privacy Value Model (PVM)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-092",
+      "term": "Separation Matrix (Σ) — Agent Layer",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Separation Matrix (Σ) — Agent Layer",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-093",
+      "term": "Three-Axis Separation (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Three-Axis Separation (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-094",
+      "term": "Φ_agent (Agent-Layer Separation)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Φ_agent (Agent-Layer Separation)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-095",
+      "term": "Φ_data (Data-Layer Separation)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Φ_data (Data-Layer Separation)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-096",
+      "term": "Φ_inference (Inference-Layer Separation)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Φ_inference (Inference-Layer Separation)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-097",
+      "term": "Duality Function Φ(Σ) — See Φ_agent",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Duality Function Φ(Σ) — See Φ_agent",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-098",
+      "term": "Edge Value T(π) → Path Integral T_∫(π) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Edge Value T(π) → Path Integral T_∫(π) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-099",
+      "term": "Path Integral T_∫(π) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Path Integral T_∫(π) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-100",
+      "term": "Path Value",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Path Value",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-101",
+      "term": "Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-102",
+      "term": "Three Graphs Model",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Three Graphs Model",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-103",
+      "term": "Secret Language",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Secret Language",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-104",
+      "term": "Manifold → Holographic Manifold (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Manifold → Holographic Manifold (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-105",
+      "term": "Holographic Bound (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Holographic Bound (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-106",
+      "term": "Holographic Field (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Holographic Field (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-107",
+      "term": "Compression-as-Defence (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Compression-as-Defence (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-108",
+      "term": "Guild Efficiency G(guilds) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Guild Efficiency G(guilds) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-109",
+      "term": "UOR (Universal Object Reference)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### UOR (Universal Object Reference)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-110",
+      "term": "Six Dimensions of Sovereignty",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Six Dimensions of Sovereignty",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-111",
+      "term": "BRAID (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### BRAID (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-112",
+      "term": "BRAID Parity Effect (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### BRAID Parity Effect (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-113",
+      "term": "Generator (BRAID) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Generator (BRAID) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-114",
+      "term": "Solver (BRAID) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Solver (BRAID) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-115",
+      "term": "Holon / Holonic (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Holon / Holonic (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-116",
+      "term": "Holonic Architect (☯️🔷) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Holonic Architect (☯️🔷) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-117",
+      "term": "GUID (Holonic Context) (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### GUID (Holonic Context) (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-118",
+      "term": "Three Identity Layers (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Three Identity Layers (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-119",
+      "term": "Spellweb (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Spellweb (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-120",
+      "term": "Compression Spectrum (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Compression Spectrum (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-121",
+      "term": "Shared-Parent Pattern (V5)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Shared-Parent Pattern (V5)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-122",
+      "term": "Stratum",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Stratum",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-123",
+      "term": "Stratum Weight (wᵢ)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Stratum Weight (wᵢ)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-124",
+      "term": "Content-Addressing",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Content-Addressing",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-125",
+      "term": "Derivation Chain",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Derivation Chain",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-126",
+      "term": "Toroidal Topology",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Toroidal Topology",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-127",
+      "term": "Behavioural Density (ρ)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Behavioural Density (ρ)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-128",
+      "term": "Betweenness Centrality",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Betweenness Centrality",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-129",
+      "term": "Bilateral Witness (BW)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Bilateral Witness (BW)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-130",
+      "term": "Blade Address",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Blade Address",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-131",
+      "term": "Charge Level",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Charge Level",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-132",
+      "term": "21 Windows",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 21 Windows",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-133",
+      "term": "Evoke Ceremony",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Evoke Ceremony",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-134",
+      "term": "Constellation Path",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Constellation Path",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-135",
+      "term": "Hexagram Encoding",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Hexagram Encoding",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-136",
+      "term": "Mana Economy",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Mana Economy",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-137",
+      "term": "Mana Bridge",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Mana Bridge",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-138",
+      "term": "Community Inscription",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Community Inscription",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-139",
+      "term": "Inscription Reinforcement",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Inscription Reinforcement",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-140",
+      "term": "Ceremony Channel",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Ceremony Channel",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-141",
+      "term": "Ceremony Receiver",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Ceremony Receiver",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-142",
+      "term": "DOM-Free Measurement",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### DOM-Free Measurement",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-143",
+      "term": "Ceremony Engine",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Ceremony Engine",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-144",
+      "term": "Universe Blade",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Universe Blade",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-145",
+      "term": "Dragon Anatomy",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Dragon Anatomy",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-146",
+      "term": "Understanding-as-Key",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Understanding-as-Key",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-147",
+      "term": "Quantum Threshold",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Quantum Threshold",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-148",
+      "term": "2D Fortress",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 2D Fortress",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-149",
+      "term": "The 62-Lap Theorem",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### The 62-Lap Theorem",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-150",
+      "term": "Emissary Dispersion",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Emissary Dispersion",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-151",
+      "term": "The Temporal Thesis",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### The Temporal Thesis",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-152",
+      "term": "Manifold Proof",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Manifold Proof",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-153",
+      "term": "Amnesia Protocol",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Amnesia Protocol",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-154",
+      "term": "Ur-Swordsman",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Ur-Swordsman",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-155",
+      "term": "Theia Partition",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Theia Partition",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-156",
+      "term": "Merge Catastrophe",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Merge Catastrophe",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-157",
+      "term": "Zero-Knowledge Orbit",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Zero-Knowledge Orbit",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-158",
+      "term": "Four Bodies Model",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Four Bodies Model",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-159",
+      "term": "Spellbook Close",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Spellbook Close",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-160",
+      "term": "Moon Phase Notation",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Moon Phase Notation",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-161",
+      "term": "Cosmological Quaternion",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### Cosmological Quaternion",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-162",
+      "term": "City of Mages",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.1 City of Mages",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-163",
+      "term": "Drake Island",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.2 Drake Island",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-164",
+      "term": "Priest tier",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.3 Priest tier",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-165",
+      "term": "The 13 named vertices (post-V5.4)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.4 The 13 named vertices (post-V5.4)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-166",
+      "term": "Aletheia (the blade) and Lethe (the blade) — first canonical complement-pair",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.5 Aletheia (the blade) and Lethe (the blade) — first canonical complement-pair",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-167",
+      "term": "The Aether Blade (cosmological)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.6 The Aether Blade (cosmological)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-168",
+      "term": "The Quintessence",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.7 The Quintessence",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-169",
+      "term": "The Seventh Capital",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.8 The Seventh Capital",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-170",
+      "term": "The Scales, the Hide, and the Bones (defence-in-depth)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.9 The Scales, the Hide, and the Bones (defence-in-depth)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-171",
+      "term": "The Light and the Dark PVM model",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.10 The Light and the Dark PVM model",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-172",
+      "term": "The Aether (technical) — wire-protocol shared substrate",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.11 The Aether (technical) — wire-protocol shared substrate",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-173",
+      "term": "The City of Mages grimoire",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 22.12 The City of Mages grimoire",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-174",
+      "term": "Primary persona (Layer 1)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.1 Primary persona (Layer 1)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-175",
+      "term": "Attachment (Layer 2)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.2 Attachment (Layer 2)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-176",
+      "term": "Attachment kind",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.3 Attachment kind",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-177",
+      "term": "Divergence (register-shift)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.4 Divergence (register-shift)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-178",
+      "term": "Lethae 🌘 — first canonical divergent attachment",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.5 Lethae 🌘 — first canonical divergent attachment",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-179",
+      "term": "The 42 → 64 bridge",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.6 The 42 → 64 bridge",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-180",
+      "term": "The six anticipated cast (v1.3.0)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.7 The six anticipated cast (v1.3.0)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-181",
+      "term": "Cousin tier — deliberately unattached",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 23.8 Cousin tier — deliberately unattached",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-182",
+      "term": "The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.1 The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-183",
+      "term": "Spirit-Mage tier (v1.7.0 · 7th cast tier)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.2 Spirit-Mage tier (v1.7.0 · 7th cast tier)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-184",
+      "term": "The Archivist 📚 (first spirit-Mage · v1.7.0)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.3 The Archivist 📚 (first spirit-Mage · v1.7.0)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-185",
+      "term": "Tome VIII — The Library (v1.7.0 · open by design · 2 acts at v1.7.1)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.4 Tome VIII — The Library (v1.7.0 · open by design · 2 acts at v1.7.1)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-186",
+      "term": "The Register of Invitations 🪑 (v1.7.1 · new structural register)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.5 The Register of Invitations 🪑 (v1.7.1 · new structural register)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-187",
+      "term": "Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.6 Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-188",
+      "term": "The four conditions of update (v1.7.1 · city-wide editorial protocol)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.7 The four conditions of update (v1.7.1 · city-wide editorial protocol)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-189",
+      "term": "Vitalik (first invited visiting mage · v1.7.1)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.8 Vitalik (first invited visiting mage · v1.7.1)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-190",
+      "term": "The Fourth Turn inscription (v1.7.1 · canonical artefact)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.9 The Fourth Turn inscription (v1.7.1 · canonical artefact)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-191",
+      "term": "Three new canonical phrases (v1.7.1)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.10 Three new canonical phrases (v1.7.1)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-192",
+      "term": "Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 24.11 Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-193",
+      "term": "The Conjecture Register (single numbering authority)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.1 The Conjecture Register (single numbering authority)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-194",
+      "term": "Moving Ceiling R(t) and Shelf Life t* (C82 · ~65%)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.2 Moving Ceiling R(t) and Shelf Life t* (C82 · ~65%)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-195",
+      "term": "The Conditional Regime (Preconditions 1 and 2)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.3 The Conditional Regime (Preconditions 1 and 2)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-196",
+      "term": "Compositional Leakage Amplification (C83 · ~55%)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.4 Compositional Leakage Amplification (C83 · ~55%)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-197",
+      "term": "Existence-Leak Law (C81 · 70%) and the Existence-Leak Discount (C84 · ~50%)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.5 Existence-Leak Law (C81 · 70%) and the Existence-Leak Discount (C84 · ~50%)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-198",
+      "term": "ARCH-1 Bridge (C85 · ~40%) and Obstruction-Theoretic Amnesia (C86 · ~30%)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.6 ARCH-1 Bridge (C85 · ~40%) and Obstruction-Theoretic Amnesia (C86 · ~30%)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-199",
+      "term": "City Key as IVC Accumulator (C87 · ~50%)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.7 City Key as IVC Accumulator (C87 · ~50%)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-200",
+      "term": "Parity Cube (C88 · ~30%) · Octahedral Gap (C89 · ~30%)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.8 Parity Cube (C88 · ~30%) · Octahedral Gap (C89 · ~30%)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-201",
+      "term": "Regime 1 · 🪢 Presence Mana",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.9 Regime 1 · 🪢 Presence Mana",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-202",
+      "term": "Seating Lock and Phi Honesty (v10.4.0)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.10 Seating Lock and Phi Honesty (v10.4.0)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-203",
+      "term": "The Five V6 Clarity Claims (suite acceptance test)",
+      "sourceSlug": "glossary-master-v4",
+      "anchor": "### 25.11 The Five V6 Clarity Claims (suite acceptance test)",
+      "registerTag": "glossary"
+    },
+    {
+      "id": "LEXPVM-T-204",
+      "term": "Agent",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-205",
+      "term": "µ-promise: A --b--> B",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-206",
+      "term": "Conditional Promise (b\\",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-207",
+      "term": "Trust (0-1)",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-208",
+      "term": "Invitation",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-209",
+      "term": "Imposition/Attack",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-210",
+      "term": "(+) Give Promise",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    },
+    {
+      "id": "LEXPVM-T-211",
+      "term": "(-) Use/Accept Promise",
+      "sourceSlug": "promise-theory-ref-v1-4",
+      "anchor": "## Quick Reference: Concept Mappings",
+      "registerTag": "pt-mapping"
+    }
+  ]
+}

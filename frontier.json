@@ -1,0 +1,24 @@
+{
+  "authority": "This file is the single source of truth for numbers (GR-1). No metric appears in prose except as a citation of this file. Keystone-only writes.",
+  "updated": "2026-07-10",
+  "objective": {
+    "metric": "coverage-debt",
+    "gate": "tools/lexon_check.mjs full pass on every proposed LEXICON entry, plus 5 held-out census terms expressed by the assayer using only the proposal's pattern recipe, plus 3 covered regression entries; gateResult 8/8 (T5: zero collapses). Regime: spec-checker (real Lexon compiler is macOS-only, source unpublished; see SOURCES.md lexon-compiler-status).",
+    "hardConstraint": "every entry cites a SOURCES.md slug (GR-9 trace-or-delete); register discipline proven/conjectured/speculative never upgraded; no em dashes in artifact/; no C-series numbers or confidence percentages from any seat (GR-3)"
+  },
+  "baseline": {
+    "metric": 211,
+    "date": "2026-07-10",
+    "how": "node tools/census.mjs --freeze (rule pinned in artifact/CENSUS.json and tools/census.mjs EXCLUSIONS); coverage-debt re-derived by node tools/coverage.mjs against artifact/LEXICON.lexon.md"
+  },
+  "best": {
+    "metric": 211,
+    "leverIds": [],
+    "evidence": "fit state: LEXICON has zero folded entries; node tools/coverage.mjs prints coverage-debt = 211"
+  },
+  "openTarget": {
+    "id": "OT-1",
+    "statement": "first VALIDATED grammar-pattern lever covering >= 5 census terms at full 8/8 gate; Phase B convergence outputs (three-clause MyTerms sketch, escrow triple decomposition) are the seed candidates",
+    "status": "OPEN"
+  }
+}

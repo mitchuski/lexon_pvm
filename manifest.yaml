@@ -1,0 +1,21 @@
+# manifest.yaml — pipeline state. Keystone-only writes (GR-10).
+pipeline: lexon-pvm
+version: 1
+gates:
+  - G0-conform        # node engine/conform.mjs C:\Users\mitch\Lexon_pvm green
+  - G1-held-out       # 5 held-out census terms + 3 regression entries, 8/8
+  - G2-hard-constraint
+  - G3-frontier-fold  # keystone folds, frontier first, prose second
+  - G4-door           # push/submit/publish/send
+rules:
+  g4_owner: first-person          # T6 — non-delegable
+  keystone_only_writes: [frontier.json, claims_register.md, manifest.yaml, artifact/CENSUS.json]
+  scratch_dir: runs/
+  chronicle_per_session: chronicles/
+artifacts:
+  census: artifact/CENSUS.json          # frozen 2026-07-10, 211 terms
+  grammar: artifact/GRAMMAR.ebnf.md     # attested subset, changes only with checker+selftest
+  lexicon: artifact/LEXICON.lexon.md    # the semantic base (coverage numerator)
+  spell_grammar: artifact/SPELL_GRAMMAR.md
+  checker: tools/lexon_check.mjs        # selftest must stay green (3 goldens, 5 mutants)
+  convergence_out: out/                 # Phase B chronicles + synthesis + artefacts
