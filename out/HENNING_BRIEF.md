@@ -29,7 +29,7 @@ Tally: 7 structural convergences, 1 terminological convergence, 0 whole-axis div
 
 **The Swordsman as a defined noun.** Idelberger's evaluation-license contract defines its ARBITER to admit a natural person, a legal person, or a machine, and gives the Arbiter the only two power clauses, Examine for Breach and Declare Breach. That machine-admitting seat is exactly Swordsman-shaped: deterministic boundary checks in, human judgment reserved. The design split proposed here: the Swordsman holds Examine for Breach; Declare Breach stays with a human or a named neutral. Lexon roles bind by first use and compile to key pairs, so the Swordsman is a key-holding role like Payer or Arbiter, no grammar change required.
 
-**Sample text.** Three clauses, modeled on the escrow example's Payer/Payee style (definitions block, constructor sentence, named clauses with one permitted initiator each). Design-register conjecture: drafted for this brief, not yet compile-checked against the 0.3 grammar; the compile check is the first work item.
+**Sample text.** Three clauses, modeled on the escrow example's Payer/Payee style (definitions block, constructor sentence, named clauses with one permitted initiator each). Passes the workshop spec-checker (parse, triple round-trip, role binding, promise typing: 5 definitions, 3 clauses, all edges typed); still design-register until compiled against the real 0.3 compiler, which remains the first work item. A first draft used two constructs outside the attested subset (an article after declare, a given-that conditional); both are repaired below to the forms the corpus attests, a small live demonstration of why the controlled grammar earns its keep.
 
 ```lexon
 LEX MyTerms Agreement.
@@ -47,11 +47,10 @@ CLAUSE: Accept Terms.
 The Counterparty may certify the Purpose.
 
 CLAUSE: Examine for Breach.
-The Swordsman may declare the Breach.
+The Swordsman may declare Breach.
 
 CLAUSE: Dissolve.
-The Person may terminate this contract, given that the Breach
-has been declared.
+The Person may, if Breach is declared, terminate this contract.
 ```
 
 The shape matters more than the wording: the Person proffers (constructor), the Counterparty accepts by certifying (the machine-readable-terms handshake), the Swordsman holds the deterministic breach seat, and dissolution is conditioned on a declared breach. The choice-of-venue slot fills by key inclusion, 2017-style: a neutral is designated by embedding a published public key, no onboarding, possibly unaware until invoked.
