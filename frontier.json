@@ -12,13 +12,13 @@
     "how": "node tools/census.mjs --freeze (rule pinned in artifact/CENSUS.json and tools/census.mjs EXCLUSIONS); coverage-debt re-derived by node tools/coverage.mjs against artifact/LEXICON.lexon.md"
   },
   "best": {
-    "metric": 201,
-    "leverIds": ["seed-fold-1"],
-    "evidence": "keystone seed-fold 2026-07-10: 10 entries (T-001,006,009,010,011,013,042,055,073,074) derived from the convergence run's three gate-verified texts; node tools/coverage.mjs prints coverage-debt = 201, 0 failed entries. Keystone fold, not a loop round: no Gap draw, no held-out gate; the first VALIDATED loop lever remains OT-1."
+    "metric": 181,
+    "leverIds": ["seed-fold-1", "defined-predicate-charter", "promise-decomposition-charter", "defined-condition-charter", "pt-primitive-role-charters"],
+    "evidence": "run lexr1 2026-07-10 (wf_931560d2-9c6, status INCOMPLETE: rounds 1-2 complete, round 3 lost to session-limit outage, engine reported outage not exhaustion): 4 levers VALIDATED 8/8, 0 MIRAGE, 0 BLOCKED. Keystone fold: 15 unique proposal entries (T-014..023 block, T-029, T-047, T-050, T-151, T-207; overlaps T-014,016,017,019,020,021,022,023 reconciled across levers) + 5 assayer-authored held-out entries from defined-predicate-charter (T-012, T-048, T-090, T-122, T-174; critic-verified recipe transfer). node tools/coverage.mjs = 181, 30 covered, 0 failed. Verdicts in runs/lexr1/*/; critic vacuity-watch adopted into LEXICON entry rules."
   },
   "openTarget": {
-    "id": "OT-1",
-    "statement": "first VALIDATED grammar-pattern lever through the full loop (Gap-drawn 5 held-out + 3 regression, 8/8) covering >= 5 census terms; seed entries exist, the loop has not yet run",
+    "id": "OT-2",
+    "statement": "quantitative-register stress test (critic nextLead, lexr1): next lever must target ONLY formula/quantitative/spatial census terms (value formulas, Trust (0-1) mappings, mana axes) with the Gap drawing held-out terms from that same register; tests whether coverage-debt falls where numbers are load-bearing instead of re-proving recipes on glossary ground. OT-1 (first VALIDATED loop lever) CLOSED by lexr1: 4 levers validated.",
     "status": "OPEN"
   }
 }
