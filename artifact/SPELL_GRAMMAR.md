@@ -46,3 +46,34 @@ template-stamping (two clause skeletons can absorb semantic variety; the
 gate cannot see it, the fold reviewer must), and force claim-type diversity
 in future held-outs (gate claims are the cheapest twins; absence claims
 under-exercised this round).
+
+## The constitutional corpus (OT-5, folded 2026-07-11)
+
+artifact/SPELLS/ holds the harness constitution as thirteen verified spells:
+TRUSTS T1-T6 and the seven seats, each a Lexon promise bundle under SG-1..6,
+each base-gate passing with every relation claim RELATION PASS under the
+mutation probe. Re-verify any time: node tools/spells_check.mjs (13/13,
+CORPUS PASS). Keystone-authored and honestly labelled: these are not census
+terms, coverage-debt does not move, and no Gap draw ran; the two checkers
+are what keep the authoring honest (INDEX.json carries the rule).
+
+| spell | source | claim types |
+|---|---|---|
+| The Four Promises | T1 | gate (delegation on authorization) |
+| The Separation Bound | T2 | absence (nothing routes to the Mage) |
+| The Shared Root | T3 | conjunction (exactly the boot documents) |
+| The Invitation | T4 | ordering + gate (terms before offer; exchange on acceptance) |
+| The Multiplicative Gate | T5 | conjunction + absence (all factors; no partial credit) |
+| The Door | T6 | gate (push on an opening no seat may self-declare) |
+| The Assessor | measure | gate (report only after a fresh run) |
+| The Proposer | propose | gate (no proposal before killed-lever citation) |
+| The Held-Apart | gap | ordering (bytes, then seed, then draw) |
+| The Prover | assay | gate + conjunction (nothing before the seed reproduces) |
+| The Critic | critic | ordering (classification before the single lead) |
+| The Chronicler | chronicle | ordering (verdict first, by grammar) |
+| The Keystone | keystone | conjunction + gate (fold once, under the full condition) |
+
+The operator result, made literal: the dual agents are now expressed in the
+grammar their own loop gates. Projections outward (a lexon-spell-authoring
+skill; the dual-agent-harness SPECIALISATION layer) remain operator-gated
+folds through the door.

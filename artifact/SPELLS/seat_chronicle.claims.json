@@ -1,0 +1,11 @@
+[
+ {
+  "type": "ordering",
+  "clause": "Record",
+  "sequence": [
+   "register:Verdict Line",
+   "register:Handoff",
+   "file:Draft"
+  ]
+ }
+]

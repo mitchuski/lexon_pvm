@@ -1,0 +1,15 @@
+[
+ {
+  "type": "conjunction",
+  "predicate": "Validated",
+  "conjuncts": [
+   "Gate Passed",
+   "Constraint Held",
+   "Frontier Beaten"
+  ]
+ },
+ {
+  "type": "absence",
+  "to": "Proposer"
+ }
+]

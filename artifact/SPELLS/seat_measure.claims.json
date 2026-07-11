@@ -1,0 +1,7 @@
+[
+ {
+  "type": "gate",
+  "clause": "Report",
+  "condition": "Metric Fresh"
+ }
+]

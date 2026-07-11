@@ -1,0 +1,127 @@
+{
+ "rule": "the constitutional corpus (OT-5): TRUSTS T1-T6 and the seven seats as Lexon promise bundles; verified by node tools/spells_check.mjs (base gate + every claim RELATION PASS); keystone-authored 2026-07-11, honestly labelled (no Gap draw: the terms are not census terms and the metric does not move)",
+ "count": 13,
+ "spells": [
+  {
+   "slug": "t1_four_promises",
+   "title": "The Four Promises",
+   "source": "TRUSTS.md T1 (Autonomy Axiom: an agent promises only its own behavior)",
+   "claims": [
+    "gate"
+   ],
+   "notes": "the four promises as clause ownership: protection and boundary clauses belong to the Swordsman, delegation to the Mage, authorization to the First Person; delegation is gated on the authorization declaration (SG-1, SG-3). The Autonomy Axiom rides the actor bindings: no clause lets one agent register another's promise. Omits promise polarity notation."
+  },
+  {
+   "slug": "t2_separation_bound",
+   "title": "The Separation Bound",
+   "source": "TRUSTS.md T2 (I(S;M|FP) < epsilon; cannot, by architectural design)",
+   "claims": [
+    "absence"
+   ],
+   "notes": "the separation bound as pure topology (SG-5 absence form): the proposal reaches the prover only through the Gap relay, the verdict flows to the First Person, and NO transfer clause routes anything back to the Mage: the proposer cannot receive the prover's output or the witness material, by construction not by promise. This is the critic-named claim the constitution owed the corpus. Omits the mutual-information formalism."
+  },
+  {
+   "slug": "t3_shared_root",
+   "title": "The Shared Root",
+   "source": "TRUSTS.md T3 (Origin(S) intersect Origin(M) = {P})",
+   "claims": [
+    "conjunction"
+   ],
+   "notes": "the shared root as the recital (SG-2): both agents are appointed and both boot documents fixed by the First Person before any clause; Rooted is the conjunction of exactly the shared documents, and booting is gated on it. Everything the agents share sits above the first CLAUSE; nothing else is shared below it. Omits the seat-card Reads lists."
+  },
+  {
+   "slug": "t4_invitation",
+   "title": "The Invitation",
+   "source": "TRUSTS.md T4 (consent first: invitation, not attack; IEEE 7012 posture)",
+   "claims": [
+    "ordering",
+    "gate"
+   ],
+   "notes": "invitation-not-attack as clause order (SG-4): the terms travel BEFORE the offer exists, and the exchange is gated on the entity's own acceptance declaration; the first party proffers. Omits the MyTerms registry mechanics."
+  },
+  {
+   "slug": "t5_multiplicative_gate",
+   "title": "The Multiplicative Gate",
+   "source": "TRUSTS.md T5 (value is a product; any zero collapses the whole)",
+   "claims": [
+    "conjunction",
+    "absence"
+   ],
+   "notes": "the product as a defined conjunction (SG-6): all three factors must stand declared, and only the Swordsman holds the declares; a missing factor is a zero and the escrowed value never releases. The absence claim carries the cliff: no clause routes any value to the Proposer, so a candidate is worth nothing at ANY score until validated (SG-5). Omits the break-even arithmetic."
+  },
+  {
+   "slug": "t6_door",
+   "title": "The Door",
+   "source": "TRUSTS.md T6 (outward actions are the First Person's alone, non-delegable)",
+   "claims": [
+    "gate"
+   ],
+   "notes": "the door as a gate no seat may self-declare (SG-3): the Keystone can only PRESENT the fold; both the opening declaration and the outward act belong to the First Person, and the push is gated on the declaration. The Keystone holds no register clause at all: making the door visible and stopping in front of it is the whole seat. Omits the G4 manifest line."
+  },
+  {
+   "slug": "seat_measure",
+   "title": "The Assessor",
+   "source": "seats/measure.md (numbers only, no advocacy; never restate from memory)",
+   "claims": [
+    "gate"
+   ],
+   "notes": "never-from-memory as a gate: the report travels only after the fresh-run declaration; staleness is flagged, never silently fixed (the Assessor holds no write toward the frontier, only the flag declare). Omits lever pricing."
+  },
+  {
+   "slug": "seat_propose",
+   "title": "The Proposer",
+   "source": "seats/soulbae-propose.md (plan never implement; blind to witnesses; cite kills)",
+   "claims": [
+    "gate"
+   ],
+   "notes": "GR-6 as a gate: no proposal travels before the killed-lever citation stands declared; the plan goes to the Gap, never to the prover (the blindness itself is carried architecturally by The Separation Bound spell). The Mage plans and sends text only: no escrow, no register, no implementation clause. Omits lens mechanics."
+  },
+  {
+   "slug": "seat_gap",
+   "title": "The Held-Apart",
+   "source": "seats/gap-hold-apart.md (Fiat-Shamir: serialize, hash, draw; persist the bytes)",
+   "claims": [
+    "ordering"
+   ],
+   "notes": "Fiat-Shamir as an ordered chain (SG-4, single officiant): the bytes are persisted first, the seed certified from them, the draw sent last; a draw before the registered bytes is unreachable in clause order. The Gap separates and does not judge: no verdict, no advisory clause. Omits the SHA-256 command discipline."
+  },
+  {
+   "slug": "seat_assay",
+   "title": "The Prover",
+   "source": "seats/soulbis-assay.md (re-derive the seed first; the verdict does not flatter)",
+   "claims": [
+    "gate",
+    "conjunction"
+   ],
+   "notes": "BLOCKED-unless-reproduced as a gate: the full gate is unreachable until the Gap's seed reproduces; the verdict travels only under the Complete conjunction and goes to the Keystone, never back to the Proposer. Omits scratch-dir discipline and the cliff-watch arithmetic (carried by The Multiplicative Gate)."
+  },
+  {
+   "slug": "seat_critic",
+   "title": "The Critic",
+   "source": "seats/critic.md (classify the whole round; exactly one lead; never overrule the prover)",
+   "claims": [
+    "ordering"
+   ],
+   "notes": "classification-before-lead as clause order (SG-4): the single next lead exists only after the whole round is classified, and exactly one travels; the Critic holds no clause touching the Verdict (the prover's verdict stands: red-team the proposer's rationale, never the prover's result). Omits the four classification classes."
+  },
+  {
+   "slug": "seat_chronicle",
+   "title": "The Chronicler",
+   "source": "seats/chronicle.md (verdict first; reversals at win-prominence; a draft, not a filing)",
+   "claims": [
+    "ordering"
+   ],
+   "notes": "verdict-first as clause order (SG-4): the verdict line is registered before anything else, the handoff follows, and only then is the draft filed; the reader learns the outcome first because the grammar puts it first. What is filed is a DRAFT: the keystone reviews and files (GR-10). Omits the chronicle template fields."
+  },
+  {
+   "slug": "seat_keystone",
+   "title": "The Keystone",
+   "source": "seats/keystone.md (fold once, conform green before and after; the pair, not a delegate)",
+   "claims": [
+    "conjunction",
+    "gate"
+   ],
+   "notes": "the fold as a triple conjunction: conform green, verdict validated, critic structural, and only then does the fold register; the keystone folds once under the full condition (succ exists only because neg and bnot stayed apart). The door itself lives in The Door spell: the Keystone here has no outward clause. Omits the ledger serialisation list."
+  }
+ ]
+}

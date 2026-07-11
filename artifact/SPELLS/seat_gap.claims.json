@@ -1,0 +1,11 @@
+[
+ {
+  "type": "ordering",
+  "clause": "Derive",
+  "sequence": [
+   "register:Canonical Bytes",
+   "certify:Seed",
+   "send:Witness Draw"
+  ]
+ }
+]

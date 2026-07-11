@@ -1,0 +1,10 @@
+[
+ {
+  "type": "ordering",
+  "clause": "Classify",
+  "sequence": [
+   "register:Round Classification",
+   "send:Next Lead"
+  ]
+ }
+]

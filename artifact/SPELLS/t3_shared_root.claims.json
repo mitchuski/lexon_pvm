@@ -1,0 +1,10 @@
+[
+ {
+  "type": "conjunction",
+  "predicate": "Rooted",
+  "conjuncts": [
+   "Ground Rules",
+   "Trusts"
+  ]
+ }
+]

@@ -1,0 +1,16 @@
+[
+ {
+  "type": "conjunction",
+  "predicate": "Foldable",
+  "conjuncts": [
+   "Conform Green",
+   "Verdict Validated",
+   "Critic Structural"
+  ]
+ },
+ {
+  "type": "gate",
+  "clause": "Fold Once",
+  "condition": "Foldable"
+ }
+]

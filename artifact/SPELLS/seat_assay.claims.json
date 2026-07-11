@@ -1,0 +1,15 @@
+[
+ {
+  "type": "gate",
+  "clause": "Run",
+  "condition": "Seed Reproduced"
+ },
+ {
+  "type": "conjunction",
+  "predicate": "Complete",
+  "conjuncts": [
+   "Seed Reproduced",
+   "Gate Run"
+  ]
+ }
+]

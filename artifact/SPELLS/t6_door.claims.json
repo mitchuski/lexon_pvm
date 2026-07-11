@@ -1,0 +1,7 @@
+[
+ {
+  "type": "gate",
+  "clause": "Push",
+  "condition": "Door Opened"
+ }
+]

@@ -1,0 +1,15 @@
+[
+ {
+  "type": "ordering",
+  "clause": "Proffer",
+  "sequence": [
+   "send:Terms",
+   "register:Offer"
+  ]
+ },
+ {
+  "type": "gate",
+  "clause": "Exchange",
+  "condition": "Terms Accepted"
+ }
+]
