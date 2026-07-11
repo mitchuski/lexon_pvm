@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-006",
+ "term": "The Gap",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### The Gap",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX The Gap.\r\n\r\n\"First Person\" is a person.\r\n\"Gap\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Mage\" is a person.\r\n\"Seed\" is data.\r\n\"Held Apart\" is a binary.\r\n\r\nThe First Person appoints the Gap, appoints the Swordsman, and appoints the Mage.\r\n\r\nCLAUSE: Draw Seed.\r\nThe Gap may certify the Seed.\r\n\r\nCLAUSE: Hold Apart.\r\nThe Gap may declare Held Apart.\r\n\r\nCLAUSE: Verify.\r\nThe Swordsman may, if Held Apart is declared, certify the Seed.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Gap",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Gap",
+   "verb": "certify",
+   "o": "Seed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Draw Seed"
+  },
+  {
+   "s": "Gap",
+   "verb": "declare",
+   "o": "Held Apart",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Apart"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Seed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Held Apart is declared",
+   "clause": "Verify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Gap",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Seed",
+   "conditional": false,
+   "clause": "Draw Seed"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Held Apart",
+   "conditional": false,
+   "clause": "Hold Apart"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Seed",
+   "conditional": true,
+   "clause": "Verify"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries maximal betweenness as clause structure (no verification path exists except through the Gap's declaration); omits the entropy expression H(X) minus C_S plus C_M.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

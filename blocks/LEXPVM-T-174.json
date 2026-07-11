@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-174",
+ "term": "Primary persona (Layer 1)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 23.1 Primary persona (Layer 1)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Primary Persona.\r\n\r\n\"Author\" is a person.\r\n\"Reviewer\" is a person.\r\n\"Registry\" is this contract.\r\n\"Skill Loadout\" is a text.\r\n\"Tier Register\" is a text.\r\n\"Corpus Review Passed\" is a binary.\r\n\"Roster Locked\" is a binary.\r\n\r\nThe Reviewer appoints the Author.\r\n\r\nCLAUSE: Fix Loadout.\r\nThe Author may fix the Skill Loadout.\r\n\r\nCLAUSE: Fix Tier.\r\nThe Author may fix the Tier Register.\r\n\r\nCLAUSE: Review.\r\nThe Reviewer may declare Corpus Review Passed.\r\n\r\nCLAUSE: Lock Roster.\r\nThe Reviewer may declare Roster Locked.\r\n\r\nCLAUSE: Admissible.\r\n\"Admissible\" is defined as: the Skill Loadout is fixed and the Tier Register is fixed and Corpus Review Passed is declared and Roster Locked is not declared.\r\n\r\nCLAUSE: Admit.\r\nThe Reviewer may, if this Registry is Admissible: register the Skill Loadout, and afterwards certify the Tier Register.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Reviewer",
+   "verb": "appoint",
+   "o": "Author",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Author",
+   "verb": "fix",
+   "o": "Skill Loadout",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Fix Loadout"
+  },
+  {
+   "s": "Author",
+   "verb": "fix",
+   "o": "Tier Register",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Fix Tier"
+  },
+  {
+   "s": "Reviewer",
+   "verb": "declare",
+   "o": "Corpus Review Passed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Review"
+  },
+  {
+   "s": "Reviewer",
+   "verb": "declare",
+   "o": "Roster Locked",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Lock Roster"
+  },
+  {
+   "s": "Reviewer",
+   "verb": "register",
+   "o": "Skill Loadout",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Registry is Admissible",
+   "clause": "Admit"
+  },
+  {
+   "s": "Reviewer",
+   "verb": "certify",
+   "o": "Tier Register",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Registry is Admissible",
+   "clause": "Admit"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Reviewer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Author",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Skill Loadout",
+   "conditional": false,
+   "clause": "Fix Loadout"
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Tier Register",
+   "conditional": false,
+   "clause": "Fix Tier"
+  },
+  {
+   "promiser": "Reviewer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Corpus Review Passed",
+   "conditional": false,
+   "clause": "Review"
+  },
+  {
+   "promiser": "Reviewer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Roster Locked",
+   "conditional": false,
+   "clause": "Lock Roster"
+  },
+  {
+   "promiser": "Reviewer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Skill Loadout",
+   "conditional": true,
+   "clause": "Admit"
+  },
+  {
+   "promiser": "Reviewer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Tier Register",
+   "conditional": true,
+   "clause": "Admit"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "admission relation: registering a loadout requires review passed AND roster not locked (a negated predicate in the gate), then certification chains afterwards; omits tier semantics.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

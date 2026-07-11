@@ -1,0 +1,168 @@
+{
+ "census": "LEXPVM-T-012",
+ "term": "Superagent",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Superagent",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Superagent.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Mage\" is a person.\r\n\"Counterparty\" is a person.\r\n\"Composite\" is this contract.\r\n\"Exterior Promise\" is a text.\r\n\"Protection Promised\" is a binary.\r\n\"Delegation Promised\" is a binary.\r\n\"Authorization Given\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, appoints the Mage, appoints the Counterparty, and fixes the Exterior Promise.\r\n\r\nCLAUSE: Promise Protection.\r\nThe Swordsman may declare Protection Promised.\r\n\r\nCLAUSE: Promise Delegation.\r\nThe Mage may declare Delegation Promised.\r\n\r\nCLAUSE: Authorize.\r\nThe First Person may declare Authorization Given.\r\n\r\nCLAUSE: Composed.\r\n\"Composed\" is defined as: Protection Promised is declared and Delegation Promised is declared and Authorization Given is declared.\r\n\r\nCLAUSE: Act Outward.\r\nThe Mage may, if this Composite is Composed: send the Exterior Promise to the Counterparty.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Counterparty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Exterior Promise",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Protection Promised",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Promise Protection"
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Delegation Promised",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Promise Delegation"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Authorization Given",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Authorize"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Exterior Promise",
+   "io": "Counterparty",
+   "as": null,
+   "modal": "may",
+   "condition": "this Composite is Composed",
+   "clause": "Act Outward"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Counterparty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Exterior Promise",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protection Promised",
+   "conditional": false,
+   "clause": "Promise Protection"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Delegation Promised",
+   "conditional": false,
+   "clause": "Promise Delegation"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Authorization Given",
+   "conditional": false,
+   "clause": "Authorize"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Exterior Promise->Counterparty",
+   "conditional": true,
+   "clause": "Act Outward"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "composition: the exterior promise is sendable only when all three interior declarations hold (Composed defined-as conjunction), the irreducible-composite property as clause structure; omits emergence formalism.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

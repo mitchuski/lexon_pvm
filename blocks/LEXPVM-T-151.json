@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-151",
+ "term": "The Temporal Thesis",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### The Temporal Thesis",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX The Temporal Thesis.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Regime\" is this contract.\r\n\"Disclosure\" is a text.\r\n\"Disclosure Time\" is a time.\r\n\"Ceiling Risen\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, and fixes the Disclosure.\r\n\r\nCLAUSE: Mark Disclosure.\r\nThe Swordsman may fix the Disclosure Time as the current time.\r\n\r\nCLAUSE: Observe Ceiling.\r\nThe Swordsman may declare Ceiling Risen.\r\n\r\nCLAUSE: Shelf Expired.\r\n\"Shelf Expired\" is defined as: the Disclosure Time lies at least 24 hours in the past, or Ceiling Risen is declared.\r\n\r\nCLAUSE: Withdraw.\r\nThe Swordsman may, if this Regime is Shelf Expired: terminate this Regime.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Disclosure",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "fix",
+   "o": "Disclosure Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark Disclosure"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Ceiling Risen",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe Ceiling"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "terminate",
+   "o": "Regime",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Regime is Shelf Expired",
+   "clause": "Withdraw"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Disclosure",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Disclosure Time",
+   "conditional": false,
+   "clause": "Mark Disclosure"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Ceiling Risen",
+   "conditional": false,
+   "clause": "Observe Ceiling"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:Regime",
+   "conditional": true,
+   "clause": "Withdraw"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries protection-buys-time as the attested time-literal predicate (disclosure aged past a stated horizon) or an observed ceiling rise, either expiring the shelf and enabling withdrawal; omits the continuous decay function and the true shelf-life constant, the 24-hour literal is a stand-in since hour and day counts are the subset's only numbers. Anchor: ### The Temporal Thesis.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

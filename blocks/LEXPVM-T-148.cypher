@@ -1,0 +1,15 @@
+MERGE (c:LexContract {census: "LEXPVM-T-148", name: "2D Fortress", cites: "glossary-master-v4 § ### 2D Fortress"})
+MERGE (:Person {name: "Key Holder", contract: "2D Fortress"})
+MERGE (:Person {name: "Quantum Adversary", contract: "2D Fortress"})
+MERGE (:Person {name: "Verifier", contract: "2D Fortress"})
+MERGE (:Amount {name: "Scalar Secret", contract: "2D Fortress"})
+MERGE (:Text {name: "Public Point", contract: "2D Fortress"})
+MERGE (:Binary {name: "Period Found", contract: "2D Fortress"})
+MATCH (a {name: "Key Holder"}), (b {name: "Key Holder"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Verifier"}]->(b)
+MATCH (a {name: "Key Holder"}), (b {name: "Key Holder"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Quantum Adversary"}]->(b)
+MATCH (a {name: "Key Holder"}), (b {name: "Key Holder"}) CREATE (a)-[:PAY {clause: "recital", object: "Scalar Secret"}]->(b)
+MATCH (a {name: "Key Holder"}), (b {name: "Key Holder"}) CREATE (a)-[:REGISTER {clause: "recital", object: "Public Point"}]->(b)
+MATCH (a {name: "Quantum Adversary"}), (b {name: "Quantum Adversary"}) CREATE (a)-[:MAY_DECLARE {clause: "Find Period", object: "Period Found"}]->(b)
+MATCH (a {name: "Quantum Adversary"}), (b {name: "Quantum Adversary"}) CREATE (a)-[:MAY_PAY {clause: "Reverse The Multiplication", object: "Scalar Secret", condition: "Period Found is declared"}]->(b)
+// claim (re-runnable): NOTHING routes Scalar Secret to Key Holder; any row falsifies the block
+MATCH (x)-[e]->(f {name: "Key Holder"}) WHERE e.object = "Scalar Secret" RETURN count(e) AS mustBeZero

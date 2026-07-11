@@ -1,0 +1,204 @@
+{
+ "census": "LEXPVM-T-095",
+ "term": "Φ_data (Data-Layer Separation)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Φ_data (Data-Layer Separation)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Data Layer Separation.\n\n\"First Person\" is a person.\n\"First Provider\" is a person.\n\"Second Provider\" is a person.\n\"Data Corpus\" is an amount.\n\"First Shard\" is an amount.\n\"Second Shard\" is an amount.\n\"Separation\" is this contract.\n\"First Shard Placed\" is a binary.\n\"Second Shard Placed\" is a binary.\n\nThe First Person pays the Data Corpus into escrow, appoints the First Provider, appoints the Second Provider, fixes the First Shard, and fixes the Second Shard.\n\nCLAUSE: Place First Shard.\nThe First Person may pay from escrow the First Shard to the First Provider, and afterwards declare First Shard Placed.\n\nCLAUSE: Place Second Shard.\nThe First Person may pay from escrow the Second Shard to the Second Provider, and afterwards declare Second Shard Placed.\n\nCLAUSE: Fragmented.\n\"Fragmented\" is defined as: First Shard Placed is declared and Second Shard Placed is declared.\n\nCLAUSE: Hold Residue.\nThe First Person may, if this Separation is Fragmented: return the remainder of the escrow to the First Person.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 10,
+  "promiseEdges": 10
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "Data Corpus",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "First Provider",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Second Provider",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "First Shard",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Second Shard",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "First Shard",
+   "io": "First Provider",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Place First Shard"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "First Shard Placed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Place First Shard"
+  },
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "Second Shard",
+   "io": "Second Provider",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Place Second Shard"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Second Shard Placed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Place Second Shard"
+  },
+  {
+   "s": "First Person",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "this Separation is Fragmented",
+   "clause": "Hold Residue"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Data Corpus",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Provider",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Provider",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Shard",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Second Shard",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:First Shard->First Provider",
+   "conditional": false,
+   "clause": "Place First Shard"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Shard Placed",
+   "conditional": false,
+   "clause": "Place First Shard"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Second Shard->Second Provider",
+   "conditional": false,
+   "clause": "Place Second Shard"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Shard Placed",
+   "conditional": false,
+   "clause": "Place Second Shard"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->First Person",
+   "conditional": true,
+   "clause": "Hold Residue"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "fragmentation carried as two shard outflows each with an afterwards declaration (ordering); the Fragmented defined conjunction gates holding the residue; conservation = shards plus retained residue exhaust the escrowed corpus. Omits the separation formula and provider counts. Assayer-authored (escrow-conservation-recipe held-out, recipe-only).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

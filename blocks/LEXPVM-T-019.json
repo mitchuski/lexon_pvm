@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-019",
+ "term": "Irreducible Promise",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Irreducible Promise § ### Irreducible Promise",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Irreducible Promise.\r\n\r\n\"First Component\" is a person.\r\n\"Second Component\" is a person.\r\n\"Superagent\" is a person.\r\n\"Whole Promise\" is a text.\r\n\"First Part Kept\" is a binary.\r\n\"Second Part Kept\" is a binary.\r\n\r\nThe Superagent appoints the First Component, appoints the Second Component, and fixes the Whole Promise.\r\n\r\nCLAUSE: Keep First Part.\r\nThe First Component may declare First Part Kept.\r\n\r\nCLAUSE: Keep Second Part.\r\nThe Second Component may declare Second Part Kept.\r\n\r\nCLAUSE: Emerge.\r\nThe Superagent may, if First Part Kept is declared and Second Part Kept is declared, register the Whole Promise.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Superagent",
+   "verb": "appoint",
+   "o": "First Component",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Superagent",
+   "verb": "appoint",
+   "o": "Second Component",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Superagent",
+   "verb": "fix",
+   "o": "Whole Promise",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Component",
+   "verb": "declare",
+   "o": "First Part Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Keep First Part"
+  },
+  {
+   "s": "Second Component",
+   "verb": "declare",
+   "o": "Second Part Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Keep Second Part"
+  },
+  {
+   "s": "Superagent",
+   "verb": "register",
+   "o": "Whole Promise",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "First Part Kept is declared and Second Part Kept is declared",
+   "clause": "Emerge"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Superagent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Component",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Superagent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Component",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Superagent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Whole Promise",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Component",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Part Kept",
+   "conditional": false,
+   "clause": "Keep First Part"
+  },
+  {
+   "promiser": "Second Component",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Part Kept",
+   "conditional": false,
+   "clause": "Keep Second Part"
+  },
+  {
+   "promiser": "Superagent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Whole Promise",
+   "conditional": true,
+   "clause": "Emerge"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries emergence-from-cooperation (the Whole Promise registers only when both components' declarations stand, and no component clause can register it alone); omits adversarial uncapturability and the Gap application.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

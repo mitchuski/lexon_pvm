@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-207",
+ "term": "Trust (0-1)",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Trust Scalar.\r\n\r\n\"Truster\" is a person.\r\n\"Trustee\" is a person.\r\n\"Relationship\" is this contract.\r\n\"Trust Level\" is an amount.\r\n\"Promise Kept\" is a binary.\r\n\"Promise Broken\" is a binary.\r\n\r\nThe Truster appoints the Trustee.\r\n\r\nCLAUSE: Set Level.\r\nThe Truster may fix the Trust Level.\r\n\r\nCLAUSE: Assess Kept.\r\nThe Truster may declare Promise Kept.\r\n\r\nCLAUSE: Assess Broken.\r\nThe Truster may declare Promise Broken.\r\n\r\nCLAUSE: Trustworthy.\r\n\"Trustworthy\" is defined as: Promise Kept is declared and Promise Broken is not declared.\r\n\r\nCLAUSE: Reward.\r\nThe Truster may, if this Relationship is Trustworthy: certify the Trust Level.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Truster",
+   "verb": "appoint",
+   "o": "Trustee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Truster",
+   "verb": "fix",
+   "o": "Trust Level",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Set Level"
+  },
+  {
+   "s": "Truster",
+   "verb": "declare",
+   "o": "Promise Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Kept"
+  },
+  {
+   "s": "Truster",
+   "verb": "declare",
+   "o": "Promise Broken",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Broken"
+  },
+  {
+   "s": "Truster",
+   "verb": "certify",
+   "o": "Trust Level",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Relationship is Trustworthy",
+   "clause": "Reward"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Truster",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Trustee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Trust Level",
+   "conditional": false,
+   "clause": "Set Level"
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Promise Kept",
+   "conditional": false,
+   "clause": "Assess Kept"
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Promise Broken",
+   "conditional": false,
+   "clause": "Assess Broken"
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Trust Level",
+   "conditional": true,
+   "clause": "Reward"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries trust as a truster-held scalar amount whose certification is gated on the defined predicate over the truster's own assessments (kept without broken), preserving that trust is assessed only by the promisee side; omits the 0 to 1 numeric range and the update rule, amounts carry no literals in the subset. Anchor: ## Quick Reference: Concept Mappings.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

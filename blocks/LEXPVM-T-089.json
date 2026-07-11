@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-089",
+ "term": "Tetrahedral Sovereignty",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Tetrahedral Sovereignty",
+  "register": "glossary · conjectured expression of convergent-preliminary term"
+ },
+ "lex": "LEX Tetrahedral Sovereignty.\n\n\"First Person\" is a person.\n\"Surveyor\" is a person.\n\"Tetrahedron\" is this contract.\n\"Architectural Volume\" is an amount.\n\"Protect Held\" is a binary.\n\"Project Held\" is a binary.\n\"Reflect Held\" is a binary.\n\"Connect Held\" is a binary.\n\nThe First Person appoints the Surveyor, and fixes the Architectural Volume.\n\nCLAUSE: Survey Protect.\nThe Surveyor may declare Protect Held.\n\nCLAUSE: Survey Project.\nThe Surveyor may declare Project Held.\n\nCLAUSE: Survey Reflect.\nThe Surveyor may, if Protect Held is declared: declare Reflect Held.\n\nCLAUSE: Survey Connect.\nThe Surveyor may, if Project Held is declared: declare Connect Held.\n\nCLAUSE: Sovereign.\n\"Sovereign\" is defined as: Protect Held is declared and Project Held is declared and Reflect Held is declared and Connect Held is declared.\n\nCLAUSE: Certify Volume.\nThe Surveyor may, if this Tetrahedron is Sovereign: certify the Architectural Volume.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Surveyor",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Architectural Volume",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Surveyor",
+   "verb": "declare",
+   "o": "Protect Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Survey Protect"
+  },
+  {
+   "s": "Surveyor",
+   "verb": "declare",
+   "o": "Project Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Survey Project"
+  },
+  {
+   "s": "Surveyor",
+   "verb": "declare",
+   "o": "Reflect Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Protect Held is declared",
+   "clause": "Survey Reflect"
+  },
+  {
+   "s": "Surveyor",
+   "verb": "declare",
+   "o": "Connect Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Project Held is declared",
+   "clause": "Survey Connect"
+  },
+  {
+   "s": "Surveyor",
+   "verb": "certify",
+   "o": "Architectural Volume",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Tetrahedron is Sovereign",
+   "clause": "Certify Volume"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Surveyor",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Architectural Volume",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Surveyor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protect Held",
+   "conditional": false,
+   "clause": "Survey Protect"
+  },
+  {
+   "promiser": "Surveyor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Project Held",
+   "conditional": false,
+   "clause": "Survey Project"
+  },
+  {
+   "promiser": "Surveyor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Reflect Held",
+   "conditional": true,
+   "clause": "Survey Reflect"
+  },
+  {
+   "promiser": "Surveyor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Connect Held",
+   "conditional": true,
+   "clause": "Survey Connect"
+  },
+  {
+   "promiser": "Surveyor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Architectural Volume",
+   "conditional": true,
+   "clause": "Certify Volume"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "four-force Sovereign conjunction gates the only certify of Architectural Volume; emergence ordering carried as Reflect and Connect declares gated on Protect and Project declares; only the Surveyor holds declare clauses. Omits the separation matrix determinant form and stratum arithmetic. Assayer-authored (formula-skeleton-charter held-out, recipe-only).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

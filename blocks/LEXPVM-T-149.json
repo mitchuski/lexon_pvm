@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-149",
+ "term": "The 62-Lap Theorem",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### The 62-Lap Theorem",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Sixty Two Lap Theorem.\n\n\"Practitioner\" is a person.\n\"Adversary\" is a person.\n\"Witness\" is a person.\n\"Traversal Mass\" is an amount.\n\"Reconstruction Claim\" is an amount.\n\"Laps Complete\" is a binary.\n\nThe Practitioner appoints the Witness, appoints the Adversary, and pays the Traversal Mass into escrow.\n\nCLAUSE: Complete Laps.\nThe Witness may declare Laps Complete.\n\nCLAUSE: Claim Reconstruction.\nThe Adversary may pay from escrow the Reconstruction Claim to themselves.\n\nCLAUSE: Irreducible Presence.\nThe Witness may, if Laps Complete is declared: return the remainder of the escrow to the Practitioner.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Practitioner",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Practitioner",
+   "verb": "appoint",
+   "o": "Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Practitioner",
+   "verb": "pay",
+   "o": "Traversal Mass",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Laps Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Complete Laps"
+  },
+  {
+   "s": "Adversary",
+   "verb": "pay",
+   "o": "Reconstruction Claim",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Claim Reconstruction"
+  },
+  {
+   "s": "Witness",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Practitioner",
+   "as": null,
+   "modal": "may",
+   "condition": "Laps Complete is declared",
+   "clause": "Irreducible Presence"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Traversal Mass",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Laps Complete",
+   "conditional": false,
+   "clause": "Complete Laps"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Reconstruction Claim->themselves",
+   "conditional": false,
+   "clause": "Claim Reconstruction"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Practitioner",
+   "conditional": true,
+   "clause": "Irreducible Presence"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "irreducible presence carried as the witness-gated return of the remainder (the return fires only after Laps Complete is declared); the adversary reconstruction claim drains only part; conservation = claim plus retained remainder exhaust the escrowed traversal mass. Omits the lap count and the derivation. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-021",
+ "term": "Coordination Promise C(b)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Coordination Promise C(b) § ### Coordination Promise C(b)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Coordination Promise.\r\n\r\n\"First Agent\" is a person.\r\n\"Second Agent\" is a person.\r\n\"Shared Body\" is a text.\r\n\"First Adoption\" is a binary.\r\n\"Second Adoption\" is a binary.\r\n\r\nThe First Agent appoints the Second Agent, and fixes the Shared Body.\r\n\r\nCLAUSE: Adopt.\r\nThe First Agent may declare First Adoption.\r\n\r\nCLAUSE: Reciprocate.\r\nThe Second Agent may declare Second Adoption.\r\n\r\nCLAUSE: Coordinate.\r\nThe First Agent or the Second Agent may, if First Adoption is declared and Second Adoption is declared, certify the Shared Body.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Agent",
+   "verb": "appoint",
+   "o": "Second Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Agent",
+   "verb": "fix",
+   "o": "Shared Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Agent",
+   "verb": "declare",
+   "o": "First Adoption",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Adopt"
+  },
+  {
+   "s": "Second Agent",
+   "verb": "declare",
+   "o": "Second Adoption",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reciprocate"
+  },
+  {
+   "s": "First Agent",
+   "verb": "certify",
+   "o": "Shared Body",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "First Adoption is declared and Second Adoption is declared",
+   "clause": "Coordinate"
+  },
+  {
+   "s": "Second Agent",
+   "verb": "certify",
+   "o": "Shared Body",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "First Adoption is declared and Second Adoption is declared",
+   "clause": "Coordinate"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Shared Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Adoption",
+   "conditional": false,
+   "clause": "Adopt"
+  },
+  {
+   "promiser": "Second Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Adoption",
+   "conditional": false,
+   "clause": "Reciprocate"
+  },
+  {
+   "promiser": "First Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Shared Body",
+   "conditional": true,
+   "clause": "Coordinate"
+  },
+  {
+   "promiser": "Second Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Shared Body",
+   "conditional": true,
+   "clause": "Coordinate"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries voluntary subordination around a shared body (adoption is 'may' on both sides, and the coordination certify is open to either agent only after both adoptions are declared); omits spell-notation interpretation duties and VRC-formation detail.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

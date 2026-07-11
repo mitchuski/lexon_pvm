@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-055",
+ "term": "MyTerms (IEEE 7012-2025)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### MyTerms (IEEE 7012-2025)",
+  "register": "glossary · conjectured expression of standard"
+ },
+ "lex": "LEX MyTerms Agreement.\r\n\r\n\"Person\" is a person.\r\n\"Counterparty\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Purpose\" is a text.\r\n\"Breach\" is a binary.\r\n\r\nThe Person fixes the Purpose, appoints the Counterparty,\r\nand appoints the Swordsman.\r\n\r\nCLAUSE: Accept Terms.\r\nThe Counterparty may certify the Purpose.\r\n\r\nCLAUSE: Examine for Breach.\r\nThe Swordsman may declare Breach.\r\n\r\nCLAUSE: Dissolve.\r\nThe Person may, if Breach is declared, terminate this contract.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Person",
+   "verb": "fix",
+   "o": "Purpose",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Person",
+   "verb": "appoint",
+   "o": "Counterparty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Counterparty",
+   "verb": "certify",
+   "o": "Purpose",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accept Terms"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Breach",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Examine for Breach"
+  },
+  {
+   "s": "Person",
+   "verb": "terminate",
+   "o": "this-contract",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Breach is declared",
+   "clause": "Dissolve"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Purpose",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Counterparty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Counterparty",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Purpose",
+   "conditional": false,
+   "clause": "Accept Terms"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Breach",
+   "conditional": false,
+   "clause": "Examine for Breach"
+  },
+  {
+   "promiser": "Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:this-contract",
+   "conditional": true,
+   "clause": "Dissolve"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "the HENNING_BRIEF probe (i) sketch, gate-repaired 2026-07-10; carries person-proffers, counterparty-accepts (the invitation pattern), Swordsman in the deterministic breach seat; omits negotiation and per-jurisdiction variation.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-020",
+ "term": "Invitation vs. Attack (Imposition)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Invitation vs. Attack (Imposition) § ### Invitation vs. Attack (Imposition)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Invitation Before Proposal.\r\n\r\n\"Host\" is a person.\r\n\"Guest\" is a person.\r\n\"Invitation\" is a text.\r\n\"Acceptance\" is a binary.\r\n\"Proposal\" is a text.\r\n\r\nThe Host appoints the Guest, fixes the Invitation, and fixes the Proposal.\r\n\r\nCLAUSE: Offer Relationship.\r\nThe Host may send the Invitation to the Guest.\r\n\r\nCLAUSE: Accept Relationship.\r\nThe Guest may declare Acceptance.\r\n\r\nCLAUSE: Propose.\r\nThe Host may, if Acceptance is declared, send the Proposal to the Guest.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Host",
+   "verb": "appoint",
+   "o": "Guest",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Host",
+   "verb": "fix",
+   "o": "Invitation",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Host",
+   "verb": "fix",
+   "o": "Proposal",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Host",
+   "verb": "send",
+   "o": "Invitation",
+   "io": "Guest",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer Relationship"
+  },
+  {
+   "s": "Guest",
+   "verb": "declare",
+   "o": "Acceptance",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accept Relationship"
+  },
+  {
+   "s": "Host",
+   "verb": "send",
+   "o": "Proposal",
+   "io": "Guest",
+   "as": null,
+   "modal": "may",
+   "condition": "Acceptance is declared",
+   "clause": "Propose"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Host",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Guest",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Host",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Invitation",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Host",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Proposal",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Host",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Invitation->Guest",
+   "conditional": false,
+   "clause": "Offer Relationship"
+  },
+  {
+   "promiser": "Guest",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Acceptance",
+   "conditional": false,
+   "clause": "Accept Relationship"
+  },
+  {
+   "promiser": "Host",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Proposal->Guest",
+   "conditional": true,
+   "clause": "Propose"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries invitation as acceptance-before-proposal ordering (the Propose send is gated on the Guest's declared Acceptance); the attack/imposition half is deliberately expressed as absence, no clause sends the Proposal ungated; omits the dark-pattern taxonomy and the MyTerms implementation table.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

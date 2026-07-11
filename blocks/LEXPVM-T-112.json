@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-112",
+ "term": "BRAID Parity Effect (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### BRAID Parity Effect (V5)",
+  "register": "glossary · conjectured expression of reported term"
+ },
+ "lex": "LEX BRAID Parity Effect.\n\n\"First Person\" is a person.\n\"Evaluator\" is a person.\n\"Reasoning Graph\" is data.\n\"Nano Capacity\" is an amount.\n\"Medium Capacity\" is an amount.\n\"Parity Reached\" is a binary.\n\"Benchmark\" is this contract.\n\nThe First Person appoints the Evaluator, fixes the Nano Capacity, and fixes the Medium Capacity.\n\nCLAUSE: Structure.\nThe First Person may fix the Reasoning Graph.\n\nCLAUSE: Compare.\nThe Evaluator may, if the Reasoning Graph is fixed, declare Parity Reached.\n\nCLAUSE: Structured Parity.\n\"Structured Parity\" is defined as: the Nano Capacity is fixed and the Reasoning Graph is fixed and Parity Reached is declared.\n\nCLAUSE: Certify Parity.\nThe Evaluator may, if this Benchmark is Structured Parity: certify the Nano Capacity.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Evaluator",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Nano Capacity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Medium Capacity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Reasoning Graph",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Structure"
+  },
+  {
+   "s": "Evaluator",
+   "verb": "declare",
+   "o": "Parity Reached",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Reasoning Graph is fixed",
+   "clause": "Compare"
+  },
+  {
+   "s": "Evaluator",
+   "verb": "certify",
+   "o": "Nano Capacity",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Benchmark is Structured Parity",
+   "clause": "Certify Parity"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Evaluator",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Nano Capacity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Medium Capacity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Reasoning Graph",
+   "conditional": false,
+   "clause": "Structure"
+  },
+  {
+   "promiser": "Evaluator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Parity Reached",
+   "conditional": true,
+   "clause": "Compare"
+  },
+  {
+   "promiser": "Evaluator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Nano Capacity",
+   "conditional": true,
+   "clause": "Certify Parity"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "structured-reasoning parity carried as a defined conjunction (nano capacity fixed, reasoning graph fixed, parity declared) gating the only certify of the Nano Capacity; ordering = the parity comparison is reachable only after the reasoning graph is fixed. Omits benchmark scores and model sizes. Assayer-authored (quantity-gate-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

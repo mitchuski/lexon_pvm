@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-015",
+ "term": "Promise Body (τ, χ)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Promise Body (τ, χ) § ### Promise Body (τ, χ)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Promise Body.\r\n\r\n\"Promiser\" is a person.\r\n\"Promisee\" is a person.\r\n\"Promise Type\" is a text.\r\n\"Promise Constraint\" is a text.\r\n\r\nThe Promiser appoints the Promisee, fixes the Promise Type, and fixes the Promise Constraint.\r\n\r\nCLAUSE: Offer Body.\r\nThe Promiser may send the Promise Type to the Promisee, and send the Promise Constraint to the Promisee.\r\n\r\nCLAUSE: Accept Body.\r\nThe Promisee may certify the Promise Type, and certify the Promise Constraint.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promise Type",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promise Constraint",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Promise Type",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer Body"
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Promise Constraint",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer Body"
+  },
+  {
+   "s": "Promisee",
+   "verb": "certify",
+   "o": "Promise Type",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accept Body"
+  },
+  {
+   "s": "Promisee",
+   "verb": "certify",
+   "o": "Promise Constraint",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accept Body"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Type",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Constraint",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Promise Type->Promisee",
+   "conditional": false,
+   "clause": "Offer Body"
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Promise Constraint->Promisee",
+   "conditional": false,
+   "clause": "Offer Body"
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Promise Type",
+   "conditional": false,
+   "clause": "Accept Body"
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Promise Constraint",
+   "conditional": false,
+   "clause": "Accept Body"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries the two-component body b = (type, constraint) as two fixed texts that travel and are accepted together; omits the tau/chi notation and the spell-notation compression mapping.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,168 @@
+{
+ "census": "LEXPVM-T-099",
+ "term": "Path Integral T_∫(π) (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Path Integral T_∫(π) (V5)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Path Integral.\n\n\"Keeper\" is a person.\n\"Traveler\" is a person.\n\"Base Value\" is an amount.\n\"First Edge Contribution\" is an amount.\n\"Second Edge Contribution\" is an amount.\n\"Path\" is this contract.\n\"First Edge Walked\" is a binary.\n\"Second Edge Walked\" is a binary.\n\nThe Keeper appoints the Traveler, and fixes the Base Value.\n\nCLAUSE: Walk First Edge.\nThe Traveler may pay the First Edge Contribution into escrow, and afterwards declare First Edge Walked.\n\nCLAUSE: Walk Second Edge.\nThe Traveler may, if First Edge Walked is declared: pay the Second Edge Contribution into escrow, and afterwards declare Second Edge Walked.\n\nCLAUSE: Traversed.\n\"Traversed\" is defined as: First Edge Walked is declared and Second Edge Walked is declared.\n\nCLAUSE: Pay Path Value.\nThe Keeper may, if this Path is Traversed: pay the Base Value to the Traveler, and afterwards pay the remainder of the escrow to the Traveler.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Traveler",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Base Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Traveler",
+   "verb": "pay",
+   "o": "First Edge Contribution",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk First Edge"
+  },
+  {
+   "s": "Traveler",
+   "verb": "declare",
+   "o": "First Edge Walked",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk First Edge"
+  },
+  {
+   "s": "Traveler",
+   "verb": "pay",
+   "o": "Second Edge Contribution",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "First Edge Walked is declared",
+   "clause": "Walk Second Edge"
+  },
+  {
+   "s": "Traveler",
+   "verb": "declare",
+   "o": "Second Edge Walked",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "First Edge Walked is declared",
+   "clause": "Walk Second Edge"
+  },
+  {
+   "s": "Keeper",
+   "verb": "pay",
+   "o": "Base Value",
+   "io": "Traveler",
+   "as": null,
+   "modal": "may",
+   "condition": "this Path is Traversed",
+   "clause": "Pay Path Value"
+  },
+  {
+   "s": "Keeper",
+   "verb": "pay",
+   "o": "escrow-remainder",
+   "io": "Traveler",
+   "as": null,
+   "modal": "may",
+   "condition": "this Path is Traversed",
+   "clause": "Pay Path Value"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Traveler",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Base Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:First Edge Contribution",
+   "conditional": false,
+   "clause": "Walk First Edge"
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Edge Walked",
+   "conditional": false,
+   "clause": "Walk First Edge"
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Second Edge Contribution",
+   "conditional": true,
+   "clause": "Walk Second Edge"
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Edge Walked",
+   "conditional": true,
+   "clause": "Walk Second Edge"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Base Value->Traveler",
+   "conditional": true,
+   "clause": "Pay Path Value"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:escrow-remainder->Traveler",
+   "conditional": true,
+   "clause": "Pay Path Value"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Carries integration as ordered accumulation: each edge deposits a contribution into escrow and the second edge is gated on the first's declaration (path order as a condition chain, so a later contribution cannot precede an earlier one), and the payout equals the fixed Base Value plus the accumulated escrow, the one-plus-integral shape of the formula, firing only when the defined predicate Traversed conjoins both edge declarations. Omits beta, the density function F, non-local correlations beyond ordering, and continuous integration. Anchor: ### Path Integral T_∫(π) (V5). Folded from escrow-conservation-recipe (grammar-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

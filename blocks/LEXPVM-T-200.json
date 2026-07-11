@@ -1,0 +1,204 @@
+{
+ "census": "LEXPVM-T-200",
+ "term": "Parity Cube · Octahedral Gap",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 25.8 Parity Cube · Octahedral Gap",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Parity Cube and Octahedral Gap.\n\n\"Geometer\" is a person.\n\"Dual Geometer\" is a person.\n\"Gap\" is a person.\n\"Lattice Volume\" is an amount.\n\"Parity Cover\" is an amount.\n\"Octahedral Cover\" is an amount.\n\"Parity Read\" is a binary.\n\"Dual Read\" is a binary.\n\nThe Geometer pays the Lattice Volume into escrow, appoints the Dual Geometer, appoints the Gap, fixes the Parity Cover, and fixes the Octahedral Cover.\n\nCLAUSE: Read Parity.\nThe Geometer may declare Parity Read.\n\nCLAUSE: Claim Parity Cube.\nThe Geometer may, if Parity Read is declared: pay from escrow the Parity Cover to themselves.\n\nCLAUSE: Read Dual.\nThe Dual Geometer may declare Dual Read.\n\nCLAUSE: Claim Octahedron.\nThe Dual Geometer may, if Dual Read is declared: pay from escrow the Octahedral Cover to themselves.\n\nCLAUSE: Keep Gap Open.\nThe Gap may, if Dual Read is declared: return the remainder of the escrow to the Gap.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 5,
+  "sentences": 6,
+  "triples": 10,
+  "promiseEdges": 10
+ },
+ "triples": [
+  {
+   "s": "Geometer",
+   "verb": "pay",
+   "o": "Lattice Volume",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Geometer",
+   "verb": "appoint",
+   "o": "Dual Geometer",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Geometer",
+   "verb": "appoint",
+   "o": "Gap",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Geometer",
+   "verb": "fix",
+   "o": "Parity Cover",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Geometer",
+   "verb": "fix",
+   "o": "Octahedral Cover",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Geometer",
+   "verb": "declare",
+   "o": "Parity Read",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Read Parity"
+  },
+  {
+   "s": "Geometer",
+   "verb": "pay",
+   "o": "Parity Cover",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "Parity Read is declared",
+   "clause": "Claim Parity Cube"
+  },
+  {
+   "s": "Dual Geometer",
+   "verb": "declare",
+   "o": "Dual Read",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Read Dual"
+  },
+  {
+   "s": "Dual Geometer",
+   "verb": "pay",
+   "o": "Octahedral Cover",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "Dual Read is declared",
+   "clause": "Claim Octahedron"
+  },
+  {
+   "s": "Gap",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Gap",
+   "as": null,
+   "modal": "may",
+   "condition": "Dual Read is declared",
+   "clause": "Keep Gap Open"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Geometer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Lattice Volume",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Geometer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Dual Geometer",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Geometer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Gap",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Geometer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Parity Cover",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Geometer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Octahedral Cover",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Geometer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Parity Read",
+   "conditional": false,
+   "clause": "Read Parity"
+  },
+  {
+   "promiser": "Geometer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Parity Cover->themselves",
+   "conditional": true,
+   "clause": "Claim Parity Cube"
+  },
+  {
+   "promiser": "Dual Geometer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Dual Read",
+   "conditional": false,
+   "clause": "Read Dual"
+  },
+  {
+   "promiser": "Dual Geometer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Octahedral Cover->themselves",
+   "conditional": true,
+   "clause": "Claim Octahedron"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Gap",
+   "conditional": true,
+   "clause": "Keep Gap Open"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "conservation = parity cover plus octahedral cover plus the open remainder exhaust the escrowed lattice volume, the octahedral gap being the remainder itself, held by the Gap; ordering = each cover is drawn only after its reading stands declared; impossibility as absence (no clause lets either geometer take the remainder, the gap stays open at candidate strength). Omits the lattice cardinality and the cube-of-cubes decomposition. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

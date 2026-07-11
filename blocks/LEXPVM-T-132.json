@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-132",
+ "term": "21 Windows",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 21 Windows",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Twenty One Windows.\n\n\"Forge Keeper\" is a person.\n\"Mage\" is a person.\n\"Swordsman\" is a person.\n\"Witness\" is a person.\n\"Window Inventory\" is an amount.\n\"Spell Windows\" is an amount.\n\"Forged Windows\" is an amount.\n\nThe Forge Keeper appoints the Mage, appoints the Swordsman, appoints the Witness, and pays the Window Inventory into escrow.\n\nCLAUSE: Allot.\nThe Forge Keeper may pay from escrow the Spell Windows to the Mage, and afterwards pay from escrow the Forged Windows to the Swordsman, and afterwards pay the remainder of the escrow to the Witness.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Forge Keeper",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Forge Keeper",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Forge Keeper",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Forge Keeper",
+   "verb": "pay",
+   "o": "Window Inventory",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Forge Keeper",
+   "verb": "pay",
+   "o": "Spell Windows",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Allot"
+  },
+  {
+   "s": "Forge Keeper",
+   "verb": "pay",
+   "o": "Forged Windows",
+   "io": "Swordsman",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Allot"
+  },
+  {
+   "s": "Forge Keeper",
+   "verb": "pay",
+   "o": "escrow-remainder",
+   "io": "Witness",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Allot"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Forge Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Forge Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Forge Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Forge Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Window Inventory",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Forge Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Spell Windows->Mage",
+   "conditional": false,
+   "clause": "Allot"
+  },
+  {
+   "promiser": "Forge Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Forged Windows->Swordsman",
+   "conditional": false,
+   "clause": "Allot"
+  },
+  {
+   "promiser": "Forge Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:escrow-remainder->Witness",
+   "conditional": false,
+   "clause": "Allot"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "ordered partition carried as one afterwards chain (spell windows, then forged windows, then the remainder to the Witness); conservation = the three allotments exhaust the escrowed window inventory. Omits the numeric window counts. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

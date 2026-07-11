@@ -1,0 +1,240 @@
+{
+ "census": "LEXPVM-T-094",
+ "term": "Φ_agent (Agent-Layer Separation)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Φ_agent (Agent-Layer Separation)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Agent Layer Separation.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Gap\" is a person.\n\"Separation Value\" is an amount.\n\"Entanglement Penalty\" is an amount.\n\"Imbalance Penalty\" is an amount.\n\"Balance Audited\" is a binary.\n\"Entanglement Found\" is a binary.\n\"Imbalance Found\" is a binary.\n\nThe First Person pays the Separation Value into escrow, appoints the Swordsman, appoints the Mage, appoints the Gap, fixes the Entanglement Penalty, and fixes the Imbalance Penalty.\n\nCLAUSE: Audit Balance.\nThe Gap may declare Balance Audited.\n\nCLAUSE: Find Entanglement.\nThe Gap may declare Entanglement Found.\n\nCLAUSE: Charge Entanglement.\nThe Gap may, if Entanglement Found is declared: pay from escrow the Entanglement Penalty to themselves.\n\nCLAUSE: Find Imbalance.\nThe Gap may declare Imbalance Found.\n\nCLAUSE: Charge Imbalance.\nThe Gap may, if Imbalance Found is declared: pay from escrow the Imbalance Penalty to themselves.\n\nCLAUSE: Retain Separation.\nThe First Person may, if Balance Audited is declared: return the remainder of the escrow to the First Person.",
+ "counts": {
+  "definitions": 10,
+  "clauses": 6,
+  "sentences": 7,
+  "triples": 12,
+  "promiseEdges": 12
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "Separation Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Gap",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Entanglement Penalty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Imbalance Penalty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Gap",
+   "verb": "declare",
+   "o": "Balance Audited",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Audit Balance"
+  },
+  {
+   "s": "Gap",
+   "verb": "declare",
+   "o": "Entanglement Found",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Find Entanglement"
+  },
+  {
+   "s": "Gap",
+   "verb": "pay",
+   "o": "Entanglement Penalty",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "Entanglement Found is declared",
+   "clause": "Charge Entanglement"
+  },
+  {
+   "s": "Gap",
+   "verb": "declare",
+   "o": "Imbalance Found",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Find Imbalance"
+  },
+  {
+   "s": "Gap",
+   "verb": "pay",
+   "o": "Imbalance Penalty",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "Imbalance Found is declared",
+   "clause": "Charge Imbalance"
+  },
+  {
+   "s": "First Person",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "Balance Audited is declared",
+   "clause": "Retain Separation"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Separation Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Gap",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Entanglement Penalty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Imbalance Penalty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Balance Audited",
+   "conditional": false,
+   "clause": "Audit Balance"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Entanglement Found",
+   "conditional": false,
+   "clause": "Find Entanglement"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Entanglement Penalty->themselves",
+   "conditional": true,
+   "clause": "Charge Entanglement"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Imbalance Found",
+   "conditional": false,
+   "clause": "Find Imbalance"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Imbalance Penalty->themselves",
+   "conditional": true,
+   "clause": "Charge Imbalance"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->First Person",
+   "conditional": true,
+   "clause": "Retain Separation"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "ceiling as conservation (the retained separation value can never exceed the escrowed whole, the min cap); multiplicative dampening as conditional drains (entanglement and imbalance penalties shrink the remainder); impossibility as absence (no clause pays the Swordsman or the Mage any separation value). Omits the ratio formula and the determinant. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

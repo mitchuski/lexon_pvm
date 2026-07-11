@@ -1,0 +1,96 @@
+{
+ "census": "LEXPVM-T-018",
+ "term": "Trust Function",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Trust Function",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Trust Function.\r\n\r\n\"Truster\" is a person.\r\n\"Promiser\" is a person.\r\n\"Kept\" is a binary.\r\n\"Broken\" is a binary.\r\n\"Trust Grant\" is a binary.\r\n\r\nThe Truster appoints the Promiser.\r\n\r\nCLAUSE: Record Kept.\r\nThe Truster may declare Kept.\r\n\r\nCLAUSE: Record Broken.\r\nThe Truster may declare Broken.\r\n\r\nCLAUSE: Trustworthy.\r\n\"Trustworthy\" is defined as: Kept is declared and Broken is not declared.\r\n\r\nCLAUSE: Extend Trust.\r\nThe Truster may, if Kept is declared and Broken is not declared, grant the Trust Grant.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Truster",
+   "verb": "appoint",
+   "o": "Promiser",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Truster",
+   "verb": "declare",
+   "o": "Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Record Kept"
+  },
+  {
+   "s": "Truster",
+   "verb": "declare",
+   "o": "Broken",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Record Broken"
+  },
+  {
+   "s": "Truster",
+   "verb": "grant",
+   "o": "Trust Grant",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Kept is declared and Broken is not declared",
+   "clause": "Extend Trust"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Truster",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promiser",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Kept",
+   "conditional": false,
+   "clause": "Record Kept"
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Broken",
+   "conditional": false,
+   "clause": "Record Broken"
+  },
+  {
+   "promiser": "Truster",
+   "type": "promise",
+   "polarity": "+",
+   "body": "grant:Trust Grant",
+   "conditional": true,
+   "clause": "Extend Trust"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Carries trust as a function of the truster's own assessment history (only the Truster records outcomes, and extended trust is gated on that record, with 'is not declared' carrying the downgrade-on-breach direction). Omits the numeric 0-to-1 value and the update rule.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

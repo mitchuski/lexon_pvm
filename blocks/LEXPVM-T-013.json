@@ -1,0 +1,96 @@
+{
+ "census": "LEXPVM-T-013",
+ "term": "Promise (Promise Theory)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Promise (Promise Theory)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Promise.\r\n\r\n\"Promiser\" is a person.\r\n\"Promisee\" is a person.\r\n\"Promise Body\" is a text.\r\n\"Kept\" is a binary.\r\n\r\nThe Promiser appoints the Promisee, and fixes the Promise Body.\r\n\r\nCLAUSE: Make Promise.\r\nThe Promiser may send the Promise Body to the Promisee.\r\n\r\nCLAUSE: Assess.\r\nThe Promisee may declare Kept.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promise Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Promise Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Make Promise"
+  },
+  {
+   "s": "Promisee",
+   "verb": "declare",
+   "o": "Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Promise Body->Promisee",
+   "conditional": false,
+   "clause": "Make Promise"
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Kept",
+   "conditional": false,
+   "clause": "Assess"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "voluntary (may), directional (promiser to promisee), and independently assessed (only the promisee declares Kept); imposition is structurally impossible, no clause lets either party act on the other's behalf. Polarity (+give / -accept) carried by clause roles.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

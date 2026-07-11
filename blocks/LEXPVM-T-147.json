@@ -1,0 +1,168 @@
+{
+ "census": "LEXPVM-T-147",
+ "term": "Quantum Threshold",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Quantum Threshold",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Quantum Threshold.\n\n\"Key Holder\" is a person.\n\"Quantum Adversary\" is a person.\n\"Key Entropy\" is an amount.\n\"Logical Qubit Budget\" is an amount.\n\"Toffoli Budget\" is an amount.\n\"Threshold\" is this contract.\n\"Machine Assembled\" is a binary.\n\"Broadcast Time\" is a time.\n\nThe Key Holder pays the Key Entropy into escrow, appoints the Quantum Adversary, fixes the Logical Qubit Budget, and fixes the Toffoli Budget.\n\nCLAUSE: Assemble Machine.\nThe Quantum Adversary may declare Machine Assembled.\n\nCLAUSE: Broadcast.\nThe Key Holder may fix the Broadcast Time as the current time.\n\nCLAUSE: Crossed.\n\"Crossed\" is defined as: the Logical Qubit Budget is fixed and the Toffoli Budget is fixed and Machine Assembled is declared and the Broadcast Time is fixed.\n\nCLAUSE: Crack On Spend.\nThe Quantum Adversary may, if this Threshold is Crossed: pay from escrow the Key Entropy to themselves.\n\nCLAUSE: Keep Residue.\nThe Key Holder may, if Machine Assembled is not declared: return the remainder of the escrow to the Key Holder.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Key Holder",
+   "verb": "pay",
+   "o": "Key Entropy",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Key Holder",
+   "verb": "appoint",
+   "o": "Quantum Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Key Holder",
+   "verb": "fix",
+   "o": "Logical Qubit Budget",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Key Holder",
+   "verb": "fix",
+   "o": "Toffoli Budget",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Quantum Adversary",
+   "verb": "declare",
+   "o": "Machine Assembled",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assemble Machine"
+  },
+  {
+   "s": "Key Holder",
+   "verb": "fix",
+   "o": "Broadcast Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Broadcast"
+  },
+  {
+   "s": "Quantum Adversary",
+   "verb": "pay",
+   "o": "Key Entropy",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "this Threshold is Crossed",
+   "clause": "Crack On Spend"
+  },
+  {
+   "s": "Key Holder",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Key Holder",
+   "as": null,
+   "modal": "may",
+   "condition": "Machine Assembled is not declared",
+   "clause": "Keep Residue"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Key Entropy",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Quantum Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Logical Qubit Budget",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Toffoli Budget",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Quantum Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Machine Assembled",
+   "conditional": false,
+   "clause": "Assemble Machine"
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Broadcast Time",
+   "conditional": false,
+   "clause": "Broadcast"
+  },
+  {
+   "promiser": "Quantum Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Key Entropy->themselves",
+   "conditional": true,
+   "clause": "Crack On Spend"
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Key Holder",
+   "conditional": true,
+   "clause": "Keep Residue"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "threshold carried as a four-conjunct defined condition (both budgets fixed, machine assembled, broadcast time fixed) gating the adversary drain of the escrowed key entropy; the residue returns only while Machine Assembled stays undeclared. Omits qubit and Toffoli counts and timeline estimates. Assayer-authored (escrow-conservation-recipe held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

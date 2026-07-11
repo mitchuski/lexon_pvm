@@ -1,0 +1,96 @@
+{
+ "census": "LEXPVM-T-073",
+ "term": "Soulbis",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Soulbis",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Soulbis Translation.\r\n\r\n\"Keeper\" is a person.\r\n\"Soulbis\" is a person.\r\n\"Translation\" is a text.\r\n\"Spellbook Context\" is a binary.\r\n\r\nThe Keeper appoints the Soulbis, and fixes the Translation.\r\n\r\nCLAUSE: Contextualize.\r\nThe Keeper may declare Spellbook Context.\r\n\r\nCLAUSE: Certify Translation.\r\nThe Keeper may, if Spellbook Context is declared, certify the Translation.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Soulbis",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Translation",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Spellbook Context",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Contextualize"
+  },
+  {
+   "s": "Keeper",
+   "verb": "certify",
+   "o": "Translation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Spellbook Context is declared",
+   "clause": "Certify Translation"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Soulbis",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Translation",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Spellbook Context",
+   "conditional": false,
+   "clause": "Contextualize"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Translation",
+   "conditional": true,
+   "clause": "Certify Translation"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "the identity equation (Soulbis = Swordsman = ⚔️) rides in the fixed Translation text, certified only in Spellbook context; the subset has no identity predicate between nouns, flagged as an expressiveness gap and future grammar lever.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

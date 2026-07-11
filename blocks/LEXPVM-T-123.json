@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-123",
+ "term": "Stratum Weight (wᵢ)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Stratum Weight (wᵢ)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Stratum Weight.\n\n\"Keeper\" is a person.\n\"Member\" is a person.\n\"Network Term\" is this contract.\n\"Stratum Weight\" is an amount.\n\"Contribution\" is an amount.\n\"Membership Verified\" is a binary.\n\nThe Keeper appoints the Member, and fixes the Stratum Weight.\n\nCLAUSE: Verify Membership.\nThe Keeper may declare Membership Verified.\n\nCLAUSE: Weighted.\n\"Weighted\" is defined as: the Stratum Weight is fixed and Membership Verified is declared.\n\nCLAUSE: Count Contribution.\nThe Member may, if this Network Term is Weighted: pay the Contribution into escrow.\n\nCLAUSE: Collect Sum.\nThe Keeper may pay from escrow the Contribution to themselves.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Member",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Stratum Weight",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Membership Verified",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Verify Membership"
+  },
+  {
+   "s": "Member",
+   "verb": "pay",
+   "o": "Contribution",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Network Term is Weighted",
+   "clause": "Count Contribution"
+  },
+  {
+   "s": "Keeper",
+   "verb": "pay",
+   "o": "Contribution",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Collect Sum"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Member",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Stratum Weight",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Membership Verified",
+   "conditional": false,
+   "clause": "Verify Membership"
+  },
+  {
+   "promiser": "Member",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Contribution",
+   "conditional": true,
+   "clause": "Count Contribution"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Contribution->themselves",
+   "conditional": false,
+   "clause": "Collect Sum"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Carries weight-gates-counting: a member's Contribution enters the network sum (the escrow) only when the Stratum Weight is fixed and Membership Verified is declared (the Weighted conjunction), and the sum is collectable only from escrow, so an unweighted or unverified member cannot add to the network term; the escrow inflow-then-outflow carries the summation ordering. Omits the Pascal-row binomial weight values over sixty-four, the modal-stratum maximum, and the network exponent; amounts carry no numeric literals in the subset. Anchor: ### Stratum Weight (wᵢ). Checker: GATE PASS (runs/lexr2/propose-scratch/t123_stratum_weight.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,186 @@
+{
+ "census": "LEXPVM-T-090",
+ "term": "Four Forces (Protect, Project, Reflect, Connect)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Four Forces (Protect, Project, Reflect, Connect)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Four Forces.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Mage\" is a person.\r\n\"Witness\" is a person.\r\n\"Bridge\" is a person.\r\n\"Force Model\" is this contract.\r\n\"Memory Record\" is a text.\r\n\"Network Record\" is a text.\r\n\"Boundary Drawn\" is a binary.\r\n\"Delegation Cast\" is a binary.\r\n\"Separation Held\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, appoints the Mage, appoints the Witness, and appoints the Bridge.\r\n\r\nCLAUSE: Draw Boundary.\r\nThe Swordsman may declare Boundary Drawn.\r\n\r\nCLAUSE: Cast Delegation.\r\nThe Mage may declare Delegation Cast.\r\n\r\nCLAUSE: Hold Separation.\r\nThe First Person may declare Separation Held.\r\n\r\nCLAUSE: Fourfold.\r\n\"Fourfold\" is defined as: Boundary Drawn is declared and Delegation Cast is declared and Separation Held is declared.\r\n\r\nCLAUSE: Reflect.\r\nThe Witness may, if this Force Model is Fourfold: register the Memory Record.\r\n\r\nCLAUSE: Connect.\r\nThe Bridge may, if this Force Model is Fourfold: register the Network Record.",
+ "counts": {
+  "definitions": 11,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 9,
+  "promiseEdges": 9
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Bridge",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Boundary Drawn",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Draw Boundary"
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Delegation Cast",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Cast Delegation"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Separation Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Separation"
+  },
+  {
+   "s": "Witness",
+   "verb": "register",
+   "o": "Memory Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Force Model is Fourfold",
+   "clause": "Reflect"
+  },
+  {
+   "s": "Bridge",
+   "verb": "register",
+   "o": "Network Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Force Model is Fourfold",
+   "clause": "Connect"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Bridge",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Boundary Drawn",
+   "conditional": false,
+   "clause": "Draw Boundary"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Delegation Cast",
+   "conditional": false,
+   "clause": "Cast Delegation"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Separation Held",
+   "conditional": false,
+   "clause": "Hold Separation"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Memory Record",
+   "conditional": true,
+   "clause": "Reflect"
+  },
+  {
+   "promiser": "Bridge",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Network Record",
+   "conditional": true,
+   "clause": "Connect"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "four forces as four roles: protect and project are agent declarations, reflect and connect are registrations gated on the Fourfold conjunction; omits the force-to-capital mapping.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

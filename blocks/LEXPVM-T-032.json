@@ -1,0 +1,230 @@
+{
+ "census": "LEXPVM-T-032",
+ "term": "Entropy H(X)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Entropy H(X)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Entropy.\n\n\"First Person\" is a person.\n\"Adversary\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Gap\" is a person.\n\"Total Uncertainty\" is an amount.\n\"Sword Channel\" is an amount.\n\"Mage Channel\" is an amount.\n\"Observation Complete\" is a binary.\n\nThe First Person pays the Total Uncertainty into escrow, appoints the Swordsman, appoints the Mage, appoints the Gap, appoints the Adversary, fixes the Sword Channel, and fixes the Mage Channel.\n\nCLAUSE: Observe Swordsman.\nThe Adversary may pay from escrow the Sword Channel to themselves.\n\nCLAUSE: Observe Mage.\nThe Adversary may pay from escrow the Mage Channel to themselves.\n\nCLAUSE: Exhaust Observation.\nThe Adversary may declare Observation Complete.\n\nCLAUSE: Remain Unknowable.\nThe First Person may, if Observation Complete is declared: return the remainder of the escrow to the Gap.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 11,
+  "promiseEdges": 11
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "Total Uncertainty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Gap",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Sword Channel",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Mage Channel",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Adversary",
+   "verb": "pay",
+   "o": "Sword Channel",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe Swordsman"
+  },
+  {
+   "s": "Adversary",
+   "verb": "pay",
+   "o": "Mage Channel",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe Mage"
+  },
+  {
+   "s": "Adversary",
+   "verb": "declare",
+   "o": "Observation Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Exhaust Observation"
+  },
+  {
+   "s": "First Person",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Gap",
+   "as": null,
+   "modal": "may",
+   "condition": "Observation Complete is declared",
+   "clause": "Remain Unknowable"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Total Uncertainty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Gap",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Sword Channel",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Mage Channel",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Sword Channel->themselves",
+   "conditional": false,
+   "clause": "Observe Swordsman"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Mage Channel->themselves",
+   "conditional": false,
+   "clause": "Observe Mage"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Observation Complete",
+   "conditional": false,
+   "clause": "Exhaust Observation"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Gap",
+   "conditional": true,
+   "clause": "Remain Unknowable"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Adversary",
+   "what": "escrow-remainder"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing escrow-remainder to Adversary"
+ },
+ "grandfathered": false,
+ "notes": "Structural: conservation as escrow arithmetic (the Sword Channel and Mage Channel payouts plus the returned remainder exhaust the escrowed Total Uncertainty), impossibility as an absent clause (no clause routes the remainder to the Adversary, so residual uncertainty survives any observation strategy), and ordering (the remainder moves only after Observation Complete is declared). Omits logarithms, the bit unit, and the numeric value of H(X). Anchor: ### Entropy H(X). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

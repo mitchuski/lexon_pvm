@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-009",
+ "term": "Dual Agents (s ⊥ m)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Dual Agents (s ⊥ m)",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Dual Agents.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Mage\" is a person.\r\n\"Private State\" is data.\r\n\"Public Task\" is a text.\r\n\"Boundary Approved\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, appoints the Mage, and fixes the Private State.\r\n\r\nCLAUSE: Observe.\r\nThe Swordsman may certify the Private State.\r\n\r\nCLAUSE: Approve Boundary.\r\nThe Swordsman may declare Boundary Approved.\r\n\r\nCLAUSE: Project.\r\nThe Mage may, if Boundary Approved is declared, register a Public Task.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Private State",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Private State",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Boundary Approved",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Approve Boundary"
+  },
+  {
+   "s": "Mage",
+   "verb": "register",
+   "o": "Public Task",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Boundary Approved is declared",
+   "clause": "Project"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Private State",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Private State",
+   "conditional": false,
+   "clause": "Observe"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Boundary Approved",
+   "conditional": false,
+   "clause": "Approve Boundary"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Public Task",
+   "conditional": true,
+   "clause": "Project"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "conditional independence given the First Person's private state carried as permission structure (the Mage's only route to action runs through the Swordsman's declaration, never through the Private State directly); the formula (Y_S ⊥ Y_M) | X omitted.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

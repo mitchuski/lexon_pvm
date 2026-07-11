@@ -1,0 +1,96 @@
+{
+ "census": "LEXPVM-T-014",
+ "term": "Autonomy Axiom",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Autonomy Axiom § ### Autonomy Axiom",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Autonomy Axiom.\r\n\r\n\"First Agent\" is a person.\r\n\"Second Agent\" is a person.\r\n\"First Behavior\" is a text.\r\n\"Second Behavior\" is a text.\r\n\r\nThe First Agent fixes the First Behavior.\r\nThe Second Agent fixes the Second Behavior.\r\n\r\nCLAUSE: First Promise.\r\nThe First Agent may register the First Behavior.\r\n\r\nCLAUSE: Second Promise.\r\nThe Second Agent may register the Second Behavior.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Agent",
+   "verb": "fix",
+   "o": "First Behavior",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Second Agent",
+   "verb": "fix",
+   "o": "Second Behavior",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Agent",
+   "verb": "register",
+   "o": "First Behavior",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "First Promise"
+  },
+  {
+   "s": "Second Agent",
+   "verb": "register",
+   "o": "Second Behavior",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Second Promise"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Behavior",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Second Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Second Behavior",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:First Behavior",
+   "conditional": false,
+   "clause": "First Promise"
+  },
+  {
+   "promiser": "Second Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Second Behavior",
+   "conditional": false,
+   "clause": "Second Promise"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries only-own-behavior as clause partition (each agent fixes and registers only its own Behavior; no clause lets either agent register the other's, so promising on another's behalf is structurally absent); omits the single-agent paradox implication and the Swordsman/Mage domain split.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

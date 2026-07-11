@@ -1,0 +1,168 @@
+{
+ "census": "LEXPVM-T-131",
+ "term": "Charge Level",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Charge Level",
+  "register": "glossary · conjectured expression of implemented term"
+ },
+ "lex": "LEX Charge Level.\n\n\"Celebrant\" is a person.\n\"Witness\" is a person.\n\"Lap Charge\" is an amount.\n\"Charge Level\" is an amount.\n\"Lap Complete\" is a binary.\n\"Ceremony Closed\" is a binary.\n\nThe Celebrant appoints the Witness, fixes the Lap Charge, and fixes the Charge Level.\n\nCLAUSE: Run Lap.\nThe Celebrant may declare Lap Complete.\n\nCLAUSE: Accumulate.\nThe Celebrant may, if Lap Complete is declared: pay the Lap Charge into escrow.\n\nCLAUSE: Read Level.\nThe Witness may, if Lap Complete is declared: certify the Charge Level.\n\nCLAUSE: Close.\nThe Celebrant may declare Ceremony Closed.\n\nCLAUSE: Discharge.\nThe Witness may, if Ceremony Closed is declared: return the remainder of the escrow to the Celebrant.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 5,
+  "sentences": 6,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Celebrant",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Celebrant",
+   "verb": "fix",
+   "o": "Lap Charge",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Celebrant",
+   "verb": "fix",
+   "o": "Charge Level",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Celebrant",
+   "verb": "declare",
+   "o": "Lap Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Run Lap"
+  },
+  {
+   "s": "Celebrant",
+   "verb": "pay",
+   "o": "Lap Charge",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Lap Complete is declared",
+   "clause": "Accumulate"
+  },
+  {
+   "s": "Witness",
+   "verb": "certify",
+   "o": "Charge Level",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Lap Complete is declared",
+   "clause": "Read Level"
+  },
+  {
+   "s": "Celebrant",
+   "verb": "declare",
+   "o": "Ceremony Closed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Close"
+  },
+  {
+   "s": "Witness",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Celebrant",
+   "as": null,
+   "modal": "may",
+   "condition": "Ceremony Closed is declared",
+   "clause": "Discharge"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Celebrant",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Celebrant",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Lap Charge",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Celebrant",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Charge Level",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Celebrant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Lap Complete",
+   "conditional": false,
+   "clause": "Run Lap"
+  },
+  {
+   "promiser": "Celebrant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Lap Charge",
+   "conditional": true,
+   "clause": "Accumulate"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Charge Level",
+   "conditional": true,
+   "clause": "Read Level"
+  },
+  {
+   "promiser": "Celebrant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Ceremony Closed",
+   "conditional": false,
+   "clause": "Close"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Celebrant",
+   "conditional": true,
+   "clause": "Discharge"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Structural: accumulation ordering (each Lap Charge deposit is gated on a declared Lap Complete, so intensity grows only lap by lap, and the Witness certifies the Charge Level only once a lap stands declared) and close-gated discharge (the remainder returns to the Celebrant only after Ceremony Closed is declared, and no clause withdraws charge earlier). Omits the lap-count level table and numeric intensity values. Anchor: ### Charge Level. Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

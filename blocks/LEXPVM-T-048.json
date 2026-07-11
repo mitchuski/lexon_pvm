@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-048",
+ "term": "SWORD Token",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### SWORD Token",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX SWORD Token.\r\n\r\n\"Swordsman\" is a person.\r\n\"Registrar\" is a person.\r\n\"Reward\" is this contract.\r\n\"SWORD Token\" is an amount.\r\n\"Guardianship\" is a text.\r\n\"Protective Action Recorded\" is a binary.\r\n\"Stake Pledged\" is a binary.\r\n\r\nThe Registrar appoints the Swordsman, and fixes the SWORD Token.\r\n\r\nCLAUSE: Record Action.\r\nThe Swordsman may declare Protective Action Recorded.\r\n\r\nCLAUSE: Pledge Stake.\r\nThe Swordsman may declare Stake Pledged.\r\n\r\nCLAUSE: Earned.\r\n\"Earned\" is defined as: Protective Action Recorded is declared.\r\n\r\nCLAUSE: Guardian Eligible.\r\n\"Guardian Eligible\" is defined as: Protective Action Recorded is declared and Stake Pledged is declared.\r\n\r\nCLAUSE: Pay Reward.\r\nThe Registrar may, if this Reward is Earned: pay the SWORD Token to the Swordsman.\r\n\r\nCLAUSE: Grant Guardianship.\r\nThe Registrar may, if this Reward is Guardian Eligible: grant the Guardianship.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 6,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Registrar",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Registrar",
+   "verb": "fix",
+   "o": "SWORD Token",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Protective Action Recorded",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Record Action"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Stake Pledged",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Pledge Stake"
+  },
+  {
+   "s": "Registrar",
+   "verb": "pay",
+   "o": "SWORD Token",
+   "io": "Swordsman",
+   "as": null,
+   "modal": "may",
+   "condition": "this Reward is Earned",
+   "clause": "Pay Reward"
+  },
+  {
+   "s": "Registrar",
+   "verb": "grant",
+   "o": "Guardianship",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Reward is Guardian Eligible",
+   "clause": "Grant Guardianship"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Registrar",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Registrar",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:SWORD Token",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protective Action Recorded",
+   "conditional": false,
+   "clause": "Record Action"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Stake Pledged",
+   "conditional": false,
+   "clause": "Pledge Stake"
+  },
+  {
+   "promiser": "Registrar",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:SWORD Token->Swordsman",
+   "conditional": true,
+   "clause": "Pay Reward"
+  },
+  {
+   "promiser": "Registrar",
+   "type": "promise",
+   "polarity": "+",
+   "body": "grant:Guardianship",
+   "conditional": true,
+   "clause": "Grant Guardianship"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "earning relation: token payment is gated on a declared protective action, guardianship on action plus stake (two defined predicates ordering the economy); omits token quantities and slashing.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,204 @@
+{
+ "census": "LEXPVM-T-025",
+ "term": "Reconstruction Ceiling (R_max)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Reconstruction Ceiling (R_max)",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Reconstruction Ceiling.\n\n\"First Person\" is a person.\n\"Adversary\" is a person.\n\"Gap\" is a person.\n\"State Entropy\" is an amount.\n\"Sword Leakage\" is an amount.\n\"Mage Leakage\" is an amount.\n\"Reconstruction\" is a text.\n\"Channels Exhausted\" is a binary.\n\nThe First Person pays the State Entropy into escrow, appoints the Adversary, appoints the Gap, fixes the Sword Leakage, and fixes the Mage Leakage.\n\nCLAUSE: Drain Sword Channel.\nThe Adversary may pay from escrow the Sword Leakage to themselves.\n\nCLAUSE: Drain Mage Channel.\nThe Adversary may pay from escrow the Mage Leakage to themselves.\n\nCLAUSE: Exhaust.\nThe Adversary may declare Channels Exhausted.\n\nCLAUSE: Reconstruct.\nThe Adversary may, if Channels Exhausted is declared: register a Reconstruction.\n\nCLAUSE: Cap.\nThe First Person may, if Channels Exhausted is declared: return the remainder of the escrow to the Gap.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 5,
+  "sentences": 6,
+  "triples": 10,
+  "promiseEdges": 10
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "State Entropy",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Gap",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Sword Leakage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Mage Leakage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Adversary",
+   "verb": "pay",
+   "o": "Sword Leakage",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Drain Sword Channel"
+  },
+  {
+   "s": "Adversary",
+   "verb": "pay",
+   "o": "Mage Leakage",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Drain Mage Channel"
+  },
+  {
+   "s": "Adversary",
+   "verb": "declare",
+   "o": "Channels Exhausted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Exhaust"
+  },
+  {
+   "s": "Adversary",
+   "verb": "register",
+   "o": "Reconstruction",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Channels Exhausted is declared",
+   "clause": "Reconstruct"
+  },
+  {
+   "s": "First Person",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Gap",
+   "as": null,
+   "modal": "may",
+   "condition": "Channels Exhausted is declared",
+   "clause": "Cap"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:State Entropy",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Gap",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Sword Leakage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Mage Leakage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Sword Leakage->themselves",
+   "conditional": false,
+   "clause": "Drain Sword Channel"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Mage Leakage->themselves",
+   "conditional": false,
+   "clause": "Drain Mage Channel"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Channels Exhausted",
+   "conditional": false,
+   "clause": "Exhaust"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Reconstruction",
+   "conditional": true,
+   "clause": "Reconstruct"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Gap",
+   "conditional": true,
+   "clause": "Cap"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Structural: the ceiling as reachability (the Adversary can draw only the two fixed leakage amounts from the escrowed State Entropy, and a Reconstruction registers only after Channels Exhausted is declared; the remainder returns to the Gap and no clause routes it to the Adversary, so reconstruction stays strictly below the whole). Omits the ratio form R_max = (C_S + C_M) / H(X) and its numeric value. Anchor: ### Reconstruction Ceiling (R_max). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-010",
+ "term": "Swordsman (⚔️)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Swordsman (⚔️)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Swordsman Charter.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Private Ledger\" is data.\r\n\"Boundary Approved\" is a binary.\r\n\"Refused\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, and fixes the Private Ledger.\r\n\r\nCLAUSE: Observe.\r\nThe Swordsman may certify the Private Ledger.\r\n\r\nCLAUSE: Approve.\r\nThe Swordsman may declare Boundary Approved.\r\n\r\nCLAUSE: Guard.\r\nThe Swordsman may, if Boundary Approved is not declared, declare Refused.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Private Ledger",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Private Ledger",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Boundary Approved",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Approve"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Refused",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Boundary Approved is not declared",
+   "clause": "Guard"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Private Ledger",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Private Ledger",
+   "conditional": false,
+   "clause": "Observe"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Boundary Approved",
+   "conditional": false,
+   "clause": "Approve"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Refused",
+   "conditional": true,
+   "clause": "Guard"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries observes-everything, approves-or-refuses-boundaries, reveals-nothing-directly (no clause sends anything to any external party); omits budget constraints on leakage.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

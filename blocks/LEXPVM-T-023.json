@@ -1,0 +1,96 @@
+{
+ "census": "LEXPVM-T-023",
+ "term": "Scope",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Scope § ### Scope",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Scope.\r\n\r\n\"Promiser\" is a person.\r\n\"Insider\" is a person.\r\n\"Outsider\" is a person.\r\n\"Promise Body\" is a text.\r\n\r\nThe Promiser appoints the Insider, appoints the Outsider, and fixes the Promise Body.\r\n\r\nCLAUSE: Share Within Scope.\r\nThe Promiser may send the Promise Body to the Insider.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Insider",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Outsider",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promise Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Promise Body",
+   "io": "Insider",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Share Within Scope"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Insider",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Outsider",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Promise Body->Insider",
+   "conditional": false,
+   "clause": "Share Within Scope"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries scope as reachability of send clauses (the Insider is the only send target; the Outsider exists in the contract yet no clause sends the Promise Body to the Outsider, so knowledge boundaries are the clause graph itself); omits the four-row scope table and the reconstruction-ceiling connection.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

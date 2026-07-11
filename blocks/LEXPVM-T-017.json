@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-017",
+ "term": "Assessment α(π)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Assessment α(π) § ### Assessment α(π)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Assessment.\r\n\r\n\"Promiser\" is a person.\r\n\"Promisee\" is a person.\r\n\"Promise Body\" is a text.\r\n\"Kept\" is a binary.\r\n\"Not Kept\" is a binary.\r\n\r\nThe Promiser appoints the Promisee, and fixes the Promise Body.\r\n\r\nCLAUSE: Deliver.\r\nThe Promiser may send the Promise Body to the Promisee.\r\n\r\nCLAUSE: Assess Kept.\r\nThe Promisee may declare Kept.\r\n\r\nCLAUSE: Assess Not Kept.\r\nThe Promisee may declare Not Kept.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promise Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Promise Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Deliver"
+  },
+  {
+   "s": "Promisee",
+   "verb": "declare",
+   "o": "Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Kept"
+  },
+  {
+   "s": "Promisee",
+   "verb": "declare",
+   "o": "Not Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Not Kept"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Promise Body->Promisee",
+   "conditional": false,
+   "clause": "Deliver"
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Kept",
+   "conditional": false,
+   "clause": "Assess Kept"
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Not Kept",
+   "conditional": false,
+   "clause": "Assess Not Kept"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries assessment-lies-with-the-promisee (only Promisee clauses hold verdict declarations, in both directions; the Promiser has no verdict clause at all); omits the alpha(pi) notation, RPP compression-ratio quantification, and trust-tier accumulation.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

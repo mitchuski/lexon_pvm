@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-137",
+ "term": "Mana Bridge",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Mana Bridge",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Mana Bridge.\n\n\"Extension Agent\" is a person.\n\"Territory Agent\" is a person.\n\"Mana Balance\" is an amount.\n\"Bridge\" is this contract.\n\"Home Territory Detected\" is a binary.\n\"Balance Read\" is a binary.\n\nThe Extension Agent pays the Mana Balance into escrow, and appoints the Territory Agent.\n\nCLAUSE: Detect Home Territory.\nThe Extension Agent may declare Home Territory Detected.\n\nCLAUSE: Read Balance.\nThe Extension Agent may, if Home Territory Detected is declared: declare Balance Read.\n\nCLAUSE: Synced.\n\"Synced\" is defined as: Home Territory Detected is declared and Balance Read is declared.\n\nCLAUSE: Sync Balance.\nThe Extension Agent must, if this Bridge is Synced: pay from escrow the Mana Balance to the Territory Agent.\n\nCLAUSE: Preserve Balance.\nThe Extension Agent may, if Balance Read is not declared: return the remainder of the escrow to the Extension Agent.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Extension Agent",
+   "verb": "pay",
+   "o": "Mana Balance",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Extension Agent",
+   "verb": "appoint",
+   "o": "Territory Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Extension Agent",
+   "verb": "declare",
+   "o": "Home Territory Detected",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Detect Home Territory"
+  },
+  {
+   "s": "Extension Agent",
+   "verb": "declare",
+   "o": "Balance Read",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Home Territory Detected is declared",
+   "clause": "Read Balance"
+  },
+  {
+   "s": "Extension Agent",
+   "verb": "pay",
+   "o": "Mana Balance",
+   "io": "Territory Agent",
+   "as": null,
+   "modal": "must",
+   "condition": "this Bridge is Synced",
+   "clause": "Sync Balance"
+  },
+  {
+   "s": "Extension Agent",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Extension Agent",
+   "as": null,
+   "modal": "may",
+   "condition": "Balance Read is not declared",
+   "clause": "Preserve Balance"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Extension Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Mana Balance",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Extension Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Territory Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Extension Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Home Territory Detected",
+   "conditional": false,
+   "clause": "Detect Home Territory"
+  },
+  {
+   "promiser": "Extension Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Balance Read",
+   "conditional": true,
+   "clause": "Read Balance"
+  },
+  {
+   "promiser": "Extension Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Mana Balance->Territory Agent",
+   "conditional": true,
+   "clause": "Sync Balance"
+  },
+  {
+   "promiser": "Extension Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Extension Agent",
+   "conditional": true,
+   "clause": "Preserve Balance"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "one-directional sync carried as a must clause (a synced bridge forces the balance to the Territory Agent); the Synced defined conjunction gates it; preservation = the remainder returns only while Balance Read stays undeclared (negated-condition guard). Omits mana magnitudes. Assayer-authored (escrow-conservation-recipe held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

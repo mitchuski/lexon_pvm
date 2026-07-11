@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-011",
+ "term": "Mage (🧙‍♂️)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Mage (🧙‍♂️)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Mage Charter.\r\n\r\n\"First Person\" is a person.\r\n\"Mage\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Counterparty\" is a person.\r\n\"Boundary Approved\" is a binary.\r\n\"Projection\" is a text.\r\n\r\nThe First Person appoints the Mage, appoints the Swordsman, and appoints the Counterparty.\r\n\r\nCLAUSE: Compose.\r\nThe Mage may register a Projection.\r\n\r\nCLAUSE: Project.\r\nThe Mage may, if Boundary Approved is declared, send the Projection to the Counterparty.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Counterparty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "register",
+   "o": "Projection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compose"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Projection",
+   "io": "Counterparty",
+   "as": null,
+   "modal": "may",
+   "condition": "Boundary Approved is declared",
+   "clause": "Project"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Counterparty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Projection",
+   "conditional": false,
+   "clause": "Compose"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Projection->Counterparty",
+   "conditional": true,
+   "clause": "Project"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries acts-publicly-on-approved-information-only (the send clause is gated on the Swordsman's declaration); omits coordination with other Mages and capability projection detail.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

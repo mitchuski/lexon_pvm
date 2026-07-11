@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-050",
+ "term": "Chronicle",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Chronicle",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Chronicle.\r\n\r\n\"Scribe\" is a person.\r\n\"Keeper\" is a person.\r\n\"Chronicle\" is this contract.\r\n\"Session Record\" is a text.\r\n\"Session Close Time\" is a time.\r\n\"Verdict Given\" is a binary.\r\n\r\nThe Keeper appoints the Scribe.\r\n\r\nCLAUSE: Record.\r\nThe Scribe may register a Session Record.\r\n\r\nCLAUSE: State Verdict.\r\nThe Scribe may declare Verdict Given.\r\n\r\nCLAUSE: Mark Close.\r\nThe Scribe may fix the Session Close Time as the current time.\r\n\r\nCLAUSE: Complete.\r\n\"Complete\" is defined as: the Session Record is fixed and Verdict Given is declared and the Session Close Time is fixed.\r\n\r\nCLAUSE: Seal.\r\nThe Keeper may, if this Chronicle is Complete: certify the Session Record.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Scribe",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Scribe",
+   "verb": "register",
+   "o": "Session Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Record"
+  },
+  {
+   "s": "Scribe",
+   "verb": "declare",
+   "o": "Verdict Given",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "State Verdict"
+  },
+  {
+   "s": "Scribe",
+   "verb": "fix",
+   "o": "Session Close Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark Close"
+  },
+  {
+   "s": "Keeper",
+   "verb": "certify",
+   "o": "Session Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Chronicle is Complete",
+   "clause": "Seal"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Scribe",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Scribe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Session Record",
+   "conditional": false,
+   "clause": "Record"
+  },
+  {
+   "promiser": "Scribe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Verdict Given",
+   "conditional": false,
+   "clause": "State Verdict"
+  },
+  {
+   "promiser": "Scribe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Session Close Time",
+   "conditional": false,
+   "clause": "Mark Close"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Session Record",
+   "conditional": true,
+   "clause": "Seal"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries verdict-first completeness as a three-part defined predicate (record present, verdict declared, close time marked) gating the Keeper's seal; omits chronicle content structure (handoff block, reversals recorded with equal prominence) and append-only storage. Anchor: ### Chronicle.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

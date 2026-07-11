@@ -1,0 +1,204 @@
+{
+ "census": "LEXPVM-T-108",
+ "term": "Guild Efficiency G(guilds) (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Guild Efficiency G(guilds) (V5)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Guild Efficiency.\n\n\"Guild Member\" is a person.\n\"Peer\" is a person.\n\"Parent\" is a person.\n\"Assessor\" is a person.\n\"Guild\" is this contract.\n\"Pattern\" is a text.\n\"Efficiency Gain\" is an amount.\n\"Pattern Received\" is a binary.\n\"Coverage Measured\" is a binary.\n\nThe Assessor appoints the Guild Member, appoints the Peer, appoints the Parent, and fixes the Efficiency Gain.\n\nThe Guild Member fixes the Pattern.\n\nCLAUSE: Share Pattern.\nThe Guild Member may send the Pattern to the Parent.\n\nCLAUSE: Receive Pattern.\nThe Parent may declare Pattern Received.\n\nCLAUSE: Relay Pattern.\nThe Parent may, if Pattern Received is declared: send the Pattern to the Peer.\n\nCLAUSE: Measure Coverage.\nThe Assessor may declare Coverage Measured.\n\nCLAUSE: Efficient.\n\"Efficient\" is defined as: Pattern Received is declared and Coverage Measured is declared.\n\nCLAUSE: Certify Gain.\nThe Assessor may, if this Guild is Efficient: certify the Efficiency Gain.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 6,
+  "sentences": 7,
+  "triples": 10,
+  "promiseEdges": 10
+ },
+ "triples": [
+  {
+   "s": "Assessor",
+   "verb": "appoint",
+   "o": "Guild Member",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Assessor",
+   "verb": "appoint",
+   "o": "Peer",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Assessor",
+   "verb": "appoint",
+   "o": "Parent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Assessor",
+   "verb": "fix",
+   "o": "Efficiency Gain",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Guild Member",
+   "verb": "fix",
+   "o": "Pattern",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Guild Member",
+   "verb": "send",
+   "o": "Pattern",
+   "io": "Parent",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Share Pattern"
+  },
+  {
+   "s": "Parent",
+   "verb": "declare",
+   "o": "Pattern Received",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Receive Pattern"
+  },
+  {
+   "s": "Parent",
+   "verb": "send",
+   "o": "Pattern",
+   "io": "Peer",
+   "as": null,
+   "modal": "may",
+   "condition": "Pattern Received is declared",
+   "clause": "Relay Pattern"
+  },
+  {
+   "s": "Assessor",
+   "verb": "declare",
+   "o": "Coverage Measured",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Measure Coverage"
+  },
+  {
+   "s": "Assessor",
+   "verb": "certify",
+   "o": "Efficiency Gain",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Guild is Efficient",
+   "clause": "Certify Gain"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Assessor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Guild Member",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Assessor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Peer",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Assessor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Parent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Assessor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Efficiency Gain",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Guild Member",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Pattern",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Guild Member",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Pattern->Parent",
+   "conditional": false,
+   "clause": "Share Pattern"
+  },
+  {
+   "promiser": "Parent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Pattern Received",
+   "conditional": false,
+   "clause": "Receive Pattern"
+  },
+  {
+   "promiser": "Parent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Pattern->Peer",
+   "conditional": true,
+   "clause": "Relay Pattern"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Coverage Measured",
+   "conditional": false,
+   "clause": "Measure Coverage"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Efficiency Gain",
+   "conditional": true,
+   "clause": "Certify Gain"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "shared-parent coordination carried as only-route topology (the sole clause reaching the Peer is the Parent relay gated on the Parent own Pattern Received declaration; no member-to-peer send exists); the Efficient conjunction gates the only certify of Efficiency Gain; the Guild Member holds no declare clause. Omits the one-plus-efficiency formula. Assayer-authored (formula-skeleton-charter held-out, recipe-only).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

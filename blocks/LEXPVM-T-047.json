@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-047",
+ "term": "Witness (Ceremonial)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Witness (Ceremonial)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Ceremonial Witness.\r\n\r\n\"Witness\" is a person.\r\n\"First Agent\" is a person.\r\n\"Second Agent\" is a person.\r\n\"Ceremony\" is this contract.\r\n\"Attestation\" is a text.\r\n\"Ceremony Time\" is a time.\r\n\"Presence Confirmed\" is a binary.\r\n\r\nThe First Agent appoints the Second Agent, and appoints the Witness.\r\n\r\nCLAUSE: Attend.\r\nThe Witness may declare Presence Confirmed.\r\n\r\nCLAUSE: Mark Time.\r\nThe Witness may fix the Ceremony Time as the current time.\r\n\r\nCLAUSE: Attested.\r\n\"Attested\" is defined as: Presence Confirmed is declared and the Ceremony Time is fixed.\r\n\r\nCLAUSE: Attest.\r\nThe Witness may, if this Ceremony is Attested: register an Attestation, and afterwards certify the Attestation.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Agent",
+   "verb": "appoint",
+   "o": "Second Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Agent",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Presence Confirmed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Attend"
+  },
+  {
+   "s": "Witness",
+   "verb": "fix",
+   "o": "Ceremony Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark Time"
+  },
+  {
+   "s": "Witness",
+   "verb": "register",
+   "o": "Attestation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Ceremony is Attested",
+   "clause": "Attest"
+  },
+  {
+   "s": "Witness",
+   "verb": "certify",
+   "o": "Attestation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Ceremony is Attested",
+   "clause": "Attest"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Presence Confirmed",
+   "conditional": false,
+   "clause": "Attend"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Ceremony Time",
+   "conditional": false,
+   "clause": "Mark Time"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Attestation",
+   "conditional": true,
+   "clause": "Attest"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Attestation",
+   "conditional": true,
+   "clause": "Attest"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries the witness's two ceremonial duties (presence and time-marking) and makes attestation reachable only when the defined predicate Attested holds, with the attested afterwards chain register-then-certify; omits witness selection and any bilateral-witness credential chain. Anchor: ### Witness (Ceremonial).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

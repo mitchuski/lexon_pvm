@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-194",
+ "term": "Moving Ceiling R(t) and Shelf Life t*",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 25.2 Moving Ceiling R(t) and Shelf Life t*",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Moving Ceiling.\n\n\"First Person\" is a person.\n\"Auditor\" is a person.\n\"Adversary\" is a person.\n\"Total Uncertainty\" is an amount.\n\"Adversary Capacity\" is an amount.\n\"Proof Time\" is a time.\n\"Full Reconstruction\" is a text.\n\"Capacity Grown\" is a binary.\n\"Guarantee\" is this contract.\n\nThe First Person appoints the Auditor, appoints the Adversary, and fixes the Total Uncertainty.\n\nCLAUSE: Mark Proof.\nThe Auditor may fix the Proof Time as the current time.\n\nCLAUSE: Grow.\nThe Auditor may, if the Proof Time lies at least 30 days in the past, fix the Adversary Capacity.\n\nCLAUSE: Observe Growth.\nThe Auditor may, if the Adversary Capacity is fixed, declare Capacity Grown.\n\nCLAUSE: Expired.\n\"Expired\" is defined as: the Adversary Capacity is fixed and Capacity Grown is declared.\n\nCLAUSE: Reconstruct.\nThe Adversary may, if this Guarantee is Expired: register a Full Reconstruction.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Auditor",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Total Uncertainty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Auditor",
+   "verb": "fix",
+   "o": "Proof Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark Proof"
+  },
+  {
+   "s": "Auditor",
+   "verb": "fix",
+   "o": "Adversary Capacity",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Proof Time lies at least 30 days in the past",
+   "clause": "Grow"
+  },
+  {
+   "s": "Auditor",
+   "verb": "declare",
+   "o": "Capacity Grown",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Adversary Capacity is fixed",
+   "clause": "Observe Growth"
+  },
+  {
+   "s": "Adversary",
+   "verb": "register",
+   "o": "Full Reconstruction",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Guarantee is Expired",
+   "clause": "Reconstruct"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Auditor",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Total Uncertainty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Auditor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Proof Time",
+   "conditional": false,
+   "clause": "Mark Proof"
+  },
+  {
+   "promiser": "Auditor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Adversary Capacity",
+   "conditional": true,
+   "clause": "Grow"
+  },
+  {
+   "promiser": "Auditor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Capacity Grown",
+   "conditional": true,
+   "clause": "Observe Growth"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Full Reconstruction",
+   "conditional": true,
+   "clause": "Reconstruct"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Carries the moving-ceiling asymmetry as temporal clause structure: the Total Uncertainty is fixed once in the recital (time-independent), while the Adversary Capacity becomes fixable only through the attested time predicate (Proof Time lies at least 30 days in the past), so capacity grows with elapsed time and the protected entropy does not; reconstruction is reachable only through the Expired defined-predicate gate, and the pre-expiry impossibility is clause absence. Omits the continuous R(t) function and the true shelf-life constant; the 30-day literal is a stand-in, since hour and day counts are the subset's only numbers. Term name truncated here per hard constraint; the keystone should carry the cites anchor verbatim from CENSUS.json. Folded from quantity-gate-charter (canon-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

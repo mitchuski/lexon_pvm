@@ -1,0 +1,419 @@
+{
+ "rule": "node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited",
+ "count": 59,
+ "blocks": [
+  {
+   "census": "LEXPVM-T-001",
+   "term": "First Person",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-006",
+   "term": "The Gap",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-009",
+   "term": "Dual Agents (s ⊥ m)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-010",
+   "term": "Swordsman (⚔️)",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-011",
+   "term": "Mage (🧙‍♂️)",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-013",
+   "term": "Promise (Promise Theory)",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-042",
+   "term": "Ceremony",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-055",
+   "term": "MyTerms (IEEE 7012-2025)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-073",
+   "term": "Soulbis",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-074",
+   "term": "Soulbae",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-014",
+   "term": "Autonomy Axiom",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-015",
+   "term": "Promise Body (τ, χ)",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-016",
+   "term": "Conditional Promise (b|c)",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-017",
+   "term": "Assessment α(π)",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-018",
+   "term": "Trust Function",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-019",
+   "term": "Irreducible Promise",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-020",
+   "term": "Invitation vs. Attack (Imposition)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-021",
+   "term": "Coordination Promise C(b)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-022",
+   "term": "Promise Bundle",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-023",
+   "term": "Scope",
+   "triples": 4,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-029",
+   "term": "Budget Constraint",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-047",
+   "term": "Witness (Ceremonial)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-050",
+   "term": "Chronicle",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-151",
+   "term": "The Temporal Thesis",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-207",
+   "term": "Trust (0-1)",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-012",
+   "term": "Superagent",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-048",
+   "term": "SWORD Token",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-090",
+   "term": "Four Forces (Protect, Project, Reflect, Connect)",
+   "triples": 9,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-122",
+   "term": "Stratum",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-174",
+   "term": "Primary persona (Layer 1)",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-005",
+   "term": "Economic Parameters (Canonical)",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-025",
+   "term": "Reconstruction Ceiling (R_max)",
+   "triples": 10,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-026",
+   "term": "Error Floor (P_e)",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-031",
+   "term": "Mutual Information I(X; Y)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-032",
+   "term": "Entropy H(X)",
+   "triples": 11,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-082",
+   "term": "Mountain of Entropy",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-089",
+   "term": "Tetrahedral Sovereignty",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-091",
+   "term": "Privacy Value Model (PVM)",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-092",
+   "term": "Separation Matrix (Σ), Agent Layer",
+   "triples": 11,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-094",
+   "term": "Φ_agent (Agent-Layer Separation)",
+   "triples": 12,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-095",
+   "term": "Φ_data (Data-Layer Separation)",
+   "triples": 10,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-098",
+   "term": "Edge Value T(π) → Path Integral T_∫(π) (V5)",
+   "triples": 9,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-099",
+   "term": "Path Integral T_∫(π) (V5)",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-101",
+   "term": "Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)",
+   "triples": 13,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-108",
+   "term": "Guild Efficiency G(guilds) (V5)",
+   "triples": 10,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-112",
+   "term": "BRAID Parity Effect (V5)",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-123",
+   "term": "Stratum Weight (wᵢ)",
+   "triples": 5,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-128",
+   "term": "Betweenness Centrality",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-131",
+   "term": "Charge Level",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-132",
+   "term": "21 Windows",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-135",
+   "term": "Hexagram Encoding",
+   "triples": 17,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-136",
+   "term": "Mana Economy",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-137",
+   "term": "Mana Bridge",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-147",
+   "term": "Quantum Threshold",
+   "triples": 8,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-148",
+   "term": "2D Fortress",
+   "triples": 6,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-149",
+   "term": "The 62-Lap Theorem",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-194",
+   "term": "Moving Ceiling R(t) and Shelf Life t*",
+   "triples": 7,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-200",
+   "term": "Parity Cube · Octahedral Gap",
+   "triples": 10,
+   "relation": null,
+   "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-201",
+   "term": "Regime 1 · 🪢 Presence Mana",
+   "triples": 6,
+   "relation": null,
+   "grandfathered": true
+  }
+ ]
+}

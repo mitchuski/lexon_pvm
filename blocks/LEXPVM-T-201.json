@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-201",
+ "term": "Regime 1 · 🪢 Presence Mana",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 25.9 Regime 1 · 🪢 Presence Mana",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Presence Mana Regime One.\n\n\"First Person\" is a person.\n\"Bearer\" is a person.\n\"Witness\" is a person.\n\"Presence Color\" is data.\n\"Mana Charge\" is an amount.\n\"Locally Present\" is a binary.\n\"Regime Fence\" is this contract.\n\nThe First Person appoints the Bearer, and appoints the Witness.\n\nCLAUSE: Show Presence.\nThe Bearer may declare Locally Present.\n\nCLAUSE: Color.\nThe Bearer may, if Locally Present is declared, fix the Presence Color.\n\nCLAUSE: Charge.\nThe Bearer may, if Locally Present is declared, fix the Mana Charge.\n\nCLAUSE: Carried As Color.\n\"Carried As Color\" is defined as: the Presence Color is fixed and Locally Present is declared.\n\nCLAUSE: Keep.\nThe Bearer may, if this Regime Fence is Carried As Color: register the Presence Color.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Bearer",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Bearer",
+   "verb": "declare",
+   "o": "Locally Present",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Show Presence"
+  },
+  {
+   "s": "Bearer",
+   "verb": "fix",
+   "o": "Presence Color",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Locally Present is declared",
+   "clause": "Color"
+  },
+  {
+   "s": "Bearer",
+   "verb": "fix",
+   "o": "Mana Charge",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Locally Present is declared",
+   "clause": "Charge"
+  },
+  {
+   "s": "Bearer",
+   "verb": "register",
+   "o": "Presence Color",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Regime Fence is Carried As Color",
+   "clause": "Keep"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Bearer",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Bearer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Locally Present",
+   "conditional": false,
+   "clause": "Show Presence"
+  },
+  {
+   "promiser": "Bearer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Presence Color",
+   "conditional": true,
+   "clause": "Color"
+  },
+  {
+   "promiser": "Bearer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Mana Charge",
+   "conditional": true,
+   "clause": "Charge"
+  },
+  {
+   "promiser": "Bearer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Presence Color",
+   "conditional": true,
+   "clause": "Keep"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "regime fence carried as a defined conjunction (presence color fixed and locally present declared) gating the only register; ordering = color and charge are fixable only after Locally Present is declared; impossibility as absence (no clause moves the Mana Charge anywhere: presence mana is non-transferable in regime one). Omits color values and charge magnitude. Assayer-authored (quantity-gate-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

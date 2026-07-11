@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-091",
+ "term": "Privacy Value Model (PVM)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Privacy Value Model (PVM)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Privacy Value Model.\n\n\"First Person\" is a person.\n\"Assessor\" is a person.\n\"Model\" is this contract.\n\"Privacy Value\" is an amount.\n\"Protection Present\" is a binary.\n\"Coordination Present\" is a binary.\n\"Quality Present\" is a binary.\n\"Separation Present\" is a binary.\n\nThe First Person appoints the Assessor, and fixes the Privacy Value.\n\nCLAUSE: Assess Protection.\nThe Assessor may declare Protection Present.\n\nCLAUSE: Assess Coordination.\nThe Assessor may declare Coordination Present.\n\nCLAUSE: Assess Quality.\nThe Assessor may declare Quality Present.\n\nCLAUSE: Assess Separation.\nThe Assessor may declare Separation Present.\n\nCLAUSE: Valuable.\n\"Valuable\" is defined as: Protection Present is declared and Coordination Present is declared and Quality Present is declared and Separation Present is declared.\n\nCLAUSE: Release Value.\nThe Assessor may, if this Model is Valuable: certify the Privacy Value.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Assessor",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Privacy Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Assessor",
+   "verb": "declare",
+   "o": "Protection Present",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Protection"
+  },
+  {
+   "s": "Assessor",
+   "verb": "declare",
+   "o": "Coordination Present",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Coordination"
+  },
+  {
+   "s": "Assessor",
+   "verb": "declare",
+   "o": "Quality Present",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Quality"
+  },
+  {
+   "s": "Assessor",
+   "verb": "declare",
+   "o": "Separation Present",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Separation"
+  },
+  {
+   "s": "Assessor",
+   "verb": "certify",
+   "o": "Privacy Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Model is Valuable",
+   "clause": "Release Value"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Assessor",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Privacy Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protection Present",
+   "conditional": false,
+   "clause": "Assess Protection"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Coordination Present",
+   "conditional": false,
+   "clause": "Assess Coordination"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Quality Present",
+   "conditional": false,
+   "clause": "Assess Quality"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Separation Present",
+   "conditional": false,
+   "clause": "Assess Separation"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Privacy Value",
+   "conditional": true,
+   "clause": "Release Value"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Carries the multiplicative any-zero-collapses composition as a four-factor conjunction defined predicate (Valuable) that is the only route to certifying the Privacy Value: one undeclared factor makes release structurally unreachable, the zero-collapse as clause topology. Omits the exponent on protection, temporal decay, network, guild, compression, market and path-integral factors, and all numeric calibration. Anchor: ### Privacy Value Model (PVM). Checker: GATE PASS (runs/lexr2/propose-scratch/t091_pvm.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

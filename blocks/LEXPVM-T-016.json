@@ -1,0 +1,96 @@
+{
+ "census": "LEXPVM-T-016",
+ "term": "Conditional Promise (b|c)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Conditional Promise (b|c) § ### Conditional Promise (b|c)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Conditional Promise.\r\n\r\n\"Promiser\" is a person.\r\n\"Promisee\" is a person.\r\n\"Promise Body\" is a text.\r\n\"Condition Met\" is a binary.\r\n\r\nThe Promiser appoints the Promisee, and fixes the Promise Body.\r\n\r\nCLAUSE: Observe Condition.\r\nThe Promisee may declare Condition Met.\r\n\r\nCLAUSE: Keep Promise.\r\nThe Promiser may, if Condition Met is declared, send the Promise Body to the Promisee.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promise Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promisee",
+   "verb": "declare",
+   "o": "Condition Met",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe Condition"
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Promise Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": "Condition Met is declared",
+   "clause": "Keep Promise"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Condition Met",
+   "conditional": false,
+   "clause": "Observe Condition"
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Promise Body->Promisee",
+   "conditional": true,
+   "clause": "Keep Promise"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries contingency as a condition-gated send (the Keep Promise clause can fire only once Condition Met is declared); omits the b|c notation and the (s perp m | X) application; pins condition assessment to the Promisee, which the canon leaves abstract.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

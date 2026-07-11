@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-148",
+ "term": "2D Fortress",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 2D Fortress",
+  "register": "glossary · conjectured expression of reported term"
+ },
+ "lex": "LEX Two Dimensional Fortress.\n\n\"Key Holder\" is a person.\n\"Quantum Adversary\" is a person.\n\"Verifier\" is a person.\n\"Scalar Secret\" is an amount.\n\"Public Point\" is a text.\n\"Period Found\" is a binary.\n\nThe Key Holder appoints the Verifier, appoints the Quantum Adversary, pays the Scalar Secret into escrow, and afterwards registers the Public Point.\n\nCLAUSE: Find Period.\nThe Quantum Adversary may declare Period Found.\n\nCLAUSE: Reverse The Multiplication.\nThe Quantum Adversary may, if Period Found is declared: pay from escrow the Scalar Secret to themselves.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Key Holder",
+   "verb": "appoint",
+   "o": "Verifier",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Key Holder",
+   "verb": "appoint",
+   "o": "Quantum Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Key Holder",
+   "verb": "pay",
+   "o": "Scalar Secret",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Key Holder",
+   "verb": "register",
+   "o": "Public Point",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Quantum Adversary",
+   "verb": "declare",
+   "o": "Period Found",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Find Period"
+  },
+  {
+   "s": "Quantum Adversary",
+   "verb": "pay",
+   "o": "Scalar Secret",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "Period Found is declared",
+   "clause": "Reverse The Multiplication"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Verifier",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Quantum Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:Scalar Secret",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Key Holder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "register:Public Point",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Quantum Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Period Found",
+   "conditional": false,
+   "clause": "Find Period"
+  },
+  {
+   "promiser": "Quantum Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Scalar Secret->themselves",
+   "conditional": true,
+   "clause": "Reverse The Multiplication"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Key Holder",
+   "what": "Scalar Secret"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Scalar Secret to Key Holder"
+ },
+ "grandfathered": false,
+ "notes": "direction is load-bearing and stated here: the fortress FALLS. Period-finding gates the Quantum Adversary draining the escrowed scalar secret, and the Key Holder holds no reclaiming clause (impossibility on the defender side, by absence). The lexr2.3 critic flagged direction-elasticity on exactly this entry; the checker cannot falsify a wrong-direction expression, so the direction lives in this Notes line by design. Omits curve arithmetic and period-finding detail. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

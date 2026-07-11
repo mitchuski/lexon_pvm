@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-022",
+ "term": "Promise Bundle",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Promise Bundle § ### Promise Bundle",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Promise Bundle.\r\n\r\n\"Promiser\" is a person.\r\n\"Promisee\" is a person.\r\n\"First Body\" is a text.\r\n\"Second Body\" is a text.\r\n\"Bundle\" is data.\r\n\"Bundle Kept\" is a binary.\r\n\r\nThe Promiser appoints the Promisee, fixes the First Body, and fixes the Second Body.\r\n\r\nCLAUSE: Assemble.\r\nThe Promiser may file the Bundle.\r\n\r\nCLAUSE: Deliver Bundle.\r\nThe Promiser may, if the Bundle is filed, send the First Body to the Promisee, and send the Second Body to the Promisee.\r\n\r\nCLAUSE: Assess Bundle.\r\nThe Promisee may declare Bundle Kept.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "First Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Second Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "file",
+   "o": "Bundle",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assemble"
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "First Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": "the Bundle is filed",
+   "clause": "Deliver Bundle"
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Second Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": "the Bundle is filed",
+   "clause": "Deliver Bundle"
+  },
+  {
+   "s": "Promisee",
+   "verb": "declare",
+   "o": "Bundle Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess Bundle"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Second Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Bundle",
+   "conditional": false,
+   "clause": "Assemble"
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:First Body->Promisee",
+   "conditional": true,
+   "clause": "Deliver Bundle"
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Second Body->Promisee",
+   "conditional": true,
+   "clause": "Deliver Bundle"
+  },
+  {
+   "promiser": "Promisee",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Bundle Kept",
+   "conditional": false,
+   "clause": "Assess Bundle"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries grouping-for-reuse (one filed Bundle gates a single delivery clause moving both bodies together) and coordinated assessment (one Bundle Kept verdict covers the whole collection); omits the 70:1 reuse-efficiency quantification and VRC bilaterality.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

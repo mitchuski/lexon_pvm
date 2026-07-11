@@ -1,0 +1,186 @@
+{
+ "census": "LEXPVM-T-098",
+ "term": "Edge Value T(π) → Path Integral T_∫(π) (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Edge Value T(π) → Path Integral T_∫(π) (V5)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Path Integral.\n\n\"Traveler\" is a person.\n\"Verifier\" is a person.\n\"Path\" is this contract.\n\"Early Edge Value\" is an amount.\n\"Late Edge Value\" is an amount.\n\"Trajectory Value\" is an amount.\n\"Checkpoint Verified\" is a binary.\n\nThe Verifier appoints the Traveler, fixes the Early Edge Value, fixes the Late Edge Value, and fixes the Trajectory Value.\n\nCLAUSE: Traverse Early.\nThe Traveler may pay the Early Edge Value into escrow.\n\nCLAUSE: Verify Checkpoint.\nThe Verifier may declare Checkpoint Verified.\n\nCLAUSE: Traverse Late.\nThe Traveler may, if Checkpoint Verified is declared: pay the Late Edge Value into escrow.\n\nCLAUSE: Integrated.\n\"Integrated\" is defined as: the Early Edge Value is fixed and the Late Edge Value is fixed and Checkpoint Verified is declared.\n\nCLAUSE: Certify Trajectory.\nThe Verifier may, if this Path is Integrated: certify the Trajectory Value, and pay from escrow the Trajectory Value to the Traveler.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 9,
+  "promiseEdges": 9
+ },
+ "triples": [
+  {
+   "s": "Verifier",
+   "verb": "appoint",
+   "o": "Traveler",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Verifier",
+   "verb": "fix",
+   "o": "Early Edge Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Verifier",
+   "verb": "fix",
+   "o": "Late Edge Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Verifier",
+   "verb": "fix",
+   "o": "Trajectory Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Traveler",
+   "verb": "pay",
+   "o": "Early Edge Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Traverse Early"
+  },
+  {
+   "s": "Verifier",
+   "verb": "declare",
+   "o": "Checkpoint Verified",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Verify Checkpoint"
+  },
+  {
+   "s": "Traveler",
+   "verb": "pay",
+   "o": "Late Edge Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Checkpoint Verified is declared",
+   "clause": "Traverse Late"
+  },
+  {
+   "s": "Verifier",
+   "verb": "certify",
+   "o": "Trajectory Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Path is Integrated",
+   "clause": "Certify Trajectory"
+  },
+  {
+   "s": "Verifier",
+   "verb": "pay",
+   "o": "Trajectory Value",
+   "io": "Traveler",
+   "as": null,
+   "modal": "may",
+   "condition": "this Path is Integrated",
+   "clause": "Certify Trajectory"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Traveler",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Early Edge Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Late Edge Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Trajectory Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Early Edge Value",
+   "conditional": false,
+   "clause": "Traverse Early"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Checkpoint Verified",
+   "conditional": false,
+   "clause": "Verify Checkpoint"
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Late Edge Value",
+   "conditional": true,
+   "clause": "Traverse Late"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Trajectory Value",
+   "conditional": true,
+   "clause": "Certify Trajectory"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Trajectory Value->Traveler",
+   "conditional": true,
+   "clause": "Certify Trajectory"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "checkpoint-gates-later-traversal ordering carried as the Late Edge inflow reachable only after the Verifier Checkpoint Verified declaration (edge non-independence as gating); accumulation as escrow conservation; the Integrated conjunction gates the only certify and outflow; the Traveler cannot verify its own checkpoint. Omits the integral form and the beta coefficient. Assayer-authored (formula-skeleton-charter held-out, recipe-only).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

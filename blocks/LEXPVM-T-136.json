@@ -1,0 +1,168 @@
+{
+ "census": "LEXPVM-T-136",
+ "term": "Mana Economy",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Mana Economy",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Mana Economy.\n\n\"Practitioner\" is a person.\n\"Registry\" is a person.\n\"Earned Mana\" is an amount.\n\"Inscription Cost\" is an amount.\n\"Inscription\" is a text.\n\"Practice Complete\" is a binary.\n\nThe Practitioner appoints the Registry, fixes the Earned Mana, and fixes the Inscription Cost.\n\nCLAUSE: Practice.\nThe Practitioner may declare Practice Complete.\n\nCLAUSE: Earn.\nThe Practitioner may, if Practice Complete is declared: pay the Earned Mana into escrow.\n\nCLAUSE: Inscribe.\nThe Practitioner may, if Practice Complete is declared: pay from escrow the Inscription Cost to the Registry, and afterwards register an Inscription.\n\nCLAUSE: Conserve.\nThe Practitioner may return the remainder of the escrow to the Practitioner.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Practitioner",
+   "verb": "appoint",
+   "o": "Registry",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Practitioner",
+   "verb": "fix",
+   "o": "Earned Mana",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Practitioner",
+   "verb": "fix",
+   "o": "Inscription Cost",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Practitioner",
+   "verb": "declare",
+   "o": "Practice Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Practice"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "pay",
+   "o": "Earned Mana",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Practice Complete is declared",
+   "clause": "Earn"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "pay",
+   "o": "Inscription Cost",
+   "io": "Registry",
+   "as": null,
+   "modal": "may",
+   "condition": "Practice Complete is declared",
+   "clause": "Inscribe"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "register",
+   "o": "Inscription",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Practice Complete is declared",
+   "clause": "Inscribe"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "Practitioner",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Conserve"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Registry",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Earned Mana",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Inscription Cost",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Practice Complete",
+   "conditional": false,
+   "clause": "Practice"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Earned Mana",
+   "conditional": true,
+   "clause": "Earn"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Inscription Cost->Registry",
+   "conditional": true,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Inscription",
+   "conditional": true,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->Practitioner",
+   "conditional": false,
+   "clause": "Conserve"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Structural: earn-before-spend ordering (the deposit clause is gated on Practice Complete, and the Inscribe payout draws only from escrow, so spending presupposes earning), the pay-then-register afterwards chain (an Inscription registers only after its cost is paid), and non-transferability as absence (no clause sends or pays mana to any person except the Registry cost sink, and the remainder returns to the Practitioner alone). Omits numeric mana quantities, prices, and regeneration rates. Anchor: ### Mana Economy. Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

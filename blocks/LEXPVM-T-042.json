@@ -1,0 +1,132 @@
+{
+ "census": "LEXPVM-T-042",
+ "term": "Ceremony",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Ceremony",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Ceremony.\r\n\r\n\"First Agent\" is a person.\r\n\"Second Agent\" is a person.\r\n\"Witness\" is a person.\r\n\"Understanding\" is a text.\r\n\"Ceremony Time\" is a time.\r\n\"Bound\" is a binary.\r\n\r\nThe First Agent appoints the Second Agent, and appoints the Witness.\r\n\r\nCLAUSE: Demonstrate.\r\nThe First Agent may register an Understanding.\r\n\r\nCLAUSE: Reciprocate.\r\nThe Second Agent may register an Understanding.\r\n\r\nCLAUSE: Mark.\r\nThe Witness may fix the Ceremony Time as the current time.\r\n\r\nCLAUSE: Bind.\r\nThe Witness may, if the Ceremony Time is fixed, declare Bound.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Agent",
+   "verb": "appoint",
+   "o": "Second Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Agent",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Agent",
+   "verb": "register",
+   "o": "Understanding",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Demonstrate"
+  },
+  {
+   "s": "Second Agent",
+   "verb": "register",
+   "o": "Understanding",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reciprocate"
+  },
+  {
+   "s": "Witness",
+   "verb": "fix",
+   "o": "Ceremony Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark"
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Bound",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Ceremony Time is fixed",
+   "clause": "Bind"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Understanding",
+   "conditional": false,
+   "clause": "Demonstrate"
+  },
+  {
+   "promiser": "Second Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Understanding",
+   "conditional": false,
+   "clause": "Reciprocate"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Ceremony Time",
+   "conditional": false,
+   "clause": "Mark"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Bound",
+   "conditional": true,
+   "clause": "Bind"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries proof-of-understanding as bilateral registration before binding; omits the genesis/operational ceremony taxonomy and the d6 value dimension.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

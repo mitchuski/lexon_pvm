@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-082",
+ "term": "Mountain of Entropy",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Mountain of Entropy",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Mountain of Entropy.\n\n\"Keeper\" is a person.\n\"Pilgrim\" is a person.\n\"Identifier\" is data.\n\"Meaning\" is a text.\n\"Caught\" is a binary.\n\"Claim\" is this contract.\n\nThe Keeper appoints the Pilgrim, and fixes the Identifier.\n\nCLAUSE: Fall.\nThe Keeper may send the Identifier to the Pilgrim.\n\nCLAUSE: Catch.\nThe Pilgrim may declare Caught.\n\nCLAUSE: Fix Meaning.\nThe Pilgrim may, if Caught is declared, fix the Meaning.\n\nCLAUSE: Claimed.\n\"Claimed\" is defined as: the Identifier is fixed and Caught is declared and the Meaning is fixed.\n\nCLAUSE: Remember.\nThe Pilgrim may, if this Claim is Claimed: register the Meaning, and afterwards certify the Meaning.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Pilgrim",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Identifier",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "send",
+   "o": "Identifier",
+   "io": "Pilgrim",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Fall"
+  },
+  {
+   "s": "Pilgrim",
+   "verb": "declare",
+   "o": "Caught",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Catch"
+  },
+  {
+   "s": "Pilgrim",
+   "verb": "fix",
+   "o": "Meaning",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Caught is declared",
+   "clause": "Fix Meaning"
+  },
+  {
+   "s": "Pilgrim",
+   "verb": "register",
+   "o": "Meaning",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Claim is Claimed",
+   "clause": "Remember"
+  },
+  {
+   "s": "Pilgrim",
+   "verb": "certify",
+   "o": "Meaning",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Claim is Claimed",
+   "clause": "Remember"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Pilgrim",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Identifier",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Identifier->Pilgrim",
+   "conditional": false,
+   "clause": "Fall"
+  },
+  {
+   "promiser": "Pilgrim",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Caught",
+   "conditional": false,
+   "clause": "Catch"
+  },
+  {
+   "promiser": "Pilgrim",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Meaning",
+   "conditional": true,
+   "clause": "Fix Meaning"
+  },
+  {
+   "promiser": "Pilgrim",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Meaning",
+   "conditional": true,
+   "clause": "Remember"
+  },
+  {
+   "promiser": "Pilgrim",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Meaning",
+   "conditional": true,
+   "clause": "Remember"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Carries the assignment-before-significance ordering as a gated chain: the Identifier falls (send) before it can be Caught (declaration), the Meaning is fixable only after Caught is declared, and remembering opens only on the Claimed three-part conjunction, closing with the register-then-afterwards-certify chain; the gap between random assignment and claimed meaning is exactly the ordering between the Fall clause and the Fix Meaning gate. Omits the rain and river imagery and any entropy quantity. Anchor: ### Mountain of Entropy. Folded from quantity-gate-charter (canon-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

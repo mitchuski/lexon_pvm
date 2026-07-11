@@ -961,10 +961,10 @@ The Reviewer may, if this Registry is Admissible: register the Skill Loadout, an
 
 Notes: admission relation: registering a loadout requires review passed AND roster not locked (a negated predicate in the gate), then certification chains afterwards; omits tier semantics.
 
-## LEXPVM-T-005 Â· Economic Parameters (Canonical)
+## LEXPVM-T-005 · Economic Parameters (Canonical)
 - census: LEXPVM-T-005
-- register: glossary Â· conjectured expression of canonical term
-- cites: glossary-master-v4 Â§ ### Economic Parameters (Canonical)
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Economic Parameters (Canonical)
 
 ```lex
 LEX Economic Parameters.
@@ -991,10 +991,10 @@ The Keeper may, if Ceremony Complete is declared: pay the Signal Fee into escrow
 
 Notes: Carries the canonical fee mechanics as ledger structure: one escrowed Ceremony Fee is exhausted by the transparent-share draw and afterwards the remainder flows to the Shielded Pool, so the two pools partition the whole fee by construction (conservation plus ordering, the split as subtraction), and ongoing Signal fees are payable only under the declared-ceremony gate, carrying one-time genesis before recurring signal (gate, ordering of fee frequencies). Omits: the golden-ratio split constants, the ZEC amounts and price basis, and internal pool allocations, none of which the subset can carry as literals. Anchor: ### Economic Parameters (Canonical). Folded from escrow-ledger-formula-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-025 Â· Reconstruction Ceiling (R_max)
+## LEXPVM-T-025 · Reconstruction Ceiling (R_max)
 - census: LEXPVM-T-025
-- register: glossary Â· conjectured expression of proven term
-- cites: glossary-master-v4 Â§ ### Reconstruction Ceiling (R_max)
+- register: glossary · conjectured expression of proven term
+- cites: glossary-master-v4 § ### Reconstruction Ceiling (R_max)
 
 ```lex
 LEX Reconstruction Ceiling.
@@ -1028,10 +1028,10 @@ The First Person may, if Channels Exhausted is declared: return the remainder of
 
 Notes: Structural: the ceiling as reachability (the Adversary can draw only the two fixed leakage amounts from the escrowed State Entropy, and a Reconstruction registers only after Channels Exhausted is declared; the remainder returns to the Gap and no clause routes it to the Adversary, so reconstruction stays strictly below the whole). Omits the ratio form R_max = (C_S + C_M) / H(X) and its numeric value. Anchor: ### Reconstruction Ceiling (R_max). Folded from escrow-conservation-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-026 Â· Error Floor (P_e)
+## LEXPVM-T-026 · Error Floor (P_e)
 - census: LEXPVM-T-026
-- register: glossary Â· conjectured expression of proven term
-- cites: glossary-master-v4 Â§ ### Error Floor (P_e)
+- register: glossary · conjectured expression of proven term
+- cites: glossary-master-v4 § ### Error Floor (P_e)
 
 ```lex
 LEX Error Floor.
@@ -1061,10 +1061,10 @@ The Adversary must, if Channels Drained is declared: declare Reconstruction Erro
 
 Notes: Structural: the floor as an unavoidable consequence (Concede Error is a must clause gated on Channels Drained, so once draining is complete the error declaration is obligatory rather than optional) and conservation (the Gap returns the undisclosed remainder to the First Person, and no clause pays it to the Adversary, which is what forces the error). Omits the inequality P_e is at least 1 minus R_max as a number. Anchor: ### Error Floor (P_e). Folded from escrow-conservation-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-031 Â· Mutual Information I(X; Y)
+## LEXPVM-T-031 · Mutual Information I(X; Y)
 - census: LEXPVM-T-031
-- register: glossary Â· conjectured expression of canonical term
-- cites: glossary-master-v4 Â§ ### Mutual Information I(X; Y)
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Mutual Information I(X; Y)
 
 ```lex
 LEX Mutual Information.
@@ -1089,10 +1089,11 @@ The Subject may, if Observation Made is declared: return the remainder of the es
 
 Notes: Structural: gating (the Learn payout fires only after Observation Made is declared), conservation and directionality (the Observer can draw only the fixed Shared Information from the escrowed Source Entropy, and the remainder returns to the Subject alone, so what observation provides plus what stays private exhausts the source). Omits the symmetry I(X;Y) = I(Y;X) and the numeric measure in bits. Anchor: ### Mutual Information I(X; Y). Folded from escrow-conservation-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-032 Â· Entropy H(X)
+## LEXPVM-T-032 · Entropy H(X)
 - census: LEXPVM-T-032
-- register: glossary Â· conjectured expression of canonical term
-- cites: glossary-master-v4 Â§ ### Entropy H(X)
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Entropy H(X)
+- relation: {"type":"absence","to":"Adversary","what":"escrow-remainder"}
 
 ```lex
 LEX Entropy.
@@ -1124,10 +1125,10 @@ The First Person may, if Observation Complete is declared: return the remainder 
 
 Notes: Structural: conservation as escrow arithmetic (the Sword Channel and Mage Channel payouts plus the returned remainder exhaust the escrowed Total Uncertainty), impossibility as an absent clause (no clause routes the remainder to the Adversary, so residual uncertainty survives any observation strategy), and ordering (the remainder moves only after Observation Complete is declared). Omits logarithms, the bit unit, and the numeric value of H(X). Anchor: ### Entropy H(X). Folded from escrow-conservation-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-082 Â· Mountain of Entropy
+## LEXPVM-T-082 · Mountain of Entropy
 - census: LEXPVM-T-082
-- register: glossary Â· conjectured expression of canonical term
-- cites: glossary-master-v4 Â§ ### Mountain of Entropy
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Mountain of Entropy
 
 ```lex
 LEX Mountain of Entropy.
@@ -1159,10 +1160,10 @@ The Pilgrim may, if this Claim is Claimed: register the Meaning, and afterwards 
 
 Notes: Carries the assignment-before-significance ordering as a gated chain: the Identifier falls (send) before it can be Caught (declaration), the Meaning is fixable only after Caught is declared, and remembering opens only on the Claimed three-part conjunction, closing with the register-then-afterwards-certify chain; the gap between random assignment and claimed meaning is exactly the ordering between the Fall clause and the Fix Meaning gate. Omits the rain and river imagery and any entropy quantity. Anchor: ### Mountain of Entropy. Folded from quantity-gate-charter (canon-forward, run lexr2).
 
-## LEXPVM-T-089 Â· Tetrahedral Sovereignty
+## LEXPVM-T-089 · Tetrahedral Sovereignty
 - census: LEXPVM-T-089
-- register: glossary Â· conjectured expression of convergent-preliminary term
-- cites: glossary-master-v4 Â§ ### Tetrahedral Sovereignty
+- register: glossary · conjectured expression of convergent-preliminary term
+- cites: glossary-master-v4 § ### Tetrahedral Sovereignty
 
 ```lex
 LEX Tetrahedral Sovereignty.
@@ -1199,10 +1200,10 @@ The Surveyor may, if this Tetrahedron is Sovereign: certify the Architectural Vo
 
 Notes: four-force Sovereign conjunction gates the only certify of Architectural Volume; emergence ordering carried as Reflect and Connect declares gated on Protect and Project declares; only the Surveyor holds declare clauses. Omits the separation matrix determinant form and stratum arithmetic. Assayer-authored (formula-skeleton-charter held-out, recipe-only).
 
-## LEXPVM-T-091 Â· Privacy Value Model (PVM)
+## LEXPVM-T-091 · Privacy Value Model (PVM)
 - census: LEXPVM-T-091
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Privacy Value Model (PVM)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Privacy Value Model (PVM)
 
 ```lex
 LEX Privacy Value Model.
@@ -1239,10 +1240,11 @@ The Assessor may, if this Model is Valuable: certify the Privacy Value.
 
 Notes: Carries the multiplicative any-zero-collapses composition as a four-factor conjunction defined predicate (Valuable) that is the only route to certifying the Privacy Value: one undeclared factor makes release structurally unreachable, the zero-collapse as clause topology. Omits the exponent on protection, temporal decay, network, guild, compression, market and path-integral factors, and all numeric calibration. Anchor: ### Privacy Value Model (PVM). Checker: GATE PASS (runs/lexr2/propose-scratch/t091_pvm.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).
 
-## LEXPVM-T-092 Â· Separation Matrix (Î£), Agent Layer
+## LEXPVM-T-092 · Separation Matrix (Σ), Agent Layer
 - census: LEXPVM-T-092
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Separation Matrix (Î£), Agent Layer
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Separation Matrix (Σ), Agent Layer
+- relation: {"type":"gate","clause":"Retain Volume","condition":"Entanglement Measured"}
 
 ```lex
 LEX Separation Matrix.
@@ -1280,10 +1282,10 @@ The First Person may, if Entanglement Measured is declared: return the remainder
 
 Notes: conservation carried as pairwise entanglement drains plus the retained remainder exhausting the escrowed architectural volume; unavoidable consequence as a must clause (any pair collapse forces volume collapse, the multiplicative zero); impossibility as absence (no clause routes volume to the Auditor). Omits the four-by-four matrix entries and the determinant. Assayer-authored (escrow-conservation-charter held-out, recipe-only).
 
-## LEXPVM-T-094 Â· Î¦_agent (Agent-Layer Separation)
+## LEXPVM-T-094 · Φ_agent (Agent-Layer Separation)
 - census: LEXPVM-T-094
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Î¦_agent (Agent-Layer Separation)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Φ_agent (Agent-Layer Separation)
 
 ```lex
 LEX Agent Layer Separation.
@@ -1322,10 +1324,10 @@ The First Person may, if Balance Audited is declared: return the remainder of th
 
 Notes: ceiling as conservation (the retained separation value can never exceed the escrowed whole, the min cap); multiplicative dampening as conditional drains (entanglement and imbalance penalties shrink the remainder); impossibility as absence (no clause pays the Swordsman or the Mage any separation value). Omits the ratio formula and the determinant. Assayer-authored (escrow-conservation-charter held-out, recipe-only).
 
-## LEXPVM-T-095 Â· Î¦_data (Data-Layer Separation)
+## LEXPVM-T-095 · Φ_data (Data-Layer Separation)
 - census: LEXPVM-T-095
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Î¦_data (Data-Layer Separation)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Φ_data (Data-Layer Separation)
 
 ```lex
 LEX Data Layer Separation.
@@ -1357,10 +1359,10 @@ The First Person may, if this Separation is Fragmented: return the remainder of 
 
 Notes: fragmentation carried as two shard outflows each with an afterwards declaration (ordering); the Fragmented defined conjunction gates holding the residue; conservation = shards plus retained residue exhaust the escrowed corpus. Omits the separation formula and provider counts. Assayer-authored (escrow-conservation-recipe held-out, recipe-only).
 
-## LEXPVM-T-098 Â· Edge Value T(Ï€) â†’ Path Integral T_âˆ«(Ï€) (V5)
+## LEXPVM-T-098 · Edge Value T(π) → Path Integral T_∫(π) (V5)
 - census: LEXPVM-T-098
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Edge Value T(Ï€) â†’ Path Integral T_âˆ«(Ï€) (V5)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Edge Value T(π) → Path Integral T_∫(π) (V5)
 
 ```lex
 LEX Path Integral.
@@ -1393,10 +1395,10 @@ The Verifier may, if this Path is Integrated: certify the Trajectory Value, and 
 
 Notes: checkpoint-gates-later-traversal ordering carried as the Late Edge inflow reachable only after the Verifier Checkpoint Verified declaration (edge non-independence as gating); accumulation as escrow conservation; the Integrated conjunction gates the only certify and outflow; the Traveler cannot verify its own checkpoint. Omits the integral form and the beta coefficient. Assayer-authored (formula-skeleton-charter held-out, recipe-only).
 
-## LEXPVM-T-099 Â· Path Integral T_âˆ«(Ï€) (V5)
+## LEXPVM-T-099 · Path Integral T_∫(π) (V5)
 - census: LEXPVM-T-099
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Path Integral T_âˆ«(Ï€) (V5)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Path Integral T_∫(π) (V5)
 
 ```lex
 LEX Path Integral.
@@ -1425,12 +1427,12 @@ CLAUSE: Pay Path Value.
 The Keeper may, if this Path is Traversed: pay the Base Value to the Traveler, and afterwards pay the remainder of the escrow to the Traveler.
 ```
 
-Notes: Carries integration as ordered accumulation: each edge deposits a contribution into escrow and the second edge is gated on the first's declaration (path order as a condition chain, so a later contribution cannot precede an earlier one), and the payout equals the fixed Base Value plus the accumulated escrow, the one-plus-integral shape of the formula, firing only when the defined predicate Traversed conjoins both edge declarations. Omits beta, the density function F, non-local correlations beyond ordering, and continuous integration. Anchor: ### Path Integral T_âˆ«(Ï€) (V5). Folded from escrow-conservation-recipe (grammar-forward, run lexr2).
+Notes: Carries integration as ordered accumulation: each edge deposits a contribution into escrow and the second edge is gated on the first's declaration (path order as a condition chain, so a later contribution cannot precede an earlier one), and the payout equals the fixed Base Value plus the accumulated escrow, the one-plus-integral shape of the formula, firing only when the defined predicate Traversed conjoins both edge declarations. Omits beta, the density function F, non-local correlations beyond ordering, and continuous integration. Anchor: ### Path Integral T_∫(π) (V5). Folded from escrow-conservation-recipe (grammar-forward, run lexr2).
 
-## LEXPVM-T-101 Â· Temporal Memory A(Ï„) â†’ Holonic Temporal Memory A_h(Ï„) (V5)
+## LEXPVM-T-101 · Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)
 - census: LEXPVM-T-101
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Temporal Memory A(Ï„) â†’ Holonic Temporal Memory A_h(Ï„) (V5)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)
 
 ```lex
 LEX Temporal Memory.
@@ -1475,10 +1477,10 @@ The First Person may, if Holonic Persistence Established is declared: return the
 
 Notes: accumulation ordering (each deposit gated on a declared verified step); dampening as conditional drains (integrity and persistence discounts leave escrow only under their declared failure binaries); conservation = deposits equal drains plus retained remainder; holonic persistence as the gate on retaining the remainder. Omits the logarithmic formula and alpha. Assayer-authored (escrow-conservation-charter held-out, recipe-only).
 
-## LEXPVM-T-108 Â· Guild Efficiency G(guilds) (V5)
+## LEXPVM-T-108 · Guild Efficiency G(guilds) (V5)
 - census: LEXPVM-T-108
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Guild Efficiency G(guilds) (V5)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Guild Efficiency G(guilds) (V5)
 
 ```lex
 LEX Guild Efficiency.
@@ -1518,10 +1520,10 @@ The Assessor may, if this Guild is Efficient: certify the Efficiency Gain.
 
 Notes: shared-parent coordination carried as only-route topology (the sole clause reaching the Peer is the Parent relay gated on the Parent own Pattern Received declaration; no member-to-peer send exists); the Efficient conjunction gates the only certify of Efficiency Gain; the Guild Member holds no declare clause. Omits the one-plus-efficiency formula. Assayer-authored (formula-skeleton-charter held-out, recipe-only).
 
-## LEXPVM-T-112 Â· BRAID Parity Effect (V5)
+## LEXPVM-T-112 · BRAID Parity Effect (V5)
 - census: LEXPVM-T-112
-- register: glossary Â· conjectured expression of reported term
-- cites: glossary-master-v4 Â§ ### BRAID Parity Effect (V5)
+- register: glossary · conjectured expression of reported term
+- cites: glossary-master-v4 § ### BRAID Parity Effect (V5)
 
 ```lex
 LEX BRAID Parity Effect.
@@ -1551,10 +1553,10 @@ The Evaluator may, if this Benchmark is Structured Parity: certify the Nano Capa
 
 Notes: structured-reasoning parity carried as a defined conjunction (nano capacity fixed, reasoning graph fixed, parity declared) gating the only certify of the Nano Capacity; ordering = the parity comparison is reachable only after the reasoning graph is fixed. Omits benchmark scores and model sizes. Assayer-authored (quantity-gate-charter held-out, recipe-only); keystone Notes.
 
-## LEXPVM-T-123 Â· Stratum Weight (wáµ¢)
+## LEXPVM-T-123 · Stratum Weight (wᵢ)
 - census: LEXPVM-T-123
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### Stratum Weight (wáµ¢)
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Stratum Weight (wᵢ)
 
 ```lex
 LEX Stratum Weight.
@@ -1581,12 +1583,12 @@ CLAUSE: Collect Sum.
 The Keeper may pay from escrow the Contribution to themselves.
 ```
 
-Notes: Carries weight-gates-counting: a member's Contribution enters the network sum (the escrow) only when the Stratum Weight is fixed and Membership Verified is declared (the Weighted conjunction), and the sum is collectable only from escrow, so an unweighted or unverified member cannot add to the network term; the escrow inflow-then-outflow carries the summation ordering. Omits the Pascal-row binomial weight values over sixty-four, the modal-stratum maximum, and the network exponent; amounts carry no numeric literals in the subset. Anchor: ### Stratum Weight (wáµ¢). Checker: GATE PASS (runs/lexr2/propose-scratch/t123_stratum_weight.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).
+Notes: Carries weight-gates-counting: a member's Contribution enters the network sum (the escrow) only when the Stratum Weight is fixed and Membership Verified is declared (the Weighted conjunction), and the sum is collectable only from escrow, so an unweighted or unverified member cannot add to the network term; the escrow inflow-then-outflow carries the summation ordering. Omits the Pascal-row binomial weight values over sixty-four, the modal-stratum maximum, and the network exponent; amounts carry no numeric literals in the subset. Anchor: ### Stratum Weight (wᵢ). Checker: GATE PASS (runs/lexr2/propose-scratch/t123_stratum_weight.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).
 
-## LEXPVM-T-128 Â· Betweenness Centrality
+## LEXPVM-T-128 · Betweenness Centrality
 - census: LEXPVM-T-128
-- register: glossary Â· conjectured expression of canonical term
-- cites: glossary-master-v4 Â§ ### Betweenness Centrality
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Betweenness Centrality
 
 ```lex
 LEX Betweenness Centrality.
@@ -1615,10 +1617,10 @@ The Gap may, if this Graph is On Path: send the Message to the Target.
 
 Notes: Carries maximal betweenness as only-route topology plus ordering: the sole clause that reaches the Target is held by the Gap and gated on the Gap's own Relay Received declaration (the On Path conjunction), and the Source has no direct send-to-Target clause, so every source-to-target path crosses the Gap, the node-on-all-shortest-paths property as clause-graph structure. Omits the shortest-path ratio formula and the counting algorithm. Anchor: ### Betweenness Centrality. Checker: GATE PASS (runs/lexr2/propose-scratch/t128_betweenness.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).
 
-## LEXPVM-T-131 Â· Charge Level
+## LEXPVM-T-131 · Charge Level
 - census: LEXPVM-T-131
-- register: glossary Â· conjectured expression of implemented term
-- cites: glossary-master-v4 Â§ ### Charge Level
+- register: glossary · conjectured expression of implemented term
+- cites: glossary-master-v4 § ### Charge Level
 
 ```lex
 LEX Charge Level.
@@ -1650,10 +1652,10 @@ The Witness may, if Ceremony Closed is declared: return the remainder of the esc
 
 Notes: Structural: accumulation ordering (each Lap Charge deposit is gated on a declared Lap Complete, so intensity grows only lap by lap, and the Witness certifies the Charge Level only once a lap stands declared) and close-gated discharge (the remainder returns to the Celebrant only after Ceremony Closed is declared, and no clause withdraws charge earlier). Omits the lap-count level table and numeric intensity values. Anchor: ### Charge Level. Folded from escrow-conservation-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-132 Â· 21 Windows
+## LEXPVM-T-132 · 21 Windows
 - census: LEXPVM-T-132
-- register: glossary Â· conjectured expression of documented term
-- cites: glossary-master-v4 Â§ ### 21 Windows
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### 21 Windows
 
 ```lex
 LEX Twenty One Windows.
@@ -1674,10 +1676,10 @@ The Forge Keeper may pay from escrow the Spell Windows to the Mage, and afterwar
 
 Notes: ordered partition carried as one afterwards chain (spell windows, then forged windows, then the remainder to the Witness); conservation = the three allotments exhaust the escrowed window inventory. Omits the numeric window counts. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.
 
-## LEXPVM-T-135 Â· Hexagram Encoding
+## LEXPVM-T-135 · Hexagram Encoding
 - census: LEXPVM-T-135
-- register: glossary Â· conjectured expression of documented term
-- cites: glossary-master-v4 Â§ ### Hexagram Encoding
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Hexagram Encoding
 
 ```lex
 LEX Hexagram Encoding.
@@ -1744,10 +1746,10 @@ The Reader may, if Lines Complete is declared: return the remainder of the escro
 
 Notes: six-fold composition as one gated deposit per privacy-dimension line, accumulating in escrow; ordering = a line weighs in only after its line stands declared, and the Reader registers the Hexagram and discharges only after Lines Complete; conservation = the six line weights exhaust what returns to the Mage. Omits the sixty-four state count and the named blade mappings. Assayer-authored (escrow-conservation-charter held-out, recipe-only).
 
-## LEXPVM-T-136 Â· Mana Economy
+## LEXPVM-T-136 · Mana Economy
 - census: LEXPVM-T-136
-- register: glossary Â· conjectured expression of specified term
-- cites: glossary-master-v4 Â§ ### Mana Economy
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Mana Economy
 
 ```lex
 LEX Mana Economy.
@@ -1776,10 +1778,10 @@ The Practitioner may return the remainder of the escrow to the Practitioner.
 
 Notes: Structural: earn-before-spend ordering (the deposit clause is gated on Practice Complete, and the Inscribe payout draws only from escrow, so spending presupposes earning), the pay-then-register afterwards chain (an Inscription registers only after its cost is paid), and non-transferability as absence (no clause sends or pays mana to any person except the Registry cost sink, and the remainder returns to the Practitioner alone). Omits numeric mana quantities, prices, and regeneration rates. Anchor: ### Mana Economy. Folded from escrow-conservation-charter (grammar-forward, run lexr2).
 
-## LEXPVM-T-137 Â· Mana Bridge
+## LEXPVM-T-137 · Mana Bridge
 - census: LEXPVM-T-137
-- register: glossary Â· conjectured expression of specified term
-- cites: glossary-master-v4 Â§ ### Mana Bridge
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Mana Bridge
 
 ```lex
 LEX Mana Bridge.
@@ -1811,10 +1813,10 @@ The Extension Agent may, if Balance Read is not declared: return the remainder o
 
 Notes: one-directional sync carried as a must clause (a synced bridge forces the balance to the Territory Agent); the Synced defined conjunction gates it; preservation = the remainder returns only while Balance Read stays undeclared (negated-condition guard). Omits mana magnitudes. Assayer-authored (escrow-conservation-recipe held-out, recipe-only); keystone Notes.
 
-## LEXPVM-T-147 Â· Quantum Threshold
+## LEXPVM-T-147 · Quantum Threshold
 - census: LEXPVM-T-147
-- register: glossary Â· conjectured expression of documented term
-- cites: glossary-master-v4 Â§ ### Quantum Threshold
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Quantum Threshold
 
 ```lex
 LEX Quantum Threshold.
@@ -1848,10 +1850,11 @@ The Key Holder may, if Machine Assembled is not declared: return the remainder o
 
 Notes: threshold carried as a four-conjunct defined condition (both budgets fixed, machine assembled, broadcast time fixed) gating the adversary drain of the escrowed key entropy; the residue returns only while Machine Assembled stays undeclared. Omits qubit and Toffoli counts and timeline estimates. Assayer-authored (escrow-conservation-recipe held-out, recipe-only); keystone Notes.
 
-## LEXPVM-T-148 Â· 2D Fortress
+## LEXPVM-T-148 · 2D Fortress
 - census: LEXPVM-T-148
-- register: glossary Â· conjectured expression of reported term
-- cites: glossary-master-v4 Â§ ### 2D Fortress
+- register: glossary · conjectured expression of reported term
+- cites: glossary-master-v4 § ### 2D Fortress
+- relation: {"type":"absence","to":"Key Holder","what":"Scalar Secret"}
 
 ```lex
 LEX Two Dimensional Fortress.
@@ -1874,10 +1877,10 @@ The Quantum Adversary may, if Period Found is declared: pay from escrow the Scal
 
 Notes: direction is load-bearing and stated here: the fortress FALLS. Period-finding gates the Quantum Adversary draining the escrowed scalar secret, and the Key Holder holds no reclaiming clause (impossibility on the defender side, by absence). The lexr2.3 critic flagged direction-elasticity on exactly this entry; the checker cannot falsify a wrong-direction expression, so the direction lives in this Notes line by design. Omits curve arithmetic and period-finding detail. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.
 
-## LEXPVM-T-149 Â· The 62-Lap Theorem
+## LEXPVM-T-149 · The 62-Lap Theorem
 - census: LEXPVM-T-149
-- register: glossary Â· conjectured expression of documented term
-- cites: glossary-master-v4 Â§ ### The 62-Lap Theorem
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### The 62-Lap Theorem
 
 ```lex
 LEX Sixty Two Lap Theorem.
@@ -1903,10 +1906,10 @@ The Witness may, if Laps Complete is declared: return the remainder of the escro
 
 Notes: irreducible presence carried as the witness-gated return of the remainder (the return fires only after Laps Complete is declared); the adversary reconstruction claim drains only part; conservation = claim plus retained remainder exhaust the escrowed traversal mass. Omits the lap count and the derivation. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.
 
-## LEXPVM-T-194 Â· Moving Ceiling R(t) and Shelf Life t*
+## LEXPVM-T-194 · Moving Ceiling R(t) and Shelf Life t*
 - census: LEXPVM-T-194
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### 25.2 Moving Ceiling R(t) and Shelf Life t*
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### 25.2 Moving Ceiling R(t) and Shelf Life t*
 
 ```lex
 LEX Moving Ceiling.
@@ -1941,10 +1944,10 @@ The Adversary may, if this Guarantee is Expired: register a Full Reconstruction.
 
 Notes: Carries the moving-ceiling asymmetry as temporal clause structure: the Total Uncertainty is fixed once in the recital (time-independent), while the Adversary Capacity becomes fixable only through the attested time predicate (Proof Time lies at least 30 days in the past), so capacity grows with elapsed time and the protected entropy does not; reconstruction is reachable only through the Expired defined-predicate gate, and the pre-expiry impossibility is clause absence. Omits the continuous R(t) function and the true shelf-life constant; the 30-day literal is a stand-in, since hour and day counts are the subset's only numbers. Term name truncated here per hard constraint; the keystone should carry the cites anchor verbatim from CENSUS.json. Folded from quantity-gate-charter (canon-forward, run lexr2).
 
-## LEXPVM-T-200 Â· Parity Cube Â· Octahedral Gap
+## LEXPVM-T-200 · Parity Cube · Octahedral Gap
 - census: LEXPVM-T-200
-- register: glossary Â· conjectured expression of conjectured term
-- cites: glossary-master-v4 Â§ ### 25.8 Parity Cube Â· Octahedral Gap
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### 25.8 Parity Cube · Octahedral Gap
 
 ```lex
 LEX Parity Cube and Octahedral Gap.
@@ -1978,10 +1981,10 @@ The Gap may, if Dual Read is declared: return the remainder of the escrow to the
 
 Notes: conservation = parity cover plus octahedral cover plus the open remainder exhaust the escrowed lattice volume, the octahedral gap being the remainder itself, held by the Gap; ordering = each cover is drawn only after its reading stands declared; impossibility as absence (no clause lets either geometer take the remainder, the gap stays open at candidate strength). Omits the lattice cardinality and the cube-of-cubes decomposition. Assayer-authored (escrow-conservation-charter held-out, recipe-only).
 
-## LEXPVM-T-201 Â· Regime 1 Â· ðŸª¢ Presence Mana
+## LEXPVM-T-201 · Regime 1 · 🪢 Presence Mana
 - census: LEXPVM-T-201
-- register: glossary Â· conjectured expression of specified term
-- cites: glossary-master-v4 Â§ ### 25.9 Regime 1 Â· ðŸª¢ Presence Mana
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### 25.9 Regime 1 · 🪢 Presence Mana
 
 ```lex
 LEX Presence Mana Regime One.

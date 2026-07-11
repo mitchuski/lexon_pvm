@@ -1,0 +1,168 @@
+{
+ "census": "LEXPVM-T-026",
+ "term": "Error Floor (P_e)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Error Floor (P_e)",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Error Floor.\n\n\"First Person\" is a person.\n\"Adversary\" is a person.\n\"Gap\" is a person.\n\"State Entropy\" is an amount.\n\"Disclosed Portion\" is an amount.\n\"Reconstruction Error\" is a binary.\n\"Channels Drained\" is a binary.\n\nThe First Person pays the State Entropy into escrow, appoints the Adversary, appoints the Gap, and fixes the Disclosed Portion.\n\nCLAUSE: Drain.\nThe Adversary may pay from escrow the Disclosed Portion to themselves.\n\nCLAUSE: Mark Drained.\nThe Adversary may declare Channels Drained.\n\nCLAUSE: Keep Floor.\nThe Gap may, if Channels Drained is declared: return the remainder of the escrow to the First Person.\n\nCLAUSE: Concede Error.\nThe Adversary must, if Channels Drained is declared: declare Reconstruction Error.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "State Entropy",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Adversary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Gap",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Disclosed Portion",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Adversary",
+   "verb": "pay",
+   "o": "Disclosed Portion",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Drain"
+  },
+  {
+   "s": "Adversary",
+   "verb": "declare",
+   "o": "Channels Drained",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark Drained"
+  },
+  {
+   "s": "Gap",
+   "verb": "return",
+   "o": "escrow-remainder",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "Channels Drained is declared",
+   "clause": "Keep Floor"
+  },
+  {
+   "s": "Adversary",
+   "verb": "declare",
+   "o": "Reconstruction Error",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": "Channels Drained is declared",
+   "clause": "Concede Error"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "pay:State Entropy",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Adversary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Gap",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Disclosed Portion",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Disclosed Portion->themselves",
+   "conditional": false,
+   "clause": "Drain"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Channels Drained",
+   "conditional": false,
+   "clause": "Mark Drained"
+  },
+  {
+   "promiser": "Gap",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:escrow-remainder->First Person",
+   "conditional": true,
+   "clause": "Keep Floor"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "declare:Reconstruction Error",
+   "conditional": true,
+   "clause": "Concede Error"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "Structural: the floor as an unavoidable consequence (Concede Error is a must clause gated on Channels Drained, so once draining is complete the error declaration is obligatory rather than optional) and conservation (the Gap returns the undisclosed remainder to the First Person, and no clause pays it to the Adversary, which is what forces the error). Omits the inequality P_e is at least 1 minus R_max as a number. Anchor: ### Error Floor (P_e). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

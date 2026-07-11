@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-001",
+ "term": "First Person",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### First Person",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX First Person.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Mage\" is a person.\r\n\"Delegation\" is a text.\r\n\"Revoked\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, and appoints the Mage.\r\n\r\nCLAUSE: Delegate.\r\nThe First Person may register a Delegation.\r\n\r\nCLAUSE: Revoke.\r\nThe First Person may declare Revoked.\r\n\r\nCLAUSE: Close.\r\nThe First Person may, if Revoked is declared, terminate this contract.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Delegation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Delegate"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Revoked",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Revoke"
+  },
+  {
+   "s": "First Person",
+   "verb": "terminate",
+   "o": "this-contract",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Revoked is declared",
+   "clause": "Close"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Delegation",
+   "conditional": false,
+   "clause": "Delegate"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Revoked",
+   "conditional": false,
+   "clause": "Revoke"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:this-contract",
+   "conditional": true,
+   "clause": "Close"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries the principal-behind-all-delegation property (only the First Person appoints, delegates, revokes, closes: the non-delegable door as clause structure); omits dignity and 7th-capital framing.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -43,6 +43,10 @@ export default {
       lens: 'canon-forward',
       hint: 'Start from an uncovered canon concept cluster in artifact/CENSUS.json (e.g. the promise-theory primitives, VRC/ceremony terms, the trust tiers). Read the canon definition at the census anchor (agentprivacy-docs paths in SOURCES.md), decompose it to subject-predicate-object relations with promise-typed edges, then find the SMALLEST existing-subset Lexon phrasing that carries the relation. Fidelity first: what the expression deliberately omits goes in the entry Notes line. Only flag a new production when no existing pattern can carry the meaning, and say why.',
     },
+    {
+      lens: 'spell-grammar',
+      hint: 'The operator result this lens serves: lexon your own dual agents. Start from the harness structures you booted on (the seat cards in the skeleton root seats/, TRUSTS.md T1-T6, GROUND_RULES.md GR-1..10, the 6-phase loop) and read artifact/SPELL_GRAMMAR.md (the stub states the design intuition: a seat card or skill trigger IS a promise bundle). Target uncovered census terms whose content is AGENT BEHAVIOR: roles, seats, delegation, ceremonies, trust boundaries, keys/doors, agentic mana and VRC terms. Express each as a Lexon SPELL: a contract whose clauses are the promise bundle the role carries (may = offered capability, must = binding duty, condition = trust gate, absence = what the role can never do, claimed as a relation). Entries land in the pinned LEXICON format with relation claims like every other lens. ADDITIONALLY return proposedSpellGrammar (a string): the authoring conventions your entries exhibit, distilled as candidate text for artifact/SPELL_GRAMMAR.md; proposed text only, the keystone folds it (GR-10), never write artifact/ yourself.',
+    },
   ],
 
   prompts: {
@@ -110,7 +114,7 @@ Classify each closed lever structural / probe-limited / noise. Red-team the prop
             properties: {
               leverId: { type: 'string', description: 'short kebab id, e.g. role-charter-family' },
               title: { type: 'string' },
-              lens: { type: 'string', enum: ['grammar-forward', 'canon-forward'] },
+              lens: { type: 'string', enum: ['grammar-forward', 'canon-forward', 'spell-grammar'] },
               rationale: { type: 'string' },
               expectedMetric: { type: 'number', description: 'coverage-debt if folded' },
               hardConstraintNote: { type: 'string' },
@@ -130,6 +134,7 @@ Classify each closed lever structural / probe-limited / noise. Red-team the prop
                 },
               },
               killedLeverCitations: { type: 'array', items: { type: 'string' } },
+              proposedSpellGrammar: { type: 'string', description: 'spell-grammar lens only: candidate authoring conventions for artifact/SPELL_GRAMMAR.md, keystone-folded (GR-10)' },
             },
           },
         },

@@ -1,0 +1,114 @@
+{
+ "census": "LEXPVM-T-122",
+ "term": "Stratum",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Stratum",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Stratum.\r\n\r\n\"Keeper\" is a person.\r\n\"Agent\" is a person.\r\n\"Placement\" is this contract.\r\n\"Sovereignty Address\" is a data.\r\n\"Stratum Level\" is an amount.\r\n\"Weight Counted\" is a binary.\r\n\r\nThe Keeper appoints the Agent, and fixes the Sovereignty Address.\r\n\r\nCLAUSE: Count Weight.\r\nThe Keeper may declare Weight Counted.\r\n\r\nCLAUSE: Set Level.\r\nThe Keeper may fix the Stratum Level.\r\n\r\nCLAUSE: Placed.\r\n\"Placed\" is defined as: the Sovereignty Address is fixed and Weight Counted is declared and the Stratum Level is fixed.\r\n\r\nCLAUSE: Certify Placement.\r\nThe Keeper may, if this Placement is Placed: certify the Stratum Level.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Sovereignty Address",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Weight Counted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Count Weight"
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Stratum Level",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Set Level"
+  },
+  {
+   "s": "Keeper",
+   "verb": "certify",
+   "o": "Stratum Level",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Placement is Placed",
+   "clause": "Certify Placement"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Sovereignty Address",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Weight Counted",
+   "conditional": false,
+   "clause": "Count Weight"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Stratum Level",
+   "conditional": false,
+   "clause": "Set Level"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Stratum Level",
+   "conditional": true,
+   "clause": "Certify Placement"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "placement relation: stratum certification requires address fixed, weight counted, and level fixed together (Placed defined-as conjunction); omits the popcount weight formula.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

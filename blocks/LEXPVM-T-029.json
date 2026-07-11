@@ -1,0 +1,150 @@
+{
+ "census": "LEXPVM-T-029",
+ "term": "Budget Constraint",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Budget Constraint",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Budget Constraint.\r\n\r\n\"First Person\" is a person.\r\n\"Swordsman\" is a person.\r\n\"Mage\" is a person.\r\n\"Counterparty\" is a person.\r\n\"Constraint\" is this contract.\r\n\"Leakage Budget\" is an amount.\r\n\"Disclosure\" is a text.\r\n\"Budget Spent\" is a binary.\r\n\r\nThe First Person appoints the Swordsman, appoints the Mage, appoints the Counterparty, and fixes the Leakage Budget.\r\n\r\nCLAUSE: Compose.\r\nThe Mage may register a Disclosure.\r\n\r\nCLAUSE: Meter.\r\nThe Swordsman may declare Budget Spent.\r\n\r\nCLAUSE: Within Budget.\r\n\"Within Budget\" is defined as: the Leakage Budget is fixed and Budget Spent is not declared.\r\n\r\nCLAUSE: Release.\r\nThe Mage may, if this Constraint is Within Budget: send the Disclosure to the Counterparty.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Counterparty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Leakage Budget",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "register",
+   "o": "Disclosure",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compose"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Budget Spent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Meter"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Disclosure",
+   "io": "Counterparty",
+   "as": null,
+   "modal": "may",
+   "condition": "this Constraint is Within Budget",
+   "clause": "Release"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Counterparty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Leakage Budget",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Disclosure",
+   "conditional": false,
+   "clause": "Compose"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Budget Spent",
+   "conditional": false,
+   "clause": "Meter"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Disclosure->Counterparty",
+   "conditional": true,
+   "clause": "Release"
+  }
+ ],
+ "relation": null,
+ "grandfathered": true,
+ "notes": "carries the budget as a First-Person-fixed amount, the Swordsman as meter, and the constraint as a defined predicate gating every release by the Mage; omits numeric leakage accounting in bits and gradual depletion, since the subset's only numeric literals are hour and day counts. Anchor: ### Budget Constraint.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}
