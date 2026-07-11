@@ -347,6 +347,10 @@ export function check(src, label = 'input') {
     counts: { definitions: doc.defs.size, clauses: doc.clauses.size, sentences: doc.sentences.length, triples: triples.length, promiseEdges: promises.edges.length },
     errors, roundTripFailures: rt, untypedActions: promises.untyped,
     triples, promiseEdges: promises.edges,
+    // structural views for tools/relation_check.mjs (additive; gate semantics unchanged)
+    defs: Object.fromEntries(doc.defs),
+    clauseNames: [...doc.clauses.keys()],
+    definedAs: doc.definedAs.map(d => ({ name: d.name, body: d.body, clause: d.clause })),
   }
 }
 

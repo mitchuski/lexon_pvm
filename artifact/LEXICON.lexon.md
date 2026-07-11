@@ -31,6 +31,14 @@ ordering, a conjunction, an impossibility), not only what is omitted. An entry
 whose content rides entirely in name strings the checker cannot inspect is
 syntactically legal but does not deserve a fold.
 
+Relation-claim rule (OT-3, adopted 2026-07-11): entries folded from lexr3
+onward also carry a `- relation:` line, a machine-readable claim in the
+grammar of tools/relation_check.mjs (documented in GRAMMAR.ebnf.md), and the
+tool must return RELATION PASS on it: the claim holds as a clause-graph
+property AND its mutated twin (which still passes the base gate) fails it.
+Direction is claimed as an absence (CR-12). Entries folded before this rule
+are grandfathered; coverage.mjs counts them unchanged.
+
 ---
 
 ## LEXPVM-T-001 · First Person

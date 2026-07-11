@@ -1,4 +1,4 @@
-# SPELL_GRAMMAR.md — Lexon-style controlled English for spells and skills
+# SPELL_GRAMMAR.md, Lexon-style controlled English for spells and skills
 
 Authoring conventions for expressing agentic-harness spells and skills
 (dual-agent-harness SPECIALISATION personas, ~/.claude/skills SKILL.md

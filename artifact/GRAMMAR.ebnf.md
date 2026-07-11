@@ -1,4 +1,4 @@
-# GRAMMAR.ebnf.md — the attested Lexon controlled-grammar subset
+# GRAMMAR.ebnf.md, the attested Lexon controlled-grammar subset
 
 This is the subset the spec-checker (`tools/lexon_check.mjs`) enforces, in the
 spec-checker regime (the real compiler is a macOS-only binary; see SOURCES.md
@@ -79,3 +79,36 @@ sections, `"X" is an account/number/1%`, comparative definitions ("greater
 than zero"), hex-literal identity binding, `%` rates. Each is a future
 grammar-expansion lever (checker + this doc + selftest extended together,
 keystone fold).
+
+
+## Relation claims (OT-3, mutation-probe layer)
+
+A LEXICON entry's Notes line names the structural relation the expression
+carries; `tools/relation_check.mjs` makes that claim mechanical. A claim is
+JSON, one relation per claim, verified over parsed triples and defined-as
+bodies (never name strings), and each claim must be DISTINGUISHABLE from its
+minimal structural negation: the tool builds a mutated twin that still passes
+the base gate, and the claim must fail on the twin.
+
+```ebnf
+claim       = gateClaim | orderClaim | conjClaim | absenceClaim ;
+gateClaim   = "{ type: gate, clause: C, condition: B }" ;
+              (* every action in clause C is conditional on binary B;
+                 twin: condition stripped *)
+orderClaim  = "{ type: ordering, clause: C, sequence: [verb:Obj, ...] }" ;
+              (* clause C performs exactly this action order, >= 2 steps;
+                 twin: order reversed *)
+conjClaim   = "{ type: conjunction, predicate: D, conjuncts: [N, ...] }" ;
+              (* defined predicate D requires ALL named conjuncts, >= 2;
+                 twin: first conjunct dropped *)
+absenceClaim= "{ type: absence, to: Role [, what: Amount|escrow-remainder] }" ;
+              (* NO pay/return/send routes the amount to the role;
+                 "themselves" aliases the actor; twin: probe route appended *)
+```
+
+Direction is claimed as an absence: what can NEVER route where. The T-148
+lesson (CR-12) is the reason this layer exists: the base gate validates a
+claim and its inverse under identical clause shapes, so the fortress-falls
+direction lives in `{ type: absence, to: Key Holder, what: Scalar Secret }`,
+not in prose. Regime caveat CR-11 binds here too: relations are clause-graph
+properties under the spec-checker, not executed semantics.
