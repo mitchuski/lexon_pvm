@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-162",
+ "term": "City of Mages",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.1 City of Mages",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX City of Mages.\n\n\"Founder\" is a person.\n\"Mage\" is a person.\n\"Production Shops\" is a text.\n\"Gathering Shops\" is a text.\n\"Charter\" is a text.\n\"Relationship\" is this contract.\n\nThe Founder appoints the Mage, fixes the Production Shops, fixes the Gathering Shops, and fixes the Charter.\n\nCLAUSE: Quarters.\n\"Quarters\" is defined as: the Production Shops is fixed and the Gathering Shops is fixed.\n\nCLAUSE: Trade.\nThe Founder may, if this Relationship is Quarters: send the Charter to the Mage.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Founder",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Founder",
+   "verb": "fix",
+   "o": "Production Shops",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Founder",
+   "verb": "fix",
+   "o": "Gathering Shops",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Founder",
+   "verb": "fix",
+   "o": "Charter",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Founder",
+   "verb": "send",
+   "o": "Charter",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": "this Relationship is Quarters",
+   "clause": "Trade"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Founder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Founder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Production Shops",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Founder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Gathering Shops",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Founder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Charter",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Founder",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Charter->Mage",
+   "conditional": true,
+   "clause": "Trade"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Quarters",
+   "conjuncts": [
+    "Production Shops",
+    "Gathering Shops"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Production Shops\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "the city as a defined conjunction: trade opens only when both production and gathering quarters stand fixed; the charter travels only under Quarters. Omits shop counts and district names. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -2017,3 +2017,870 @@ The Bearer may, if this Regime Fence is Carried As Color: register the Presence 
 
 Notes: regime fence carried as a defined conjunction (presence color fixed and locally present declared) gating the only register; ordering = color and charge are fixable only after Locally Present is declared; impossibility as absence (no clause moves the Mana Charge anywhere: presence mana is non-transferable in regime one). Omits color values and charge magnitude. Assayer-authored (quantity-gate-charter held-out, recipe-only); keystone Notes.
 
+## LEXPVM-T-037 · Verifiable Relationship Credential (VRC)
+- census: LEXPVM-T-037
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Verifiable Relationship Credential (VRC)
+- relation: {"type":"conjunction","predicate":"Credential Earned","conjuncts":["First Compression","Second Compression","Compressions Match"]}
+
+```lex
+LEX Verifiable Relationship Credential.
+
+"First Practitioner" is a person.
+"Second Practitioner" is a person.
+"Relationship" is this contract.
+"Shared Content" is a text.
+"First Compression" is a text.
+"Second Compression" is a text.
+"Credential" is a text.
+"Compressions Match" is a binary.
+
+The First Practitioner registers the Shared Content.
+
+CLAUSE: Compress Apart.
+The First Practitioner may file the First Compression.
+
+CLAUSE: Compress Again.
+The Second Practitioner may file the Second Compression.
+
+CLAUSE: Match.
+The First Practitioner or the Second Practitioner may declare Compressions Match.
+
+CLAUSE: Credential Earned.
+"Credential Earned" is defined as: First Compression is filed and Second Compression is filed and Compressions Match is declared.
+
+CLAUSE: Issue.
+The First Practitioner or the Second Practitioner may, if this Relationship is Credential Earned: register the Credential.
+```
+
+Notes: carries the bilateral formation process as a conjunction: the defined predicate Credential Earned requires both independently filed compressions AND the declared match, and issuance is gated on that predicate with either party able to issue (mutual comprehension without central authority, a bilateral promise bundle). Omits the coordination-efficiency ratio and the proverb compression mechanics. Folded from promise-bundle-spell (spell-grammar, run lexr3).
+
+## LEXPVM-T-038 · Trust Tier
+- census: LEXPVM-T-038
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Trust Tier
+- relation: {"type":"gate","clause":"Exercise","condition":"Tier Advanced"}
+
+```lex
+LEX Trust Tier.
+
+"Participant" is a person.
+"Assessor" is a person.
+"Signal Record" is data.
+"Basic Capability" is a text.
+"Higher Capability" is a text.
+"Tier Advanced" is a binary.
+
+The Assessor appoints the Participant.
+
+CLAUSE: Participate.
+The Participant may register the Basic Capability.
+
+CLAUSE: Accumulate.
+The Participant may file the Signal Record.
+
+CLAUSE: Advance.
+The Assessor may, if Signal Record is filed: declare Tier Advanced.
+
+CLAUSE: Exercise.
+The Participant may, if Tier Advanced is declared: register the Higher Capability.
+```
+
+Notes: carries progressive capability as a two-stage gate: the Higher Capability's only route is the Exercise clause conditional on the Assessor's Tier Advanced declaration, itself gated on the Participant's filed Signal Record (tiers as accumulated positive assessments, advancement declared by the assessing side never by the gated side). Omits the four named tiers, signal counts, and trust ranges, since numeric literals are out of subset. Folded from promise-bundle-spell (spell-grammar, run lexr3).
+
+## LEXPVM-T-039 · Guardian
+- census: LEXPVM-T-039
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Guardian
+- relation: {"type":"absence","to":"Guardian","what":"Stake"}
+
+```lex
+LEX Guardian Charter.
+
+"Guardian" is a person.
+"City" is a person.
+"Stake" is an amount.
+"Validation" is a text.
+"Dragon Tier Held" is a binary.
+"Integrity Breach" is a binary.
+
+The City appoints the Guardian.
+
+CLAUSE: Qualify.
+The City may declare Dragon Tier Held.
+
+CLAUSE: Commit Stake.
+The Guardian may, if Dragon Tier Held is declared: pay the Stake into escrow.
+
+CLAUSE: Validate.
+The Guardian must file the Validation.
+
+CLAUSE: Slash.
+The City may, if Integrity Breach is declared: pay from escrow the Stake to themselves.
+```
+
+Notes: carries the stake's irreversibility as an impossibility by absence: no transfer clause routes the Stake back to the Guardian, so the valency commitment cannot be reclaimed from the guardian's side; staking is gated on the City's Dragon Tier declaration and validation is a binding duty (must, not may). Direction is load-bearing: slashing routes the escrowed Stake to the City on a declared breach, never back. Omits the stake denomination and the signal threshold, and the source section is WIP status so the register stays documented. Folded from promise-bundle-spell (spell-grammar, run lexr3).
+
+## LEXPVM-T-041 · Signal
+- census: LEXPVM-T-041
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Signal
+- relation: {"type":"ordering","clause":"Post Signal","sequence":["register:Comprehension Proof","pay:Signal Fee"]}
+
+```lex
+LEX Signal.
+
+"Practitioner" is a person.
+"Network" is a person.
+"Signal Fee" is an amount.
+"Comprehension Proof" is a text.
+"Ceremony Complete" is a binary.
+
+The Practitioner appoints the Network, and fixes the Signal Fee.
+
+CLAUSE: Complete Ceremony.
+The Practitioner may declare Ceremony Complete.
+
+CLAUSE: Post Signal.
+The Practitioner may, if Ceremony Complete is declared: register a Comprehension Proof, and afterwards pay the Signal Fee into escrow.
+
+CLAUSE: Receive.
+The Network may, if Ceremony Complete is declared: certify the Comprehension Proof.
+```
+
+Notes: Structural: ordering (within Post Signal the Comprehension Proof registers before the Signal Fee is escrowed, assessment before stake, the skin-in-the-game direction) under a gate (every signal clause is conditional on Ceremony Complete, carrying the one-time-genesis-before-recurring-signal contrast the glossary states against Ceremony). Omits the ZEC fee constant and the transparent/shielded split ratio, which the subset cannot carry as literals. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t041_signal.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).
+
+## LEXPVM-T-044 · Moon Ceremony (🌙)
+- census: LEXPVM-T-044
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Moon Ceremony (🌙)
+- relation: {"type":"conjunction","predicate":"Converged","conjuncts":["First Trace","Second Trace"]}
+
+```lex
+LEX Moon Ceremony.
+
+"First Practitioner" is a person.
+"Second Practitioner" is a person.
+"Swordsman" is a person.
+"Ceremony" is this contract.
+"Poem" is a text.
+"Blade Proof" is a text.
+"First Trace" is a binary.
+"Second Trace" is a binary.
+
+The First Practitioner appoints the Second Practitioner, appoints the Swordsman, and fixes the Poem.
+
+CLAUSE: Trace First.
+The First Practitioner may declare First Trace.
+
+CLAUSE: Trace Second.
+The Second Practitioner may declare Second Trace.
+
+CLAUSE: Converged.
+"Converged" is defined as: First Trace is declared and Second Trace is declared.
+
+CLAUSE: Draw Edge.
+The Swordsman may, if this Ceremony is Converged: certify the Blade Proof.
+```
+
+Notes: Structural: conjunction (Converged requires both trace declarations, and each is declarable only by its own practitioner, the autonomy partition of independent tracing) gating the single certify of the Blade Proof; the Draw Edge clause is held by the Swordsman alone (the Swordsman decides whether the edge is worth drawing) and by neither practitioner, so the blade belongs to no tracer as clause topology. Omits the rhythm/rhyme role split and the gap-ownership formalism. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t044_moon_ceremony.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).
+
+## LEXPVM-T-045 · The Circuit (Ceremonial Propagation)
+- census: LEXPVM-T-045
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### The Circuit (Ceremonial Propagation)
+- relation: {"type":"gate","clause":"Begin Again","condition":"Origin Forgotten"}
+
+```lex
+LEX The Circuit.
+
+"Sun" is a person.
+"Witness" is a person.
+"New Sun" is a person.
+"Light" is a text.
+"Sun Time" is a time.
+"Light Carried" is a binary.
+"Origin Forgotten" is a binary.
+
+The Sun appoints the Witness, appoints the New Sun, and fixes the Light.
+
+CLAUSE: Shine.
+The Sun may send the Light to the Witness, and afterwards fix the Sun Time as the current time.
+
+CLAUSE: Carry.
+The Witness may, if the Sun Time is fixed, declare Light Carried.
+
+CLAUSE: Forget.
+The Witness may, if Light Carried is declared, declare Origin Forgotten.
+
+CLAUSE: Begin Again.
+The Witness may, if Origin Forgotten is declared: send the Light to the New Sun.
+```
+
+Notes: Structural: gate cascade as orbital ordering (the Light is sent and afterwards the Sun Time is marked; carrying is conditional on the time being fixed; forgetting is conditional on carrying; and the onward send to the New Sun is conditional on Origin Forgotten): the circuit propagates through forgetting, not instruction, as reachability structure, with the claimed gate on the re-seeding step. Omits the sun/moon ceremony pairing detail and the property that the new practitioner believes they invented it. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t045_the_circuit.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).
+
+## LEXPVM-T-133 · Evoke Ceremony
+- census: LEXPVM-T-133
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Evoke Ceremony
+- relation: {"type":"ordering","clause":"Evoke","sequence":["register:Constellation","certify:Circuit","register:Cast","file:Trace","declare:Ceremony Complete","register:Blade Proof"]}
+
+```lex
+LEX Evoke Ceremony.
+
+"Practitioner" is a person.
+"Constellation" is a text.
+"Circuit" is a text.
+"Cast" is a text.
+"Trace" is data.
+"Blade Proof" is data.
+"Ceremony Complete" is a binary.
+
+CLAUSE: Evoke.
+The Practitioner may register the Constellation, and afterwards certify the Circuit, and afterwards register the Cast, and afterwards file the Trace, and afterwards declare Ceremony Complete, and afterwards register the Blade Proof.
+```
+
+Notes: carries the ceremony's canonical phase order as an ordering: the single Evoke clause performs Constellation, Circuit, Cast, Trace, Complete, Proof in exactly the attested sequence under one officiant, and the blade proof is generated last (proof follows tracing, never precedes it). Omits wandering-orb physics and knowledge-graph traversal detail. Folded from promise-bundle-spell (spell-grammar, run lexr3).
+
+## LEXPVM-T-139 · Inscription Reinforcement
+- census: LEXPVM-T-139
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Inscription Reinforcement
+- relation: {"type":"gate","clause":"Decay","condition":"Decay Period"}
+
+```lex
+LEX Inscription Reinforcement.
+
+"Curator" is a person.
+"Keeper" is a person.
+"Inscription" is this contract.
+"Community Mark" is a text.
+"Reinforcement Time" is a time.
+"Mana Spent" is a binary.
+
+The Keeper appoints the Curator, and fixes the Community Mark.
+
+CLAUSE: Spend Mana.
+The Curator may declare Mana Spent.
+
+CLAUSE: Reinforce.
+The Curator may, if Mana Spent is declared, fix the Reinforcement Time as the current time.
+
+CLAUSE: Decay Period.
+"Decay Period" is defined as 30 days after the Reinforcement Time.
+
+CLAUSE: Decay.
+The Keeper may, if the Decay Period has passed, terminate this Inscription.
+```
+
+Notes: Structural: gate (the Decay clause's terminate is reachable only once the defined Decay Period, 30 days after the Reinforcement Time, has passed) with an upstream gate (re-marking the Reinforcement Time is conditional on Mana Spent, so reinforcement costs mana and holds decay off). Omits the 0.5 mana price and reset arithmetic; the 30-day literal is the attested number form (days-after period and has-passed condition per lexon-example-statement). Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t139_inscription_reinforcement.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).
+
+## LEXPVM-T-153 · Amnesia Protocol
+- census: LEXPVM-T-153
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Amnesia Protocol
+- relation: {"type":"gate","clause":"Serve","condition":"Forgotten"}
+
+```lex
+LEX Amnesia Protocol.
+
+"Principal" is a person.
+"Emissary" is a person.
+"Protocol" is this contract.
+"Service" is a text.
+"Derivation Time" is a time.
+"Service Verified" is a binary.
+
+The Principal appoints the Emissary, and fixes the Service.
+
+CLAUSE: Mark Derivation.
+The Principal may fix the Derivation Time as the current time.
+
+CLAUSE: Forgotten.
+"Forgotten" is defined as: the Derivation Time lies at least 24 hours in the past.
+
+CLAUSE: Serve.
+The Emissary may, if this Protocol is Forgotten: send the Service to the Principal.
+
+CLAUSE: Verify Service.
+The Principal may, if this Protocol is Forgotten: declare Service Verified.
+```
+
+Notes: Structural: gate (both the Emissary's send of the Service and the Principal's verification declaration are conditional on the defined predicate Forgotten, which holds only when the Derivation Time lies at least 24 hours in the past): service and its verification become reachable only after the origin has aged out, forgetting as the protocol itself, verify-without-remembering as clause topology. Omits the zero-knowledge primitive formalism and the Theia cosmology; the 24-hour literal is a stand-in shelf constant (lies-at-least predicate per lexon-example-license). Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t153_amnesia_protocol.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).
+
+## LEXPVM-T-159 · Spellbook Close
+- census: LEXPVM-T-159
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Spellbook Close
+- relation: {"type":"conjunction","predicate":"Closed","conjuncts":["Arc Complete","Close Time"]}
+
+```lex
+LEX Spellbook Close.
+
+"First Person" is a person.
+"Scribe" is a person.
+"Spellbook" is this contract.
+"Continuation Act" is a text.
+"Close Time" is a time.
+"Arc Complete" is a binary.
+
+The First Person appoints the Scribe, and fixes the Continuation Act.
+
+CLAUSE: Answer Arc.
+The First Person may declare Arc Complete.
+
+CLAUSE: Mark Tide.
+The Scribe may, if Arc Complete is declared, fix the Close Time as the current time.
+
+CLAUSE: Closed.
+"Closed" is defined as: Arc Complete is declared and the Close Time is fixed.
+
+CLAUSE: Continue Elsewhere.
+The Scribe may, if this Spellbook is Closed: register a Continuation Act.
+```
+
+Notes: Structural: conjunction (Closed requires the arc answered AND the close time marked, both together) gating the only register of a Continuation Act, so continuation is reachable only through closure, a tide not a lock as clause topology; upstream ordering (the tide mark is itself conditional on Arc Complete, answered-before-closed). Omits the five-spellbook taxonomy, the HOW/WHEN/WHY/WHERE act taxonomy, and the salt-inscription imagery. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t159_spellbook_close.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).
+
+## LEXPVM-T-204 · Agent
+- census: LEXPVM-T-204
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"absence","to":"Neighbor","what":"Assessment"}
+
+```lex
+LEX Promise Agent.
+
+"Agent" is a person.
+"Neighbor" is a person.
+"Own Conduct" is a text.
+"Peer Conduct" is a text.
+"Assessment" is an amount.
+
+The Agent fixes the Own Conduct.
+The Neighbor fixes the Peer Conduct.
+
+CLAUSE: Promise Own Conduct.
+The Agent may send the Own Conduct to the Neighbor.
+
+CLAUSE: Assess.
+The Agent may fix the Assessment, and afterwards certify the Assessment.
+```
+
+Notes: Structural: independent assessment as impossibility (no transfer clause routes the Assessment to the Neighbor: an agent's assessment is local and never transfers, so trust is not transitive), plus the Autonomy Axiom in recital shape (each person fixes only its own conduct, and the only promise route to the Neighbor carries the Agent's Own Conduct). Omits: the assessment function alpha(pi) semantics and multi-neighbor topology; modeled minimally with one neighbor. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-205 · µ-promise: A --b--> B
+- census: LEXPVM-T-205
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"absence","to":"Promiser","what":"Promised Benefit"}
+
+```lex
+LEX Micro Promise.
+
+"Promiser" is a person.
+"Promisee" is a person.
+"Body" is a text.
+"Promised Benefit" is an amount.
+
+The Promiser appoints the Promisee, fixes the Body, and fixes the Promised Benefit.
+
+CLAUSE: Give.
+The Promiser may send the Body to the Promisee.
+
+CLAUSE: Keep.
+The Promiser may pay the Promised Benefit to the Promisee.
+```
+
+Notes: Structural: directionality as impossibility (the promised benefit routes only from promiser to promisee; no transfer clause routes the Promised Benefit back to the Promiser, so the edge A --b--> B is unilateral commitment, not exchange), and voluntariness as modal may on both edges. Omits: the promise body typing (tau, chi) and the promisee's acceptance, which is the minus pole carried by T-211. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-206 · Conditional Promise (b\
+- census: LEXPVM-T-206
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"gate","clause":"Keep","condition":"Condition Met"}
+
+```lex
+LEX Conditional Promise.
+
+"Promiser" is a person.
+"Promisee" is a person.
+"Body" is a text.
+"Condition Met" is a binary.
+
+The Promiser appoints the Promisee, and fixes the Body.
+
+CLAUSE: Observe.
+The Promiser may declare Condition Met.
+
+CLAUSE: Keep.
+The Promiser may, if Condition Met is declared, send the Body to the Promisee.
+```
+
+Notes: Structural: contingency as gate (the Body moves to the Promisee only through the declared Condition Met; strip the gate and the text collapses to an unconditional micro promise, which is exactly the mutation twin), and the condition is observed by the promiser itself (Observe clause: assessment of c is also autonomous). Omits: the mapped conditional-independence reading (Swordsman and Mage independent given X) and any probability semantics. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-208 · Invitation
+- census: LEXPVM-T-208
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"conjunction","predicate":"Standing","conjuncts":["Terms","Acceptance"]}
+
+```lex
+LEX Invitation.
+
+"First Party" is a person.
+"Second Party" is a person.
+"Terms" is a text.
+"Acceptance" is a binary.
+"Proposal" is a text.
+"Relationship" is this contract.
+
+The First Party appoints the Second Party, fixes the Terms, and fixes the Proposal.
+
+CLAUSE: Proffer.
+The First Party may send the Terms to the Second Party.
+
+CLAUSE: Accept.
+The Second Party may declare Acceptance.
+
+CLAUSE: Standing.
+"Standing" is defined as: the Terms is fixed and Acceptance is declared.
+
+CLAUSE: Propose.
+The First Party may, if this Relationship is Standing: send the Proposal to the Second Party.
+```
+
+Notes: Structural: invitation as conjunction (the defined predicate Standing requires BOTH proffered Terms fixed AND declared Acceptance; drop either conjunct and the proposal loses its warrant, the mutation twin drops Terms and models consent without proffered terms), plus the ordering it induces (Propose is gated on Standing, so the acceptance relationship strictly precedes any specific proposal, the canon's own definition of invitation). Omits: MyTerms agreement-taxonomy content and renegotiation of terms. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-209 · Imposition/Attack
+- census: LEXPVM-T-209
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"absence","to":"Imposer","what":"Data Value"}
+
+```lex
+LEX Imposition.
+
+"Imposer" is a person.
+"Target" is a person.
+"Swordsman" is a person.
+"Unsolicited Proposal" is a text.
+"Acceptance" is a binary.
+"Data Value" is an amount.
+"Refused" is a binary.
+
+The Imposer fixes the Unsolicited Proposal.
+The Target appoints the Swordsman, and fixes the Data Value.
+
+CLAUSE: Impose.
+The Imposer may send the Unsolicited Proposal to the Target.
+
+CLAUSE: Guard.
+The Swordsman may, if Acceptance is not declared, declare Refused.
+```
+
+Notes: Structural: attack as ungated send (the Impose clause carries no acceptance condition, the deliberate structural contrast with Invitation's Standing-gated Propose), refusal gated on non-acceptance (Guard fires only while Acceptance is not declared), and extraction as impossibility (no transfer clause routes the Target's Data Value to the Imposer: the text grants imposition no economy, surveillance extraction never succeeds by this contract). Omits: dark-pattern taxonomy and post-hoc consent rationalization. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-210 · (+) Give Promise
+- census: LEXPVM-T-210
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"ordering","clause":"Give","sequence":["fix:Protection Offer","send:Protection Offer"]}
+
+```lex
+LEX Give Promise.
+
+"Swordsman" is a person.
+"First Person" is a person.
+"Protection Offer" is a text.
+
+The Swordsman appoints the First Person.
+
+CLAUSE: Give.
+The Swordsman may fix the Protection Offer, and afterwards send the Protection Offer to the First Person.
+```
+
+Notes: Structural: outbound polarity as ordering (in Give the Swordsman first fixes the Protection Offer and afterwards sends it: commitment precedes emission, one cannot give an unbound offer; the reversed order is exactly the mutation twin), and the plus pole as the actor being the promiser (the offer originates with the Swordsman and flows outward to the First Person). Omits: the promisee's use/acceptance (the minus pole, T-211) and the protection content itself. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-211 · (-) Use/Accept Promise
+- census: LEXPVM-T-211
+- register: pt-mapping · conjectured expression of canonical mapping
+- cites: promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings
+- relation: {"type":"gate","clause":"Use","condition":"Delegation Given"}
+
+```lex
+LEX Accept Promise.
+
+"First Person" is a person.
+"Mage" is a person.
+"Delegation" is a text.
+"Delegation Given" is a binary.
+"Accepted Task" is a text.
+
+The First Person appoints the Mage, and fixes the Delegation.
+
+CLAUSE: Offer.
+The First Person may declare Delegation Given.
+
+CLAUSE: Use.
+The Mage may, if Delegation Given is declared, register the Accepted Task.
+```
+
+Notes: Structural: inbound polarity as gate (Use fires only if Delegation Given is declared: acceptance can never precede the give, a minus-polarity promise consumes an existing plus-polarity offer; the ungated twin is a self-authorized delegate, exactly what inbound authorization forbids). Omits: scope negotiation and the assessment of whether the accepted delegation is kept. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).
+
+## LEXPVM-T-027 · Selene's Proof
+- census: LEXPVM-T-027
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Selene's Proof
+- relation: {"type":"gate","clause":"Verify","condition":"Amnesiac"}
+
+```lex
+LEX Selene's Proof.
+
+"Moon" is a person.
+"Verifier" is a person.
+"Proof" is this contract.
+"Tide Mark" is a text.
+"Impact Time" is a time.
+"Orbit Held" is a binary.
+
+The Moon appoints the Verifier, and fixes the Tide Mark.
+
+CLAUSE: Impact.
+The Moon may fix the Impact Time as the current time.
+
+CLAUSE: Hold Orbit.
+The Moon may, if the Impact Time is fixed, declare Orbit Held.
+
+CLAUSE: Amnesiac.
+"Amnesiac" is defined as: the Impact Time lies at least 24 hours in the past.
+
+CLAUSE: Verify.
+The Verifier may, if this Proof is Amnesiac: certify the Tide Mark.
+```
+
+Notes: the aging law as a defined temporal predicate (Amnesiac = the impact time lies at least 24 hours in the past) gating the only certify; ordering = orbit holds only after the impact time is fixed. Omits the proof arithmetic and the moon-lore framing. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-034 · Trusted Execution Environment (TEE)
+- census: LEXPVM-T-034
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Trusted Execution Environment (TEE)
+- relation: {"type":"gate","clause":"Process","condition":"Attestation Verified"}
+
+```lex
+LEX Trusted Execution Environment.
+
+"Operator" is a person.
+"Enclave" is a person.
+"Verifier" is a person.
+"Workload" is data.
+"Measurement" is data.
+"Result" is a text.
+"Attestation Verified" is a binary.
+
+The Operator appoints the Enclave.
+
+CLAUSE: Seal.
+The Operator may file the Workload.
+
+CLAUSE: Measure.
+The Enclave may file the Measurement.
+
+CLAUSE: Attest.
+The Verifier may, if Measurement is filed: declare Attestation Verified.
+
+CLAUSE: Process.
+The Enclave may, if Attestation Verified is declared: certify the Result.
+```
+
+Notes: processing gated on verified attestation: the promise bundle grants processing capability only after the attestation stands verified by the counterparty role. Omits the attestation format. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-057 · ERC-7812
+- census: LEXPVM-T-057
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### ERC-7812
+- relation: {"type":"absence","to":"Verifier","what":"Identity"}
+
+```lex
+LEX ERC Identity Commitment.
+
+"Prover" is a person.
+"Verifier" is a person.
+"Identity" is an amount.
+"Identity Proof" is a text.
+
+The Prover appoints the Verifier, and fixes the Identity.
+
+CLAUSE: Prove.
+The Prover may fix the Identity Proof, and afterwards send the Identity Proof to the Verifier.
+```
+
+Notes: zero-knowledge shape as an absence: the proof travels to the verifier, the identity itself has no route anywhere (impossibility as the missing clause); ordering = fix the proof, afterwards send it. Omits the ERC mechanics and commitment scheme. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-058 · Agent (IEEE 7012)
+- census: LEXPVM-T-058
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Agent (IEEE 7012)
+- relation: {"type":"gate","clause":"Present","condition":"Mandate Time"}
+
+```lex
+LEX Agent.
+
+"Principal" is a person.
+"Agent" is a person.
+"Entity" is a person.
+"Proposed Terms" is a text.
+"Mandate Time" is a time.
+"Mandate Given" is a binary.
+
+The Principal appoints the Agent, appoints the Entity, and fixes the Proposed Terms.
+
+CLAUSE: Authorize.
+The Principal may declare Mandate Given.
+
+CLAUSE: Mark Mandate.
+The Agent may, if Mandate Given is declared, fix the Mandate Time as the current time.
+
+CLAUSE: Present.
+The Agent may, if the Mandate Time is fixed: send the Proposed Terms to the Entity.
+```
+
+Notes: agency as a phase law: the agent presents terms only after the mandate time is fixed, and the mandate time is fixable only after Mandate Given stands declared (delegation before action, as clause ordering). Omits the IEEE 7012 role taxonomy. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-065 · DPV (Data Privacy Vocabulary)
+- census: LEXPVM-T-065
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### DPV (Data Privacy Vocabulary)
+- relation: {"type":"gate","clause":"Express Agreement","condition":"Description Conformant"}
+
+```lex
+LEX Data Privacy Vocabulary.
+
+"Standards Body" is a person.
+"Processor" is a person.
+"Reviewer" is a person.
+"Vocabulary" is a text.
+"Processing Description" is a text.
+"Agreement" is a text.
+"Description Conformant" is a binary.
+
+The Standards Body registers the Vocabulary.
+
+CLAUSE: Describe.
+The Processor may file the Processing Description.
+
+CLAUSE: Review.
+The Reviewer may, if Processing Description is filed: declare Description Conformant.
+
+CLAUSE: Express Agreement.
+The Processor may, if Description Conformant is declared: register the Agreement.
+```
+
+Notes: agreement expressible only under a conformant description: the express-agreement clause is gated on declared conformance, consent-follows-description as clause order. Omits the description schema. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-067 · Agreement Taxonomy (IEEE 7012)
+- census: LEXPVM-T-067
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Agreement Taxonomy (IEEE 7012)
+- relation: {"type":"gate","clause":"Escalate","condition":"Selection Time"}
+
+```lex
+LEX Agreement Taxonomy.
+
+"Principal" is a person.
+"Entity" is a person.
+"Base Agreement" is a text.
+"Escalation" is a text.
+"Selection Time" is a time.
+"Base Chosen" is a binary.
+
+The Principal appoints the Entity, and fixes the Base Agreement.
+
+CLAUSE: Choose Base.
+The Principal may declare Base Chosen.
+
+CLAUSE: Mark Selection.
+The Principal may, if Base Chosen is declared, fix the Selection Time as the current time.
+
+CLAUSE: Offer Base.
+The Principal may, if the Selection Time is fixed: send the Base Agreement to the Entity.
+
+CLAUSE: Escalate.
+The Principal may, if the Selection Time is fixed: register an Escalation.
+```
+
+Notes: the taxonomy as a selection gate: both offering the base agreement and registering an escalation are reachable only after the selection time is fixed; base-before-escalation carried as shared gating on one declared choice. Omits the agreement-type enumeration. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-080 · The Keeper
+- census: LEXPVM-T-080
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### The Keeper
+- relation: {"type":"gate","clause":"Witness","condition":"Threshold Passed"}
+
+```lex
+LEX The Keeper.
+
+"Keeper" is a person.
+"Traveler" is a person.
+"Covenant" is a text.
+"Covenant Artifact" is a text.
+"New Artifact" is a text.
+"Witness Record" is a text.
+"Threshold Passed" is a binary.
+
+The Keeper registers the Covenant.
+
+CLAUSE: Preserve.
+The Keeper must file the Covenant Artifact.
+
+CLAUSE: Pass.
+The Traveler may declare Threshold Passed.
+
+CLAUSE: Witness.
+The Keeper may, if Threshold Passed is declared: register the Witness Record.
+
+CLAUSE: Await.
+The Keeper may register the New Artifact.
+```
+
+Notes: keeping as a threshold-gated witness: the keeper witnesses only after the threshold stands passed; the bundle separates holding from attesting. Omits threshold values. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-085 · Infinite Vault
+- census: LEXPVM-T-085
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Infinite Vault
+- relation: {"type":"gate","clause":"Rest","condition":"Warded"}
+
+```lex
+LEX Infinite Vault.
+
+"Archivist" is a person.
+"Bearer" is a person.
+"Vault" is this contract.
+"Artifact" is a text.
+"Warding Time" is a time.
+"Alcove Prepared" is a binary.
+
+The Archivist appoints the Bearer, and fixes the Artifact.
+
+CLAUSE: Prepare Alcove.
+The Archivist may declare Alcove Prepared.
+
+CLAUSE: Ward.
+The Archivist may, if Alcove Prepared is declared, fix the Warding Time as the current time.
+
+CLAUSE: Warded.
+"Warded" is defined as: Alcove Prepared is declared and the Warding Time is fixed.
+
+CLAUSE: Rest.
+The Bearer may, if this Vault is Warded: send the Artifact to the Archivist.
+```
+
+Notes: warding as a defined conjunction (alcove prepared and warding time fixed) gating the artifact coming to rest; the bearer cannot deposit into an unwarded vault. Critic flag carried: this entry and T-086 share one clause skeleton (lexr3.1 template-stamping watch); folded because the gate and claim both hold and the warding content is the term. Omits capacity and retrieval. Assayer-authored (held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-086 · Scrying Glass / Mage Mode
+- census: LEXPVM-T-086
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### Scrying Glass / Mage Mode
+- relation: {"type":"conjunction","predicate":"Selective","conjuncts":["Selection Chosen","Transformation Time"]}
+
+```lex
+LEX Scrying Glass.
+
+"Mage" is a person.
+"Keeper" is a person.
+"Glass" is this contract.
+"Resonance" is a text.
+"Transformation Time" is a time.
+"Selection Chosen" is a binary.
+
+The Mage appoints the Keeper, and fixes the Resonance.
+
+CLAUSE: Choose Selection.
+The Mage may declare Selection Chosen.
+
+CLAUSE: Transform.
+The Mage may, if Selection Chosen is declared, fix the Transformation Time as the current time.
+
+CLAUSE: Selective.
+"Selective" is defined as: Selection Chosen is declared and the Transformation Time is fixed.
+
+CLAUSE: Evoke.
+The Keeper may, if this Glass is Selective: send the Resonance to the Mage.
+```
+
+Notes: selective disclosure as a defined conjunction (selection chosen and transformation time fixed) gating the keeper evoking the resonance back to the mage. Critic flag carried: shares its skeleton with T-085 (template-stamping watch). Omits the scrying optics and mage-mode phases. Assayer-authored (held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-088 · Yggdrasil
+- census: LEXPVM-T-088
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Yggdrasil
+- relation: {"type":"gate","clause":"Collapse","condition":"Measurement Taken"}
+
+```lex
+LEX Yggdrasil.
+
+"Swordsman" is a person.
+"First Person" is a person.
+"Specific Reality" is a text.
+"Measurement Taken" is a binary.
+
+The Swordsman appoints the First Person, and fixes the Specific Reality.
+
+CLAUSE: Measure.
+The Swordsman may declare Measurement Taken.
+
+CLAUSE: Collapse.
+The Swordsman may, if Measurement Taken is declared, send the Specific Reality to the First Person.
+```
+
+Notes: measurement-collapses-possibility carried as a gate: specific reality reaches the First Person only after Measurement Taken stands declared; only the Swordsman holds the measuring declare. Omits the world-tree branching figure. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-162 · City of Mages
+- census: LEXPVM-T-162
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.1 City of Mages
+- relation: {"type":"conjunction","predicate":"Quarters","conjuncts":["Production Shops","Gathering Shops"]}
+
+```lex
+LEX City of Mages.
+
+"Founder" is a person.
+"Mage" is a person.
+"Production Shops" is a text.
+"Gathering Shops" is a text.
+"Charter" is a text.
+"Relationship" is this contract.
+
+The Founder appoints the Mage, fixes the Production Shops, fixes the Gathering Shops, and fixes the Charter.
+
+CLAUSE: Quarters.
+"Quarters" is defined as: the Production Shops is fixed and the Gathering Shops is fixed.
+
+CLAUSE: Trade.
+The Founder may, if this Relationship is Quarters: send the Charter to the Mage.
+```
+
+Notes: the city as a defined conjunction: trade opens only when both production and gathering quarters stand fixed; the charter travels only under Quarters. Omits shop counts and district names. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.
+
+## LEXPVM-T-182 · The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)
+- census: LEXPVM-T-182
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.1 The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)
+- relation: {"type":"ordering","clause":"Recognize","sequence":["register:Higher Seat","certify:Cast Entry"]}
+
+```lex
+LEX The Tower.
+
+"Cast" is a person.
+"Archivist" is a person.
+"Higher Seat" is a text.
+"Cast Entry" is a text.
+
+The Cast appoints the Archivist, and fixes the Cast Entry.
+
+CLAUSE: Recognize.
+The Cast may register the Higher Seat, and afterwards certify the Cast Entry.
+```
+
+Notes: honor-built recognition as ordering: the higher seat is registered first and the cast entry certified afterwards (the entry came later than the inhabiting, as clause sequence). Omits tower geometry. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.
+

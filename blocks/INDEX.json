@@ -1,6 +1,6 @@
 {
  "rule": "node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited",
- "count": 59,
+ "count": 88,
  "blocks": [
   {
    "census": "LEXPVM-T-001",
@@ -414,6 +414,209 @@
    "triples": 6,
    "relation": null,
    "grandfathered": true
+  },
+  {
+   "census": "LEXPVM-T-037",
+   "term": "Verifiable Relationship Credential (VRC)",
+   "triples": 7,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-038",
+   "term": "Trust Tier",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-039",
+   "term": "Guardian",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-041",
+   "term": "Signal",
+   "triples": 6,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-044",
+   "term": "Moon Ceremony (🌙)",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-045",
+   "term": "The Circuit (Ceremonial Propagation)",
+   "triples": 8,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-133",
+   "term": "Evoke Ceremony",
+   "triples": 6,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-139",
+   "term": "Inscription Reinforcement",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-153",
+   "term": "Amnesia Protocol",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-159",
+   "term": "Spellbook Close",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-204",
+   "term": "Agent",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-205",
+   "term": "µ-promise: A --b--> B",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-206",
+   "term": "Conditional Promise (b\\",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-208",
+   "term": "Invitation",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-209",
+   "term": "Imposition/Attack",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-210",
+   "term": "(+) Give Promise",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-211",
+   "term": "(-) Use/Accept Promise",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-027",
+   "term": "Selene's Proof",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-034",
+   "term": "Trusted Execution Environment (TEE)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-057",
+   "term": "ERC-7812",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-058",
+   "term": "Agent (IEEE 7012)",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-065",
+   "term": "DPV (Data Privacy Vocabulary)",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-067",
+   "term": "Agreement Taxonomy (IEEE 7012)",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-080",
+   "term": "The Keeper",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-085",
+   "term": "Infinite Vault",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-086",
+   "term": "Scrying Glass / Mage Mode",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-088",
+   "term": "Yggdrasil",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-162",
+   "term": "City of Mages",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-182",
+   "term": "The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
+   "triples": 4,
+   "relation": "ordering",
+   "grandfathered": false
   }
  ]
 }

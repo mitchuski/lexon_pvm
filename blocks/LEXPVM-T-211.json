@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-211",
+ "term": "(-) Use/Accept Promise",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Accept Promise.\n\n\"First Person\" is a person.\n\"Mage\" is a person.\n\"Delegation\" is a text.\n\"Delegation Given\" is a binary.\n\"Accepted Task\" is a text.\n\nThe First Person appoints the Mage, and fixes the Delegation.\n\nCLAUSE: Offer.\nThe First Person may declare Delegation Given.\n\nCLAUSE: Use.\nThe Mage may, if Delegation Given is declared, register the Accepted Task.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Delegation",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Delegation Given",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer"
+  },
+  {
+   "s": "Mage",
+   "verb": "register",
+   "o": "Accepted Task",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Delegation Given is declared",
+   "clause": "Use"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Delegation",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Delegation Given",
+   "conditional": false,
+   "clause": "Offer"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Accepted Task",
+   "conditional": true,
+   "clause": "Use"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Use",
+   "condition": "Delegation Given"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: inbound polarity as gate (Use fires only if Delegation Given is declared: acceptance can never precede the give, a minus-polarity promise consumes an existing plus-polarity offer; the ungated twin is a self-authorized delegate, exactly what inbound authorization forbids). Omits: scope negotiation and the assessment of whether the accepted delegation is kept. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

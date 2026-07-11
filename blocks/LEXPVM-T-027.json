@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-027",
+ "term": "Selene's Proof",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Selene's Proof",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Selene's Proof.\n\n\"Moon\" is a person.\n\"Verifier\" is a person.\n\"Proof\" is this contract.\n\"Tide Mark\" is a text.\n\"Impact Time\" is a time.\n\"Orbit Held\" is a binary.\n\nThe Moon appoints the Verifier, and fixes the Tide Mark.\n\nCLAUSE: Impact.\nThe Moon may fix the Impact Time as the current time.\n\nCLAUSE: Hold Orbit.\nThe Moon may, if the Impact Time is fixed, declare Orbit Held.\n\nCLAUSE: Amnesiac.\n\"Amnesiac\" is defined as: the Impact Time lies at least 24 hours in the past.\n\nCLAUSE: Verify.\nThe Verifier may, if this Proof is Amnesiac: certify the Tide Mark.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Moon",
+   "verb": "appoint",
+   "o": "Verifier",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Moon",
+   "verb": "fix",
+   "o": "Tide Mark",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Moon",
+   "verb": "fix",
+   "o": "Impact Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Impact"
+  },
+  {
+   "s": "Moon",
+   "verb": "declare",
+   "o": "Orbit Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Impact Time is fixed",
+   "clause": "Hold Orbit"
+  },
+  {
+   "s": "Verifier",
+   "verb": "certify",
+   "o": "Tide Mark",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Proof is Amnesiac",
+   "clause": "Verify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Moon",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Verifier",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Moon",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Tide Mark",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Moon",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Impact Time",
+   "conditional": false,
+   "clause": "Impact"
+  },
+  {
+   "promiser": "Moon",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Orbit Held",
+   "conditional": true,
+   "clause": "Hold Orbit"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Tide Mark",
+   "conditional": true,
+   "clause": "Verify"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Verify",
+   "condition": "Amnesiac"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "the aging law as a defined temporal predicate (Amnesiac = the impact time lies at least 24 hours in the past) gating the only certify; ordering = orbit holds only after the impact time is fixed. Omits the proof arithmetic and the moon-lore framing. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

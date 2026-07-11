@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-205",
+ "term": "µ-promise: A --b--> B",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Micro Promise.\n\n\"Promiser\" is a person.\n\"Promisee\" is a person.\n\"Body\" is a text.\n\"Promised Benefit\" is an amount.\n\nThe Promiser appoints the Promisee, fixes the Body, and fixes the Promised Benefit.\n\nCLAUSE: Give.\nThe Promiser may send the Body to the Promisee.\n\nCLAUSE: Keep.\nThe Promiser may pay the Promised Benefit to the Promisee.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Promised Benefit",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Give"
+  },
+  {
+   "s": "Promiser",
+   "verb": "pay",
+   "o": "Promised Benefit",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Keep"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promised Benefit",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Body->Promisee",
+   "conditional": false,
+   "clause": "Give"
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Promised Benefit->Promisee",
+   "conditional": false,
+   "clause": "Keep"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Promiser",
+   "what": "Promised Benefit"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Promised Benefit to Promiser"
+ },
+ "grandfathered": false,
+ "notes": "Structural: directionality as impossibility (the promised benefit routes only from promiser to promisee; no transfer clause routes the Promised Benefit back to the Promiser, so the edge A --b--> B is unilateral commitment, not exchange), and voluntariness as modal may on both edges. Omits: the promise body typing (tau, chi) and the promisee's acceptance, which is the minus pole carried by T-211. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

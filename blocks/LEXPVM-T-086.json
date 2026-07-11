@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-086",
+ "term": "Scrying Glass / Mage Mode",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Scrying Glass / Mage Mode",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Scrying Glass.\n\n\"Mage\" is a person.\n\"Keeper\" is a person.\n\"Glass\" is this contract.\n\"Resonance\" is a text.\n\"Transformation Time\" is a time.\n\"Selection Chosen\" is a binary.\n\nThe Mage appoints the Keeper, and fixes the Resonance.\n\nCLAUSE: Choose Selection.\nThe Mage may declare Selection Chosen.\n\nCLAUSE: Transform.\nThe Mage may, if Selection Chosen is declared, fix the Transformation Time as the current time.\n\nCLAUSE: Selective.\n\"Selective\" is defined as: Selection Chosen is declared and the Transformation Time is fixed.\n\nCLAUSE: Evoke.\nThe Keeper may, if this Glass is Selective: send the Resonance to the Mage.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Mage",
+   "verb": "appoint",
+   "o": "Keeper",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "fix",
+   "o": "Resonance",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Selection Chosen",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Choose Selection"
+  },
+  {
+   "s": "Mage",
+   "verb": "fix",
+   "o": "Transformation Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": "Selection Chosen is declared",
+   "clause": "Transform"
+  },
+  {
+   "s": "Keeper",
+   "verb": "send",
+   "o": "Resonance",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": "this Glass is Selective",
+   "clause": "Evoke"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Mage",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Keeper",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Resonance",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Selection Chosen",
+   "conditional": false,
+   "clause": "Choose Selection"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Transformation Time",
+   "conditional": true,
+   "clause": "Transform"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Resonance->Mage",
+   "conditional": true,
+   "clause": "Evoke"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Selective",
+   "conjuncts": [
+    "Selection Chosen",
+    "Transformation Time"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Selection Chosen\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "selective disclosure as a defined conjunction (selection chosen and transformation time fixed) gating the keeper evoking the resonance back to the mage. Critic flag carried: shares its skeleton with T-085 (template-stamping watch). Omits the scrying optics and mage-mode phases. Assayer-authored (held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

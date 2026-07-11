@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-038",
+ "term": "Trust Tier",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Trust Tier",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Trust Tier.\n\n\"Participant\" is a person.\n\"Assessor\" is a person.\n\"Signal Record\" is data.\n\"Basic Capability\" is a text.\n\"Higher Capability\" is a text.\n\"Tier Advanced\" is a binary.\n\nThe Assessor appoints the Participant.\n\nCLAUSE: Participate.\nThe Participant may register the Basic Capability.\n\nCLAUSE: Accumulate.\nThe Participant may file the Signal Record.\n\nCLAUSE: Advance.\nThe Assessor may, if Signal Record is filed: declare Tier Advanced.\n\nCLAUSE: Exercise.\nThe Participant may, if Tier Advanced is declared: register the Higher Capability.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Assessor",
+   "verb": "appoint",
+   "o": "Participant",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Participant",
+   "verb": "register",
+   "o": "Basic Capability",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Participate"
+  },
+  {
+   "s": "Participant",
+   "verb": "file",
+   "o": "Signal Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accumulate"
+  },
+  {
+   "s": "Assessor",
+   "verb": "declare",
+   "o": "Tier Advanced",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Signal Record is filed",
+   "clause": "Advance"
+  },
+  {
+   "s": "Participant",
+   "verb": "register",
+   "o": "Higher Capability",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Tier Advanced is declared",
+   "clause": "Exercise"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Assessor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Participant",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Participant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Basic Capability",
+   "conditional": false,
+   "clause": "Participate"
+  },
+  {
+   "promiser": "Participant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Signal Record",
+   "conditional": false,
+   "clause": "Accumulate"
+  },
+  {
+   "promiser": "Assessor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Tier Advanced",
+   "conditional": true,
+   "clause": "Advance"
+  },
+  {
+   "promiser": "Participant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Higher Capability",
+   "conditional": true,
+   "clause": "Exercise"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Exercise",
+   "condition": "Tier Advanced"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "carries progressive capability as a two-stage gate: the Higher Capability's only route is the Exercise clause conditional on the Assessor's Tier Advanced declaration, itself gated on the Participant's filed Signal Record (tiers as accumulated positive assessments, advancement declared by the assessing side never by the gated side). Omits the four named tiers, signal counts, and trust ranges, since numeric literals are out of subset. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

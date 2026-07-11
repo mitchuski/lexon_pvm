@@ -1,0 +1,143 @@
+{
+ "census": "LEXPVM-T-044",
+ "term": "Moon Ceremony (🌙)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Moon Ceremony (🌙)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Moon Ceremony.\n\n\"First Practitioner\" is a person.\n\"Second Practitioner\" is a person.\n\"Swordsman\" is a person.\n\"Ceremony\" is this contract.\n\"Poem\" is a text.\n\"Blade Proof\" is a text.\n\"First Trace\" is a binary.\n\"Second Trace\" is a binary.\n\nThe First Practitioner appoints the Second Practitioner, appoints the Swordsman, and fixes the Poem.\n\nCLAUSE: Trace First.\nThe First Practitioner may declare First Trace.\n\nCLAUSE: Trace Second.\nThe Second Practitioner may declare Second Trace.\n\nCLAUSE: Converged.\n\"Converged\" is defined as: First Trace is declared and Second Trace is declared.\n\nCLAUSE: Draw Edge.\nThe Swordsman may, if this Ceremony is Converged: certify the Blade Proof.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Practitioner",
+   "verb": "appoint",
+   "o": "Second Practitioner",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Practitioner",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Practitioner",
+   "verb": "fix",
+   "o": "Poem",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Practitioner",
+   "verb": "declare",
+   "o": "First Trace",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Trace First"
+  },
+  {
+   "s": "Second Practitioner",
+   "verb": "declare",
+   "o": "Second Trace",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Trace Second"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Blade Proof",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Ceremony is Converged",
+   "clause": "Draw Edge"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Practitioner",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Poem",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Trace",
+   "conditional": false,
+   "clause": "Trace First"
+  },
+  {
+   "promiser": "Second Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Trace",
+   "conditional": false,
+   "clause": "Trace Second"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Blade Proof",
+   "conditional": true,
+   "clause": "Draw Edge"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Converged",
+   "conjuncts": [
+    "First Trace",
+    "Second Trace"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"First Trace\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Structural: conjunction (Converged requires both trace declarations, and each is declarable only by its own practitioner, the autonomy partition of independent tracing) gating the single certify of the Blade Proof; the Draw Edge clause is held by the Swordsman alone (the Swordsman decides whether the edge is worth drawing) and by neither practitioner, so the blade belongs to no tracer as clause topology. Omits the rhythm/rhyme role split and the gap-ownership formalism. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t044_moon_ceremony.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

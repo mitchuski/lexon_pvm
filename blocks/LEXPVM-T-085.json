@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-085",
+ "term": "Infinite Vault",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Infinite Vault",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Infinite Vault.\n\n\"Archivist\" is a person.\n\"Bearer\" is a person.\n\"Vault\" is this contract.\n\"Artifact\" is a text.\n\"Warding Time\" is a time.\n\"Alcove Prepared\" is a binary.\n\nThe Archivist appoints the Bearer, and fixes the Artifact.\n\nCLAUSE: Prepare Alcove.\nThe Archivist may declare Alcove Prepared.\n\nCLAUSE: Ward.\nThe Archivist may, if Alcove Prepared is declared, fix the Warding Time as the current time.\n\nCLAUSE: Warded.\n\"Warded\" is defined as: Alcove Prepared is declared and the Warding Time is fixed.\n\nCLAUSE: Rest.\nThe Bearer may, if this Vault is Warded: send the Artifact to the Archivist.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Archivist",
+   "verb": "appoint",
+   "o": "Bearer",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Archivist",
+   "verb": "fix",
+   "o": "Artifact",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Archivist",
+   "verb": "declare",
+   "o": "Alcove Prepared",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Prepare Alcove"
+  },
+  {
+   "s": "Archivist",
+   "verb": "fix",
+   "o": "Warding Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": "Alcove Prepared is declared",
+   "clause": "Ward"
+  },
+  {
+   "s": "Bearer",
+   "verb": "send",
+   "o": "Artifact",
+   "io": "Archivist",
+   "as": null,
+   "modal": "may",
+   "condition": "this Vault is Warded",
+   "clause": "Rest"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Archivist",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Bearer",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Archivist",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Artifact",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Alcove Prepared",
+   "conditional": false,
+   "clause": "Prepare Alcove"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Warding Time",
+   "conditional": true,
+   "clause": "Ward"
+  },
+  {
+   "promiser": "Bearer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Artifact->Archivist",
+   "conditional": true,
+   "clause": "Rest"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Rest",
+   "condition": "Warded"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "warding as a defined conjunction (alcove prepared and warding time fixed) gating the artifact coming to rest; the bearer cannot deposit into an unwarded vault. Critic flag carried: this entry and T-086 share one clause skeleton (lexr3.1 template-stamping watch); folded because the gate and claim both hold and the warding content is the term. Omits capacity and retrieval. Assayer-authored (held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

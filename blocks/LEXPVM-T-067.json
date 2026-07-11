@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-067",
+ "term": "Agreement Taxonomy (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Agreement Taxonomy (IEEE 7012)",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Agreement Taxonomy.\n\n\"Principal\" is a person.\n\"Entity\" is a person.\n\"Base Agreement\" is a text.\n\"Escalation\" is a text.\n\"Selection Time\" is a time.\n\"Base Chosen\" is a binary.\n\nThe Principal appoints the Entity, and fixes the Base Agreement.\n\nCLAUSE: Choose Base.\nThe Principal may declare Base Chosen.\n\nCLAUSE: Mark Selection.\nThe Principal may, if Base Chosen is declared, fix the Selection Time as the current time.\n\nCLAUSE: Offer Base.\nThe Principal may, if the Selection Time is fixed: send the Base Agreement to the Entity.\n\nCLAUSE: Escalate.\nThe Principal may, if the Selection Time is fixed: register an Escalation.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Principal",
+   "verb": "appoint",
+   "o": "Entity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Base Agreement",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "declare",
+   "o": "Base Chosen",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Choose Base"
+  },
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Selection Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": "Base Chosen is declared",
+   "clause": "Mark Selection"
+  },
+  {
+   "s": "Principal",
+   "verb": "send",
+   "o": "Base Agreement",
+   "io": "Entity",
+   "as": null,
+   "modal": "may",
+   "condition": "the Selection Time is fixed",
+   "clause": "Offer Base"
+  },
+  {
+   "s": "Principal",
+   "verb": "register",
+   "o": "Escalation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Selection Time is fixed",
+   "clause": "Escalate"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Entity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Base Agreement",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Base Chosen",
+   "conditional": false,
+   "clause": "Choose Base"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Selection Time",
+   "conditional": true,
+   "clause": "Mark Selection"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Base Agreement->Entity",
+   "conditional": true,
+   "clause": "Offer Base"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Escalation",
+   "conditional": true,
+   "clause": "Escalate"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Escalate",
+   "condition": "Selection Time"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "the taxonomy as a selection gate: both offering the base agreement and registering an escalation are reachable only after the selection time is fixed; base-before-escalation carried as shared gating on one declared choice. Omits the agreement-type enumeration. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

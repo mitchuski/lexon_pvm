@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-159",
+ "term": "Spellbook Close",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Spellbook Close",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Spellbook Close.\n\n\"First Person\" is a person.\n\"Scribe\" is a person.\n\"Spellbook\" is this contract.\n\"Continuation Act\" is a text.\n\"Close Time\" is a time.\n\"Arc Complete\" is a binary.\n\nThe First Person appoints the Scribe, and fixes the Continuation Act.\n\nCLAUSE: Answer Arc.\nThe First Person may declare Arc Complete.\n\nCLAUSE: Mark Tide.\nThe Scribe may, if Arc Complete is declared, fix the Close Time as the current time.\n\nCLAUSE: Closed.\n\"Closed\" is defined as: Arc Complete is declared and the Close Time is fixed.\n\nCLAUSE: Continue Elsewhere.\nThe Scribe may, if this Spellbook is Closed: register a Continuation Act.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Scribe",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Continuation Act",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Arc Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Answer Arc"
+  },
+  {
+   "s": "Scribe",
+   "verb": "fix",
+   "o": "Close Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": "Arc Complete is declared",
+   "clause": "Mark Tide"
+  },
+  {
+   "s": "Scribe",
+   "verb": "register",
+   "o": "Continuation Act",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Spellbook is Closed",
+   "clause": "Continue Elsewhere"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Scribe",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Continuation Act",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Arc Complete",
+   "conditional": false,
+   "clause": "Answer Arc"
+  },
+  {
+   "promiser": "Scribe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Close Time",
+   "conditional": true,
+   "clause": "Mark Tide"
+  },
+  {
+   "promiser": "Scribe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Continuation Act",
+   "conditional": true,
+   "clause": "Continue Elsewhere"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Closed",
+   "conjuncts": [
+    "Arc Complete",
+    "Close Time"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Arc Complete\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Structural: conjunction (Closed requires the arc answered AND the close time marked, both together) gating the only register of a Continuation Act, so continuation is reachable only through closure, a tide not a lock as clause topology; upstream ordering (the tide mark is itself conditional on Arc Complete, answered-before-closed). Omits the five-spellbook taxonomy, the HOW/WHEN/WHY/WHERE act taxonomy, and the salt-inscription imagery. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t159_spellbook_close.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

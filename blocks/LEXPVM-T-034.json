@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-034",
+ "term": "Trusted Execution Environment (TEE)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Trusted Execution Environment (TEE)",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Trusted Execution Environment.\n\n\"Operator\" is a person.\n\"Enclave\" is a person.\n\"Verifier\" is a person.\n\"Workload\" is data.\n\"Measurement\" is data.\n\"Result\" is a text.\n\"Attestation Verified\" is a binary.\n\nThe Operator appoints the Enclave.\n\nCLAUSE: Seal.\nThe Operator may file the Workload.\n\nCLAUSE: Measure.\nThe Enclave may file the Measurement.\n\nCLAUSE: Attest.\nThe Verifier may, if Measurement is filed: declare Attestation Verified.\n\nCLAUSE: Process.\nThe Enclave may, if Attestation Verified is declared: certify the Result.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Operator",
+   "verb": "appoint",
+   "o": "Enclave",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Operator",
+   "verb": "file",
+   "o": "Workload",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Seal"
+  },
+  {
+   "s": "Enclave",
+   "verb": "file",
+   "o": "Measurement",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Measure"
+  },
+  {
+   "s": "Verifier",
+   "verb": "declare",
+   "o": "Attestation Verified",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Measurement is filed",
+   "clause": "Attest"
+  },
+  {
+   "s": "Enclave",
+   "verb": "certify",
+   "o": "Result",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Attestation Verified is declared",
+   "clause": "Process"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Operator",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Enclave",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Operator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Workload",
+   "conditional": false,
+   "clause": "Seal"
+  },
+  {
+   "promiser": "Enclave",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Measurement",
+   "conditional": false,
+   "clause": "Measure"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Attestation Verified",
+   "conditional": true,
+   "clause": "Attest"
+  },
+  {
+   "promiser": "Enclave",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Result",
+   "conditional": true,
+   "clause": "Process"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Process",
+   "condition": "Attestation Verified"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "processing gated on verified attestation: the promise bundle grants processing capability only after the attestation stands verified by the counterparty role. Omits the attestation format. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

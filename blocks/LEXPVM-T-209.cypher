@@ -1,0 +1,15 @@
+MERGE (c:LexContract {census: "LEXPVM-T-209", name: "Imposition/Attack", cites: "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings"})
+MERGE (:Person {name: "Imposer", contract: "Imposition/Attack"})
+MERGE (:Person {name: "Target", contract: "Imposition/Attack"})
+MERGE (:Person {name: "Swordsman", contract: "Imposition/Attack"})
+MERGE (:Text {name: "Unsolicited Proposal", contract: "Imposition/Attack"})
+MERGE (:Binary {name: "Acceptance", contract: "Imposition/Attack"})
+MERGE (:Amount {name: "Data Value", contract: "Imposition/Attack"})
+MERGE (:Binary {name: "Refused", contract: "Imposition/Attack"})
+MATCH (a {name: "Imposer"}), (b {name: "Imposer"}) CREATE (a)-[:FIX {clause: "recital", object: "Unsolicited Proposal"}]->(b)
+MATCH (a {name: "Target"}), (b {name: "Target"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Swordsman"}]->(b)
+MATCH (a {name: "Target"}), (b {name: "Target"}) CREATE (a)-[:FIX {clause: "recital", object: "Data Value"}]->(b)
+MATCH (a {name: "Imposer"}), (b {name: "Target"}) CREATE (a)-[:MAY_SEND {clause: "Impose", object: "Unsolicited Proposal"}]->(b)
+MATCH (a {name: "Swordsman"}), (b {name: "Swordsman"}) CREATE (a)-[:MAY_DECLARE {clause: "Guard", object: "Refused", condition: "Acceptance is not declared"}]->(b)
+// claim (re-runnable): NOTHING routes Data Value to Imposer; any row falsifies the block
+MATCH (x)-[e]->(f {name: "Imposer"}) WHERE e.object = "Data Value" RETURN count(e) AS mustBeZero

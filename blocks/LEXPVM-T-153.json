@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-153",
+ "term": "Amnesia Protocol",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Amnesia Protocol",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Amnesia Protocol.\n\n\"Principal\" is a person.\n\"Emissary\" is a person.\n\"Protocol\" is this contract.\n\"Service\" is a text.\n\"Derivation Time\" is a time.\n\"Service Verified\" is a binary.\n\nThe Principal appoints the Emissary, and fixes the Service.\n\nCLAUSE: Mark Derivation.\nThe Principal may fix the Derivation Time as the current time.\n\nCLAUSE: Forgotten.\n\"Forgotten\" is defined as: the Derivation Time lies at least 24 hours in the past.\n\nCLAUSE: Serve.\nThe Emissary may, if this Protocol is Forgotten: send the Service to the Principal.\n\nCLAUSE: Verify Service.\nThe Principal may, if this Protocol is Forgotten: declare Service Verified.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Principal",
+   "verb": "appoint",
+   "o": "Emissary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Service",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Derivation Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Mark Derivation"
+  },
+  {
+   "s": "Emissary",
+   "verb": "send",
+   "o": "Service",
+   "io": "Principal",
+   "as": null,
+   "modal": "may",
+   "condition": "this Protocol is Forgotten",
+   "clause": "Serve"
+  },
+  {
+   "s": "Principal",
+   "verb": "declare",
+   "o": "Service Verified",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Protocol is Forgotten",
+   "clause": "Verify Service"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Emissary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Service",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Derivation Time",
+   "conditional": false,
+   "clause": "Mark Derivation"
+  },
+  {
+   "promiser": "Emissary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Service->Principal",
+   "conditional": true,
+   "clause": "Serve"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Service Verified",
+   "conditional": true,
+   "clause": "Verify Service"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Serve",
+   "condition": "Forgotten"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: gate (both the Emissary's send of the Service and the Principal's verification declaration are conditional on the defined predicate Forgotten, which holds only when the Derivation Time lies at least 24 hours in the past): service and its verification become reachable only after the origin has aged out, forgetting as the protocol itself, verify-without-remembering as clause topology. Omits the zero-knowledge primitive formalism and the Theia cosmology; the 24-hour literal is a stand-in shelf constant (lies-at-least predicate per lexon-example-license). Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t153_amnesia_protocol.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

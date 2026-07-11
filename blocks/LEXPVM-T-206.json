@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-206",
+ "term": "Conditional Promise (b\\",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Conditional Promise.\n\n\"Promiser\" is a person.\n\"Promisee\" is a person.\n\"Body\" is a text.\n\"Condition Met\" is a binary.\n\nThe Promiser appoints the Promisee, and fixes the Body.\n\nCLAUSE: Observe.\nThe Promiser may declare Condition Met.\n\nCLAUSE: Keep.\nThe Promiser may, if Condition Met is declared, send the Body to the Promisee.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Promiser",
+   "verb": "appoint",
+   "o": "Promisee",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "fix",
+   "o": "Body",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Promiser",
+   "verb": "declare",
+   "o": "Condition Met",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe"
+  },
+  {
+   "s": "Promiser",
+   "verb": "send",
+   "o": "Body",
+   "io": "Promisee",
+   "as": null,
+   "modal": "may",
+   "condition": "Condition Met is declared",
+   "clause": "Keep"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Promisee",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Body",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Condition Met",
+   "conditional": false,
+   "clause": "Observe"
+  },
+  {
+   "promiser": "Promiser",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Body->Promisee",
+   "conditional": true,
+   "clause": "Keep"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Keep",
+   "condition": "Condition Met"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: contingency as gate (the Body moves to the Promisee only through the declared Condition Met; strip the gate and the text collapses to an unconditional micro promise, which is exactly the mutation twin), and the condition is observed by the promiser itself (Observe clause: assessment of c is also autonomous). Omits: the mapped conditional-independence reading (Swordsman and Mage independent given X) and any probability semantics. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

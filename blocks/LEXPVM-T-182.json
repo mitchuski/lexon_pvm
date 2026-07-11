@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-182",
+ "term": "The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.1 The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Tower.\n\n\"Cast\" is a person.\n\"Archivist\" is a person.\n\"Higher Seat\" is a text.\n\"Cast Entry\" is a text.\n\nThe Cast appoints the Archivist, and fixes the Cast Entry.\n\nCLAUSE: Recognize.\nThe Cast may register the Higher Seat, and afterwards certify the Cast Entry.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Cast",
+   "verb": "appoint",
+   "o": "Archivist",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Cast",
+   "verb": "fix",
+   "o": "Cast Entry",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Cast",
+   "verb": "register",
+   "o": "Higher Seat",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Recognize"
+  },
+  {
+   "s": "Cast",
+   "verb": "certify",
+   "o": "Cast Entry",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Recognize"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Cast",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Archivist",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Cast",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Cast Entry",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Cast",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Higher Seat",
+   "conditional": false,
+   "clause": "Recognize"
+  },
+  {
+   "promiser": "Cast",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Cast Entry",
+   "conditional": false,
+   "clause": "Recognize"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Recognize",
+   "sequence": [
+    "register:Higher Seat",
+    "certify:Cast Entry"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "honor-built recognition as ordering: the higher seat is registered first and the cast entry certified afterwards (the entry came later than the inhabiting, as clause sequence). Omits tower geometry. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

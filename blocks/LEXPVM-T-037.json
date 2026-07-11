@@ -1,0 +1,162 @@
+{
+ "census": "LEXPVM-T-037",
+ "term": "Verifiable Relationship Credential (VRC)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Verifiable Relationship Credential (VRC)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Verifiable Relationship Credential.\n\n\"First Practitioner\" is a person.\n\"Second Practitioner\" is a person.\n\"Relationship\" is this contract.\n\"Shared Content\" is a text.\n\"First Compression\" is a text.\n\"Second Compression\" is a text.\n\"Credential\" is a text.\n\"Compressions Match\" is a binary.\n\nThe First Practitioner registers the Shared Content.\n\nCLAUSE: Compress Apart.\nThe First Practitioner may file the First Compression.\n\nCLAUSE: Compress Again.\nThe Second Practitioner may file the Second Compression.\n\nCLAUSE: Match.\nThe First Practitioner or the Second Practitioner may declare Compressions Match.\n\nCLAUSE: Credential Earned.\n\"Credential Earned\" is defined as: First Compression is filed and Second Compression is filed and Compressions Match is declared.\n\nCLAUSE: Issue.\nThe First Practitioner or the Second Practitioner may, if this Relationship is Credential Earned: register the Credential.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Practitioner",
+   "verb": "register",
+   "o": "Shared Content",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Practitioner",
+   "verb": "file",
+   "o": "First Compression",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress Apart"
+  },
+  {
+   "s": "Second Practitioner",
+   "verb": "file",
+   "o": "Second Compression",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress Again"
+  },
+  {
+   "s": "First Practitioner",
+   "verb": "declare",
+   "o": "Compressions Match",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Match"
+  },
+  {
+   "s": "Second Practitioner",
+   "verb": "declare",
+   "o": "Compressions Match",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Match"
+  },
+  {
+   "s": "First Practitioner",
+   "verb": "register",
+   "o": "Credential",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Relationship is Credential Earned",
+   "clause": "Issue"
+  },
+  {
+   "s": "Second Practitioner",
+   "verb": "register",
+   "o": "Credential",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Relationship is Credential Earned",
+   "clause": "Issue"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "register:Shared Content",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:First Compression",
+   "conditional": false,
+   "clause": "Compress Apart"
+  },
+  {
+   "promiser": "Second Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Second Compression",
+   "conditional": false,
+   "clause": "Compress Again"
+  },
+  {
+   "promiser": "First Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Compressions Match",
+   "conditional": false,
+   "clause": "Match"
+  },
+  {
+   "promiser": "Second Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Compressions Match",
+   "conditional": false,
+   "clause": "Match"
+  },
+  {
+   "promiser": "First Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Credential",
+   "conditional": true,
+   "clause": "Issue"
+  },
+  {
+   "promiser": "Second Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Credential",
+   "conditional": true,
+   "clause": "Issue"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Credential Earned",
+   "conjuncts": [
+    "First Compression",
+    "Second Compression",
+    "Compressions Match"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"First Compression\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "carries the bilateral formation process as a conjunction: the defined predicate Credential Earned requires both independently filed compressions AND the declared match, and issuance is gated on that predicate with either party able to issue (mutual comprehension without central authority, a bilateral promise bundle). Omits the coordination-efficiency ratio and the proverb compression mechanics. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

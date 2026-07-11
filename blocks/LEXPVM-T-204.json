@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-204",
+ "term": "Agent",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Promise Agent.\n\n\"Agent\" is a person.\n\"Neighbor\" is a person.\n\"Own Conduct\" is a text.\n\"Peer Conduct\" is a text.\n\"Assessment\" is an amount.\n\nThe Agent fixes the Own Conduct.\nThe Neighbor fixes the Peer Conduct.\n\nCLAUSE: Promise Own Conduct.\nThe Agent may send the Own Conduct to the Neighbor.\n\nCLAUSE: Assess.\nThe Agent may fix the Assessment, and afterwards certify the Assessment.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Agent",
+   "verb": "fix",
+   "o": "Own Conduct",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Neighbor",
+   "verb": "fix",
+   "o": "Peer Conduct",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Agent",
+   "verb": "send",
+   "o": "Own Conduct",
+   "io": "Neighbor",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Promise Own Conduct"
+  },
+  {
+   "s": "Agent",
+   "verb": "fix",
+   "o": "Assessment",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess"
+  },
+  {
+   "s": "Agent",
+   "verb": "certify",
+   "o": "Assessment",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assess"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Own Conduct",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Neighbor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Peer Conduct",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Own Conduct->Neighbor",
+   "conditional": false,
+   "clause": "Promise Own Conduct"
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Assessment",
+   "conditional": false,
+   "clause": "Assess"
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Assessment",
+   "conditional": false,
+   "clause": "Assess"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Neighbor",
+   "what": "Assessment"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Assessment to Neighbor"
+ },
+ "grandfathered": false,
+ "notes": "Structural: independent assessment as impossibility (no transfer clause routes the Assessment to the Neighbor: an agent's assessment is local and never transfers, so trust is not transitive), plus the Autonomy Axiom in recital shape (each person fixes only its own conduct, and the only promise route to the Neighbor carries the Agent's Own Conduct). Omits: the assessment function alpha(pi) semantics and multi-neighbor topology; modeled minimally with one neighbor. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

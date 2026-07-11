@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-057",
+ "term": "ERC-7812",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### ERC-7812",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX ERC Identity Commitment.\n\n\"Prover\" is a person.\n\"Verifier\" is a person.\n\"Identity\" is an amount.\n\"Identity Proof\" is a text.\n\nThe Prover appoints the Verifier, and fixes the Identity.\n\nCLAUSE: Prove.\nThe Prover may fix the Identity Proof, and afterwards send the Identity Proof to the Verifier.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Prover",
+   "verb": "appoint",
+   "o": "Verifier",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Prover",
+   "verb": "fix",
+   "o": "Identity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Prover",
+   "verb": "fix",
+   "o": "Identity Proof",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Prove"
+  },
+  {
+   "s": "Prover",
+   "verb": "send",
+   "o": "Identity Proof",
+   "io": "Verifier",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Prove"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Prover",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Verifier",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Prover",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Identity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Prover",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Identity Proof",
+   "conditional": false,
+   "clause": "Prove"
+  },
+  {
+   "promiser": "Prover",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Identity Proof->Verifier",
+   "conditional": false,
+   "clause": "Prove"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Verifier",
+   "what": "Identity"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Identity to Verifier"
+ },
+ "grandfathered": false,
+ "notes": "zero-knowledge shape as an absence: the proof travels to the verifier, the identity itself has no route anywhere (impossibility as the missing clause); ordering = fix the proof, afterwards send it. Omits the ERC mechanics and commitment scheme. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

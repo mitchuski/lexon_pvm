@@ -1,0 +1,7 @@
+MERGE (c:LexContract {census: "LEXPVM-T-210", name: "(+) Give Promise", cites: "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings"})
+MERGE (:Person {name: "Swordsman", contract: "(+) Give Promise"})
+MERGE (:Person {name: "First Person", contract: "(+) Give Promise"})
+MERGE (:Text {name: "Protection Offer", contract: "(+) Give Promise"})
+MATCH (a {name: "Swordsman"}), (b {name: "Swordsman"}) CREATE (a)-[:APPOINT {clause: "recital", object: "First Person"}]->(b)
+MATCH (a {name: "Swordsman"}), (b {name: "Swordsman"}) CREATE (a)-[:MAY_FIX {clause: "Give", object: "Protection Offer"}]->(b)
+MATCH (a {name: "Swordsman"}), (b {name: "First Person"}) CREATE (a)-[:MAY_SEND {clause: "Give", object: "Protection Offer"}]->(b)

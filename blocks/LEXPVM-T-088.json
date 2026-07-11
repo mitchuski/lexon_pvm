@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-088",
+ "term": "Yggdrasil",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Yggdrasil",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Yggdrasil.\n\n\"Swordsman\" is a person.\n\"First Person\" is a person.\n\"Specific Reality\" is a text.\n\"Measurement Taken\" is a binary.\n\nThe Swordsman appoints the First Person, and fixes the Specific Reality.\n\nCLAUSE: Measure.\nThe Swordsman may declare Measurement Taken.\n\nCLAUSE: Collapse.\nThe Swordsman may, if Measurement Taken is declared, send the Specific Reality to the First Person.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Swordsman",
+   "verb": "appoint",
+   "o": "First Person",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "fix",
+   "o": "Specific Reality",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Measurement Taken",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Measure"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Specific Reality",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "Measurement Taken is declared",
+   "clause": "Collapse"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Person",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Specific Reality",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Measurement Taken",
+   "conditional": false,
+   "clause": "Measure"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Specific Reality->First Person",
+   "conditional": true,
+   "clause": "Collapse"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Collapse",
+   "condition": "Measurement Taken"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "measurement-collapses-possibility carried as a gate: specific reality reaches the First Person only after Measurement Taken stands declared; only the Swordsman holds the measuring declare. Omits the world-tree branching figure. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

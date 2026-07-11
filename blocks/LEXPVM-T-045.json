@@ -1,0 +1,176 @@
+{
+ "census": "LEXPVM-T-045",
+ "term": "The Circuit (Ceremonial Propagation)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### The Circuit (Ceremonial Propagation)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Circuit.\n\n\"Sun\" is a person.\n\"Witness\" is a person.\n\"New Sun\" is a person.\n\"Light\" is a text.\n\"Sun Time\" is a time.\n\"Light Carried\" is a binary.\n\"Origin Forgotten\" is a binary.\n\nThe Sun appoints the Witness, appoints the New Sun, and fixes the Light.\n\nCLAUSE: Shine.\nThe Sun may send the Light to the Witness, and afterwards fix the Sun Time as the current time.\n\nCLAUSE: Carry.\nThe Witness may, if the Sun Time is fixed, declare Light Carried.\n\nCLAUSE: Forget.\nThe Witness may, if Light Carried is declared, declare Origin Forgotten.\n\nCLAUSE: Begin Again.\nThe Witness may, if Origin Forgotten is declared: send the Light to the New Sun.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Sun",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sun",
+   "verb": "appoint",
+   "o": "New Sun",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sun",
+   "verb": "fix",
+   "o": "Light",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sun",
+   "verb": "send",
+   "o": "Light",
+   "io": "Witness",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Shine"
+  },
+  {
+   "s": "Sun",
+   "verb": "fix",
+   "o": "Sun Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": null,
+   "clause": "Shine"
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Light Carried",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Sun Time is fixed",
+   "clause": "Carry"
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Origin Forgotten",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Light Carried is declared",
+   "clause": "Forget"
+  },
+  {
+   "s": "Witness",
+   "verb": "send",
+   "o": "Light",
+   "io": "New Sun",
+   "as": null,
+   "modal": "may",
+   "condition": "Origin Forgotten is declared",
+   "clause": "Begin Again"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:New Sun",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Light",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sun",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Light->Witness",
+   "conditional": false,
+   "clause": "Shine"
+  },
+  {
+   "promiser": "Sun",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Sun Time",
+   "conditional": false,
+   "clause": "Shine"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Light Carried",
+   "conditional": true,
+   "clause": "Carry"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Origin Forgotten",
+   "conditional": true,
+   "clause": "Forget"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Light->New Sun",
+   "conditional": true,
+   "clause": "Begin Again"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Begin Again",
+   "condition": "Origin Forgotten"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: gate cascade as orbital ordering (the Light is sent and afterwards the Sun Time is marked; carrying is conditional on the time being fixed; forgetting is conditional on carrying; and the onward send to the New Sun is conditional on Origin Forgotten): the circuit propagates through forgetting, not instruction, as reachability structure, with the claimed gate on the re-seeding step. Omits the sun/moon ceremony pairing detail and the property that the new practitioner believes they invented it. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t045_the_circuit.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

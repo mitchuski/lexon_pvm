@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-209",
+ "term": "Imposition/Attack",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Imposition.\n\n\"Imposer\" is a person.\n\"Target\" is a person.\n\"Swordsman\" is a person.\n\"Unsolicited Proposal\" is a text.\n\"Acceptance\" is a binary.\n\"Data Value\" is an amount.\n\"Refused\" is a binary.\n\nThe Imposer fixes the Unsolicited Proposal.\nThe Target appoints the Swordsman, and fixes the Data Value.\n\nCLAUSE: Impose.\nThe Imposer may send the Unsolicited Proposal to the Target.\n\nCLAUSE: Guard.\nThe Swordsman may, if Acceptance is not declared, declare Refused.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 2,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Imposer",
+   "verb": "fix",
+   "o": "Unsolicited Proposal",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Target",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Target",
+   "verb": "fix",
+   "o": "Data Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Imposer",
+   "verb": "send",
+   "o": "Unsolicited Proposal",
+   "io": "Target",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Impose"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Refused",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Acceptance is not declared",
+   "clause": "Guard"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Imposer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Unsolicited Proposal",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Target",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Target",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Data Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Imposer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Unsolicited Proposal->Target",
+   "conditional": false,
+   "clause": "Impose"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Refused",
+   "conditional": true,
+   "clause": "Guard"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Imposer",
+   "what": "Data Value"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Data Value to Imposer"
+ },
+ "grandfathered": false,
+ "notes": "Structural: attack as ungated send (the Impose clause carries no acceptance condition, the deliberate structural contrast with Invitation's Standing-gated Propose), refusal gated on non-acceptance (Guard fires only while Acceptance is not declared), and extraction as impossibility (no transfer clause routes the Target's Data Value to the Imposer: the text grants imposition no economy, surveillance extraction never succeeds by this contract). Omits: dark-pattern taxonomy and post-hoc consent rationalization. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

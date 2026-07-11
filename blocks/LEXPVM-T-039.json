@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-039",
+ "term": "Guardian",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Guardian",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Guardian Charter.\n\n\"Guardian\" is a person.\n\"City\" is a person.\n\"Stake\" is an amount.\n\"Validation\" is a text.\n\"Dragon Tier Held\" is a binary.\n\"Integrity Breach\" is a binary.\n\nThe City appoints the Guardian.\n\nCLAUSE: Qualify.\nThe City may declare Dragon Tier Held.\n\nCLAUSE: Commit Stake.\nThe Guardian may, if Dragon Tier Held is declared: pay the Stake into escrow.\n\nCLAUSE: Validate.\nThe Guardian must file the Validation.\n\nCLAUSE: Slash.\nThe City may, if Integrity Breach is declared: pay from escrow the Stake to themselves.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "City",
+   "verb": "appoint",
+   "o": "Guardian",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "City",
+   "verb": "declare",
+   "o": "Dragon Tier Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Qualify"
+  },
+  {
+   "s": "Guardian",
+   "verb": "pay",
+   "o": "Stake",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Dragon Tier Held is declared",
+   "clause": "Commit Stake"
+  },
+  {
+   "s": "Guardian",
+   "verb": "file",
+   "o": "Validation",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Validate"
+  },
+  {
+   "s": "City",
+   "verb": "pay",
+   "o": "Stake",
+   "io": "themselves",
+   "as": null,
+   "modal": "may",
+   "condition": "Integrity Breach is declared",
+   "clause": "Slash"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "City",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Guardian",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "City",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Dragon Tier Held",
+   "conditional": false,
+   "clause": "Qualify"
+  },
+  {
+   "promiser": "Guardian",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Stake",
+   "conditional": true,
+   "clause": "Commit Stake"
+  },
+  {
+   "promiser": "Guardian",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "file:Validation",
+   "conditional": false,
+   "clause": "Validate"
+  },
+  {
+   "promiser": "City",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Stake->themselves",
+   "conditional": true,
+   "clause": "Slash"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Guardian",
+   "what": "Stake"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Stake to Guardian"
+ },
+ "grandfathered": false,
+ "notes": "carries the stake's irreversibility as an impossibility by absence: no transfer clause routes the Stake back to the Guardian, so the valency commitment cannot be reclaimed from the guardian's side; staking is gated on the City's Dragon Tier declaration and validation is a binding duty (must, not may). Direction is load-bearing: slashing routes the escrowed Stake to the City on a declared breach, never back. Omits the stake denomination and the signal threshold, and the source section is WIP status so the register stays documented. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

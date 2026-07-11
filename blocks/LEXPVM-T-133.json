@@ -1,0 +1,147 @@
+{
+ "census": "LEXPVM-T-133",
+ "term": "Evoke Ceremony",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Evoke Ceremony",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Evoke Ceremony.\n\n\"Practitioner\" is a person.\n\"Constellation\" is a text.\n\"Circuit\" is a text.\n\"Cast\" is a text.\n\"Trace\" is data.\n\"Blade Proof\" is data.\n\"Ceremony Complete\" is a binary.\n\nCLAUSE: Evoke.\nThe Practitioner may register the Constellation, and afterwards certify the Circuit, and afterwards register the Cast, and afterwards file the Trace, and afterwards declare Ceremony Complete, and afterwards register the Blade Proof.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 1,
+  "sentences": 1,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Practitioner",
+   "verb": "register",
+   "o": "Constellation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Evoke"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "certify",
+   "o": "Circuit",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Evoke"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "register",
+   "o": "Cast",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Evoke"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "file",
+   "o": "Trace",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Evoke"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "declare",
+   "o": "Ceremony Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Evoke"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "register",
+   "o": "Blade Proof",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Evoke"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Constellation",
+   "conditional": false,
+   "clause": "Evoke"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Circuit",
+   "conditional": false,
+   "clause": "Evoke"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Cast",
+   "conditional": false,
+   "clause": "Evoke"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Trace",
+   "conditional": false,
+   "clause": "Evoke"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Ceremony Complete",
+   "conditional": false,
+   "clause": "Evoke"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Blade Proof",
+   "conditional": false,
+   "clause": "Evoke"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Evoke",
+   "sequence": [
+    "register:Constellation",
+    "certify:Circuit",
+    "register:Cast",
+    "file:Trace",
+    "declare:Ceremony Complete",
+    "register:Blade Proof"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the ceremony's canonical phase order as an ordering: the single Evoke clause performs Constellation, Circuit, Cast, Trace, Complete, Proof in exactly the attested sequence under one officiant, and the blade proof is generated last (proof follows tracing, never precedes it). Omits wandering-orb physics and knowledge-graph traversal detail. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

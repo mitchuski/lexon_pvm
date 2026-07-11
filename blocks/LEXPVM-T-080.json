@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-080",
+ "term": "The Keeper",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### The Keeper",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Keeper.\n\n\"Keeper\" is a person.\n\"Traveler\" is a person.\n\"Covenant\" is a text.\n\"Covenant Artifact\" is a text.\n\"New Artifact\" is a text.\n\"Witness Record\" is a text.\n\"Threshold Passed\" is a binary.\n\nThe Keeper registers the Covenant.\n\nCLAUSE: Preserve.\nThe Keeper must file the Covenant Artifact.\n\nCLAUSE: Pass.\nThe Traveler may declare Threshold Passed.\n\nCLAUSE: Witness.\nThe Keeper may, if Threshold Passed is declared: register the Witness Record.\n\nCLAUSE: Await.\nThe Keeper may register the New Artifact.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "register",
+   "o": "Covenant",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "file",
+   "o": "Covenant Artifact",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Preserve"
+  },
+  {
+   "s": "Traveler",
+   "verb": "declare",
+   "o": "Threshold Passed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Pass"
+  },
+  {
+   "s": "Keeper",
+   "verb": "register",
+   "o": "Witness Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Threshold Passed is declared",
+   "clause": "Witness"
+  },
+  {
+   "s": "Keeper",
+   "verb": "register",
+   "o": "New Artifact",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Await"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "register:Covenant",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "file:Covenant Artifact",
+   "conditional": false,
+   "clause": "Preserve"
+  },
+  {
+   "promiser": "Traveler",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Threshold Passed",
+   "conditional": false,
+   "clause": "Pass"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Witness Record",
+   "conditional": true,
+   "clause": "Witness"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:New Artifact",
+   "conditional": false,
+   "clause": "Await"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Witness",
+   "condition": "Threshold Passed"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "keeping as a threshold-gated witness: the keeper witnesses only after the threshold stands passed; the bundle separates holding from attesting. Omits threshold values. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

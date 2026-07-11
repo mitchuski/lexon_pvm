@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-058",
+ "term": "Agent (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Agent (IEEE 7012)",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Agent.\n\n\"Principal\" is a person.\n\"Agent\" is a person.\n\"Entity\" is a person.\n\"Proposed Terms\" is a text.\n\"Mandate Time\" is a time.\n\"Mandate Given\" is a binary.\n\nThe Principal appoints the Agent, appoints the Entity, and fixes the Proposed Terms.\n\nCLAUSE: Authorize.\nThe Principal may declare Mandate Given.\n\nCLAUSE: Mark Mandate.\nThe Agent may, if Mandate Given is declared, fix the Mandate Time as the current time.\n\nCLAUSE: Present.\nThe Agent may, if the Mandate Time is fixed: send the Proposed Terms to the Entity.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Principal",
+   "verb": "appoint",
+   "o": "Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "appoint",
+   "o": "Entity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Proposed Terms",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "declare",
+   "o": "Mandate Given",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Authorize"
+  },
+  {
+   "s": "Agent",
+   "verb": "fix",
+   "o": "Mandate Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": "Mandate Given is declared",
+   "clause": "Mark Mandate"
+  },
+  {
+   "s": "Agent",
+   "verb": "send",
+   "o": "Proposed Terms",
+   "io": "Entity",
+   "as": null,
+   "modal": "may",
+   "condition": "the Mandate Time is fixed",
+   "clause": "Present"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Entity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Proposed Terms",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Mandate Given",
+   "conditional": false,
+   "clause": "Authorize"
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Mandate Time",
+   "conditional": true,
+   "clause": "Mark Mandate"
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Proposed Terms->Entity",
+   "conditional": true,
+   "clause": "Present"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Present",
+   "condition": "Mandate Time"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "agency as a phase law: the agent presents terms only after the mandate time is fixed, and the mandate time is fixable only after Mandate Given stands declared (delegation before action, as clause ordering). Omits the IEEE 7012 role taxonomy. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

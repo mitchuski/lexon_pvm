@@ -1,0 +1,143 @@
+{
+ "census": "LEXPVM-T-208",
+ "term": "Invitation",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Invitation.\n\n\"First Party\" is a person.\n\"Second Party\" is a person.\n\"Terms\" is a text.\n\"Acceptance\" is a binary.\n\"Proposal\" is a text.\n\"Relationship\" is this contract.\n\nThe First Party appoints the Second Party, fixes the Terms, and fixes the Proposal.\n\nCLAUSE: Proffer.\nThe First Party may send the Terms to the Second Party.\n\nCLAUSE: Accept.\nThe Second Party may declare Acceptance.\n\nCLAUSE: Standing.\n\"Standing\" is defined as: the Terms is fixed and Acceptance is declared.\n\nCLAUSE: Propose.\nThe First Party may, if this Relationship is Standing: send the Proposal to the Second Party.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Party",
+   "verb": "appoint",
+   "o": "Second Party",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Terms",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Proposal",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "send",
+   "o": "Terms",
+   "io": "Second Party",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Proffer"
+  },
+  {
+   "s": "Second Party",
+   "verb": "declare",
+   "o": "Acceptance",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accept"
+  },
+  {
+   "s": "First Party",
+   "verb": "send",
+   "o": "Proposal",
+   "io": "Second Party",
+   "as": null,
+   "modal": "may",
+   "condition": "this Relationship is Standing",
+   "clause": "Propose"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Party",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Terms",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Proposal",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Terms->Second Party",
+   "conditional": false,
+   "clause": "Proffer"
+  },
+  {
+   "promiser": "Second Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Acceptance",
+   "conditional": false,
+   "clause": "Accept"
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Proposal->Second Party",
+   "conditional": true,
+   "clause": "Propose"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Standing",
+   "conjuncts": [
+    "Terms",
+    "Acceptance"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Terms\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Structural: invitation as conjunction (the defined predicate Standing requires BOTH proffered Terms fixed AND declared Acceptance; drop either conjunct and the proposal loses its warrant, the mutation twin drops Terms and models consent without proffered terms), plus the ordering it induces (Propose is gated on Standing, so the acceptance relationship strictly precedes any specific proposal, the canon's own definition of invitation). Omits: MyTerms agreement-taxonomy content and renegotiation of terms. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-065",
+ "term": "DPV (Data Privacy Vocabulary)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### DPV (Data Privacy Vocabulary)",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Data Privacy Vocabulary.\n\n\"Standards Body\" is a person.\n\"Processor\" is a person.\n\"Reviewer\" is a person.\n\"Vocabulary\" is a text.\n\"Processing Description\" is a text.\n\"Agreement\" is a text.\n\"Description Conformant\" is a binary.\n\nThe Standards Body registers the Vocabulary.\n\nCLAUSE: Describe.\nThe Processor may file the Processing Description.\n\nCLAUSE: Review.\nThe Reviewer may, if Processing Description is filed: declare Description Conformant.\n\nCLAUSE: Express Agreement.\nThe Processor may, if Description Conformant is declared: register the Agreement.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Standards Body",
+   "verb": "register",
+   "o": "Vocabulary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Processor",
+   "verb": "file",
+   "o": "Processing Description",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Describe"
+  },
+  {
+   "s": "Reviewer",
+   "verb": "declare",
+   "o": "Description Conformant",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Processing Description is filed",
+   "clause": "Review"
+  },
+  {
+   "s": "Processor",
+   "verb": "register",
+   "o": "Agreement",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Description Conformant is declared",
+   "clause": "Express Agreement"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Standards Body",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "register:Vocabulary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Processor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Processing Description",
+   "conditional": false,
+   "clause": "Describe"
+  },
+  {
+   "promiser": "Reviewer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Description Conformant",
+   "conditional": true,
+   "clause": "Review"
+  },
+  {
+   "promiser": "Processor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Agreement",
+   "conditional": true,
+   "clause": "Express Agreement"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Express Agreement",
+   "condition": "Description Conformant"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "agreement expressible only under a conformant description: the express-agreement clause is gated on declared conformance, consent-follows-description as clause order. Omits the description schema. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

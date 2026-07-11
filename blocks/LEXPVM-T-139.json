@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-139",
+ "term": "Inscription Reinforcement",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Inscription Reinforcement",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Inscription Reinforcement.\n\n\"Curator\" is a person.\n\"Keeper\" is a person.\n\"Inscription\" is this contract.\n\"Community Mark\" is a text.\n\"Reinforcement Time\" is a time.\n\"Mana Spent\" is a binary.\n\nThe Keeper appoints the Curator, and fixes the Community Mark.\n\nCLAUSE: Spend Mana.\nThe Curator may declare Mana Spent.\n\nCLAUSE: Reinforce.\nThe Curator may, if Mana Spent is declared, fix the Reinforcement Time as the current time.\n\nCLAUSE: Decay Period.\n\"Decay Period\" is defined as 30 days after the Reinforcement Time.\n\nCLAUSE: Decay.\nThe Keeper may, if the Decay Period has passed, terminate this Inscription.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Curator",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Community Mark",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Curator",
+   "verb": "declare",
+   "o": "Mana Spent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Spend Mana"
+  },
+  {
+   "s": "Curator",
+   "verb": "fix",
+   "o": "Reinforcement Time",
+   "io": null,
+   "as": "current-time",
+   "modal": "may",
+   "condition": "Mana Spent is declared",
+   "clause": "Reinforce"
+  },
+  {
+   "s": "Keeper",
+   "verb": "terminate",
+   "o": "Inscription",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Decay Period has passed",
+   "clause": "Decay"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Curator",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Community Mark",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Curator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Mana Spent",
+   "conditional": false,
+   "clause": "Spend Mana"
+  },
+  {
+   "promiser": "Curator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Reinforcement Time",
+   "conditional": true,
+   "clause": "Reinforce"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:Inscription",
+   "conditional": true,
+   "clause": "Decay"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Decay",
+   "condition": "Decay Period"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: gate (the Decay clause's terminate is reachable only once the defined Decay Period, 30 days after the Reinforcement Time, has passed) with an upstream gate (re-marking the Reinforcement Time is conditional on Mana Spent, so reinforcement costs mana and holds decay off). Omits the 0.5 mana price and reset arithmetic; the 30-day literal is the attested number form (days-after period and has-passed condition per lexon-example-statement). Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t139_inscription_reinforcement.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

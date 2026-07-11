@@ -1,0 +1,89 @@
+{
+ "census": "LEXPVM-T-210",
+ "term": "(+) Give Promise",
+ "provenance": {
+  "cites": "promise-theory-ref-v1-4 § ## Quick Reference: Concept Mappings",
+  "register": "pt-mapping · conjectured expression of canonical mapping"
+ },
+ "lex": "LEX Give Promise.\n\n\"Swordsman\" is a person.\n\"First Person\" is a person.\n\"Protection Offer\" is a text.\n\nThe Swordsman appoints the First Person.\n\nCLAUSE: Give.\nThe Swordsman may fix the Protection Offer, and afterwards send the Protection Offer to the First Person.",
+ "counts": {
+  "definitions": 3,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Swordsman",
+   "verb": "appoint",
+   "o": "First Person",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "fix",
+   "o": "Protection Offer",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Give"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Protection Offer",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Give"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Person",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Protection Offer",
+   "conditional": false,
+   "clause": "Give"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Protection Offer->First Person",
+   "conditional": false,
+   "clause": "Give"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Give",
+   "sequence": [
+    "fix:Protection Offer",
+    "send:Protection Offer"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: outbound polarity as ordering (in Give the Swordsman first fixes the Protection Offer and afterwards sends it: commitment precedes emission, one cannot give an unbound offer; the reversed order is exactly the mutation twin), and the plus pole as the actor being the promiser (the offer originates with the Swordsman and flows outward to the First Person). Omits: the promisee's use/acceptance (the minus pole, T-211) and the protection content itself. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}
