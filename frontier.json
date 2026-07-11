@@ -1,6 +1,6 @@
 {
   "authority": "This file is the single source of truth for numbers (GR-1). No metric appears in prose except as a citation of this file. Keystone-only writes.",
-  "updated": "2026-07-10",
+  "updated": "2026-07-11",
   "objective": {
     "metric": "coverage-debt",
     "gate": "tools/lexon_check.mjs full pass on every proposed LEXICON entry, plus 5 held-out census terms expressed by the assayer using only the proposal's pattern recipe, plus 3 covered regression entries; gateResult 8/8 (T5: zero collapses). Regime: spec-checker (real Lexon compiler is macOS-only, source unpublished; see SOURCES.md lexon-compiler-status).",
@@ -12,13 +12,13 @@
     "how": "node tools/census.mjs --freeze (rule pinned in artifact/CENSUS.json and tools/census.mjs EXCLUSIONS); coverage-debt re-derived by node tools/coverage.mjs against artifact/LEXICON.lexon.md"
   },
   "best": {
-    "metric": 181,
-    "leverIds": ["seed-fold-1", "defined-predicate-charter", "promise-decomposition-charter", "defined-condition-charter", "pt-primitive-role-charters"],
-    "evidence": "run lexr1 2026-07-10 (wf_931560d2-9c6, status INCOMPLETE: rounds 1-2 complete, round 3 lost to session-limit outage, engine reported outage not exhaustion): 4 levers VALIDATED 8/8, 0 MIRAGE, 0 BLOCKED. Keystone fold: 15 unique proposal entries (T-014..023 block, T-029, T-047, T-050, T-151, T-207; overlaps T-014,016,017,019,020,021,022,023 reconciled across levers) + 5 assayer-authored held-out entries from defined-predicate-charter (T-012, T-048, T-090, T-122, T-174; critic-verified recipe transfer). node tools/coverage.mjs = 181, 30 covered, 0 failed. Verdicts in runs/lexr1/*/; critic vacuity-watch adopted into LEXICON entry rules."
+    "metric": 152,
+    "leverIds": ["seed-fold-1", "defined-predicate-charter", "promise-decomposition-charter", "defined-condition-charter", "pt-primitive-role-charters", "escrow-conservation-charter", "quantity-gate-charter", "escrow-conservation-recipe", "escrow-ledger-formula-charter", "formula-skeleton-charter"],
+    "evidence": "run lexr2 2026-07-10 (wf_4017e0c4-584, status INCOMPLETE: rounds 1-3 complete, round 4 lost to session-limit outage at the Gap seats, engine reported outage not exhaustion): 5 levers VALIDATED 8/8, 1 MIRAGE (quantity-gate-charter round-2 scale-up: em dash in entry T-092 term/notes violated the hard constraint and its hardConstraintNote self-certification was false; critic classed the mirage noise not structural, no K-id, salvage folded via other levers). Keystone fold 2026-07-11: 13 unique proposal entries (heavy cross-lever overlap: T-025/026/031/032 proposed by ALL levers in ALL rounds; one expression folded per censusId, arbitration recorded in chronicles/2026-07-11_lexr2_fold.md) + 16 deduped assayer-authored held-out entries, all 29 re-verified GATE PASS at fold and all 29 inside artifact/OT2_REGISTER.json. node tools/coverage.mjs = 152, 59 covered, 0 failed. OT-2 register: 34 of 42 covered, residue 8 ids. Verdicts in runs/lexr2/*/ and the engine record."
   },
   "openTarget": {
-    "id": "OT-2",
-    "statement": "quantitative-register stress test (critic nextLead, lexr1): next lever must target ONLY formula/quantitative/spatial census terms (value formulas, Trust (0-1) mappings, mana axes) with the Gap drawing held-out terms from that same register; tests whether coverage-debt falls where numbers are load-bearing instead of re-proving recipes on glossary ground. OT-1 (first VALIDATED loop lever) CLOSED by lexr1: 4 levers validated.",
+    "id": "OT-3",
+    "statement": "mutation-probe falsifiability gate (critic nextLead, lexr2.3): the T-148 direction-inversion showed the gate validates a claim and its inverse under identical clause shapes, with only Notes prose stating direction. Build tools/relation_check.mjs plus a mutation probe: for each proposed entry the assayer also authors ONE mutated twin (gate condition removed, afterwards-chain reordered, or remainder redirected to the adversarial role) and the tool must mechanically distinguish twin from original on the exact relation the Notes claim (gate / ordering / impossibility-as-absence, as clause-graph properties). Register the check as objective.canary (clears the standing conform advisory). Checker extension: keystone-only, checker + GRAMMAR.ebnf.md + selftest move together. OT-2 (quantitative-register stress test) CLOSED by lexr2: the register yielded 29 covered terms across 5 validated levers with one formatting mirage; residue 8 ids.",
     "status": "OPEN"
   }
 }

@@ -52,14 +52,16 @@ export default {
       `Seat PROPOSE — soulbae 🧙 (bnot), lens = ${finder.lens}: ${finder.hint}
 Frontier context: ${JSON.stringify(measure)}.
 Read ${ctx.repo}/notes/KILLED_LEVERS.md first; never re-propose a K-id without new cited evidence. Read ${ctx.repo}/artifact/LEXICON.lexon.md (entry format is pinned there) and ${ctx.repo}/artifact/CENSUS.json (the uncovered terms).
-Propose exactly 1 lever through YOUR lens: a patternRecipe (the reusable authoring recipe, stated so precisely that a stranger could express a NEW census term with it) plus entries: at least 5 worked LEXICON entries in the pinned format, each with censusId, term, full lexText (the \`\`\`lex block content), cites (a SOURCES.md slug), registerTag. Every lexText must pass \`node tools/lexon_check.mjs\` — run it on each before returning (write scratch files under ${ctx.runDir}/propose-scratch/ only). expectedMetric = current coverage-debt minus your entry count. Plan and text only — never touch artifact/ or frontier.json.`,
+Propose exactly 1 lever through YOUR lens: a patternRecipe (the reusable authoring recipe, stated so precisely that a stranger could express a NEW census term with it) plus entries: at least 5 worked LEXICON entries in the pinned format, each with censusId, term, full lexText (the \`\`\`lex block content), cites (a SOURCES.md slug), registerTag, and notes. Every lexText must pass \`node tools/lexon_check.mjs\` — run it on each before returning (write scratch files under ${ctx.runDir}/propose-scratch/ only). expectedMetric = current coverage-debt minus your entry count. Plan and text only — never touch artifact/ or frontier.json.
+OT-2 REGISTER RESTRICTION (frontier openTarget, binding this round): your entries may target ONLY census ids listed in ${ctx.repo}/artifact/OT2_REGISTER.json (the formula/quantitative/spatial register). An entry outside that list is invalid regardless of gate result.
+VACUITY RULE (LEXICON header, binding): each entry's notes field MUST name at least one STRUCTURAL relation the expression captures (a gate, an ordering, a conjunction, an impossibility) before saying what is omitted. Where the term is a formula, the expression must carry the formula's STRUCTURE (which quantities gate which actions, what orders what) in clause shape, not just its name in a string.`,
 
     holdApart: (proposal, i, ctx) =>
       `Seat HOLD-APART — the Gap ⿻ (xor). Proposal artifact (verbatim):
 ${JSON.stringify(proposal)}
 Procedure:
 1. Canonically serialize the proposal above (JSON, recursive sorted keys, no whitespace) and SAVE THOSE EXACT BYTES to ${ctx.runDir}/p${i + 1}-${proposal.leverId}/proposal_canon.json — it must persist, it is the auditor's only route to your seed. SHA-256 that file with a real shell command; show command and digest; sha256sum of the saved file must equal seedHex.
-2. Build the uncovered list: run \`node ${ctx.repo}/tools/coverage.mjs --json\`, uncovered = CENSUS.json term ids minus coveredIds minus the proposal's own censusIds, in census order. Covered list = coveredIds in census order (if fewer than 3 covered entries exist yet, draw what exists and say so; the regression slots shrink accordingly and gateResult denominator with them).
+2. Build the uncovered list: run \`node ${ctx.repo}/tools/coverage.mjs --json\`, uncovered = ids in ${ctx.repo}/artifact/OT2_REGISTER.json (OT-2 register restriction, frontier openTarget) minus coveredIds minus the proposal's own censusIds, in census order. Covered list = coveredIds in census order (if fewer than 3 covered entries exist yet, draw what exists and say so; the regression slots shrink accordingly and gateResult denominator with them).
 3. Draw without replacement using digest bytes left to right as unsigned integers: 5 terms from the uncovered list, then 3 from the covered list; for draw k, idx = b_k mod (remaining list size). Show every step.
 4. draw = JSON text listing the 5 held-out terms (id, term, census anchor) the assayer must express using ONLY the proposal's patternRecipe, plus the 3 regression entry ids that must still pass.
 Write { seedHex, draw, transcript } to ${ctx.runDir}/p${i + 1}-${proposal.leverId}/gap.json (create dirs). Leave proposal_canon.json in place. Never accept proposer-suggested witnesses.`,
@@ -69,7 +71,7 @@ Write { seedHex, draw, transcript } to ${ctx.runDir}/p${i + 1}-${proposal.leverI
 Gap seed=${gap.seedHex}. Re-derive it the auditor's way first: sha256sum ${ctx.runDir}/p${i + 1}-${proposal.leverId}/proposal_canon.json must equal seedHex. BLOCKED if the file is missing or the digest does not reproduce. Transcript: ${gap.transcript}
 Then, scratch only (GR-10), under ${ctx.runDir}/p${i + 1}-${proposal.leverId}/:
 1. Write each proposed entry's lexText to scratch .lex files; run \`node ${ctx.repo}/tools/lexon_check.mjs <file>\` on every one. ANY failure = MIRAGE (name the entry and the failing check).
-2. Hard constraint: every entry has cites resolving to a SOURCES.md slug, a registerTag consistent with the canon source (spot-check 2 against their census anchors), no em dash anywhere in the proposal.
+2. Hard constraint: every entry has cites resolving to a SOURCES.md slug, a registerTag consistent with the canon source (spot-check 2 against their census anchors), no em dash anywhere in the proposal. OT-2 checks (binding this round): every entry's censusId is in ${ctx.repo}/artifact/OT2_REGISTER.json (an entry outside it = MIRAGE); every entry's notes names at least one structural relation captured (gate/ordering/conjunction/impossibility) and the lexText actually exhibits it in clause shape — an entry whose quantitative content rides only in name strings = MIRAGE (vacuity, LEXICON header rule).
 3. Held-out: for each of the Gap's 5 drawn terms, author an expression yourself using ONLY the proposal's patternRecipe (read the term's canon definition at its census anchor first). Run the checker on each. A term the recipe cannot express = gate fail: the recipe is not general.
 4. Regression: extract the Gap's 3 drawn covered entries from ${ctx.repo}/artifact/LEXICON.lexon.md and re-run the checker on each.
 5. gateResult = "n/8" (5 held-out + 3 regression; use the Gap's stated denominator if fewer regression entries exist). metric = coverage-debt if this lever folded: current debt minus proposal entries that passed step 1.
@@ -115,7 +117,7 @@ Classify each closed lever structural / probe-limited / noise. Red-team the prop
               entries: {
                 type: 'array', minItems: 5,
                 items: {
-                  type: 'object', required: ['censusId', 'term', 'lexText', 'cites', 'registerTag'],
+                  type: 'object', required: ['censusId', 'term', 'lexText', 'cites', 'registerTag', 'notes'],
                   properties: {
                     censusId: { type: 'string' }, term: { type: 'string' },
                     lexText: { type: 'string', description: 'full ```lex block content, checker-passing' },
