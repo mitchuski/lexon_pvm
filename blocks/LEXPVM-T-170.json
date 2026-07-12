@@ -104,5 +104,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Defended requires all three layers (Scales Held, Hide Held, Bones Held) and absorbing the Blow is gated on Defended: the layers gate multiplicatively as a joint requirement, any layer missing and the defence is not Defended. Section names no acting party, so the First Person holds every clause (universal cast rule). Omits the vendor toolkit example, the epsilon failure-mode terms, and the three separation-axes mapping. Folded from lexr5.3:zero-party-story-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:645b40e13f24d15f8549dd1e8b6a666218bd5bc6a236b47298d34467c815dc61"
 }

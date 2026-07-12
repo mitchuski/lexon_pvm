@@ -200,5 +200,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "conservation = parity cover plus octahedral cover plus the open remainder exhaust the escrowed lattice volume, the octahedral gap being the remainder itself, held by the Gap; ordering = each cover is drawn only after its reading stands declared; impossibility as absence (no clause lets either geometer take the remainder, the gap stays open at candidate strength). Omits the lattice cardinality and the cube-of-cubes decomposition. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0385314ea1dd1b44d763fcac248248a42926217aed2eaab603263fd4b460302e"
 }

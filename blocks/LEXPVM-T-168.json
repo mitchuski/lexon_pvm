@@ -179,5 +179,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the Quintessence is defined as ALL six dimension-holdings simultaneously (protection, connection, computation, delegation, memory, value), and certification of the privacy value model routes only through that full conjunction, carrying held-simultaneously-across-all-six-dimensions in clause shape; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the alchemical lineage, the quintessential tale and blade numerology, and the Aether naming, which is a separate census term. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:58dfcdb23920c982f965955e71b3995ca7e145740b3903356bb96b5a2c7fe90c"
 }

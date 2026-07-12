@@ -254,5 +254,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "accumulation ordering (each deposit gated on a declared verified step); dampening as conditional drains (integrity and persistence discounts leave escrow only under their declared failure binaries); conservation = deposits equal drains plus retained remainder; holonic persistence as the gate on retaining the remainder. Omits the logarithmic formula and alpha. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:278f81c5b4c5f9d70e606ef3aabf9b8aea259c90669395271c52fab9a5a4c1b9"
 }

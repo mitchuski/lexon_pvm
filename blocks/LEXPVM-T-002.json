@@ -141,5 +141,7 @@
  },
  "grandfathered": false,
  "notes": "Carries sovereignty as a four-way conjunction: the Sovereign state requires all four canon components (data, decision, representation, and conditional sovereignty as fixed engagement terms), and every component is declarable only by the First Person while the Agent's sole route to engagement runs through the constituted state. Deliberately omits the inalienability framing beyond clause shape, the Gap-as-architectural-expression sentence, and the 7th Capital economic expression (covered separately at T-003). Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:ca261394b91f11807d301ecb69cb36633b1c394a47a8f1c50771bc2ca5636401"
 }

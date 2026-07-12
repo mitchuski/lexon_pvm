@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "carries the zero-knowledge direction as an absence (no transfer clause ever routes the Credential to the First Person, while the Proof does route there: the proof flows, the witness never does), anchored quantitatively by the Disclosure Count initially 0 comparative gating verification; the Mage is the canon-named prover and the First Person holds the verifying side per the cast rule; omits the soundness and completeness games and all cryptographic machinery. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:45d4f7edcc000607ade9f680897be1035f9c9604023385789a39229be94dba83"
 }

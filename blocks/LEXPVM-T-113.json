@@ -85,5 +85,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: clause Plan performs fix:Traversal Structure, then certify:Reasoning Graph as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:237821019d535e161db73016919dc5b0edf1f75c0db90876ddc9bb163558acc1"
 }

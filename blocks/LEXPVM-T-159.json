@@ -121,5 +121,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: conjunction (Closed requires the arc answered AND the close time marked, both together) gating the only register of a Continuation Act, so continuation is reachable only through closure, a tide not a lock as clause topology; upstream ordering (the tide mark is itself conditional on Arc Complete, answered-before-closed). Omits the five-spellbook taxonomy, the HOW/WHEN/WHY/WHERE act taxonomy, and the salt-inscription imagery. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t159_spellbook_close.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f0d316374da1a08e52c9e37c76fe6e86d4f5970b6e638b3c6e9838835c64c640"
 }

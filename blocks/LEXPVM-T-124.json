@@ -103,5 +103,7 @@
  },
  "grandfathered": false,
  "notes": "captures same-object-same-identifier as a defined-as conjunction: Addressed requires exactly Object fixed and Identifier fixed, and the Arrival Path is deliberately not a conjunct, which is the path-independence of verification (the ZK separation of verify from witness); the section names no actor, so the First Person holds every capability (universal cast rule); omits hash mechanics and the UOR lattice context. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:b14a1a2fec0126d1ab4bf4157c099949a239bc1f5bcddf436699b61a2d059746"
 }

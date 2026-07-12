@@ -177,5 +177,7 @@
  },
  "grandfathered": false,
  "notes": "editorial admission as a four-way conjunction: the defined predicate Admissible requires the watcher's congruence declaration, the editor's filed signature (a duty, must), the resident mage's filed scribal witness, and the keeper's preservation declaration, each produced by its own side in its own clause, with binding gated on the whole predicate. Omits the addenda fallback for anonymous edits and the reading-not-a-vote nuance of the congruence test. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:8832d92f6b0e1b51b301b1f5808370e7ec1793ff62adb987c861994748238e3e"
 }

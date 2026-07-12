@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "Carries cycle zero's orientation as a cross-separation gate (the Moon side's evocation and the orbit pattern both wait on the Sun side's declared completion, never the reverse: the seeding direction of the first ceremony as permission structure); omits the named poems, constellations, and evocations of the two sides. Folded from rite-and-register-spell (spell-grammar, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1b2c3dbacb04d84d172a9c36bc33078f79c2f586d902fed8af7fd9e13146b500"
 }

@@ -172,5 +172,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: gate cascade as orbital ordering (the Light is sent and afterwards the Sun Time is marked; carrying is conditional on the time being fixed; forgetting is conditional on carrying; and the onward send to the New Sun is conditional on Origin Forgotten): the circuit propagates through forgetting, not instruction, as reachability structure, with the claimed gate on the re-seeding step. Omits the sun/moon ceremony pairing detail and the property that the new practitioner believes they invented it. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t045_the_circuit.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d09fbb0aec091d57f42fe0033e1cce3576b195864915778013e5808cc2e34f69"
 }

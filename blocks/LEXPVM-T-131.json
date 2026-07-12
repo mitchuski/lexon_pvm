@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Structural: accumulation ordering (each Lap Charge deposit is gated on a declared Lap Complete, so intensity grows only lap by lap, and the Witness certifies the Charge Level only once a lap stands declared) and close-gated discharge (the remainder returns to the Celebrant only after Ceremony Closed is declared, and no clause withdraws charge earlier). Omits the lap-count level table and numeric intensity values. Anchor: ### Charge Level. Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:88cd3266a25be92017369072eaa65d88cec3e4c777f462d43b4a7b3d43214d15"
 }

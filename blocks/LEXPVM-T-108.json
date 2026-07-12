@@ -200,5 +200,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "shared-parent coordination carried as only-route topology (the sole clause reaching the Peer is the Parent relay gated on the Parent own Pattern Received declaration; no member-to-peer send exists); the Efficient conjunction gates the only certify of Efficiency Gain; the Guild Member holds no declare clause. Omits the one-plus-efficiency formula. Assayer-authored (formula-skeleton-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:19fa7b07cc0632b1050198c1c68b1c05b42f61e13d608fbd098cc97d530edc89"
 }

@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Carries machine-readability as a gate chain: the Encoding artifact must be filed before Encoded can be declared, and the Processor's certify of the Terms is conditional on Encoded (the relation claim), so computer processing of unencoded terms is structurally unreachable, an encode-then-mark-then-process ordering carried by two stacked gates. Omits the concrete formats (JSON-LD, RDF/Turtle, HTTP headers, bitwise encoding). Anchor: ### Machine-readable (IEEE 7012). Folded from ieee7012-standards-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:9007cb25453214fc3c0204e435528a643da4b99f47f109eeb70de684377bebae"
 }

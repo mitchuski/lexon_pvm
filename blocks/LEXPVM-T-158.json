@@ -141,5 +141,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: Quaternion Complete requires all four bodies' aspects declared (Protection, Delegation, Reflection, Connection), the quaternion as a four-way joint requirement; the recitals carry the two-generator structure, Sun appoints Moon and Earth appoints Human, with each declaration held by its own body; omits the instant-versus-four-billion-years production asymmetry and the persisting Moon-to-Human gap. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:a70de054ce7cbb9d97fcd605d57539d08b9947e8a93488eafd14e4a4ee70988e"
 }

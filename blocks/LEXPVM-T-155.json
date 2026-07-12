@@ -86,5 +86,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: the partition is one distribution chain performed by the section's named impactor (Body to the Earth, then Silence to the Moon, then Heat to the Sun), carrying partition-not-destruction as three outbound routes in canonical order from a single officiant. Deliberately omits the etymology discovery about the distributed letters and the naming proverb; register stays conjectured because the canon marks this a cosmological metaphor. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:15367e472a3e7fe9f08c90570d23351a15ce34f70b82261eb1e05f90c6f3a816"
 }

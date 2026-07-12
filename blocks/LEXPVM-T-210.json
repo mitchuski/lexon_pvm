@@ -85,5 +85,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: outbound polarity as ordering (in Give the Swordsman first fixes the Protection Offer and afterwards sends it: commitment precedes emission, one cannot give an unbound offer; the reversed order is exactly the mutation twin), and the plus pole as the actor being the promiser (the offer originates with the Swordsman and flows outward to the First Person). Omits: the promisee's use/acceptance (the minus pole, T-211) and the protection content itself. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:638f66495e57adb56c3390261cbc644e0b427b6ef0ea9024296ae40372a9e7b7"
 }

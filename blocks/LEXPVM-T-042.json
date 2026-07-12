@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries proof-of-understanding as bilateral registration before binding; omits the genesis/operational ceremony taxonomy and the d6 value dimension.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:a1c65e15f26d7565d8173a175ad06fc5661a15a6dae55d1577d4781ab305c434"
 }

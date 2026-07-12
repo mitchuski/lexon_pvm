@@ -85,5 +85,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: Dense Spell requires all of Compression Ratio is not less than 70 AND Compression Ratio is not greater than 125. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2debbd1abde206359309c056f0c7a554225490f73834ba6f93b5e52ebf1a9dd4"
 }

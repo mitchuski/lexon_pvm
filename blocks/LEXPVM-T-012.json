@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "composition: the exterior promise is sendable only when all three interior declarations hold (Composed defined-as conjunction), the irreducible-composite property as clause structure; omits emergence formalism.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1c54e38b369a71333719cac1ab12ee1296417e3f0b57a77dfec6844975ae6255"
 }

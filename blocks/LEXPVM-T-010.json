@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries observes-everything, approves-or-refuses-boundaries, reveals-nothing-directly (no clause sends anything to any external party); omits budget constraints on leakage.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:43c72c12264a262e14563135a0303079f40d14998df5309a3c1ab74d4784dd4a"
 }

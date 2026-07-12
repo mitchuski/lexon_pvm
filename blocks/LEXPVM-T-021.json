@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries voluntary subordination around a shared body (adoption is 'may' on both sides, and the coordination certify is open to either agent only after both adoptions are declared); omits spell-notation interpretation duties and VRC-formation detail.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:72a4ddfe796257566f3611837f5109f7981432791f0f150939ada771b5429971"
 }

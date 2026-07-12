@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "carries progressive capability as a two-stage gate: the Higher Capability's only route is the Exercise clause conditional on the Assessor's Tier Advanced declaration, itself gated on the Participant's filed Signal Record (tiers as accumulated positive assessments, advancement declared by the assessing side never by the gated side). Omits the four named tiers, signal counts, and trust ranges, since numeric literals are out of subset. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:13789bd1f95d4bada89b2a0406614304a1bbc0ab0fa02aec9bff02fd13bf561b"
 }

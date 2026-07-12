@@ -273,5 +273,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: Covenant Inscribed is defined as all ten canon principles declared, so any missing principle breaks the definition (the mutated twin drops Personhood and fails the claim); the Carry Forward gate on Threshold Passed carries the key proverb's structure, copies travel only with those who passed the threshold; omits the Infinite Vault staging and the proverb's wording; zero-party section, First Person holds per the universal cast rule. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:4a33582554db607077d8e6b925961746979606ec5440bf6fff87148a3eed5820"
 }

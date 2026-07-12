@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "ordered partition carried as one afterwards chain (spell windows, then forged windows, then the remainder to the Witness); conservation = the three allotments exhaust the escrowed window inventory. Omits the numeric window counts. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:df89d8781dfad89c6e3589d375b4319e7c6812e5ede729999d72cc62b33e2512"
 }

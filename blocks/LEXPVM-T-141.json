@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "carries validation-gates-rendering (the Receiver certifies the Inscription only under Mana Sufficient declared, and delivery orders inscription before mana payment in the Deliver chain); omits the message schema fields, accepted sources, and shimmer rendering. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:212736fa1529c9a52149d854bee4973e9c5fb694a6384d3e1d684315e7cea90a"
 }

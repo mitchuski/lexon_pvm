@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries the principal-behind-all-delegation property (only the First Person appoints, delegates, revokes, closes: the non-delegable door as clause structure); omits dignity and 7th-capital framing.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d8fc57477610c9b38e44ec99d0739d9b2385fc856cfb715449c7494b6d377296"
 }

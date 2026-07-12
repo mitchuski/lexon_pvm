@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Structural: the floor as an unavoidable consequence (Concede Error is a must clause gated on Channels Drained, so once draining is complete the error declaration is obligatory rather than optional) and conservation (the Gap returns the undisclosed remainder to the First Person, and no clause pays it to the Adversary, which is what forces the error). Omits the inequality P_e is at least 1 minus R_max as a number. Anchor: ### Error Floor (P_e). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:125e83bde66ab3590bc08cfa825cf53bab66fad48982e3516168e368a566ec0a"
 }

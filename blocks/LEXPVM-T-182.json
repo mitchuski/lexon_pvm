@@ -103,5 +103,7 @@
  },
  "grandfathered": false,
  "notes": "honor-built recognition as ordering: the higher seat is registered first and the cast entry certified afterwards (the entry came later than the inhabiting, as clause sequence). Omits tower geometry. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:e94191581e0a50ad6c19d21df0b6a139fdbe25e845d0170a9259d14a488694f0"
 }

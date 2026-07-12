@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "gate: the Attach clause is reachable only under the Seated condition. Omissions per the term's canon anchor. Assayer-authored (myterms-party-charter-spell held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:66ae0da71fa4401f70a10ae1c10891c62a2f2304a5c1941ca459b21ba4b812c8"
 }

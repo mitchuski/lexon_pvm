@@ -172,5 +172,7 @@
  },
  "grandfathered": false,
  "notes": "Carries the compliant-exit direction as an absence (both the Depositor and the Flagged Depositor may pay the Deposit into escrow, but no transfer clause routes the Deposit to the Flagged Depositor; the only exit is the Withdraw clause, gated on Innocent, which is declared only after an Association Proof is fixed: proving non-association is the condition of getting funds out); omits the cryptographic mixing mathematics and anonymity-set semantics. Folded from instance-charter-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:913e599700164c51691195dec33bd26f0221eb13b995e66cce9961d8a4de0d5e"
 }

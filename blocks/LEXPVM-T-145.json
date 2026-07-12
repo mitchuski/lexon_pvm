@@ -180,5 +180,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: the six anatomy parts are established in the canon Act sequence, Boundary through Flight, ending in the Flight inscription, and the Wake clause is additionally gated on Flight Inscribed (the dragon wakes only after the last part is in place); zero-party section, First Person holds per the universal cast rule; omits the Act numbers, the per-part status column, and the proven versus grounded labels. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d1facee6ff8ab3c51f133f9d5a63f10a69ea7566e4fbb0585f27185800ef3ae1"
 }

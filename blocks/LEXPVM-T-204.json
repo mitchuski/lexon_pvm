@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: independent assessment as impossibility (no transfer clause routes the Assessment to the Neighbor: an agent's assessment is local and never transfers, so trust is not transitive), plus the Autonomy Axiom in recital shape (each person fixes only its own conduct, and the only promise route to the Neighbor carries the Agent's Own Conduct). Omits: the assessment function alpha(pi) semantics and multi-neighbor topology; modeled minimally with one neighbor. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d6c263a1933ed5ec651271cda5c673c3285088541d33cd5ed5ed61874d99e42a"
 }

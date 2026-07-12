@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes Collision to the First Person. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1a5416226f5b91fb545af5f9b29aa0d2639028138b4f83c58941dda3d2e741c7"
 }

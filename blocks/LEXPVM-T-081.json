@@ -82,5 +82,7 @@
  },
  "grandfathered": false,
  "notes": "gate: Freedom is granted only under the declared Shackled constraint, the section's paradox (constraints become freedom) carried as a clause condition; zero-party section, so the First Person holds every clause per the universal cast rule; omits the named groves, Platox's teaching domains, and the Act 15 lore. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:6415c20cad45d6a5b667469a153d2a3899d468b601614fd8cbf2655785e4a9fa"
 }

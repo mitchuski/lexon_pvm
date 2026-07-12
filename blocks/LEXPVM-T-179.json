@@ -64,5 +64,7 @@
  },
  "grandfathered": false,
  "notes": "carries the bridge arithmetic as a gate (registering an Attachment Record is conditional on Open Slotted, itself the conjunction of the Vertex Count initially 64 greater than the Primary Count initially 42 and the Attachment Slots initially 22 greater than zero: the sixty-four minus forty-two equals twenty-two accounting in clause shape); the only registrable object is an attachment record, never a new primary; zero-actor canon section, First Person holder; omits per-city attachment multiplicity and the inhabited-vertex tallies. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:6b4959b54d3af9e1114a7bd1c564c95859b544b5b557127def02862b274c30a0"
 }

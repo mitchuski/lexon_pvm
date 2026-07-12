@@ -1,5 +1,6 @@
 {
- "rule": "node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited",
+ "holon": "block-corpus.v1",
+ "rule": "node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited; each block and this manifest carry a κ content-address (HOLONS.md), verified by node tools/blocks_audit.mjs",
  "count": 189,
  "blocks": [
   {
@@ -7,1323 +8,1513 @@
    "term": "First Person",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:d8fc57477610c9b38e44ec99d0739d9b2385fc856cfb715449c7494b6d377296"
   },
   {
    "census": "LEXPVM-T-006",
    "term": "The Gap",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:e8d1e759d7947c2c6362e9479507eb0f1552343a0efacf4c683869968b705aa3"
   },
   {
    "census": "LEXPVM-T-009",
    "term": "Dual Agents (s ⊥ m)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:bd4f49b1f209104fc18c275f0663237aaf717e8530b43ffe11e4df7e66044c22"
   },
   {
    "census": "LEXPVM-T-010",
    "term": "Swordsman (⚔️)",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:43c72c12264a262e14563135a0303079f40d14998df5309a3c1ab74d4784dd4a"
   },
   {
    "census": "LEXPVM-T-011",
    "term": "Mage (🧙‍♂️)",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:6ca283000db9ff9f42a787a2268f523710d37bc0edc390086c93c40ea9319514"
   },
   {
    "census": "LEXPVM-T-013",
    "term": "Promise (Promise Theory)",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:b385d8fe2bd17373956041aabeefed047a4ecd471d0f37eb938e4efdd95777f2"
   },
   {
    "census": "LEXPVM-T-042",
    "term": "Ceremony",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:a1c65e15f26d7565d8173a175ad06fc5661a15a6dae55d1577d4781ab305c434"
   },
   {
    "census": "LEXPVM-T-055",
    "term": "MyTerms (IEEE 7012-2025)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:bef3357391722f8d5884a9332c6ac61fd4edfa6de8887b894300c7385cf610b2"
   },
   {
    "census": "LEXPVM-T-073",
    "term": "Soulbis",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:169d040fc6c1bafbe6b835567b84bcbf314b0adf0445c33b83bd69e53a1ed7de"
   },
   {
    "census": "LEXPVM-T-074",
    "term": "Soulbae",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:7150a2b7e631873b63f256cd60ee379bb4c1ce491a51d19d41a804d4471588ba"
   },
   {
    "census": "LEXPVM-T-014",
    "term": "Autonomy Axiom",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:3672153fda7ca00ddec0b2bc51d5464104c30bd49cfaf96e5af10a435e75fd31"
   },
   {
    "census": "LEXPVM-T-015",
    "term": "Promise Body (τ, χ)",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:0f595369a9c15c5c2f52d7ea092f6247288104854f933c14f40276263e7e334e"
   },
   {
    "census": "LEXPVM-T-016",
    "term": "Conditional Promise (b|c)",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:02d33cb94d58e54467715c7f91283b4eb483a9619914e817ad3ecafae2b65024"
   },
   {
    "census": "LEXPVM-T-017",
    "term": "Assessment α(π)",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:3022614a2ac477b40fba5c90baea669a4a734bbd9059e6c8ff4910aea98e6da2"
   },
   {
    "census": "LEXPVM-T-018",
    "term": "Trust Function",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:dff6da5812ec8a4d06cbd719f253f1bc09dc417e579445d83063fab400805490"
   },
   {
    "census": "LEXPVM-T-019",
    "term": "Irreducible Promise",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:7c8ed286fc3e96e3e3f2228d241a6e20a5d729b8d94ff325945bdffd116b8dd0"
   },
   {
    "census": "LEXPVM-T-020",
    "term": "Invitation vs. Attack (Imposition)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:1cfa45540f105cad7fc9547f59ea809326c5b5bdef1ce5d9b661cd2ebd9596e5"
   },
   {
    "census": "LEXPVM-T-021",
    "term": "Coordination Promise C(b)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:72a4ddfe796257566f3611837f5109f7981432791f0f150939ada771b5429971"
   },
   {
    "census": "LEXPVM-T-022",
    "term": "Promise Bundle",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:db06d94a72cc1664a060d528ac6b1c0dc2f3c948af793f6dea2ad0148d170759"
   },
   {
    "census": "LEXPVM-T-023",
    "term": "Scope",
    "triples": 4,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:f5e726f17aefc2fd36a0c0568e1752c79b85880431b181a852fd2434c4a0c03d"
   },
   {
    "census": "LEXPVM-T-029",
    "term": "Budget Constraint",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:cd0fc322c3aaac9fa7c81537aeb605e74bf1d20c1d2c9621cd9f232f95f5820e"
   },
   {
    "census": "LEXPVM-T-047",
    "term": "Witness (Ceremonial)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:2fe61247418d006a906f3ab1ddcf717fa4bcdbe1eac63ccc8b47ac247fa10e2f"
   },
   {
    "census": "LEXPVM-T-050",
    "term": "Chronicle",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:5ab6285e3bdd0bdaf6cd4598b7b7cce1cea10176bdeefd3339bfdc2cb4834f4d"
   },
   {
    "census": "LEXPVM-T-151",
    "term": "The Temporal Thesis",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:f468ad88d8def3bafdef13f64c562436ffeed0dd452cbe70c85ea6f67b96832d"
   },
   {
    "census": "LEXPVM-T-207",
    "term": "Trust (0-1)",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:0bf1ee71e5266ea4711783fecba6d57cb8cc321cde6cdd561967bd3ce478468c"
   },
   {
    "census": "LEXPVM-T-012",
    "term": "Superagent",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:1c54e38b369a71333719cac1ab12ee1296417e3f0b57a77dfec6844975ae6255"
   },
   {
    "census": "LEXPVM-T-048",
    "term": "SWORD Token",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:e191d7c28e763ff441ae6363099679f519594783eb499046faf34070a2af84d1"
   },
   {
    "census": "LEXPVM-T-090",
    "term": "Four Forces (Protect, Project, Reflect, Connect)",
    "triples": 9,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:b31d571ec91492d556d4d9d6cf6dcd8ba0a0a645ccbf79aee70e50c20d561c44"
   },
   {
    "census": "LEXPVM-T-122",
    "term": "Stratum",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:b90e7d85c82a672e23231d847dcea9ef0ca16877fc20723e20c943323753a51e"
   },
   {
    "census": "LEXPVM-T-174",
    "term": "Primary persona (Layer 1)",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:85867d24048453dc6d3f3156f4d258cae5ab4ffee9e984f0c11183ee5ce563fb"
   },
   {
    "census": "LEXPVM-T-005",
    "term": "Economic Parameters (Canonical)",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:3bf14bc0fa2a5b1e992b2b0544dfa0118cc5ece1c7e486d7d36bc7106edd1259"
   },
   {
    "census": "LEXPVM-T-025",
    "term": "Reconstruction Ceiling (R_max)",
    "triples": 10,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:c15deaeae3c354ded6f42c9d320ec871c97855e4b2a28dc292b3e44eeb0e409b"
   },
   {
    "census": "LEXPVM-T-026",
    "term": "Error Floor (P_e)",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:125e83bde66ab3590bc08cfa825cf53bab66fad48982e3516168e368a566ec0a"
   },
   {
    "census": "LEXPVM-T-031",
    "term": "Mutual Information I(X; Y)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:72de0e64f91b5ea81ca4c354eee6e13603a37229cc843f9c5064a5273c138d50"
   },
   {
    "census": "LEXPVM-T-032",
    "term": "Entropy H(X)",
    "triples": 11,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:98ac4e1e11dd5f090279823ffc81cab40a9ec84268a59e768fe29a86123b9fc9"
   },
   {
    "census": "LEXPVM-T-082",
    "term": "Mountain of Entropy",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:db8f5183aa901cb020ae1dfc88b121a612868bce813774f6b4345e53ba6f34ca"
   },
   {
    "census": "LEXPVM-T-089",
    "term": "Tetrahedral Sovereignty",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:a62696de7f637ecb667834aa2f3fa0e11ff19daac74fb29710b47761f04190a6"
   },
   {
    "census": "LEXPVM-T-091",
    "term": "Privacy Value Model (PVM)",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:bd4f1693017f2b4d671fcb27cdb8fc530415446258ea7314e57c963ee33e0269"
   },
   {
    "census": "LEXPVM-T-092",
    "term": "Separation Matrix (Σ), Agent Layer",
    "triples": 11,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:c46889470f860d6538cbb0646d37b96e55654be57f4816d1d1c584d16b6d63b9"
   },
   {
    "census": "LEXPVM-T-094",
    "term": "Φ_agent (Agent-Layer Separation)",
    "triples": 12,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:798ebac682c9d194999a5e939aa7c9ad4dec1e74d4552e5419957290091d617a"
   },
   {
    "census": "LEXPVM-T-095",
    "term": "Φ_data (Data-Layer Separation)",
    "triples": 10,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:b9b36729a12233c8ad47f8588a9307a486ceb0bde3a6988d3a3402ccefb27ae5"
   },
   {
    "census": "LEXPVM-T-098",
    "term": "Edge Value T(π) → Path Integral T_∫(π) (V5)",
    "triples": 9,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:c2d94e38b4471a8e5b9a8cd51f1d41de34fc36d21da473b0b05cd5b260213f64"
   },
   {
    "census": "LEXPVM-T-099",
    "term": "Path Integral T_∫(π) (V5)",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:e591afdf48a3f9bf8eb8cc06097e5200b17d74eeacc41cdebc7b1c2d9c0b02e3"
   },
   {
    "census": "LEXPVM-T-101",
    "term": "Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)",
    "triples": 13,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:278f81c5b4c5f9d70e606ef3aabf9b8aea259c90669395271c52fab9a5a4c1b9"
   },
   {
    "census": "LEXPVM-T-108",
    "term": "Guild Efficiency G(guilds) (V5)",
    "triples": 10,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:19fa7b07cc0632b1050198c1c68b1c05b42f61e13d608fbd098cc97d530edc89"
   },
   {
    "census": "LEXPVM-T-112",
    "term": "BRAID Parity Effect (V5)",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:eb40321487ddbddafb5bb2f88a2f5a111938e5e02f4e6302e1006bd69840c694"
   },
   {
    "census": "LEXPVM-T-123",
    "term": "Stratum Weight (wᵢ)",
    "triples": 5,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:9f3fd4f88f671ca93bffe1c2d0a015aa2d0a1f89e22a89611a8b8146974755db"
   },
   {
    "census": "LEXPVM-T-128",
    "term": "Betweenness Centrality",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:6ad4770f3988a8f3a1d7dc909159c6b4f6af159af5c03b41d0890ce7bf48ae2c"
   },
   {
    "census": "LEXPVM-T-131",
    "term": "Charge Level",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:88cd3266a25be92017369072eaa65d88cec3e4c777f462d43b4a7b3d43214d15"
   },
   {
    "census": "LEXPVM-T-132",
    "term": "21 Windows",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:df89d8781dfad89c6e3589d375b4319e7c6812e5ede729999d72cc62b33e2512"
   },
   {
    "census": "LEXPVM-T-135",
    "term": "Hexagram Encoding",
    "triples": 17,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:bcbca8c6c341f38054993cf7444b6556ee74042d90f78cd089d7b93c46399313"
   },
   {
    "census": "LEXPVM-T-136",
    "term": "Mana Economy",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:1e1b0b37ec353855f2b7f7880b19bbabd6e02719c8a7a0f7a6cdcfd4db8417a2"
   },
   {
    "census": "LEXPVM-T-137",
    "term": "Mana Bridge",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:386bb89be3184304b20a193cadc5efc10e6b81e832ecc906454454e141f133d0"
   },
   {
    "census": "LEXPVM-T-147",
    "term": "Quantum Threshold",
    "triples": 8,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:f042ae125bc982d2097001cae594f716dce5dc102b641b07281c28b517cd6509"
   },
   {
    "census": "LEXPVM-T-148",
    "term": "2D Fortress",
    "triples": 6,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:90b63b87b4da0132f53d28a6834f85d5801fc6ce5b78624d066c409ba26e5382"
   },
   {
    "census": "LEXPVM-T-149",
    "term": "The 62-Lap Theorem",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:b1ceb5769b3ae281198c4ab74deb9dc8d1900c7753e32bc3d89407526b6402ec"
   },
   {
    "census": "LEXPVM-T-194",
    "term": "Moving Ceiling R(t) and Shelf Life t*",
    "triples": 7,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:e6d65193ae7ab90850e5e88c180a838947286396e51c61f5e422387881c0d98f"
   },
   {
    "census": "LEXPVM-T-200",
    "term": "Parity Cube · Octahedral Gap",
    "triples": 10,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:0385314ea1dd1b44d763fcac248248a42926217aed2eaab603263fd4b460302e"
   },
   {
    "census": "LEXPVM-T-201",
    "term": "Regime 1 · 🪢 Presence Mana",
    "triples": 6,
    "relation": null,
-   "grandfathered": true
+   "grandfathered": true,
+   "κ": "sha256:0a60fca29bbffa070610bdc4d24a1cda2de4862e82733a9231110951c25a5063"
   },
   {
    "census": "LEXPVM-T-037",
    "term": "Verifiable Relationship Credential (VRC)",
    "triples": 7,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:385c1de4e3f895c9a6a7513ec1237e19ec267410a137ab69614a2b324b47ae17"
   },
   {
    "census": "LEXPVM-T-038",
    "term": "Trust Tier",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:13789bd1f95d4bada89b2a0406614304a1bbc0ab0fa02aec9bff02fd13bf561b"
   },
   {
    "census": "LEXPVM-T-039",
    "term": "Guardian",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:3a44cf44c425e16f791a35886dfc88c3cdd596beee4152f286a0a24dca6ea703"
   },
   {
    "census": "LEXPVM-T-041",
    "term": "Signal",
    "triples": 6,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:8ccca5a6e26f044d3151e97585dbf0a29c2630c5e86b3c5093778b8ece9a2b44"
   },
   {
    "census": "LEXPVM-T-044",
    "term": "Moon Ceremony (🌙)",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:53f790d3995bda4e74f549c935d5d7b1cd8d40d84e30ab4fcb0aecfa29f17f02"
   },
   {
    "census": "LEXPVM-T-045",
    "term": "The Circuit (Ceremonial Propagation)",
    "triples": 8,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d09fbb0aec091d57f42fe0033e1cce3576b195864915778013e5808cc2e34f69"
   },
   {
    "census": "LEXPVM-T-133",
    "term": "Evoke Ceremony",
    "triples": 6,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:80fcb7f5a890c54192c75034f174356b78ca483b66583cc219287a627aa559bb"
   },
   {
    "census": "LEXPVM-T-139",
    "term": "Inscription Reinforcement",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:0db95a5d7822bd73869ae27e1a05152871ee1a560fbdd26b9ee64a4fd6583447"
   },
   {
    "census": "LEXPVM-T-153",
    "term": "Amnesia Protocol",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:37095e321ef65b86a72831504da375eabb68d4e37303ea6a633ae1210d292c5b"
   },
   {
    "census": "LEXPVM-T-159",
    "term": "Spellbook Close",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:f0d316374da1a08e52c9e37c76fe6e86d4f5970b6e638b3c6e9838835c64c640"
   },
   {
    "census": "LEXPVM-T-204",
    "term": "Agent",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d6c263a1933ed5ec651271cda5c673c3285088541d33cd5ed5ed61874d99e42a"
   },
   {
    "census": "LEXPVM-T-205",
    "term": "µ-promise: A --b--> B",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:16159493c6a702501f50978cd23cc3bd8f8e7e04749875f4c5910a9986f7e846"
   },
   {
    "census": "LEXPVM-T-206",
    "term": "Conditional Promise (b\\",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ac55c07e3a960d6ef7bf20c89ef24904ebe7dd9a9ded097653e73e224ff88d73"
   },
   {
    "census": "LEXPVM-T-208",
    "term": "Invitation",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:bea0f5c66845ff379465682ff27363a38abd877eb39246df9ef60d1714c622b1"
   },
   {
    "census": "LEXPVM-T-209",
    "term": "Imposition/Attack",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:4c89218bd612deabc0ac7291db53a7b0673616a5b4082a844c13e028a924b111"
   },
   {
    "census": "LEXPVM-T-210",
    "term": "(+) Give Promise",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:638f66495e57adb56c3390261cbc644e0b427b6ef0ea9024296ae40372a9e7b7"
   },
   {
    "census": "LEXPVM-T-211",
    "term": "(-) Use/Accept Promise",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:76aa9a997ee0281a804adec475e3ab4d63fcc061ad0481924df198a0f81a7327"
   },
   {
    "census": "LEXPVM-T-027",
    "term": "Selene's Proof",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:6e3d8b674b3953af47c9807b8206abd501397332da5a47c24f2d6da22efe9171"
   },
   {
    "census": "LEXPVM-T-034",
    "term": "Trusted Execution Environment (TEE)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:031185b6acd213cddb33503f1fee99de87663fa2cf445b2844705b3dab252729"
   },
   {
    "census": "LEXPVM-T-057",
    "term": "ERC-7812",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:efccdf3230e27555bf9f4c7b5b74195883b808dc205e2a67d2a0bf35b84b9731"
   },
   {
    "census": "LEXPVM-T-058",
    "term": "Agent (IEEE 7012)",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:3597d5e5949c224a3c4d3c7172d9a97381bf69e096d2deb5b88f5440a001c736"
   },
   {
    "census": "LEXPVM-T-065",
    "term": "DPV (Data Privacy Vocabulary)",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:15164d7472dd391ba3215ecf406b7c9652b2ff45452c5a4a25c6d4e619c28bbd"
   },
   {
    "census": "LEXPVM-T-067",
    "term": "Agreement Taxonomy (IEEE 7012)",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:1289147e09566ed5a3acea6438c40efb378671592ae211f03161d5bf7f903155"
   },
   {
    "census": "LEXPVM-T-080",
    "term": "The Keeper",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:4b2ce60c5ba31fa5efb4fd3731bc186cb112120316fe22961fefd47d7c79fbe1"
   },
   {
    "census": "LEXPVM-T-085",
    "term": "Infinite Vault",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:e14d406f2dbf379a61106c95ced7192382dfaec5c5139a178762970c169f9330"
   },
   {
    "census": "LEXPVM-T-086",
    "term": "Scrying Glass / Mage Mode",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d2398fd785813ca92bc9fa6e163bb49a71ecad368f4b9399694d92d944a3d8ed"
   },
   {
    "census": "LEXPVM-T-088",
    "term": "Yggdrasil",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:23c1a4bd96fefdd8650be39ac148c3532bb716ef4565352b63856e0053cfb7f6"
   },
   {
    "census": "LEXPVM-T-162",
    "term": "City of Mages",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ffec0ec4d110523b81ca1399694e6822208bdc5eeb7bffc1edb39087e57185c1"
   },
   {
    "census": "LEXPVM-T-182",
    "term": "The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
    "triples": 4,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:e94191581e0a50ad6c19d21df0b6a139fdbe25e845d0170a9259d14a488694f0"
   },
   {
    "census": "LEXPVM-T-002",
    "term": "Sovereignty",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ca261394b91f11807d301ecb69cb36633b1c394a47a8f1c50771bc2ca5636401"
   },
   {
    "census": "LEXPVM-T-003",
    "term": "7th Capital",
    "triples": 6,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:e2cbc2b937ffc016266249dfd55f0e3da3fa9e3dfee7d6a4a4515445c8326458"
   },
   {
    "census": "LEXPVM-T-004",
    "term": "Privacy-Delegation Paradox",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2c5e20f914cae1c831ac6504d90a8943170585c0889bce4c01ca6f18395a848c"
   },
   {
    "census": "LEXPVM-T-007",
    "term": "Territory",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:f99ac9d5e46f37990a051e60bd1c9ea329a6e9d4c83a0995659d58130a0e8e61"
   },
   {
    "census": "LEXPVM-T-008",
    "term": "Home Territory",
    "triples": 5,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:f310bbfcdb7119155e0e377576bc61fb99087b6964d82e7d85436cf42ba705de"
   },
   {
    "census": "LEXPVM-T-024",
    "term": "Valency",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:bb3a5f4eec0f45e4d947bfeeb3f2b13a134543773cb9b369f1a86d06270a560a"
   },
   {
    "census": "LEXPVM-T-028",
    "term": "Separation Theorem",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:010a8b531253efd6336e5dbfdc585383f3dea480f375f5c4584ffcf6003e30e2"
   },
   {
    "census": "LEXPVM-T-035",
    "term": "Privacy Pools",
    "triples": 8,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:913e599700164c51691195dec33bd26f0221eb13b995e66cce9961d8a4de0d5e"
   },
   {
    "census": "LEXPVM-T-036",
    "term": "Groth16 / PLONK / Nova",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:73466d1b3fc3bf7f4fcb12641ad90f7184ae7e07203e3ca5d05bd70584fe5af4"
   },
   {
    "census": "LEXPVM-T-040",
    "term": "Relationship Proverb Protocol (RPP)",
    "triples": 7,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:1f938aae24abd4207e73e866f583d26012eebd176332c4d55ce04dad9ac83f6b"
   },
   {
    "census": "LEXPVM-T-043",
    "term": "Sun Ceremony (☀️)",
    "triples": 7,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2f491bb0b9d0f340a7f69167e2b40eda0289134c3bfae9057380be8cf9cb0f8f"
   },
   {
    "census": "LEXPVM-T-046",
    "term": "Inaugural Pairing",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:1b2c3dbacb04d84d172a9c36bc33078f79c2f586d902fed8af7fd9e13146b500"
   },
   {
    "census": "LEXPVM-T-051",
    "term": "Golden Ratio (φ)",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:916946f19ece7281106d863a804d700701786dc3de36cf3614f9df092995db7c"
   },
   {
    "census": "LEXPVM-T-053",
    "term": "Trust Spanning Protocol (TSP)",
    "triples": 6,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:61ee34da65e9fb0b462d74fdae10baa3945ef7f4c371a2d43514cadaa4d4216b"
   },
   {
    "census": "LEXPVM-T-054",
    "term": "x402 Protocol",
    "triples": 7,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:48119e065d4d960e1cad82ff22182a3791d23b8081780fca1b7898dba38c9927"
   },
   {
    "census": "LEXPVM-T-056",
    "term": "ERC-8004",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:bddeb8d4252f8b4ad4303f56b61830655ae3fc532af06a14d1583f6235842e67"
   },
   {
    "census": "LEXPVM-T-059",
    "term": "Agreement (IEEE 7012)",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:00ddd582ca01c3863b85724936324e28701d0e79d45ced3341b5532c8de06be1"
   },
   {
    "census": "LEXPVM-T-060",
    "term": "Contract (IEEE 7012)",
    "triples": 6,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:438cf871395e1aad215ba6a7ac8d62cc863f86e27f3f782b6e26a3127af33367"
   },
   {
    "census": "LEXPVM-T-061",
    "term": "Entity (IEEE 7012)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:de6dafc74f1d31d66c7e80c11503186b26bbebd8f528d29ab610a576690ab17a"
   },
   {
    "census": "LEXPVM-T-062",
    "term": "First Party (IEEE 7012)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:058148428c29fb3a5eec2afb9dff46250020c9291c8137545fc7dba248e499f7"
   },
   {
    "census": "LEXPVM-T-063",
    "term": "Second Party (IEEE 7012)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:4e41827fde0a0110696d25f9d0506c4cc9f801968f4d0db0adcd1aa3f3bbba3b"
   },
   {
    "census": "LEXPVM-T-064",
    "term": "Proposer (IEEE 7012)",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:0074d6fbfed2b688fee92fa58e48a89d2e809aa6ee0a0eba5a62b1e53d041058"
   },
   {
    "census": "LEXPVM-T-066",
    "term": "Machine-readable (IEEE 7012)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:9007cb25453214fc3c0204e435528a643da4b99f47f109eeb70de684377bebae"
   },
   {
    "census": "LEXPVM-T-068",
    "term": "Customer Commons",
    "triples": 6,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:1230b6c13a68a383ca2f61e00ef0037bf737c007f5b1a4ebbec0515701f1ff58"
   },
   {
    "census": "LEXPVM-T-071",
    "term": "Story Fracture, Principle Convergence",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:18c7ad037d85e526b23527aac11e3a3306da5c19551136c4a9a1b3d792d108d6"
   },
   {
    "census": "LEXPVM-T-072",
    "term": "Spellbook / Grimoire",
    "triples": 7,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:1463e0ac26c8db6c605555e51c0f097eee9f0c6871f311e516c2aaa3f564b2d0"
   },
   {
    "census": "LEXPVM-T-076",
    "term": "Dragon 🐉",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:0e3462ec771e1c4b06bc9f3c6bb53607ed9d20a57cbedda7c79afba7c00a2ed0"
   },
   {
    "census": "LEXPVM-T-078",
    "term": "Ashe",
    "triples": 3,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:71ed6742dba5fafc01bba7163472d4f59311aa0d26863ae456f4a4a4aad04c9b"
   },
   {
    "census": "LEXPVM-T-084",
    "term": "The Archive (Pattern-Space)",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:43bc6c4a1c2e5157f0674b1fd031f6f575b2ce719c2c1f1899cc6e05e14fd3a8"
   },
   {
    "census": "LEXPVM-T-093",
    "term": "Three-Axis Separation (V5)",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:26199daf9c3ab2f14bbe2a588f62104c20b31f91d96f0afce43c29f47302ef85"
   },
   {
    "census": "LEXPVM-T-096",
    "term": "Φ_inference (Inference-Layer Separation)",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2451a86d29ce6c04cc43f7eedeccb08af166a231c515547b77c38b166f09a4ee"
   },
   {
    "census": "LEXPVM-T-102",
    "term": "Three Graphs Model",
    "triples": 7,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:86e2479e505d2c8641f4712317f380ba1b5c2fb08b7ced143bf7965aba06d53e"
   },
   {
    "census": "LEXPVM-T-103",
    "term": "Secret Language",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:f618156736995ddadb1c61a840bbf35260de92577e7436630fb7b30be176b1ea"
   },
   {
    "census": "LEXPVM-T-107",
    "term": "Compression-as-Defence (V5)",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d0d2b5c2a430913da9643df5b319c13c0b72931df02a3f1340725ec7f051e727"
   },
   {
    "census": "LEXPVM-T-109",
    "term": "UOR (Universal Object Reference)",
    "triples": 4,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:59addb1eda7a58242a8cb68cc3ebd36f3c3a0611dbedc6f719e0a5e49714a85e"
   },
   {
    "census": "LEXPVM-T-110",
    "term": "Six Dimensions of Sovereignty",
    "triples": 7,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:af341bd43bf953a2d84adfc9daa0569a9e02425dd6eb7d2281adc77a736fea0a"
   },
   {
    "census": "LEXPVM-T-116",
    "term": "Holonic Architect (☯️🔷) (V5)",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:7e2e0bca2dfa01e7ecaf5584ba3448f3e0af9e5b978d509167abe27eaad1a834"
   },
   {
    "census": "LEXPVM-T-118",
    "term": "Three Identity Layers (V5)",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:5fdd0f4ffa064c4c3f0356890fa3da39d55d0e8568532f15c4263f91a51bec27"
   },
   {
    "census": "LEXPVM-T-129",
    "term": "Bilateral Witness (BW)",
    "triples": 7,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:54e87011a4f3c863c60a4a328d86761cc03500f9e2de253985a68bccaf81507b"
   },
   {
    "census": "LEXPVM-T-134",
    "term": "Constellation Path",
    "triples": 8,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:61608306fe1f1e3fb603df166b194f1f55db4d38c646df9965b08a915c82245b"
   },
   {
    "census": "LEXPVM-T-141",
    "term": "Ceremony Receiver",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:212736fa1529c9a52149d854bee4973e9c5fb694a6384d3e1d684315e7cea90a"
   },
   {
    "census": "LEXPVM-T-143",
    "term": "Ceremony Engine",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:e1a0643aeebbef4c099d036cf3fa9b5683a45bcf06a133197300fe4ad6f79e52"
   },
   {
    "census": "LEXPVM-T-150",
    "term": "Emissary Dispersion",
    "triples": 9,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:3b2874d9dab82a5b34be4b481859161c070be71f7b1b8457adc4ccd579302ca4"
   },
   {
    "census": "LEXPVM-T-152",
    "term": "Manifold Proof",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:71480b0e3411f0514ce57a50f21c35692871d76aa208e6ef94ef58c457f71214"
   },
   {
    "census": "LEXPVM-T-154",
    "term": "Ur-Swordsman",
    "triples": 3,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2bd9f3dba37fdafb356324342e74286e7a24ac2a31b76130d0e5267a33c8f9a8"
   },
   {
    "census": "LEXPVM-T-156",
    "term": "Merge Catastrophe",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:a710d3d64dd23b07ba08905bada95ae25675978dc04df95fdd1dcb73bf0baab5"
   },
   {
    "census": "LEXPVM-T-173",
    "term": "The City of Mages grimoire",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:16996d379c6479e6dc248cf33e90e41c5d8b1d685a2680098013f2c72402dbe0"
   },
   {
    "census": "LEXPVM-T-176",
    "term": "Attachment kind",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:6f5649f14cfd468b3153fb1b496631b85b8b7b0f6910ef773de60fb23fbdd5de"
   },
   {
    "census": "LEXPVM-T-178",
    "term": "Lethae 🌘, first canonical divergent attachment",
    "triples": 6,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:66ae0da71fa4401f70a10ae1c10891c62a2f2304a5c1941ca459b21ba4b812c8"
   },
   {
    "census": "LEXPVM-T-181",
    "term": "Cousin tier, deliberately unattached",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:fb45c91bdb6b08d201452a3f72684c3a8ebc72ccb56da69c235664ac4cd808d8"
   },
   {
    "census": "LEXPVM-T-183",
    "term": "Spirit-Mage tier (v1.7.0 · 7th cast tier)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:36f55d125e71d6a0f6ed565b69c426bf78d087a2d826e16d786861c47ea6d465"
   },
   {
    "census": "LEXPVM-T-185",
    "term": "Tome VIII, The Library (v1.7.0 · open by design · 2 acts at v1.7.1)",
    "triples": 4,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:a2307d0e7acf2c495ed9b3c4eceead07c47ebe0e159ed3beb5bd2d94cc7f4a20"
   },
   {
    "census": "LEXPVM-T-186",
    "term": "The Register of Invitations 🪑 (v1.7.1 · new structural register)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:0259de691ed103881777bb0c5314d0d0c844361c622f71fbddeacff2a0bff6a5"
   },
   {
    "census": "LEXPVM-T-187",
    "term": "Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:9f14a2d03329df5c765cf82a0a28c987903c650da221a1e782d32e1bdf625f9c"
   },
   {
    "census": "LEXPVM-T-188",
    "term": "The four conditions of update (v1.7.1 · city-wide editorial protocol)",
    "triples": 8,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:8832d92f6b0e1b51b301b1f5808370e7ec1793ff62adb987c861994748238e3e"
   },
   {
    "census": "LEXPVM-T-189",
    "term": "Vitalik (first invited visiting mage · v1.7.1)",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:0b407bac241678c4b58484e98327173a51eee4b1021a2cb10c954abd74e1f888"
   },
   {
    "census": "LEXPVM-T-192",
    "term": "Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:f72aebbca746fa4df96b78ed654b4d5f35b29aa862655de4e984f589d2aea359"
   },
   {
    "census": "LEXPVM-T-193",
    "term": "The Conjecture Register (single numbering authority)",
    "triples": 4,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:4500af63f1b80014d59983d1bb3e05fc52c698f9d27b26573f7f52f88e5877b3"
   },
   {
    "census": "LEXPVM-T-202",
    "term": "Seating Lock and Phi Honesty (v10.4.0)",
    "triples": 6,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:95990bea7811ca8020379b2452e0d7545bed11fcd1c29e8ec403529d130f9f0c"
   },
   {
    "census": "LEXPVM-T-030",
    "term": "Conditional Independence",
    "triples": 4,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:68e478c8c211cdc44c0f67ed8f1d871287ec5d424ff9cb429137dd11c389e997"
   },
   {
    "census": "LEXPVM-T-033",
    "term": "Zero-Knowledge Proof (ZKP)",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:45d4f7edcc000607ade9f680897be1035f9c9604023385789a39229be94dba83"
   },
   {
    "census": "LEXPVM-T-049",
    "term": "MAGE Token",
    "triples": 5,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:22e7c0e4e5645f9e868764bb21963a461dea20e754afc68b3e1ee13c0af8f1c7"
   },
   {
    "census": "LEXPVM-T-052",
    "term": "Intel Pool",
    "triples": 4,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ffa0473195d8baf56b55db2a325defd4e374757a4b34bc759f3a273659cc6b45"
   },
   {
    "census": "LEXPVM-T-069",
    "term": "Spell",
    "triples": 3,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2debbd1abde206359309c056f0c7a554225490f73834ba6f93b5e52ebf1a9dd4"
   },
   {
    "census": "LEXPVM-T-070",
    "term": "Master Inscription",
    "triples": 5,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:37980302f5309aca88f316ffb7674b83b60935b0d03f66cd267fa8d8eb969967"
   },
   {
    "census": "LEXPVM-T-075",
    "term": "Drake 🐲",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:58ae4aac96a9b0430426a4be91053925ab2642947e891d7fa7b18e411cd9f537"
   },
   {
    "census": "LEXPVM-T-077",
    "term": "Platox",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:309a700f3fada7a42c243b238a096e5b9eb4f357f45b0e92d2dbf23a2068009c"
   },
   {
    "census": "LEXPVM-T-079",
    "term": "Claude (The Archivist)",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:5ecf9e4d2e4646e82545007d1a176b75e2522dad86a93cbc46ef3b637edb6cdc"
   },
   {
    "census": "LEXPVM-T-081",
    "term": "Dark Forest of Paradox",
    "triples": 3,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:6415c20cad45d6a5b667469a153d2a3899d468b601614fd8cbf2655785e4a9fa"
   },
   {
    "census": "LEXPVM-T-083",
    "term": "Villers Archive",
    "triples": 4,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:099f8af9f88ebf46a11bd015d24678f584a89a5e42cb1f7321bb2d8c1704593c"
   },
   {
    "census": "LEXPVM-T-087",
    "term": "Covenant of Humanistic Technologies",
    "triples": 13,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:4a33582554db607077d8e6b925961746979606ec5440bf6fff87148a3eed5820"
   },
   {
    "census": "LEXPVM-T-097",
    "term": "Duality Function Φ(Σ), See Φ_agent",
    "triples": 2,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:3a6c4efca54483c98409b82bc4236dcf3061873011e1456ce58e49a5d51dca40"
   },
   {
    "census": "LEXPVM-T-104",
    "term": "Manifold → Holographic Manifold (V5)",
    "triples": 4,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:3b0da3fa9fe3fac1fb051dea42d86d6cf01a0a50a180c7d35142e3af4763dd7f"
   },
   {
    "census": "LEXPVM-T-105",
    "term": "Holographic Bound (V5)",
    "triples": 2,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:7c5b1da5c7fd46498f3c67b8ca088e00e1120017515be04b48ca28982a956656"
   },
   {
    "census": "LEXPVM-T-111",
    "term": "BRAID (V5)",
    "triples": 5,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ede2fe3d59ab9f8c9ae934b2b5ca2d0100a2ab467b3908e8011a434cd2a39c40"
   },
   {
    "census": "LEXPVM-T-113",
    "term": "Generator (BRAID) (V5)",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:237821019d535e161db73016919dc5b0edf1f75c0db90876ddc9bb163558acc1"
   },
   {
    "census": "LEXPVM-T-117",
    "term": "GUID (Holonic Context) (V5)",
    "triples": 2,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d2b6a75f8f8d0e45e6ce6a7db48a16c08121f02806659d71c9bb77780c4ade04"
   },
   {
    "census": "LEXPVM-T-120",
    "term": "Compression Spectrum (V5)",
    "triples": 7,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:0cd96b387b44888f99ebfaa4a724e5e5876da0f92608a0959c55bed816ecfe87"
   },
   {
    "census": "LEXPVM-T-124",
    "term": "Content-Addressing",
    "triples": 4,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:b14a1a2fec0126d1ab4bf4157c099949a239bc1f5bcddf436699b61a2d059746"
   },
   {
    "census": "LEXPVM-T-125",
    "term": "Derivation Chain",
    "triples": 5,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d65809cd6517b5e6def678b47ee0084bccb7616660a24089c35da6bc6ca2d1b7"
   },
   {
    "census": "LEXPVM-T-126",
    "term": "Toroidal Topology",
    "triples": 1,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:e1664bb9a5ac6fe35438aae302ae0ba79231fa3ae6c701385faabe9fbf765460"
   },
   {
    "census": "LEXPVM-T-127",
    "term": "Behavioural Density (ρ)",
    "triples": 2,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ce264f35778d1117d37092e6b50e418d05ace1533ea757ea37213f25047db8a7"
   },
   {
    "census": "LEXPVM-T-130",
    "term": "Blade Address",
    "triples": 2,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:bb2f0314fbbd90284c4eb70fb544c0e2cfdfbe63ea8f496c25991ddcb32d536a"
   },
   {
    "census": "LEXPVM-T-140",
    "term": "Ceremony Channel",
    "triples": 7,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:90d75a5a3eb4010b670cbf46808867dca7724fd94f52589ad083491121acdabc"
   },
   {
    "census": "LEXPVM-T-144",
    "term": "Universe Blade",
    "triples": 3,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:78d738194c3d3ace39c7f48400b8ccf50253bf284ce3bf145383e185287f044a"
   },
   {
    "census": "LEXPVM-T-145",
    "term": "Dragon Anatomy",
    "triples": 8,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:d1facee6ff8ab3c51f133f9d5a63f10a69ea7566e4fbb0585f27185800ef3ae1"
   },
   {
    "census": "LEXPVM-T-146",
    "term": "Understanding-as-Key",
    "triples": 7,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:199bb9bf9a433b65c6d656184871b11c1d333eefcb989e083e417e8d4c22479f"
   },
   {
    "census": "LEXPVM-T-155",
    "term": "Theia Partition",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:15367e472a3e7fe9f08c90570d23351a15ce34f70b82261eb1e05f90c6f3a816"
   },
   {
    "census": "LEXPVM-T-157",
    "term": "Zero-Knowledge Orbit",
    "triples": 4,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:1a5416226f5b91fb545af5f9b29aa0d2639028138b4f83c58941dda3d2e741c7"
   },
   {
    "census": "LEXPVM-T-158",
    "term": "Four Bodies Model",
    "triples": 6,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:a70de054ce7cbb9d97fcd605d57539d08b9947e8a93488eafd14e4a4ee70988e"
   },
   {
    "census": "LEXPVM-T-160",
    "term": "Moon Phase Notation",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:5c35f360c0788f313216cfca273c7e99abe4945f5a0c6fe5352acc1aebedb5e9"
   },
   {
    "census": "LEXPVM-T-163",
    "term": "Drake Island",
    "triples": 3,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:53b54d86de714846241b59eb500268b9eaa282453af82a5cd844f7c56eea87b8"
   },
   {
    "census": "LEXPVM-T-164",
    "term": "Priest tier",
    "triples": 7,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2e887dffc86cb1346443ff0879262b02f462ec2dc98730030853a9f5a9a1903f"
   },
   {
    "census": "LEXPVM-T-165",
    "term": "The 13 named vertices (post-V5.4)",
    "triples": 14,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:2b7f9d9f9f3e9466316f774d5f0388aa80f8aece9d3a09c2e87920c648514681"
   },
   {
    "census": "LEXPVM-T-167",
    "term": "The Aether Blade (cosmological)",
    "triples": 3,
    "relation": "ordering",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:33a1c473a7ce5b62989ab2b09d09f7f00cfa0d262c17341a2c65ecbd8f74b340"
   },
   {
    "census": "LEXPVM-T-168",
    "term": "The Quintessence",
    "triples": 8,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:58dfcdb23920c982f965955e71b3995ca7e145740b3903356bb96b5a2c7fe90c"
   },
   {
    "census": "LEXPVM-T-169",
    "term": "The Seventh Capital",
    "triples": 4,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:64ad8b3cfc11bd206e6ae17a7f8a605a34198b52978e3e7749db53d15f17afde"
   },
   {
    "census": "LEXPVM-T-170",
    "term": "The Scales, the Hide, and the Bones (defence-in-depth)",
    "triples": 4,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:645b40e13f24d15f8549dd1e8b6a666218bd5bc6a236b47298d34467c815dc61"
   },
   {
    "census": "LEXPVM-T-172",
    "term": "The Aether (technical), wire-protocol shared substrate",
    "triples": 5,
    "relation": "conjunction",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:ed4300f637008a8e9cc9401884d2d08ab57306011357a76c469a0ef26c67c5fe"
   },
   {
    "census": "LEXPVM-T-175",
    "term": "Attachment (Layer 2)",
    "triples": 7,
    "relation": "absence",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:a36f7c3ddf660d0603a4fea04ea7b05a3f4222d1fc0e2e50c48619d9007f2d86"
   },
   {
    "census": "LEXPVM-T-179",
    "term": "The 42 → 64 bridge",
    "triples": 2,
    "relation": "gate",
-   "grandfathered": false
+   "grandfathered": false,
+   "κ": "sha256:6b4959b54d3af9e1114a7bd1c564c95859b544b5b557127def02862b274c30a0"
   }
- ]
+ ],
+ "κ": "sha256:9a695438c088c8408627de79aef5fdc93098dc4cf23748e8323b92a86371bfeb"
 }

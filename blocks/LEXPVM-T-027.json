@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "the aging law as a defined temporal predicate (Amnesiac = the impact time lies at least 24 hours in the past) gating the only certify; ordering = orbit holds only after the impact time is fixed. Omits the proof arithmetic and the moon-lore framing. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:6e3d8b674b3953af47c9807b8206abd501397332da5a47c24f2d6da22efe9171"
 }

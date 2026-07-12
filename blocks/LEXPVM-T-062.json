@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: consent-first direction as gate (the Entity's Acceptance fires only after the individual's declared Proffered; the mutation twin strips the gate so acceptance can precede any proffered terms, exactly the imposition shape the canon rejects). The individual is the origin of terms: the Proffer clause sends the Terms outward and only the First Party fixes them. Omits: always-a-person-never-an-organization typing (the Lexon person type cannot distinguish individuals from organizations) and the First Person dignity framing of the mapping. Folded from myterms-agreement-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:058148428c29fb3a5eec2afb9dff46250020c9291c8137545fc7dba248e499f7"
 }

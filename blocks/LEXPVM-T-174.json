@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "admission relation: registering a loadout requires review passed AND roster not locked (a negated predicate in the gate), then certification chains afterwards; omits tier semantics.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:85867d24048453dc6d3f3156f4d258cae5ab4ffee9e984f0c11183ee5ce563fb"
 }

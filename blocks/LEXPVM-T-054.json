@@ -154,5 +154,7 @@
  },
  "grandfathered": false,
  "notes": "carries the payment-gates-delivery structure of the payment-required pattern (the Serve action exists only under Paid declared, and settlement precedes the declaration in the Settle chain); omits HTTP status semantics, per-request accounting, and payment rails. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:48119e065d4d960e1cad82ff22182a3791d23b8081780fca1b7898dba38c9927"
 }

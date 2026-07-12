@@ -67,5 +67,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: clause Address performs fix:Content, then certify:Identifier as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes. Template-thin (lexr5.3 critic flag): a single clause carrying the minimal relation; folded because the ordering carries the term structure, flagged for the fold reviewer.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d2b6a75f8f8d0e45e6ce6a7db48a16c08121f02806659d71c9bb77780c4ade04"
 }

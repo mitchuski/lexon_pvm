@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: directionality as impossibility (the promised benefit routes only from promiser to promisee; no transfer clause routes the Promised Benefit back to the Promiser, so the edge A --b--> B is unilateral commitment, not exchange), and voluntariness as modal may on both edges. Omits: the promise body typing (tau, chi) and the promisee's acceptance, which is the minus pole carried by T-211. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:16159493c6a702501f50978cd23cc3bd8f8e7e04749875f4c5910a9986f7e846"
 }

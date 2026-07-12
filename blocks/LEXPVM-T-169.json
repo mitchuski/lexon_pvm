@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "gate: every action in clause Build (registering the Six Capitals, certifying the Wealth) is conditional on Privacy Founded declared: foundation, not graft, as clause shape (a value cannot be added on; it is foundation, or it is absence). Section names no actor, so the First Person holds every clause (universal cast rule). Omits the watched-world litany, the proem naming, and the conjecture-register formalisation pointer. Folded from lexr5.3:zero-party-story-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:64ad8b3cfc11bd206e6ae17a7f8a605a34198b52978e3e7749db53d15f17afde"
 }

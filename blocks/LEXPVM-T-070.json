@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "captures the separation reading of the inscription as an impossibility: no clause routes the Swordsman's Observation to the Mage, while the Mage's Projection gates on the First Person's Authorized declaration (the irreducible promise of conditional independence given First Person authorization, as clause structure); omits the emoji notation form and the compression-ratio framing. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:37980302f5309aca88f316ffb7674b83b60935b0d03f66cd267fa8d8eb969967"
 }

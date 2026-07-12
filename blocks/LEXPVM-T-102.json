@@ -158,5 +158,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Overlap Standing requires all of Knowledge Mapped AND Promise Formed AND Trust Emerged. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:86e2479e505d2c8641f4712317f380ba1b5c2fb08b7ced143bf7965aba06d53e"
 }

@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "gate: the Present clause is reachable only under the Selection condition. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f618156736995ddadb1c61a840bbf35260de92577e7436630fb7b30be176b1ea"
 }

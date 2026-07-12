@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries emergence-from-cooperation (the Whole Promise registers only when both components' declarations stand, and no component clause can register it alone); omits adversarial uncapturability and the Gap application.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:7c8ed286fc3e96e3e3f2228d241a6e20a5d729b8d94ff325945bdffd116b8dd0"
 }

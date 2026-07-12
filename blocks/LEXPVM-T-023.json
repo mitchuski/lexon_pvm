@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries scope as reachability of send clauses (the Insider is the only send target; the Outsider exists in the contract yet no clause sends the Promise Body to the Outsider, so knowledge boundaries are the clause graph itself); omits the four-row scope table and the reconstruction-ceiling connection.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f5e726f17aefc2fd36a0c0568e1752c79b85880431b181a852fd2434c4a0c03d"
 }

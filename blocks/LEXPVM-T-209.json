@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: attack as ungated send (the Impose clause carries no acceptance condition, the deliberate structural contrast with Invitation's Standing-gated Propose), refusal gated on non-acceptance (Guard fires only while Acceptance is not declared), and extraction as impossibility (no transfer clause routes the Target's Data Value to the Imposer: the text grants imposition no economy, surveillance extraction never succeeds by this contract). Omits: dark-pattern taxonomy and post-hoc consent rationalization. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:4c89218bd612deabc0ac7291db53a7b0673616a5b4082a844c13e028a924b111"
 }

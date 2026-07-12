@@ -161,5 +161,7 @@
  },
  "grandfathered": false,
  "notes": "Carries each canonical dimension as an independently declarable binary (active or dormant) and the fully active configuration as a six-way conjunction over exactly the six canonical dimension names; the claim requires all six, so dropping any one dimension breaks the constituted state, which is the stratum structure's top vertex in clause shape. Deliberately omits the bit numbering, the implementation names (Hide, Commit, Prove, Connect, Reflect, Delegate), the three-axis mapping, and the Pascal stratum counts, and expresses only the all-active configuration, not the other configurations of the lattice. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:af341bd43bf953a2d84adfc9daa0569a9e02425dd6eb7d2281adc77a736fea0a"
 }

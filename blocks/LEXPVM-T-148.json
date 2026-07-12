@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "direction is load-bearing and stated here: the fortress FALLS. Period-finding gates the Quantum Adversary draining the escrowed scalar secret, and the Key Holder holds no reclaiming clause (impossibility on the defender side, by absence). The lexr2.3 critic flagged direction-elasticity on exactly this entry; the checker cannot falsify a wrong-direction expression, so the direction lives in this Notes line by design. Omits curve arithmetic and period-finding detail. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:90b63b87b4da0132f53d28a6834f85d5801fc6ce5b78624d066c409ba26e5382"
 }

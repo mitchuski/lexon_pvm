@@ -85,5 +85,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: clause Stake performs fix:Sword Stake, then grant:Attention Pledge as clause order. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:bb3a5f4eec0f45e4d947bfeeb3f2b13a134543773cb9b369f1a86d06270a560a"
 }

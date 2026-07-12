@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "earning relation: token payment is gated on a declared protective action, guardianship on action plus stake (two defined predicates ordering the economy); omits token quantities and slashing.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:e191d7c28e763ff441ae6363099679f519594783eb499046faf34070a2af84d1"
 }

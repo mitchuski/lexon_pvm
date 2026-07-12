@@ -104,5 +104,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: clause Aggregate performs file:Individual Insight, then file:Aggregate Insight, then register:Pool Value as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:ffa0473195d8baf56b55db2a325defd4e374757a4b34bc759f3a273659cc6b45"
 }

@@ -139,5 +139,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: ordering (within Post Signal the Comprehension Proof registers before the Signal Fee is escrowed, assessment before stake, the skin-in-the-game direction) under a gate (every signal clause is conditional on Ceremony Complete, carrying the one-time-genesis-before-recurring-signal contrast the glossary states against Ceremony). Omits the ZEC fee constant and the transparent/shielded split ratio, which the subset cannot carry as literals. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t041_signal.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:8ccca5a6e26f044d3151e97585dbf0a29c2630c5e86b3c5093778b8ece9a2b44"
 }

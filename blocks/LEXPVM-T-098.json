@@ -182,5 +182,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "checkpoint-gates-later-traversal ordering carried as the Late Edge inflow reachable only after the Verifier Checkpoint Verified declaration (edge non-independence as gating); accumulation as escrow conservation; the Integrated conjunction gates the only certify and outflow; the Traveler cannot verify its own checkpoint. Omits the integral form and the beta coefficient. Assayer-authored (formula-skeleton-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:c2d94e38b4471a8e5b9a8cd51f1d41de34fc36d21da473b0b05cd5b260213f64"
 }

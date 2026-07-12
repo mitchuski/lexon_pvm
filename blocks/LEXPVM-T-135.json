@@ -326,5 +326,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "six-fold composition as one gated deposit per privacy-dimension line, accumulating in escrow; ordering = a line weighs in only after its line stands declared, and the Reader registers the Hexagram and discharges only after Lines Complete; conservation = the six line weights exhaust what returns to the Mage. Omits the sixty-four state count and the named blade mappings. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:bcbca8c6c341f38054993cf7444b6556ee74042d90f78cd089d7b93c46399313"
 }

@@ -121,5 +121,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Principle Convergence requires all of First Match AND Second Match. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:18c7ad037d85e526b23527aac11e3a3306da5c19551136c4a9a1b3d792d108d6"
 }

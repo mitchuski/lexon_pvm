@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries maximal betweenness as only-route topology plus ordering: the sole clause that reaches the Target is held by the Gap and gated on the Gap's own Relay Received declaration (the On Path conjunction), and the Source has no direct send-to-Target clause, so every source-to-target path crosses the Gap, the node-on-all-shortest-paths property as clause-graph structure. Omits the shortest-path ratio formula and the counting algorithm. Anchor: ### Betweenness Centrality. Checker: GATE PASS (runs/lexr2/propose-scratch/t128_betweenness.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:6ad4770f3988a8f3a1d7dc909159c6b4f6af159af5c03b41d0890ce7bf48ae2c"
 }

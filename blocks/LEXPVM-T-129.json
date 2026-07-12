@@ -157,5 +157,7 @@
  },
  "grandfathered": false,
  "notes": "carries attestation without revelation as a conjunction (community reception requires BOTH private verification declared AND public testimony fixed, while no transfer clause routes the Blade itself to the Community); omits the quantum-resistance rationale and the demonstration date. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:54e87011a4f3c863c60a4a328d86761cc03500f9e2de253985a68bccaf81507b"
 }

@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "placement relation: stratum certification requires address fixed, weight counted, and level fixed together (Placed defined-as conjunction); omits the popcount weight formula.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:b90e7d85c82a672e23231d847dcea9ef0ca16877fc20723e20c943323753a51e"
 }

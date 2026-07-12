@@ -122,5 +122,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Separated requires all of Agent Axis AND Data Axis AND Inference Axis. Omissions per the term's canon anchor. Assayer-authored (consent-standard-party-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:26199daf9c3ab2f14bbe2a588f62104c20b31f91d96f0afce43c29f47302ef85"
 }

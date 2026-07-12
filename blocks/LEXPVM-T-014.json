@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries only-own-behavior as clause partition (each agent fixes and registers only its own Behavior; no clause lets either agent register the other's, so promising on another's behalf is structurally absent); omits the single-agent paradox implication and the Swordsman/Mage domain split.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:3672153fda7ca00ddec0b2bc51d5464104c30bd49cfaf96e5af10a435e75fd31"
 }

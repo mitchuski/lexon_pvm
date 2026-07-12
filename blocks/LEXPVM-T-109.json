@@ -103,5 +103,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Convergent requires all of Algebra AND Addressing. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:59addb1eda7a58242a8cb68cc3ebd36f3c3a0611dbedc6f719e0a5e49714a85e"
 }

@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries protection-buys-time as the attested time-literal predicate (disclosure aged past a stated horizon) or an observed ceiling rise, either expiring the shelf and enabling withdrawal; omits the continuous decay function and the true shelf-life constant, the 24-hour literal is a stand-in since hour and day counts are the subset's only numbers. Anchor: ### The Temporal Thesis.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f468ad88d8def3bafdef13f64c562436ffeed0dd452cbe70c85ea6f67b96832d"
 }

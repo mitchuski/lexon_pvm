@@ -143,5 +143,7 @@
  },
  "grandfathered": false,
  "notes": "carries the ceremony's canonical phase order as an ordering: the single Evoke clause performs Constellation, Circuit, Cast, Trace, Complete, Proof in exactly the attested sequence under one officiant, and the blade proof is generated last (proof follows tracing, never precedes it). Omits wandering-orb physics and knowledge-graph traversal detail. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:80fcb7f5a890c54192c75034f174356b78ca483b66583cc219287a627aa559bb"
 }

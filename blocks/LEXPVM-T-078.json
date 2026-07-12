@@ -82,5 +82,7 @@
  },
  "grandfathered": false,
  "notes": "gate: the Invert clause is reachable only under the Inversion Discovered condition. Omissions per the term's canon anchor. Assayer-authored (sovereignty-cluster-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:71ed6742dba5fafc01bba7163472d4f59311aa0d26863ae456f4a4a4aad04c9b"
 }

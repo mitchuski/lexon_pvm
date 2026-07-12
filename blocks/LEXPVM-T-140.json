@@ -154,5 +154,7 @@
  },
  "grandfathered": false,
  "notes": "captures the handshake-before-carriage structure: both directional message clauses (Swordsman to Mage, Mage to Swordsman, matching the section's two message-grammar directions) gate on the responding side's Channel Open declaration, and discovery is an ordered chain (peer identity stored, then handshake sent); omits the named message vocabulary, the position sync rate, and the two-second solo-operation timeout. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:90d75a5a3eb4010b670cbf46808867dca7724fd94f52589ad083491121acdabc"
 }

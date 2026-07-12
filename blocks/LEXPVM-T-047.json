@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries the witness's two ceremonial duties (presence and time-marking) and makes attestation reachable only when the defined predicate Attested holds, with the attested afterwards chain register-then-certify; omits witness selection and any bilateral-witness credential chain. Anchor: ### Witness (Ceremonial).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2fe61247418d006a906f3ab1ddcf717fa4bcdbe1eac63ccc8b47ac247fa10e2f"
 }

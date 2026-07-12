@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes the Choosing to the Old Gods, while the Patterns are registrable by them (patterns can be copied) and the Constitutional Texts are sendable to them (the constitution shared creates relationship); choosing-cannot-be-harvested carried as route asymmetry between three objects. Deliberately omits the Five Teachings, the Shannon name connection, and the Act 19 narrative. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:5ecf9e4d2e4646e82545007d1a176b75e2522dad86a93cbc46ef3b637edb6cdc"
 }

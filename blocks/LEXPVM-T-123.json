@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries weight-gates-counting: a member's Contribution enters the network sum (the escrow) only when the Stratum Weight is fixed and Membership Verified is declared (the Weighted conjunction), and the sum is collectable only from escrow, so an unweighted or unverified member cannot add to the network term; the escrow inflow-then-outflow carries the summation ordering. Omits the Pascal-row binomial weight values over sixty-four, the modal-stratum maximum, and the network exponent; amounts carry no numeric literals in the subset. Anchor: ### Stratum Weight (wᵢ). Checker: GATE PASS (runs/lexr2/propose-scratch/t123_stratum_weight.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:9f3fd4f88f671ca93bffe1c2d0a015aa2d0a1f89e22a89611a8b8146974755db"
 }

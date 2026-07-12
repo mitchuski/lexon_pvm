@@ -15,6 +15,11 @@
 // RELATION PASS right now. Entries without a relation line (grandfathered,
 // pre-OT-3) emit with relation: null and grandfathered: true.
 //
+// Each block is a κ-addressed HOLON (tools/kappa.mjs, from the harness HOLONS.md):
+// it carries its own content-address so a mesh reader verifies it by re-hashing,
+// not by trusting the emitter. The block's relation claim gives it a checkable
+// constraint; its κ gives it a checkable identity. Verify with tools/blocks_audit.mjs.
+//
 // Usage:
 //   node tools/blocks_emit.mjs                 emit all covered entries to blocks/
 //   node tools/blocks_emit.mjs --id LEXPVM-T-032 [--cypher]
@@ -28,6 +33,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { check } from './lexon_check.mjs'
 import { probeRelation } from './relation_check.mjs'
+import { kappaOf, verifyKappa } from './kappa.mjs'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(HERE, '..')
@@ -80,21 +86,22 @@ export function emitBlock(entry) {
   }
   if (problems.length) return { census: entry.census, problems }
 
-  return {
-    block: {
-      census: entry.census,
-      term: entry.term,
-      provenance: { cites: entry.cites, register: entry.register },
-      lex: entry.lex,
-      counts: r.counts,
-      triples: r.triples.map(t => ({ s: t.s, verb: t.verb, o: t.o, io: t.io, as: t.as, modal: t.modal, condition: t.condition, clause: t.clause })),
-      promises: r.promiseEdges,
-      relation,
-      grandfathered,
-      notes: entry.notes,
-      regime: 'spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)',
-    },
+  const block = {
+    census: entry.census,
+    term: entry.term,
+    provenance: { cites: entry.cites, register: entry.register },
+    lex: entry.lex,
+    counts: r.counts,
+    triples: r.triples.map(t => ({ s: t.s, verb: t.verb, o: t.o, io: t.io, as: t.as, modal: t.modal, condition: t.condition, clause: t.clause })),
+    promises: r.promiseEdges,
+    relation,
+    grandfathered,
+    notes: entry.notes,
+    regime: 'spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)',
+    holon: 'block.v1',
   }
+  block['κ'] = kappaOf(block)   // the block carries its own content-address (HOLONS.md, Law L5)
+  return { block }
 }
 
 // ---------- optional Cypher rendering ----------
@@ -146,7 +153,10 @@ function selftest() {
   if (b.block) {
     const cy = toCypher(b.block)
     say(cy.includes('mustBeZero'), 'T-032 cypher rendering carries the re-runnable absence constraint')
+    const v = verifyKappa(b.block)
+    say(v.ok, `T-032 block is a κ-addressed holon (κ re-derives: ${v.ok ? v.derived.slice(0, 20) + '…' : 'MISMATCH'})`)
   }
+  say(results.every(x => !x.block || verifyKappa(x.block).ok), 'every emitted block carries a κ that re-derives from its bytes')
   console.log(`\nblocks selftest: ${pass} pass, ${fail} fail -> ${fail === 0 ? 'SELFTEST PASS' : 'SELFTEST FAIL'}`)
   process.exit(fail === 0 ? 0 : 1)
 }
@@ -170,10 +180,15 @@ if (isMain) {
       if (!r.block) { console.log(`SKIP ${e.census}: ${r.problems.join('; ')}`); failures++; continue }
       writeFileSync(join(outDir, `${e.census}.json`), JSON.stringify(r.block, null, 1) + '\n')
       if (argv.includes('--cypher')) writeFileSync(join(outDir, `${e.census}.cypher`), toCypher(r.block) + '\n')
-      index.push({ census: r.block.census, term: r.block.term, triples: r.block.counts.triples, relation: r.block.relation ? r.block.relation.claim.type : null, grandfathered: r.block.grandfathered })
-      console.log(`EMIT ${e.census}  ${r.block.counts.triples} triples${r.block.relation ? '  claim:' + r.block.relation.claim.type : '  (grandfathered)'}`)
+      index.push({ census: r.block.census, term: r.block.term, triples: r.block.counts.triples, relation: r.block.relation ? r.block.relation.claim.type : null, grandfathered: r.block.grandfathered, 'κ': r.block['κ'] })
+      console.log(`EMIT ${e.census}  ${r.block.counts.triples} triples${r.block.relation ? '  claim:' + r.block.relation.claim.type : '  (grandfathered)'}  ${r.block['κ'].slice(0, 14)}…`)
     }
-    if (!idArg) writeFileSync(join(outDir, 'INDEX.json'), JSON.stringify({ rule: 'node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited', count: index.length, blocks: index }, null, 1) + '\n')
+    if (!idArg) {
+      // the corpus manifest is itself a κ-addressed holon: one address over all block κs
+      const manifest = { holon: 'block-corpus.v1', rule: 'node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited; each block and this manifest carry a κ content-address (HOLONS.md), verified by node tools/blocks_audit.mjs', count: index.length, blocks: index }
+      manifest['κ'] = kappaOf(manifest)
+      writeFileSync(join(outDir, 'INDEX.json'), JSON.stringify(manifest, null, 1) + '\n')
+    }
     console.log(`\n${index.length} block(s) emitted to blocks/${failures ? `, ${failures} skipped` : ''}`)
     process.exit(failures ? 1 : 0)
   }

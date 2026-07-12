@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries invitation as acceptance-before-proposal ordering (the Propose send is gated on the Guest's declared Acceptance); the attack/imposition half is deliberately expressed as absence, no clause sends the Proposal ungated; omits the dark-pattern taxonomy and the MyTerms implementation table.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1cfa45540f105cad7fc9547f59ea809326c5b5bdef1ce5d9b661cd2ebd9596e5"
 }

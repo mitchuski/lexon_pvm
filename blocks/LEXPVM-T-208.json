@@ -139,5 +139,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: invitation as conjunction (the defined predicate Standing requires BOTH proffered Terms fixed AND declared Acceptance; drop either conjunct and the proposal loses its warrant, the mutation twin drops Terms and models consent without proffered terms), plus the ordering it induces (Propose is gated on Standing, so the acceptance relationship strictly precedes any specific proposal, the canon's own definition of invitation). Omits: MyTerms agreement-taxonomy content and renegotiation of terms. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:bea0f5c66845ff379465682ff27363a38abd877eb39246df9ef60d1714c622b1"
 }

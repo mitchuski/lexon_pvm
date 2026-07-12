@@ -85,5 +85,7 @@
  },
  "grandfathered": false,
  "notes": "carries the boundary-made-visible sequence as an ordering (the Swordsman sets the Active Dimensions and only afterwards certifies the Phase: the stratum determines the phase, reversal-falsifiable) plus the Full Moon comparative (Active Dimensions not less than the Stratum Count initially 6, the all-six-dimensions ceiling); the Swordsman is the canon-named holder; omits the per-phase emoji table and the lit-versus-dark proverb. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:5c35f360c0788f313216cfca273c7e99abe4945f5a0c6fe5352acc1aebedb5e9"
 }

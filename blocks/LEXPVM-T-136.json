@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Structural: earn-before-spend ordering (the deposit clause is gated on Practice Complete, and the Inscribe payout draws only from escrow, so spending presupposes earning), the pay-then-register afterwards chain (an Inscription registers only after its cost is paid), and non-transferability as absence (no clause sends or pays mana to any person except the Registry cost sink, and the remainder returns to the Practitioner alone). Omits numeric mana quantities, prices, and regeneration rates. Anchor: ### Mana Economy. Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1e1b0b37ec353855f2b7f7880b19bbabd6e02719c8a7a0f7a6cdcfd4db8417a2"
 }

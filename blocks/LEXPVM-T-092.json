@@ -226,5 +226,7 @@
  },
  "grandfathered": false,
  "notes": "conservation carried as pairwise entanglement drains plus the retained remainder exhausting the escrowed architectural volume; unavoidable consequence as a must clause (any pair collapse forces volume collapse, the multiplicative zero); impossibility as absence (no clause routes volume to the Auditor). Omits the four-by-four matrix entries and the determinant. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:c46889470f860d6538cbb0646d37b96e55654be57f4816d1d1c584d16b6d63b9"
 }

@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries the multiplicative any-zero-collapses composition as a four-factor conjunction defined predicate (Valuable) that is the only route to certifying the Privacy Value: one undeclared factor makes release structurally unreachable, the zero-collapse as clause topology. Omits the exponent on protection, temporal decay, network, guild, compression, market and path-integral factors, and all numeric calibration. Anchor: ### Privacy Value Model (PVM). Checker: GATE PASS (runs/lexr2/propose-scratch/t091_pvm.lex). Folded from formula-skeleton-charter (canon-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:bd4f1693017f2b4d671fcb27cdb8fc530415446258ea7314e57c963ee33e0269"
 }

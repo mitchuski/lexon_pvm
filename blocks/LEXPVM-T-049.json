@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "captures the earn-then-stake gate structure: minting (Earn) and staking (Stake) both gate on the First Person's Chronicle Kept declaration, never self-declared by the Mage (SG-3), with the canonical 100 MAGE stake for VRC formation carried as an initially-literal on the VRC Stake amount; omits token decay, transfer mechanics, and the VRC formation protocol itself. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:22e7c0e4e5645f9e868764bb21963a461dea20e754afc68b3e1ee13c0af8f1c7"
 }

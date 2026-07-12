@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "the taxonomy as a selection gate: both offering the base agreement and registering an escalation are reachable only after the selection time is fixed; base-before-escalation carried as shared gating on one declared choice. Omits the agreement-type enumeration. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1289147e09566ed5a3acea6438c40efb378671592ae211f03161d5bf7f903155"
 }

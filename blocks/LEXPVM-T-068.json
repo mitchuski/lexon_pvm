@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: neutrality as impossibility (Consideration flows between the two parties in the Exchange clause, yet no transfer clause routes the Consideration to the Customer Commons; the probe twin adds exactly that route, the captured registry the canon rules out). The host's only actions are hosting: register the Agreement, certify the Registry Entry, and publish it to either side alike. Omits: nonprofit legal form and the capture-prevention rationale as prose; profits-from-neither-side is carried only as the absent route. Folded from myterms-agreement-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1230b6c13a68a383ca2f61e00ef0037bf737c007f5b1a4ebbec0515701f1ff58"
 }

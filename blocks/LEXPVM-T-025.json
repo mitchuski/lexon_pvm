@@ -200,5 +200,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Structural: the ceiling as reachability (the Adversary can draw only the two fixed leakage amounts from the escrowed State Entropy, and a Reconstruction registers only after Channels Exhausted is declared; the remainder returns to the Gap and no clause routes it to the Adversary, so reconstruction stays strictly below the whole). Omits the ratio form R_max = (C_S + C_M) / H(X) and its numeric value. Anchor: ### Reconstruction Ceiling (R_max). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:c15deaeae3c354ded6f42c9d320ec871c97855e4b2a28dc292b3e44eeb0e409b"
 }

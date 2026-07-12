@@ -82,5 +82,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes Light to the Ur-Swordsman. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2bd9f3dba37fdafb356324342e74286e7a24ac2a31b76130d0e5267a33c8f9a8"
 }

@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "warding as a defined conjunction (alcove prepared and warding time fixed) gating the artifact coming to rest; the bearer cannot deposit into an unwarded vault. Critic flag carried: this entry and T-086 share one clause skeleton (lexr3.1 template-stamping watch); folded because the gate and claim both hold and the warding content is the term. Omits capacity and retrieval. Assayer-authored (held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:e14d406f2dbf379a61106c95ced7192382dfaec5c5139a178762970c169f9330"
 }

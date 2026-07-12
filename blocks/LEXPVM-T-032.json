@@ -226,5 +226,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: conservation as escrow arithmetic (the Sword Channel and Mage Channel payouts plus the returned remainder exhaust the escrowed Total Uncertainty), impossibility as an absent clause (no clause routes the remainder to the Adversary, so residual uncertainty survives any observation strategy), and ordering (the remainder moves only after Observation Complete is declared). Omits logarithms, the bit unit, and the numeric value of H(X). Anchor: ### Entropy H(X). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:98ac4e1e11dd5f090279823ffc81cab40a9ec84268a59e768fe29a86123b9fc9"
 }

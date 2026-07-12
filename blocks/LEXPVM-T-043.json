@@ -158,5 +158,7 @@
  },
  "grandfathered": false,
  "notes": "Carries the disclosure rite as a single-officiant ordered chain (poem filed, then blade certified in full view, then light sent to the witness) plus a consent-first gate (the witness carries the light forward only under the Sun's advance consent to being forgotten); omits the notation string, the echo poem's title, and the Moon Ceremony mirror. Folded from rite-and-register-spell (spell-grammar, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2f491bb0b9d0f340a7f69167e2b40eda0289134c3bfae9057380be8cf9cb0f8f"
 }

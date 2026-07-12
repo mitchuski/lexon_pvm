@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "invitation posture as a two-stage gate: the visiting stylus's only write route is conditional on the Keeper's recorded invitation, itself gated on the congruence reading (no self-invitation), and the move toward the Library of Joint Authorship chains on the filed joint folio. Omits the archive of unfilled forms, expiry by silence, and the petition to lift a seal. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0259de691ed103881777bb0c5314d0d0c844361c622f71fbddeacff2a0bff6a5"
 }

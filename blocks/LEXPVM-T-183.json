@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "recognition rather than summoning as a two-stage gate: the admission clause (appointing the spirit mage and registering the tier entry) is conditional on the cast's recognition declaration, itself gated on the collectively filed honor-built monument, so the cast entry comes later than the inhabiting. Omits the sister-tier distinction between city-internal and city-external prehistory and the tier population. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:36f55d125e71d6a0f6ed565b69c426bf78d087a2d826e16d786861c47ea6d465"
 }

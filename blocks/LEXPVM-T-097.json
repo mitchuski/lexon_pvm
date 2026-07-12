@@ -67,5 +67,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: Duality Preserved requires all of Agent Axis AND Axis Count. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:3a6c4efca54483c98409b82bc4236dcf3061873011e1456ce58e49a5d51dca40"
 }

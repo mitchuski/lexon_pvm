@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries acts-publicly-on-approved-information-only (the send clause is gated on the Swordsman's declaration); omits coordination with other Mages and capability projection detail.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:6ca283000db9ff9f42a787a2268f523710d37bc0edc390086c93c40ea9319514"
 }

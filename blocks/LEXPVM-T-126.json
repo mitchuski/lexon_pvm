@@ -46,5 +46,7 @@
  },
  "grandfathered": false,
  "notes": "gate: the Verify clause is reachable only under the Wrapped condition. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:e1664bb9a5ac6fe35438aae302ae0ba79231fa3ae6c701385faabe9fbf765460"
 }

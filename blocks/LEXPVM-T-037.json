@@ -158,5 +158,7 @@
  },
  "grandfathered": false,
  "notes": "carries the bilateral formation process as a conjunction: the defined predicate Credential Earned requires both independently filed compressions AND the declared match, and issuance is gated on that predicate with either party able to issue (mutual comprehension without central authority, a bilateral promise bundle). Omits the coordination-efficiency ratio and the proverb compression mechanics. Folded from promise-bundle-spell (spell-grammar, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:385c1de4e3f895c9a6a7513ec1237e19ec267410a137ab69614a2b324b47ae17"
 }

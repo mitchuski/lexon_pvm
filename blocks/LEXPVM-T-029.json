@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries the budget as a First-Person-fixed amount, the Swordsman as meter, and the constraint as a defined predicate gating every release by the Mage; omits numeric leakage accounting in bits and gradual depletion, since the subset's only numeric literals are hour and day counts. Anchor: ### Budget Constraint.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:cd0fc322c3aaac9fa7c81537aeb605e74bf1d20c1d2c9621cd9f232f95f5820e"
 }

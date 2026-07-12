@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries grouping-for-reuse (one filed Bundle gates a single delivery clause moving both bodies together) and coordinated assessment (one Bundle Kept verdict covers the whole collection); omits the 70:1 reuse-efficiency quantification and VRC bilaterality.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:db06d94a72cc1664a060d528ac6b1c0dc2f3c948af793f6dea2ad0148d170759"
 }

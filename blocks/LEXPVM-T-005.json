@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries the canonical fee mechanics as ledger structure: one escrowed Ceremony Fee is exhausted by the transparent-share draw and afterwards the remainder flows to the Shielded Pool, so the two pools partition the whole fee by construction (conservation plus ordering, the split as subtraction), and ongoing Signal fees are payable only under the declared-ceremony gate, carrying one-time genesis before recurring signal (gate, ordering of fee frequencies). Omits: the golden-ratio split constants, the ZEC amounts and price basis, and internal pool allocations, none of which the subset can carry as literals. Anchor: ### Economic Parameters (Canonical). Folded from escrow-ledger-formula-charter (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:3bf14bc0fa2a5b1e992b2b0544dfa0118cc5ece1c7e486d7d36bc7106edd1259"
 }

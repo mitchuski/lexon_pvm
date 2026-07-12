@@ -64,5 +64,7 @@
  },
  "grandfathered": false,
  "notes": "carries the density threshold as a gate (certifying Reconstruction Resistance is conditional on Dense, defined by the comparative Lap Count initially 62 greater than Shallow Count initially 13, the two attested blade depths from the canon's empirical basis); zero-actor canon section, First Person holder by the universal cast rule; omits the temporal-duration and intentional-transition terms of the density measure and the quantum-resistance amplification claim. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:ce264f35778d1117d37092e6b50e418d05ace1533ea757ea37213f25047db8a7"
 }

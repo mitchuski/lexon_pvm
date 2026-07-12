@@ -103,5 +103,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: the Mirror is terminated BEFORE the Scrying Glass is registered (where mirrors die and scrying glasses are born, as a single officiant chain), with the proverb repository carried as a filing route; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the Act 18 narrative frame and the visiting mage's inversion story, which belongs to a different census term. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:099f8af9f88ebf46a11bd015d24678f584a89a5e42cb1f7321bb2d8c1704593c"
 }

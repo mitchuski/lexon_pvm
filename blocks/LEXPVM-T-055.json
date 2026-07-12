@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "the HENNING_BRIEF probe (i) sketch, gate-repaired 2026-07-10; carries person-proffers, counterparty-accepts (the invitation pattern), Swordsman in the deterministic breach seat; omits negotiation and per-jurisdiction variation.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:bef3357391722f8d5884a9332c6ac61fd4edfa6de8887b894300c7385cf610b2"
 }

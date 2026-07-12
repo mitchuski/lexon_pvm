@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries verdict-first completeness as a three-part defined predicate (record present, verdict declared, close time marked) gating the Keeper's seal; omits chronicle content structure (handoff block, reversals recorded with equal prominence) and append-only storage. Anchor: ### Chronicle.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:5ab6285e3bdd0bdaf6cd4598b7b7cce1cea10176bdeefd3339bfdc2cb4834f4d"
 }

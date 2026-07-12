@@ -121,5 +121,7 @@
  },
  "grandfathered": false,
  "notes": "the city as a defined conjunction: trade opens only when both production and gathering quarters stand fixed; the charter travels only under Quarters. Omits shop counts and district names. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:ffec0ec4d110523b81ca1399694e6822208bdc5eeb7bffc1edb39087e57185c1"
 }

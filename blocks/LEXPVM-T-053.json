@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "carries intermediary blindness as an impossibility (only the sealed Envelope crosses the Relay hop; no transfer clause routes the Payload to the Relay, and the Relay's sole action is gated on the fixed Envelope); omits key management, endpoint identifiers, and wire format. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:61ee34da65e9fb0b462d74fdae10baa3945ef7f4c371a2d43514cadaa4d4216b"
 }

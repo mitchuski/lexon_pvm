@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: gate (both the Emissary's send of the Service and the Principal's verification declaration are conditional on the defined predicate Forgotten, which holds only when the Derivation Time lies at least 24 hours in the past): service and its verification become reachable only after the origin has aged out, forgetting as the protocol itself, verify-without-remembering as clause topology. Omits the zero-knowledge primitive formalism and the Theia cosmology; the 24-hour literal is a stand-in shelf constant (lies-at-least predicate per lexon-example-license). Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t153_amnesia_protocol.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:37095e321ef65b86a72831504da375eabb68d4e37303ea6a633ae1210d292c5b"
 }

@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Carries entity-hood as a prerequisite gate: the only clause that concludes an agreement with the Entity (the send of the Agreement Record) is conditional on Organization Confirmed (the relation claim), so contracting with an unconfirmed entity is structurally unreachable. Omits the negative half (never an individual) as a typed distinction, since person is the subset's only agent type, and omits organizational form detail. Anchor: ### Entity (IEEE 7012). Folded from ieee7012-standards-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:de6dafc74f1d31d66c7e80c11503186b26bbebd8f528d29ab610a576690ab17a"
 }

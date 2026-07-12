@@ -139,5 +139,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: conjunction (Converged requires both trace declarations, and each is declarable only by its own practitioner, the autonomy partition of independent tracing) gating the single certify of the Blade Proof; the Draw Edge clause is held by the Swordsman alone (the Swordsman decides whether the edge is worth drawing) and by neither practitioner, so the blade belongs to no tracer as clause topology. Omits the rhythm/rhyme role split and the gap-ownership formalism. Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t044_moon_ceremony.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:53f790d3995bda4e74f549c935d5d7b1cd8d40d84e30ab4fcb0aecfa29f17f02"
 }

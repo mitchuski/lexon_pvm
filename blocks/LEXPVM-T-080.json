@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "keeping as a threshold-gated witness: the keeper witnesses only after the threshold stands passed; the bundle separates holding from attesting. Omits threshold values. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:4b2ce60c5ba31fa5efb4fd3731bc186cb112120316fe22961fefd47d7c79fbe1"
 }

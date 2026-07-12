@@ -154,5 +154,7 @@
  },
  "grandfathered": false,
  "notes": "gate: the Study clause is reachable only under the Offered condition. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1463e0ac26c8db6c605555e51c0f097eee9f0c6871f311e516c2aaa3f564b2d0"
 }

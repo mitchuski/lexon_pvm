@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "the identity equation (Soulbis = Swordsman = ⚔️) rides in the fixed Translation text, certified only in Spellbook context; the subset has no identity predicate between nouns, flagged as an expressiveness gap and future grammar lever.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:169d040fc6c1bafbe6b835567b84bcbf314b0adf0445c33b83bd69e53a1ed7de"
 }

@@ -121,5 +121,7 @@
  },
  "grandfathered": false,
  "notes": "captures kept-in-sync as a conjunction: In Sync is defined as both extensions' copies fixed, each fixed by its own side in its own clause (SG-6 independent production), and wire carriage gates on the in-sync substrate; omits the TypeScript type, storage, crypto, and meaning contract contents, and the cosmological Aether Blade is deliberately out of scope (the section itself draws that distinction). Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:ed4300f637008a8e9cc9401884d2d08ab57306011357a76c469a0ef26c67c5fe"
 }

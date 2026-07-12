@@ -121,5 +121,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: compoundness as conjunction (the defined predicate Complete requires BOTH the Purpose Term AND the Retention Term fixed; the mutation twin drops one term clause and the offer warrant survives on a fragment that is no longer a compound set), plus the proposed-and-offered-before-a-contract posture carried by gating Offer on Complete. Omits: the open-ended plurality of term clauses (two stand for the set) and the formal-contract successor step, which lives in T-060. Folded from myterms-agreement-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:00ddd582ca01c3863b85724936324e28701d0e79d45ced3341b5532c8de06be1"
 }

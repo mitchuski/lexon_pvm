@@ -139,5 +139,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: agreement-precedes-contract as ordering (the Bind clause certifies the Agreement first and only afterwards registers the Contract Record; the mutation twin registers the record before certifying what it records), with mutuality carried by the defined predicate Mutual requiring both parties' declared assent and each assent declared only by its own party (autonomy). Omits: enforceable-by-law externality (no court is modeled) and the chronicle-system detail of the 0xagentprivacy mapping. Folded from myterms-agreement-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:438cf871395e1aad215ba6a7ac8d62cc863f86e27f3f782b6e26a3127af33367"
 }

@@ -103,5 +103,7 @@
  },
  "grandfathered": false,
  "notes": "carries conditional independence as a defined-as conjunction (Conditionally Independent requires the Private State fixed AND the Shared Information not greater than zero: the given-the-conditioning-variable condition and the zero-shared-information bound as joint conjuncts, the number initially 0 as the quantitative anchor), with certification of Separation gated on it; omits the probabilistic definition over distributions and the epsilon form of the bound. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:68e478c8c211cdc44c0f67ed8f1d871287ec5d424ff9cb429137dd11c389e997"
 }

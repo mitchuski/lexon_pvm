@@ -122,5 +122,7 @@
  },
  "grandfathered": false,
  "notes": "Carries detection-then-enablement as an ordered action chain: the enable clause performs the three canon-enabled features (mana balance, inscription panel, ceremony receiver) in the canon's listed order, and only after home detection is declared; the ordering claim pins the sequence and the gate condition carries the detection premise. Deliberately omits the home domain list, the hostname-match mechanism, and the HOME_TERRITORY message name. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f310bbfcdb7119155e0e377576bc61fb99087b6964d82e7d85436cf42ba705de"
 }

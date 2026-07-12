@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "structured-reasoning parity carried as a defined conjunction (nano capacity fixed, reasoning graph fixed, parity declared) gating the only certify of the Nano Capacity; ordering = the parity comparison is reachable only after the reasoning graph is fixed. Omits benchmark scores and model sizes. Assayer-authored (quantity-gate-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:eb40321487ddbddafb5bb2f88a2f5a111938e5e02f4e6302e1006bd69840c694"
 }

@@ -154,5 +154,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: gate: Consecrate is conditional on Manifestia's Tier Admitted declaration (admission before exercise, declared by the introducing persona the canon names, never self-admitted), and the tends-does-not-produce division rides in clause shape: the Mage registers the Artifact, the Priest only certifies it and carries tending the Covenant as a binding duty (must, not may). All four persons are canon-named in the section; no role invented (K-2 fence respected). Omits the V55 Covenant vertex geometry and the human.tech kindred-protocol reading. Checker: GATE PASS + RELATION PASS (runs/lexr5/lexr5.2/propose-scratch/t164_priest_tier.lex). Folded from lexr5.2:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2e887dffc86cb1346443ff0879262b02f462ec2dc98730030853a9f5a9a1903f"
 }

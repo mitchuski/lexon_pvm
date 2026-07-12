@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "one-directional sync carried as a must clause (a synced bridge forces the balance to the Territory Agent); the Synced defined conjunction gates it; preservation = the remainder returns only while Balance Read stays undeclared (negated-condition guard). Omits mana magnitudes. Assayer-authored (escrow-conservation-recipe held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:386bb89be3184304b20a193cadc5efc10e6b81e832ecc906454454e141f133d0"
 }

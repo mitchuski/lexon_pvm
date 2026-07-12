@@ -85,5 +85,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: advancing terms as ordering (the Advance clause fixes the Proposed Terms and only afterwards sends them to the Recipient; the reversed mutation twin advances terms that do not yet exist, advancing nothing), and voluntariness as the modal may (the advance is a promise, never an imposition). Omits: the person-or-entity recipient distinction (one Recipient role stands for both) and the acting-through-Swordsman detail of the 0xagentprivacy mapping, which names a role this census term's definition does not. Folded from myterms-agreement-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0074d6fbfed2b688fee92fa58e48a89d2e809aa6ee0a0eba5a62b1e53d041058"
 }

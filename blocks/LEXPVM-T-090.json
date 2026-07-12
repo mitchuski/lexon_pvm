@@ -182,5 +182,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "four forces as four roles: protect and project are agent declarations, reflect and connect are registrations gated on the Fourfold conjunction; omits the force-to-capital mapping.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:b31d571ec91492d556d4d9d6cf6dcd8ba0a0a645ccbf79aee70e50c20d561c44"
 }

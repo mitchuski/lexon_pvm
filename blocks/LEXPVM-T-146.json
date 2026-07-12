@@ -159,5 +159,7 @@
  },
  "grandfathered": false,
  "notes": "captures the five ceremony steps: the officiant's chain orders vocabulary capture, constellation mapping, blade forging, proverb inscription (the ordering claim), and the fifth step, bilateral witness, is the Participant's separate gated clause closing back into Trust (SG-4 split form for a two-sided rite; Participant is the section's own word for the other side); no credential or stored secret is defined anywhere in the text, comprehension is the only route, which is the term's key insight; omits the post-quantum qubit framing. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:199bb9bf9a433b65c6d656184871b11c1d333eefcb989e083e417e8d4c22479f"
 }

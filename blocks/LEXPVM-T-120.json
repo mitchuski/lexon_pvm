@@ -161,5 +161,7 @@
  },
  "grandfathered": false,
  "notes": "carries the seven-layer spectrum as a strict ordering (the Compress clause fixes Experience then Memory then Knowledge then Understanding then Wisdom and only then certifies the Skill File, reversal-falsifiable) plus an Ascending conjunction over the attested ratio literals 10, 100, 1000, 10000; zero-actor canon section, First Person holder; omits the two variable-ratio layers as quantities (Reasoning Graph and Skill File carry no fixed ratio in canon, so none is invented) and the more-tokens-more-surveilable argument. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0cd96b387b44888f99ebfaa4a724e5e5876da0f92608a0959c55bed816ecfe87"
 }

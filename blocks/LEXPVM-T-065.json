@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "agreement expressible only under a conformant description: the express-agreement clause is gated on declared conformance, consent-follows-description as clause order. Omits the description schema. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:15164d7472dd391ba3215ecf406b7c9652b2ff45452c5a4a25c6d4e619c28bbd"
 }

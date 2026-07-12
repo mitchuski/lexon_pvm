@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: contingency as gate (the Body moves to the Promisee only through the declared Condition Met; strip the gate and the text collapses to an unconditional micro promise, which is exactly the mutation twin), and the condition is observed by the promiser itself (Observe clause: assessment of c is also autonomous). Omits: the mapped conditional-independence reading (Swordsman and Mage independent given X) and any probability semantics. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:ac55c07e3a960d6ef7bf20c89ef24904ebe7dd9a9ded097653e73e224ff88d73"
 }

@@ -86,5 +86,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: clause Trace performs register:Gap Anchor, then file:Zero Constellation, then certify:Arrival as clause order. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes. Template-thin (lexr5.3 critic flag): a single clause carrying the minimal relation; folded because the ordering carries the term structure, flagged for the fold reviewer.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:33a1c473a7ce5b62989ab2b09d09f7f00cfa0d262c17341a2c65ecbd8f74b340"
 }

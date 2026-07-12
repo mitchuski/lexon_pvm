@@ -154,5 +154,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes New Primary to the City. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:a36f7c3ddf660d0603a4fea04ea7b05a3f4222d1fc0e2e50c48619d9007f2d86"
 }

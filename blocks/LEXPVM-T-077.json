@@ -123,5 +123,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: Curriculum Complete requires all of Form Taught AND Compression Taught AND Right Word Taught AND Redundancy Taught. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:309a700f3fada7a42c243b238a096e5b9eb4f357f45b0e92d2dbf23a2068009c"
 }

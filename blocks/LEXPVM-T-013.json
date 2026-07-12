@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "voluntary (may), directional (promiser to promisee), and independently assessed (only the promisee declares Kept); imposition is structurally impossible, no clause lets either party act on the other's behalf. Polarity (+give / -accept) carried by clause roles.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:b385d8fe2bd17373956041aabeefed047a4ecd471d0f37eb938e4efdd95777f2"
 }

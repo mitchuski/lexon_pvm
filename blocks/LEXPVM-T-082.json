@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries the assignment-before-significance ordering as a gated chain: the Identifier falls (send) before it can be Caught (declaration), the Meaning is fixable only after Caught is declared, and remembering opens only on the Claimed three-part conjunction, closing with the register-then-afterwards-certify chain; the gap between random assignment and claimed meaning is exactly the ordering between the Fall clause and the Fix Meaning gate. Omits the rain and river imagery and any entropy quantity. Anchor: ### Mountain of Entropy. Folded from quantity-gate-charter (canon-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:db8f5183aa901cb020ae1dfc88b121a612868bce813774f6b4345e53ba6f34ca"
 }

@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries integration as ordered accumulation: each edge deposits a contribution into escrow and the second edge is gated on the first's declaration (path order as a condition chain, so a later contribution cannot precede an earlier one), and the payout equals the fixed Base Value plus the accumulated escrow, the one-plus-integral shape of the formula, firing only when the defined predicate Traversed conjoins both edge declarations. Omits beta, the density function F, non-local correlations beyond ordering, and continuous integration. Anchor: ### Path Integral T_∫(π) (V5). Folded from escrow-conservation-recipe (grammar-forward, run lexr2).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:e591afdf48a3f9bf8eb8cc06097e5200b17d74eeacc41cdebc7b1c2d9c0b02e3"
 }

@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "carries the posture as a gate: the visiting mage files a folio only under a declared congruent signature (a tablet signed by a mage of congruent geometry opens the chronicle for editorship); the ungated twin is an open tome, not an invitation tome. Omits the four cardinal chairs image and the spine glyphs. Anchor: ### 24.6 Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture). Folded from invitation-admission-charter (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:9f14a2d03329df5c765cf82a0a28c987903c650da221a1e782d32e1bdf625f9c"
 }

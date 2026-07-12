@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "carries the no-tier exclusion as an absence of routes: the tier stipend pays only to resident mages and no clause can route it to the visiting mage (not a cast member, not a kindred subcategory, not a workshop-keeper), whose only permitted act is filing the appended folio under declared congruent geometry (authority limited to the appended folio). Omits the four-faced tablet's inscriptions and the named identity. Anchor: ### 24.8 Vitalik (first invited visiting mage · v1.7.1). Folded from invitation-admission-charter (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0b407bac241678c4b58484e98327173a51eee4b1021a2cb10c954abd74e1f888"
 }

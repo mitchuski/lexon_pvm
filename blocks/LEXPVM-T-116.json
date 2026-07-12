@@ -122,5 +122,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Sound requires all of Data Persistence AND Identity Persistence AND History Persistence. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:7e2e0bca2dfa01e7ecaf5584ba3448f3e0af9e5b978d509167abe27eaad1a834"
 }

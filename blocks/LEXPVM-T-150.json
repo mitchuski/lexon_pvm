@@ -190,5 +190,7 @@
  },
  "grandfathered": false,
  "notes": "carries dispersal as an impossibility (shards route outward one per emissary, each emissary certifies only its own shard, and no transfer clause routes the Master Secret to any single emissary: the no-single-shard-holds-the-whole property in clause shape); omits the hemispheric-capture origin and the mirror proverb. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:3b2874d9dab82a5b34be4b481859161c070be71f7b1b8457adc4ccd579302ca4"
 }

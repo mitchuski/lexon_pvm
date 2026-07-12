@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: inbound polarity as gate (Use fires only if Delegation Given is declared: acceptance can never precede the give, a minus-polarity promise consumes an existing plus-polarity offer; the ungated twin is a self-authorized delegate, exactly what inbound authorization forbids). Omits: scope negotiation and the assessment of whether the accepted delegation is kept. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:76aa9a997ee0281a804adec475e3ab4d63fcc061ad0481924df198a0f81a7327"
 }

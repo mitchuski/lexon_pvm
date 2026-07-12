@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes Mandate to the Master. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:a710d3d64dd23b07ba08905bada95ae25675978dc04df95fdd1dcb73bf0baab5"
 }

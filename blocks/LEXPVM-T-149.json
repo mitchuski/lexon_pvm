@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "irreducible presence carried as the witness-gated return of the remainder (the return fires only after Laps Complete is declared); the adversary reconstruction claim drains only part; conservation = claim plus retained remainder exhaust the escrowed traversal mass. Omits the lap count and the derivation. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:b1ceb5769b3ae281198c4ab74deb9dc8d1900c7753e32bc3d89407526b6402ec"
 }

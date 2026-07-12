@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "Carries two authority domains with a single gated crossing: each agent acts only on its own domain's record, and the only sentence that crosses territories is the ceremony message, gated on the receiver-opened channel; the never-merge rule is that no clause moves either territory's record across, only ceremony messages cross and only through the gate. Deliberately omits the domain names (spellweb.ai, agentprivacy.ai), the third node bgin.ai, and the repo/process/storage separation levels. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f99ac9d5e46f37990a051e60bd1c9ea329a6e9d4c83a0995659d58130a0e8e61"
 }

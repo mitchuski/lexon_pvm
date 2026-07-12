@@ -236,5 +236,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "ceiling as conservation (the retained separation value can never exceed the escrowed whole, the min cap); multiplicative dampening as conditional drains (entanglement and imbalance penalties shrink the remainder); impossibility as absence (no clause pays the Swordsman or the Mage any separation value). Omits the ratio formula and the determinant. Assayer-authored (escrow-conservation-charter held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:798ebac682c9d194999a5e939aa7c9ad4dec1e74d4552e5419957290091d617a"
 }

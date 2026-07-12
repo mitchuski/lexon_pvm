@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries assessment-lies-with-the-promisee (only Promisee clauses hold verdict declarations, in both directions; the Promiser has no verdict clause at all); omits the alpha(pi) notation, RPP compression-ratio quantification, and trust-tier accumulation.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:3022614a2ac477b40fba5c90baea669a4a734bbd9059e6c8ff4910aea98e6da2"
 }

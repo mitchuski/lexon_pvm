@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: gate (the Decay clause's terminate is reachable only once the defined Decay Period, 30 days after the Reinforcement Time, has passed) with an upstream gate (re-marking the Reinforcement Time is conditional on Mana Spent, so reinforcement costs mana and holds decay off). Omits the 0.5 mana price and reset arithmetic; the 30-day literal is the attested number form (days-after period and has-passed condition per lexon-example-statement). Checker: GATE PASS + RELATION PASS (runs/lexr3/lexr3.1/propose-scratch/t139_inscription_reinforcement.lex). Folded from temporal-spine-lifecycle-charter (grammar-forward, run lexr3).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0db95a5d7822bd73869ae27e1a05152871ee1a560fbdd26b9ee64a4fd6583447"
 }

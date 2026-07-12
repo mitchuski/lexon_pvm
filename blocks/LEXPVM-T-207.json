@@ -110,5 +110,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries trust as a truster-held scalar amount whose certification is gated on the defined predicate over the truster's own assessments (kept without broken), preserving that trust is assessed only by the promisee side; omits the 0 to 1 numeric range and the update rule, amounts carry no literals in the subset. Anchor: ## Quick Reference: Concept Mappings.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0bf1ee71e5266ea4711783fecba6d57cb8cc321cde6cdd561967bd3ce478468c"
 }

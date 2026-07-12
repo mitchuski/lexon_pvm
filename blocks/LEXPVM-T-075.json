@@ -141,5 +141,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: Drake emergence requires ALL four canon conditions (both extensions active, the node threshold, the ceremony threshold, the tracker threshold) as a defined predicate, matching the canon multiplicative test where zeroing any condition breaks the body; the whisper routes to the First Person only through the emergent state (intimacy as a gated route). Deliberately omits the emergence animation, the symbol distinction from the Dragon, the tier association, and the scale-of-the-question framing. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:58ae4aac96a9b0430426a4be91053925ab2642947e891d7fa7b18e411cd9f537"
 }

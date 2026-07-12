@@ -99,5 +99,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes anything to the Interceptor. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d0d2b5c2a430913da9643df5b319c13c0b72931df02a3f1340725ec7f051e727"
 }

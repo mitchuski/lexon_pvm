@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Carries the paradox as a single binary gating two consequences: the same Disclosure that gates the wanted delegation (Act) gates the unwanted exposure (Expose), both held by the one Single Agent, which is the canon's why-single-agents-cannot-solve-it sentence in clause shape; the claim pins the unwanted clause to the shared condition. Deliberately omits the dual-agent resolution (expressed at the covered T-009) and the autonomy-axiom derivation. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2c5e20f914cae1c831ac6504d90a8943170585c0889bce4c01ca6f18395a848c"
 }

@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries contingency as a condition-gated send (the Keep Promise clause can fire only once Condition Met is declared); omits the b|c notation and the (s perp m | X) application; pins condition assessment to the Promisee, which the canon leaves abstract.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:02d33cb94d58e54467715c7f91283b4eb483a9619914e817ad3ecafae2b65024"
 }

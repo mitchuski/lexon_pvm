@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "mirror of LEXPVM-T-073 (Soulbae = Mage = 🧙‍♂️); same identity-predicate gap flagged there applies.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:7150a2b7e631873b63f256cd60ee379bb4c1ce491a51d19d41a804d4471588ba"
 }

@@ -141,5 +141,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Dragon Tier requires all of Domains Asserted AND Constellation Nodes AND Drake Summonings AND Privacy Posture. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0e3462ec771e1c4b06bc9f3c6bb53607ed9d20a57cbedda7c79afba7c00a2ed0"
 }

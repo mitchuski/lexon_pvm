@@ -123,5 +123,7 @@
  },
  "grandfathered": false,
  "notes": "captures the chain as a single-officiant ordering: certificate registered, then the chain fixed, then the chain's own first-class identity fixed (the path is content-addressed too), then endpoint verification last; the section names no actor, so the First Person walks the chain (universal cast rule); omits path multiplicity (different chains reaching the one recital-fixed Endpoint) beyond the Endpoint's immutability. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d65809cd6517b5e6def678b47ee0084bccb7616660a24089c35da6bc6ca2d1b7"
 }

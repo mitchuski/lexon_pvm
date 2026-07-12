@@ -92,5 +92,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "Carries trust as a function of the truster's own assessment history (only the Truster records outcomes, and extended trust is gated on that record, with 'is not declared' carrying the downgrade-on-breach direction). Omits the numeric 0-to-1 value and the update rule.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:dff6da5812ec8a4d06cbd719f253f1bc09dc417e579445d83063fab400805490"
 }

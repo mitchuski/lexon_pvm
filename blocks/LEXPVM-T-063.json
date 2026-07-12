@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "Structural: exchange gated on accepted terms (the Serve clause registers the Service only under the entity's own declared Terms Accepted, so the service provider acts only inside the individual's proffered agreement; the ungated mutation twin serves without acceptance, the surveillance default), with the receive-accept-serve lifecycle laid out as separate clauses. Omits: always-an-organization typing (one Lexon person type) and service-provider or platform taxonomy. Folded from myterms-agreement-family (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:4e41827fde0a0110696d25f9d0506c4cc9f801968f4d0db0adcd1aa3f3bbba3b"
 }

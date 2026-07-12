@@ -82,5 +82,7 @@
  },
  "grandfathered": false,
  "notes": "gate: the City of Mages registers only under the fixed island substrate (built-upon carried as a condition), with grounding ordered before building inside the Ground clause; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the two-registers-of-one-place line and the Drake as place-fire-whisperer-elder framing. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:53b54d86de714846241b59eb500268b9eaa282453af82a5cd844f7c56eea87b8"
 }

@@ -122,5 +122,7 @@
  },
  "grandfathered": false,
  "notes": "conjunction: the defined predicate Workshop Kind requires all of Vertex AND Trade Quarter AND Mage Binding. Omissions per the term's canon anchor. Assayer-authored (consent-standard-party-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:6f5649f14cfd468b3153fb1b496631b85b8b7b0f6910ef773de60fb23fbdd5de"
 }

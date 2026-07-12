@@ -158,5 +158,7 @@
  },
  "grandfathered": false,
  "notes": "carries the compress-then-signal ordering (the Proverb is registered, then sent, then the Signal paid: proverb formation strictly precedes payment, and assessment is gated on a fixed Proverb); omits the compression-ratio assessment metric and the signal denomination. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:1f938aae24abd4207e73e866f583d26012eebd176332c4d55ce04dad9ac83f6b"
 }

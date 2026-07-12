@@ -146,5 +146,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "carries the two-component body b = (type, constraint) as two fixed texts that travel and are accepted together; omits the tau/chi notation and the spell-notation compression mapping.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0f595369a9c15c5c2f52d7ea092f6247288104854f933c14f40276263e7e334e"
 }

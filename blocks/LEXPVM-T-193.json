@@ -103,5 +103,7 @@
  },
  "grandfathered": false,
  "notes": "Carries the numbering discipline as an ordering (per conjecture instance the Conjecture Number is fixed and only afterwards registered, the whole clause gated on the Candidate Statement being filed: a number exists before its register entry, never a register entry awaiting a renumber, and the Register Keeper is the only numbering actor in the text); omits the namespaces, the alias resolution rule, and the head pointer. Folded from instance-charter-family (grammar-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:4500af63f1b80014d59983d1bb3e05fc52c698f9d27b26573f7f52f88e5877b3"
 }

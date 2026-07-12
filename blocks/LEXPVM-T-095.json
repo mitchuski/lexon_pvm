@@ -200,5 +200,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "fragmentation carried as two shard outflows each with an afterwards declaration (ordering); the Fragmented defined conjunction gates holding the residue; conservation = shards plus retained residue exhaust the escrowed corpus. Omits the separation formula and provider counts. Assayer-authored (escrow-conservation-recipe held-out, recipe-only).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:b9b36729a12233c8ad47f8588a9307a486ceb0bde3a6988d3a3402ccefb27ae5"
 }

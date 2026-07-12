@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes Shared Weights to the Solver. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:2451a86d29ce6c04cc43f7eedeccb08af166a231c515547b77c38b166f09a4ee"
 }

@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "Carries the theorem's premise-conclusion structure: the total leakage may be fixed only under the held-apart premise (the conditional-independence condition of the formula) and only from the two marginal observations, whose two-conjunct Accounted definition has no third synergy conjunct, which is additive-not-multiplicative in clause shape; the claim pins the accounting to the premise. Deliberately omits the mutual-information notation, the equality itself as arithmetic, and the proof; the theorem's PROVEN canon status is recorded in the register tag, not upgraded here. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:010a8b531253efd6336e5dbfdc585383f3dea480f375f5c4584ffcf6003e30e2"
 }

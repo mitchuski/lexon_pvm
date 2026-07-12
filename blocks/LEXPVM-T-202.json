@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes Delta Share to the Lethe. Omissions per the term's canon anchor. Assayer-authored (rite-and-register-spell held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:95990bea7811ca8020379b2452e0d7545bed11fcd1c29e8ec403529d130f9f0c"
 }

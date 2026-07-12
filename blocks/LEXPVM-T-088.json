@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "measurement-collapses-possibility carried as a gate: specific reality reaches the First Person only after Measurement Taken stands declared; only the Swordsman holds the measuring declare. Omits the world-tree branching figure. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:23c1a4bd96fefdd8650be39ac148c3532bb716ef4565352b63856e0053cfb7f6"
 }

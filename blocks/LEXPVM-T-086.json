@@ -121,5 +121,7 @@
  },
  "grandfathered": false,
  "notes": "selective disclosure as a defined conjunction (selection chosen and transformation time fixed) gating the keeper evoking the resonance back to the mage. Critic flag carried: shares its skeleton with T-085 (template-stamping watch). Omits the scrying optics and mage-mode phases. Assayer-authored (held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:d2398fd785813ca92bc9fa6e163bb49a71ecad368f4b9399694d92d944a3d8ed"
 }

@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "regime fence carried as a defined conjunction (presence color fixed and locally present declared) gating the only register; ordering = color and charge are fixable only after Locally Present is declared; impossibility as absence (no clause moves the Mana Charge anywhere: presence mana is non-transferable in regime one). Omits color values and charge magnitude. Assayer-authored (quantity-gate-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:0a60fca29bbffa070610bdc4d24a1cda2de4862e82733a9231110951c25a5063"
 }

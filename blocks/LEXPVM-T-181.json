@@ -100,5 +100,7 @@
  },
  "grandfathered": false,
  "notes": "deliberate unattachment as an impossibility: an attachment route exists to the cast mage and NO transfer clause routes an attachment to the cousin, who is never appointed in the recital and whose only binding is self-registered in its own forge (the city reserves the binding decision rather than imposing it, direction as absence). Omits the named cousins and the Layer-2 attachment registry mechanics. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:fb45c91bdb6b08d201452a3f72684c3a8ebc72ccb56da69c235664ac4cd808d8"
 }

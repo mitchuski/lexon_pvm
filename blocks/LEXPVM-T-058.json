@@ -136,5 +136,7 @@
  },
  "grandfathered": false,
  "notes": "agency as a phase law: the agent presents terms only after the mandate time is fixed, and the mandate time is fixable only after Mandate Given stands declared (delegation before action, as clause ordering). Omits the IEEE 7012 role taxonomy. Assayer-authored (temporal-spine-lifecycle-charter held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:3597d5e5949c224a3c4d3c7172d9a97381bf69e096d2deb5b88f5440a001c736"
 }

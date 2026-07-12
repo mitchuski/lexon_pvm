@@ -164,5 +164,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "threshold carried as a four-conjunct defined condition (both budgets fixed, machine assembled, broadcast time fixed) gating the adversary drain of the escrowed key entropy; the residue returns only while Machine Assembled stays undeclared. Omits qubit and Toffoli counts and timeline estimates. Assayer-authored (escrow-conservation-recipe held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:f042ae125bc982d2097001cae594f716dce5dc102b641b07281c28b517cd6509"
 }

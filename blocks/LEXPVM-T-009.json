@@ -128,5 +128,7 @@
  "relation": null,
  "grandfathered": true,
  "notes": "conditional independence given the First Person's private state carried as permission structure (the Mage's only route to action runs through the Swordsman's declaration, never through the Private State directly); the formula (Y_S ⊥ Y_M) | X omitted.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:bd4f49b1f209104fc18c275f0663237aaf717e8530b43ffe11e4df7e66044c22"
 }

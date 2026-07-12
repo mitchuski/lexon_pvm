@@ -118,5 +118,7 @@
  },
  "grandfathered": false,
  "notes": "processing gated on verified attestation: the promise bundle grants processing capability only after the attestation stands verified by the counterparty role. Omits the attestation format. Assayer-authored (promise-bundle-spell held-out, recipe-only); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:031185b6acd213cddb33503f1fee99de87663fa2cf445b2844705b3dab252729"
 }

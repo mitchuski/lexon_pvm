@@ -176,5 +176,7 @@
  },
  "grandfathered": false,
  "notes": "ordering: clause Traverse performs certify:First Node, then certify:Second Node, then register:Path as clause order. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.",
- "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)",
+ "holon": "block.v1",
+ "κ": "sha256:61608306fe1f1e3fb603df166b194f1f55db4d38c646df9965b08a915c82245b"
 }
