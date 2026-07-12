@@ -162,16 +162,21 @@ function mutate(src, claim, r) {
   if (claim.type === 'absence') {
     const persons = Object.entries(r.defs).filter(([, t]) => t === 'person').map(([n]) => n)
     const amounts = Object.entries(r.defs).filter(([, t]) => t === 'amount').map(([n]) => n)
+    const texts = Object.entries(r.defs).filter(([, t]) => t === 'text' || t === 'data').map(([n]) => n)
     const actor = persons.find(p => p !== claim.to)
-    const what = claim.what || amounts[0]
+    const what = claim.what || amounts[0] || texts[0]
     if (!actor) return { twin: null, why: 'no person other than the forbidden role to act in the probe clause' }
-    if (!what) return { twin: null, why: 'no amount defined to route in the probe clause' }
+    if (!what) return { twin: null, why: 'no transferable object defined to route in the probe clause' }
+    // probe verb follows the object's TYPE (CR-20 fix): amounts pay, texts/data
+    // send. No more typing a secret as an amount just so the twin can pay it.
+    const whatType = what === 'escrow-remainder' ? 'amount' : r.defs[what]
     const escrow = /into escrow|from escrow/i.test(src)
-    const core = what === 'escrow-remainder'
-      ? `pay the remainder of the escrow to the ${claim.to}`
-      : `pay ${escrow ? 'from escrow ' : ''}the ${what} to the ${claim.to}`
+    let core
+    if (what === 'escrow-remainder') core = `pay the remainder of the escrow to the ${claim.to}`
+    else if (whatType === 'amount') core = `pay ${escrow ? 'from escrow ' : ''}the ${what} to the ${claim.to}`
+    else core = `send the ${what} to the ${claim.to}`
     const probe = `\nCLAUSE: Mutation Probe.\nThe ${actor} may ${core}.\n`
-    return { twin: src.trimEnd() + '\n' + probe, why: `probe clause appended routing ${what} to ${claim.to}` }
+    return { twin: src.trimEnd() + '\n' + probe, why: `probe clause appended routing ${what} to ${claim.to} (${whatType === 'amount' ? 'pay' : 'send'} probe)` }
   }
   return { twin: null, why: `unknown claim type "${claim.type}"` }
 }

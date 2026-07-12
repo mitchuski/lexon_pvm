@@ -5,11 +5,15 @@ LEX Relation Fixture.
 "Witness" is a person.
 "Vault" is an amount.
 "Fee" is an amount.
+"Scroll" is a text.
 "Opened" is a binary.
 "Sealed" is a binary.
 "Fixture" is this contract.
 
-The Keeper pays the Vault into escrow, appoints the Witness, appoints the Adversary, and fixes the Fee.
+The Keeper pays the Vault into escrow, appoints the Witness, appoints the Adversary, fixes the Fee, and fixes the Scroll.
+
+CLAUSE: Share Scroll.
+The Keeper may, if Opened is declared: send the Scroll to the Witness.
 
 CLAUSE: Open.
 The Witness may declare Opened.

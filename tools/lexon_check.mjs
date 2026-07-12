@@ -26,7 +26,9 @@ const HERE = dirname(fileURLToPath(import.meta.url))
 
 // ---------- grammar tables (attested subset) ----------
 
-const TYPES = ['person', 'amount', 'text', 'time', 'binary', 'data', 'contract']
+// number, account: 0.7-attested (oversimplicated.lex DEFINITIONS, SOURCES.md
+// slug lexon-example-oversimplicated); folded 2026-07-12 with the numeric layer
+const TYPES = ['person', 'amount', 'text', 'time', 'binary', 'data', 'contract', 'number', 'account']
 
 // verb → { base, patterns: ordered list of arg templates }
 // templates: FROM_ESCROW_TO, OBJ_TO, OBJ_INTO_ESCROW, REMAINDER_TO, OBJ_AS, OBJ, THIS_CONTRACT
@@ -42,6 +44,7 @@ const VERBS = {
   file: ['OBJ'],
   send: ['OBJ_TO'],
   terminate: ['THIS_CONTRACT', 'OBJ'],
+  set: ['OBJ'], // 0.7-attested: "sets the Trader Rate" (oversimplicated recital)
 }
 const VERB_FORMS = {}
 for (const v of Object.keys(VERBS)) {
@@ -101,11 +104,14 @@ function parseDoc(src) {
     const defAs = s.match(/^"([^"]+)"\s+is\s+defined\s+as:?\s+(.+)\.$/i)
     if (defAs) { doc.definedAs.push({ name: defAs[1], body: defAs[2], clause: currentClause }); continue }
 
-    const def = s.match(/^"([^"]+)"\s+is\s+(?:(a|an|this)\s+)?([a-z]+)\.$/i)
+    // optional initial numeric literal: "X" is a number, initially 99.
+    // (0.7-attested: oversimplicated "Maximum Members Count" is a number, initially 99.)
+    const def = s.match(/^"([^"]+)"\s+is\s+(?:(a|an|this)\s+)?([a-z]+)(?:,\s+initially\s+(\d+(?:\.\d+)?))?\.$/i)
     if (def) {
-      const [, name, , typeRaw] = def
+      const [, name, , typeRaw, initial] = def
       const type = typeRaw.toLowerCase()
       if (!TYPES.includes(type)) { errors.push(`unknown definition type "${typeRaw}" for "${name}"`); continue }
+      if (initial !== undefined && type !== 'number' && type !== 'amount') { errors.push(`initial literal on non-numeric type "${type}" for "${name}"`); continue }
       if (doc.defs.has(name)) { errors.push(`rebinding of "${name}" (definitions are immutable)`); continue }
       doc.defs.set(name, type)
       continue
@@ -243,14 +249,18 @@ function parseSentence(sentence, doc, nouns, errors) {
     for (const actor of actors) {
       if (doc.defs.get(actor) && doc.defs.get(actor) !== 'person') errors.push(`${where}: actor "${actor}" is ${doc.defs.get(actor)}, not person`)
       if (act.verb === 'pay' && act.o !== 'escrow-remainder' && doc.defs.get(act.o) && doc.defs.get(act.o) !== 'amount') errors.push(`${where}: pay object "${act.o}" is ${doc.defs.get(act.o)}, not amount`)
-      if (act.verb === 'appoint' && doc.defs.get(act.o) !== 'person') errors.push(`${where}: appoint object "${act.o}" is not a person`)
+      if (act.verb === 'appoint' && !['person', 'account'].includes(doc.defs.get(act.o))) errors.push(`${where}: appoint object "${act.o}" is not a person or account`) // account: 0.7-attested ("appoints the Maintenance Account")
       triples.push({ s: actor, verb: act.verb, mode: act.mode, o: act.o, io: act.io || null, as: act.as || null, modal, condition, clause: sentence.clause })
     }
   }
   return triples
 }
 
-const COND_SCAFFOLD = new Set(['this', 'the', 'is', 'are', 'not', 'and', 'or', 'there', 'no', 'has', 'have', 'passed', 'fixed', 'filed', 'declared', 'lies', 'at', 'least', 'in', 'past', 'being', 'a', 'an', 'after', 'day', 'days', 'hour', 'hours', 'then', 'current', 'time', 'if'])
+const COND_SCAFFOLD = new Set(['this', 'the', 'is', 'are', 'not', 'and', 'or', 'there', 'no', 'has', 'have', 'passed', 'fixed', 'filed', 'declared', 'lies', 'at', 'least', 'in', 'past', 'being', 'a', 'an', 'after', 'day', 'days', 'hour', 'hours', 'then', 'current', 'time', 'if',
+  // comparative scaffold, 0.7-attested (oversimplicated: "greater than zero",
+  // "greater than or equal to half of", "being zero", "sum of", "divided by",
+  // "difference between", "times"); numeric layer folded 2026-07-12
+  'greater', 'less', 'than', 'equal', 'equals', 'to', 'zero', 'one', 'half', 'sum', 'of', 'times', 'divided', 'by', 'minus', 'plus', 'difference', 'between'])
 
 function checkConditionBinding(cond, nouns, errors, where) {
   // scan left to right: eat a bound noun (longest match wins, so multi-word
@@ -261,7 +271,7 @@ function checkConditionBinding(cond, nouns, errors, where) {
     const hit = nouns.eat(frag)
     if (hit) { frag = hit[1]; continue }
     const w = frag.split(' ')[0]
-    if (COND_SCAFFOLD.has(w.toLowerCase()) || /^\d+$/.test(w)) { frag = frag.slice(w.length).trim(); continue }
+    if (COND_SCAFFOLD.has(w.toLowerCase()) || /^\d+(\.\d+)?$/.test(w)) { frag = frag.slice(w.length).trim(); continue }
     errors.push(`${where}: unbound name in condition: "${frag.split(' ').slice(0, 4).join(' ')}"`)
     return
   }
@@ -270,7 +280,7 @@ function checkConditionBinding(cond, nouns, errors, where) {
 // ---------- round trip ----------
 
 function serializeAction(t) {
-  const V = { pay: 'pays', return: 'returns', appoint: 'appoints', fix: 'fixes', certify: 'certifies', register: 'registers', grant: 'grants', declare: 'declares', file: 'files', send: 'sends', terminate: 'terminates' }[t.verb]
+  const V = { pay: 'pays', return: 'returns', appoint: 'appoints', fix: 'fixes', certify: 'certifies', register: 'registers', grant: 'grants', declare: 'declares', file: 'files', send: 'sends', terminate: 'terminates', set: 'sets' }[t.verb]
   let core
   switch (t.mode) {
     case 'FROM_ESCROW_TO': core = `pays from escrow the ${t.o} to ${t.io === 'themselves' ? 'themselves' : 'the ' + t.io}`; break

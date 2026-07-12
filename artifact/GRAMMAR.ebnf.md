@@ -74,9 +74,11 @@ polarity rules.
 
 ## Out of subset (known, honest)
 
-`oversimplicated.lex` (0.7-era) constructs are NOT covered: `DEFINITIONS.`
-sections, `"X" is an account/number/1%`, comparative definitions ("greater
-than zero"), hex-literal identity binding, `%` rates. Each is a future
+`oversimplicated.lex` (0.7-era) constructs NOT covered after the 2026-07-12
+numeric fold: `DEFINITIONS.` sections, hex-literal identity binding, and `%`
+rates (percent literals stay excluded: the assay pipeline scans proposals
+for confidence percentages, and a % in lexText would collide with that
+hard-constraint check; revisit only with an operator convention). Each is a future
 grammar-expansion lever (checker + this doc + selftest extended together,
 keystone fold).
 
@@ -112,3 +114,29 @@ claim and its inverse under identical clause shapes, so the fortress-falls
 direction lives in `{ type: absence, to: Key Holder, what: Scalar Secret }`,
 not in prose. Regime caveat CR-11 binds here too: relations are clause-graph
 properties under the spec-checker, not executed semantics.
+
+
+## Numeric layer (0.7-attested, folded 2026-07-12)
+
+Folded with checker + selftest together (the standing coupled-artifacts
+rule). Every production cites lexon-example-oversimplicated (SOURCES.md):
+
+```ebnf
+defType     = ... | "number" | "account" ;            (* DEFINITIONS block *)
+defInitial  = '"' name '"' "is a" type "," "initially" NUM "." ;
+              (* "Maximum Members Count" is a number, initially 99. *)
+setAction   = "set" , "the" , N ;                     (* recital: sets the Trader Rate *)
+appointObj  = person | account ;                      (* appoints the Maintenance Account *)
+comparative = N "is" ["not"] ("greater"|"less") "than" (NUM|"zero"|N)
+            | N "is greater than or equal to half of" N ;
+              (* condition/defined-as scaffold only; bare numeric literals
+                 allowed in conditions, incl. decimals *)
+```
+
+Typing: initial literals bind only to number and amount definitions; appoint
+accepts persons and accounts; pay objects remain amounts. Golden:
+tools/golden/numeric.lex (constructed from the attested shapes, canary by
+construction); mutants bad_initial.lex (missing comma) and
+bad_comparative.lex (unbound comparand) must fail. This layer is what makes
+the formula-hard census residue expressible with quantity-bearing anchors
+instead of shape-only claims (CORPUS_COVERAGE_PLAN.md Phase 1.2).
