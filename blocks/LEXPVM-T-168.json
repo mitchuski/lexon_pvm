@@ -1,0 +1,183 @@
+{
+ "census": "LEXPVM-T-168",
+ "term": "The Quintessence",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.7 The Quintessence",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Quintessence.\n\n\"First Person\" is a person.\n\"Quintessence Charter\" is this contract.\n\"Protection Held\" is a binary.\n\"Connection Held\" is a binary.\n\"Computation Held\" is a binary.\n\"Delegation Held\" is a binary.\n\"Memory Held\" is a binary.\n\"Value Held\" is a binary.\n\"Privacy Value Model\" is data.\n\nThe First Person fixes the Privacy Value Model.\n\nCLAUSE: Hold Protection.\nThe First Person may declare Protection Held.\n\nCLAUSE: Hold Connection.\nThe First Person may declare Connection Held.\n\nCLAUSE: Hold Computation.\nThe First Person may declare Computation Held.\n\nCLAUSE: Hold Delegation.\nThe First Person may declare Delegation Held.\n\nCLAUSE: Hold Memory.\nThe First Person may declare Memory Held.\n\nCLAUSE: Hold Value.\nThe First Person may declare Value Held.\n\nCLAUSE: Quintessence.\n\"Quintessence\" is defined as: Protection Held is declared and Connection Held is declared and Computation Held is declared and Delegation Held is declared and Memory Held is declared and Value Held is declared.\n\nCLAUSE: Distil.\nThe First Person may, if this Quintessence Charter is Quintessence: certify the Privacy Value Model.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 8,
+  "sentences": 8,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Privacy Value Model",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Protection Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Protection"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Connection Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Connection"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Computation Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Computation"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Delegation Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Delegation"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Memory Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Memory"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Value Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Value"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Privacy Value Model",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Quintessence Charter is Quintessence",
+   "clause": "Distil"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Privacy Value Model",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protection Held",
+   "conditional": false,
+   "clause": "Hold Protection"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Connection Held",
+   "conditional": false,
+   "clause": "Hold Connection"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Computation Held",
+   "conditional": false,
+   "clause": "Hold Computation"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Delegation Held",
+   "conditional": false,
+   "clause": "Hold Delegation"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Memory Held",
+   "conditional": false,
+   "clause": "Hold Memory"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Value Held",
+   "conditional": false,
+   "clause": "Hold Value"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Privacy Value Model",
+   "conditional": true,
+   "clause": "Distil"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Protection Held",
+    "Connection Held",
+    "Computation Held",
+    "Delegation Held",
+    "Memory Held",
+    "Value Held"
+   ],
+   "predicate": "Quintessence",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Protection Held\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the Quintessence is defined as ALL six dimension-holdings simultaneously (protection, connection, computation, delegation, memory, value), and certification of the privacy value model routes only through that full conjunction, carrying held-simultaneously-across-all-six-dimensions in clause shape; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the alchemical lineage, the quintessential tale and blade numerology, and the Aether naming, which is a separate census term. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

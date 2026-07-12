@@ -132,7 +132,7 @@
    "what": "Payload"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Payload to Relay"
+  "mutation": "probe clause appended routing Payload to Relay (pay probe)"
  },
  "grandfathered": false,
  "notes": "carries intermediary blindness as an impossibility (only the sealed Envelope crosses the Relay hop; no transfer clause routes the Payload to the Relay, and the Relay's sole action is gated on the fixed Envelope); omits key management, endpoint identifiers, and wire format. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",

@@ -1,0 +1,145 @@
+{
+ "census": "LEXPVM-T-075",
+ "term": "Drake 🐲",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Drake 🐲",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Drake.\n\n\"First Person\" is a person.\n\"Drake\" is a person.\n\"Drake Charter\" is this contract.\n\"Extensions Active\" is a binary.\n\"Node Threshold\" is a binary.\n\"Ceremony Threshold\" is a binary.\n\"Tracker Threshold\" is a binary.\n\"Whisper\" is a text.\n\nThe First Person appoints the Drake.\n\nCLAUSE: Hold Extensions.\nThe First Person may declare Extensions Active.\n\nCLAUSE: Hold Nodes.\nThe First Person may declare Node Threshold.\n\nCLAUSE: Hold Ceremonies.\nThe First Person may declare Ceremony Threshold.\n\nCLAUSE: Hold Trackers.\nThe First Person may declare Tracker Threshold.\n\nCLAUSE: Emergent.\n\"Emergent\" is defined as: Extensions Active is declared and Node Threshold is declared and Ceremony Threshold is declared and Tracker Threshold is declared.\n\nCLAUSE: Whisper From The Centre.\nThe Drake may, if this Drake Charter is Emergent: send the Whisper to the First Person.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Drake",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Extensions Active",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Extensions"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Node Threshold",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Nodes"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Ceremony Threshold",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Ceremonies"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Tracker Threshold",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Trackers"
+  },
+  {
+   "s": "Drake",
+   "verb": "send",
+   "o": "Whisper",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "this Drake Charter is Emergent",
+   "clause": "Whisper From The Centre"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Drake",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Extensions Active",
+   "conditional": false,
+   "clause": "Hold Extensions"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Node Threshold",
+   "conditional": false,
+   "clause": "Hold Nodes"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Ceremony Threshold",
+   "conditional": false,
+   "clause": "Hold Ceremonies"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Tracker Threshold",
+   "conditional": false,
+   "clause": "Hold Trackers"
+  },
+  {
+   "promiser": "Drake",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Whisper->First Person",
+   "conditional": true,
+   "clause": "Whisper From The Centre"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Extensions Active",
+    "Node Threshold",
+    "Ceremony Threshold",
+    "Tracker Threshold"
+   ],
+   "predicate": "Emergent",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Extensions Active\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Drake emergence requires ALL four canon conditions (both extensions active, the node threshold, the ceremony threshold, the tracker threshold) as a defined predicate, matching the canon multiplicative test where zeroing any condition breaks the body; the whisper routes to the First Person only through the emergent state (intimacy as a gated route). Deliberately omits the emergence animation, the symbol distinction from the Dragon, the tier association, and the scale-of-the-question framing. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,89 @@
+{
+ "census": "LEXPVM-T-113",
+ "term": "Generator (BRAID) (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Generator (BRAID) (V5)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Generator.\n\n\"Generator\" is a person.\n\"Solver\" is a person.\n\"Traversal Structure\" is a text.\n\"Reasoning Graph\" is a text.\n\"Braid\" is this contract.\n\nCLAUSE: Plan.\nThe Generator may fix the Traversal Structure, and then certify the Reasoning Graph.\n\nCLAUSE: Deliver.\nThe Generator may send the Reasoning Graph to the Solver.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Generator",
+   "verb": "fix",
+   "o": "Traversal Structure",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Plan"
+  },
+  {
+   "s": "Generator",
+   "verb": "certify",
+   "o": "Reasoning Graph",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Plan"
+  },
+  {
+   "s": "Generator",
+   "verb": "send",
+   "o": "Reasoning Graph",
+   "io": "Solver",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Deliver"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Traversal Structure",
+   "conditional": false,
+   "clause": "Plan"
+  },
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Reasoning Graph",
+   "conditional": false,
+   "clause": "Plan"
+  },
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Reasoning Graph->Solver",
+   "conditional": false,
+   "clause": "Deliver"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Plan",
+   "sequence": [
+    "fix:Traversal Structure",
+    "certify:Reasoning Graph"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: clause Plan performs fix:Traversal Structure, then certify:Reasoning Graph as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

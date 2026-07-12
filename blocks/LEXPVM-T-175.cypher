@@ -1,0 +1,16 @@
+MERGE (c:LexContract {census: "LEXPVM-T-175", name: "Attachment (Layer 2)", cites: "glossary-master-v4 § ### 23.2 Attachment (Layer 2)"})
+MERGE (:Person {name: "First Person", contract: "Attachment (Layer 2)"})
+MERGE (:Person {name: "Cast Mage", contract: "Attachment (Layer 2)"})
+MERGE (:Person {name: "City", contract: "Attachment (Layer 2)"})
+MERGE (:Text {name: "Primary Persona", contract: "Attachment (Layer 2)"})
+MERGE (:Text {name: "Attachment", contract: "Attachment (Layer 2)"})
+MERGE (:Text {name: "New Primary", contract: "Attachment (Layer 2)"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Cast Mage"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:APPOINT {clause: "recital", object: "City"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:FIX {clause: "recital", object: "Primary Persona"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_FILE {clause: "Base", object: "New Primary"}]->(b)
+MATCH (a {name: "Cast Mage"}), (b {name: "Cast Mage"}) CREATE (a)-[:MAY_REGISTER {clause: "Bind", object: "Attachment"}]->(b)
+MATCH (a {name: "Cast Mage"}), (b {name: "City"}) CREATE (a)-[:MAY_SEND {clause: "Instance", object: "Attachment"}]->(b)
+MATCH (a {name: "Cast Mage"}), (b {name: "City"}) CREATE (a)-[:MAY_SEND {clause: "Instance", object: "Primary Persona"}]->(b)
+// claim (re-runnable): NOTHING routes New Primary to City; any row falsifies the block
+MATCH (x)-[e]->(f {name: "City"}) WHERE e.object = "New Primary" RETURN count(e) AS mustBeZero

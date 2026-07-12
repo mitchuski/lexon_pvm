@@ -1,0 +1,158 @@
+{
+ "census": "LEXPVM-T-175",
+ "term": "Attachment (Layer 2)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 23.2 Attachment (Layer 2)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Attachment.\n\n\"First Person\" is a person.\n\"Cast Mage\" is a person.\n\"City\" is a person.\n\"Primary Persona\" is a text.\n\"Attachment\" is a text.\n\"New Primary\" is a text.\n\nThe First Person appoints the Cast Mage, and appoints the City, and fixes the Primary Persona.\n\nCLAUSE: Base.\nThe First Person may file the New Primary.\n\nCLAUSE: Bind.\nThe Cast Mage may register the Attachment.\n\nCLAUSE: Instance.\nThe Cast Mage may send the Attachment to the City, and send the Primary Persona to the City.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Cast Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "City",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Primary Persona",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "New Primary",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Base"
+  },
+  {
+   "s": "Cast Mage",
+   "verb": "register",
+   "o": "Attachment",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind"
+  },
+  {
+   "s": "Cast Mage",
+   "verb": "send",
+   "o": "Attachment",
+   "io": "City",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Instance"
+  },
+  {
+   "s": "Cast Mage",
+   "verb": "send",
+   "o": "Primary Persona",
+   "io": "City",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Instance"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Cast Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:City",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Primary Persona",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:New Primary",
+   "conditional": false,
+   "clause": "Base"
+  },
+  {
+   "promiser": "Cast Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Attachment",
+   "conditional": false,
+   "clause": "Bind"
+  },
+  {
+   "promiser": "Cast Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Attachment->City",
+   "conditional": false,
+   "clause": "Instance"
+  },
+  {
+   "promiser": "Cast Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Primary Persona->City",
+   "conditional": false,
+   "clause": "Instance"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "City",
+   "what": "New Primary"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing New Primary to City (send probe)"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes New Primary to the City. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

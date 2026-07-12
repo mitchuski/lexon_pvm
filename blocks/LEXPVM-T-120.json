@@ -1,0 +1,165 @@
+{
+ "census": "LEXPVM-T-120",
+ "term": "Compression Spectrum (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Compression Spectrum (V5)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Compression Spectrum.\n\n\"First Person\" is a person.\n\"Experience\" is data.\n\"Memory\" is data.\n\"Knowledge\" is data.\n\"Understanding\" is data.\n\"Wisdom\" is data.\n\"Skill File\" is a text.\n\"Memory Ratio\" is a number, initially 10.\n\"Knowledge Ratio\" is a number, initially 100.\n\"Understanding Ratio\" is a number, initially 1000.\n\"Wisdom Ratio\" is a number, initially 10000.\n\"Spectrum\" is this contract.\n\nCLAUSE: Ascending.\n\"Ascending\" is defined as: the Knowledge Ratio is greater than the Memory Ratio and the Wisdom Ratio is greater than the Understanding Ratio.\n\nCLAUSE: Compress.\nThe First Person may fix the Experience, then fix the Memory, then fix the Knowledge, then fix the Understanding, then fix the Wisdom, and then certify the Skill File.\n\nCLAUSE: Publish.\nThe First Person may, if this Spectrum is Ascending: certify the Skill File.",
+ "counts": {
+  "definitions": 12,
+  "clauses": 3,
+  "sentences": 2,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Experience",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Memory",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Knowledge",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Understanding",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Wisdom",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Skill File",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Skill File",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Spectrum is Ascending",
+   "clause": "Publish"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Experience",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Memory",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Knowledge",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Understanding",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Wisdom",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Skill File",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Skill File",
+   "conditional": true,
+   "clause": "Publish"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Compress",
+   "sequence": [
+    "fix:Experience",
+    "fix:Memory",
+    "fix:Knowledge",
+    "fix:Understanding",
+    "fix:Wisdom",
+    "certify:Skill File"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the seven-layer spectrum as a strict ordering (the Compress clause fixes Experience then Memory then Knowledge then Understanding then Wisdom and only then certifies the Skill File, reversal-falsifiable) plus an Ascending conjunction over the attested ratio literals 10, 100, 1000, 10000; zero-actor canon section, First Person holder; omits the two variable-ratio layers as quantities (Reasoning Graph and Skill File carry no fixed ratio in canon, so none is invented) and the more-tokens-more-surveilable argument. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

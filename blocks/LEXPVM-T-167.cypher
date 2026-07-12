@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-167", name: "The Aether Blade (cosmological)", cites: "glossary-master-v4 § ### 22.6 The Aether Blade (cosmological)"})
+MERGE (:Person {name: "First Person", contract: "The Aether Blade (cosmological)"})
+MERGE (:Data {name: "Gap Anchor", contract: "The Aether Blade (cosmological)"})
+MERGE (:Data {name: "Zero Constellation", contract: "The Aether Blade (cosmological)"})
+MERGE (:Data {name: "Arrival", contract: "The Aether Blade (cosmological)"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_REGISTER {clause: "Trace", object: "Gap Anchor"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_FILE {clause: "Trace", object: "Zero Constellation"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_CERTIFY {clause: "Trace", object: "Arrival"}]->(b)

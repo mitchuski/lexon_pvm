@@ -1,0 +1,71 @@
+{
+ "census": "LEXPVM-T-117",
+ "term": "GUID (Holonic Context) (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### GUID (Holonic Context) (V5)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Global Unique Identifier.\n\n\"First Person\" is a person.\n\"Content\" is data.\n\"Identifier\" is a text.\n\"Holon\" is this contract.\n\nCLAUSE: Address.\nThe First Person may fix the Content, and then certify the Identifier.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 1,
+  "sentences": 1,
+  "triples": 2,
+  "promiseEdges": 2
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Content",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Address"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Identifier",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Address"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Content",
+   "conditional": false,
+   "clause": "Address"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Identifier",
+   "conditional": false,
+   "clause": "Address"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Address",
+   "sequence": [
+    "fix:Content",
+    "certify:Identifier"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: clause Address performs fix:Content, then certify:Identifier as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes. Template-thin (lexr5.3 critic flag): a single clause carrying the minimal relation; folded because the ordering carries the term structure, flagged for the fold reviewer.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

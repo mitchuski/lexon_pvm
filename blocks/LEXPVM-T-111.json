@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-111",
+ "term": "BRAID (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### BRAID (V5)",
+  "register": "glossary · conjectured expression of reported term"
+ },
+ "lex": "LEX BRAID.\n\n\"Generator\" is a person.\n\"Solver\" is a person.\n\"Compression Ratio\" is a number, initially 74.\n\"Reasoning Graph\" is a text.\n\"Frame\" is this contract.\n\nThe Generator appoints the Solver, and sets the Compression Ratio.\n\nCLAUSE: Compressed.\n\"Compressed\" is defined as: the Compression Ratio is greater than 1.\n\nCLAUSE: Plan Then Execute.\nThe Generator may, if this Frame is Compressed: register the Reasoning Graph, and then send the Reasoning Graph to the Solver.\n\nCLAUSE: Execute.\nThe Solver may certify the Reasoning Graph.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Generator",
+   "verb": "appoint",
+   "o": "Solver",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Generator",
+   "verb": "set",
+   "o": "Compression Ratio",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Generator",
+   "verb": "register",
+   "o": "Reasoning Graph",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Frame is Compressed",
+   "clause": "Plan Then Execute"
+  },
+  {
+   "s": "Generator",
+   "verb": "send",
+   "o": "Reasoning Graph",
+   "io": "Solver",
+   "as": null,
+   "modal": "may",
+   "condition": "this Frame is Compressed",
+   "clause": "Plan Then Execute"
+  },
+  {
+   "s": "Solver",
+   "verb": "certify",
+   "o": "Reasoning Graph",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Execute"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Generator",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Solver",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Generator",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "set:Compression Ratio",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Reasoning Graph",
+   "conditional": true,
+   "clause": "Plan Then Execute"
+  },
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Reasoning Graph->Solver",
+   "conditional": true,
+   "clause": "Plan Then Execute"
+  },
+  {
+   "promiser": "Solver",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Reasoning Graph",
+   "conditional": false,
+   "clause": "Execute"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Plan Then Execute",
+   "sequence": [
+    "register:Reasoning Graph",
+    "send:Reasoning Graph"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries the ordering: the Generator registers the Reasoning Graph and then sends it to the Solver, plan strictly before execution in one officiant's clause, gated on the Compressed threshold; the 74-fold compression finding rides as the initial literal of the Compression Ratio; omits the nano-versus-medium benchmark detail and the separation axes derived from the framework. Folded from lexr5.2:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

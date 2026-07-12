@@ -1,0 +1,86 @@
+{
+ "census": "LEXPVM-T-081",
+ "term": "Dark Forest of Paradox",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Dark Forest of Paradox",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Dark Forest of Paradox.\n\n\"First Person\" is a person.\n\"Constraint\" is a text.\n\"Freedom\" is a text.\n\"Shackled\" is a binary.\n\nThe First Person fixes the Constraint.\n\nCLAUSE: Enter.\nThe First Person may declare Shackled.\n\nCLAUSE: Run Free.\nThe First Person may, if Shackled is declared, grant the Freedom.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Constraint",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Shackled",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Enter"
+  },
+  {
+   "s": "First Person",
+   "verb": "grant",
+   "o": "Freedom",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Shackled is declared",
+   "clause": "Run Free"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Constraint",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Shackled",
+   "conditional": false,
+   "clause": "Enter"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "grant:Freedom",
+   "conditional": true,
+   "clause": "Run Free"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Run Free",
+   "condition": "Shackled",
+   "type": "gate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: Freedom is granted only under the declared Shackled constraint, the section's paradox (constraints become freedom) carried as a clause condition; zero-party section, so the First Person holds every clause per the universal cast rule; omits the named groves, Platox's teaching domains, and the Act 15 lore. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

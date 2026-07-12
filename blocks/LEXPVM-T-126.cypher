@@ -1,0 +1,7 @@
+MERGE (c:LexContract {census: "LEXPVM-T-126", name: "Toroidal Topology", cites: "glossary-master-v4 § ### Toroidal Topology"})
+MERGE (:Person {name: "First Person", contract: "Toroidal Topology"})
+MERGE (:Number {name: "Path Count", contract: "Toroidal Topology"})
+MERGE (:Number {name: "Enumeration Bound", contract: "Toroidal Topology"})
+MERGE (:Text {name: "Verification", contract: "Toroidal Topology"})
+MERGE (:Contract {name: "Torus", contract: "Toroidal Topology"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_CERTIFY {clause: "Verify", object: "Verification", condition: "this Torus is Wrapped"}]->(b)

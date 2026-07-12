@@ -132,7 +132,7 @@
    "what": "Scalar Secret"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Scalar Secret to Key Holder"
+  "mutation": "probe clause appended routing Scalar Secret to Key Holder (pay probe)"
  },
  "grandfathered": false,
  "notes": "direction is load-bearing and stated here: the fortress FALLS. Period-finding gates the Quantum Adversary draining the escrowed scalar secret, and the Key Holder holds no reclaiming clause (impossibility on the defender side, by absence). The lexr2.3 critic flagged direction-elasticity on exactly this entry; the checker cannot falsify a wrong-direction expression, so the direction lives in this Notes line by design. Omits curve arithmetic and period-finding detail. Assayer-authored (escrow-ledger-formula-charter held-out, recipe-only); keystone Notes.",

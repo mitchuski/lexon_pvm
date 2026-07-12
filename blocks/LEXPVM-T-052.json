@@ -1,0 +1,108 @@
+{
+ "census": "LEXPVM-T-052",
+ "term": "Intel Pool",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Intel Pool",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Intel Pool.\n\n\"First Person\" is a person.\n\"Pool\" is a text.\n\"Individual Insight\" is a text.\n\"Aggregate Insight\" is a text.\n\"Pool Value\" is a text.\n\nThe First Person fixes the Pool.\n\nCLAUSE: Aggregate.\nThe First Person may file the Individual Insight, and afterwards file the Aggregate Insight, and afterwards register the Pool Value.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Pool",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "Individual Insight",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Aggregate"
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "Aggregate Insight",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Aggregate"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Pool Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Aggregate"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Pool",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Individual Insight",
+   "conditional": false,
+   "clause": "Aggregate"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Aggregate Insight",
+   "conditional": false,
+   "clause": "Aggregate"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Pool Value",
+   "conditional": false,
+   "clause": "Aggregate"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Aggregate",
+   "sequence": [
+    "file:Individual Insight",
+    "file:Aggregate Insight",
+    "register:Pool Value"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: clause Aggregate performs file:Individual Insight, then file:Aggregate Insight, then register:Pool Value as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

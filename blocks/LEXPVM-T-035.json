@@ -168,7 +168,7 @@
    "what": "Deposit"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Deposit to Flagged Depositor"
+  "mutation": "probe clause appended routing Deposit to Flagged Depositor (pay probe)"
  },
  "grandfathered": false,
  "notes": "Carries the compliant-exit direction as an absence (both the Depositor and the Flagged Depositor may pay the Deposit into escrow, but no transfer clause routes the Deposit to the Flagged Depositor; the only exit is the Withdraw clause, gated on Innocent, which is declared only after an Association Proof is fixed: proving non-association is the condition of getting funds out); omits the cryptographic mixing mathematics and anonymity-set semantics. Folded from instance-charter-family (grammar-forward, run lexr4).",

@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-033",
+ "term": "Zero-Knowledge Proof (ZKP)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Zero-Knowledge Proof (ZKP)",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Zero Knowledge Proof.\n\n\"First Person\" is a person.\n\"Mage\" is a person.\n\"Credential\" is a text.\n\"Proof\" is a text.\n\"Disclosure Count\" is a number, initially 0.\n\"Protocol\" is this contract.\n\nThe First Person appoints the Mage, and fixes the Credential.\n\nCLAUSE: Zero Knowledge.\n\"Zero Knowledge\" is defined as: the Disclosure Count is not greater than zero.\n\nCLAUSE: Prove.\nThe Mage may send the Proof to the First Person.\n\nCLAUSE: Verify.\nThe First Person may, if this Protocol is Zero Knowledge: certify the Proof.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Credential",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Proof",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Prove"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Proof",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Protocol is Zero Knowledge",
+   "clause": "Verify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Credential",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Proof->First Person",
+   "conditional": false,
+   "clause": "Prove"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Proof",
+   "conditional": true,
+   "clause": "Verify"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "to": "First Person",
+   "type": "absence",
+   "what": "Credential"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Credential to First Person (send probe)"
+ },
+ "grandfathered": false,
+ "notes": "carries the zero-knowledge direction as an absence (no transfer clause ever routes the Credential to the First Person, while the Proof does route there: the proof flows, the witness never does), anchored quantitatively by the Disclosure Count initially 0 comparative gating verification; the Mage is the canon-named prover and the First Person holds the verifying side per the cast rule; omits the soundness and completeness games and all cryptographic machinery. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

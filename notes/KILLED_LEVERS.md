@@ -6,8 +6,9 @@ proposal. A lever killed by a cheap pre-filter is still filed.
 
 | id | lever | died how | evidence | date |
 |---|---|---|---|---|
-| K-1 | (example) merge sections A and B | MIRAGE — full gate lost fact 12 | runs/r1/p2-merge-ab/verdict.json | YYYY-MM-DD |
+| K-1 | (example) merge sections A and B | MIRAGE, full gate lost fact 12 | runs/r1/p2-merge-ab/verdict.json | YYYY-MM-DD |
 | K-2 | tier-invitation-spell-family (lexr4.4, spell-grammar) | MIRAGE 5/8, structural: recipe cannot express zero-party canon terms (its own cast-list rule forbids invented roles, citing the lexr3 T-105 refusal), claim diversity 2/4 below the OT-6 minimum; plus one em dash in a cites field with a narrower-than-claimed self-certification (CR-10) | runs/lexr4/lexr4.4/p3-tier-invitation-spell-family/verdict.json | 2026-07-12 |
+| K-3 | instrument-charter-family (lexr5.3, cast-and-infrastructure) | MIRAGE 8/8, structural: gate and relation mechanically sound (6/6 proposal + 5/5 held-out GATE+RELATION), killed on the hard constraint alone: raw em dash (U+2014) in the T-172 term field at proposal byte 6299, with a hardConstraintNote narrower than the constraint (CR-10, third catch). Its cast-and-infrastructure territory was already swept by the validated round-1/2 cast-infrastructure levers, so nothing was lost; re-open needs only a byte-clean re-author (GR-4 re-seeds) | runs/lexr5/lexr5.3/p3-instrument-charter-family/verdict.json | 2026-07-12 |
 
 ## K-2 · critic draft (verbatim, keystone-filed 2026-07-12)
 

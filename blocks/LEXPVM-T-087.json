@@ -1,0 +1,277 @@
+{
+ "census": "LEXPVM-T-087",
+ "term": "Covenant of Humanistic Technologies",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Covenant of Humanistic Technologies",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Covenant of Humanistic Technologies.\n\n\"First Person\" is a person.\n\"Covenant\" is a text.\n\"Copy\" is a text.\n\"Personhood\" is a binary.\n\"Ownership\" is a binary.\n\"Privacy\" is a binary.\n\"Information Flow\" is a binary.\n\"Capital Flow\" is a binary.\n\"Capital Service\" is a binary.\n\"Security\" is a binary.\n\"Accountability\" is a binary.\n\"Earth Goods\" is a binary.\n\"Resilience\" is a binary.\n\"Threshold Passed\" is a binary.\n\nThe First Person fixes the Covenant.\n\n\"Covenant Inscribed\" is defined as: Personhood is declared and Ownership is declared and Privacy is declared and Information Flow is declared and Capital Flow is declared and Capital Service is declared and Security is declared and Accountability is declared and Earth Goods is declared and Resilience is declared.\n\nCLAUSE: Inscribe.\nThe First Person may declare Personhood, declare Ownership, declare Privacy, declare Information Flow, declare Capital Flow, declare Capital Service, declare Security, declare Accountability, declare Earth Goods, and declare Resilience.\n\nCLAUSE: Pass Threshold.\nThe First Person may declare Threshold Passed.\n\nCLAUSE: Carry Forward.\nThe First Person may, if Threshold Passed is declared, register the Copy.",
+ "counts": {
+  "definitions": 14,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 13,
+  "promiseEdges": 13
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Covenant",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Personhood",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Ownership",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Privacy",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Information Flow",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Capital Flow",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Capital Service",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Security",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Accountability",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Earth Goods",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Resilience",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Inscribe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Threshold Passed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Pass Threshold"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Copy",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Threshold Passed is declared",
+   "clause": "Carry Forward"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Covenant",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Personhood",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Ownership",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Privacy",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Information Flow",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Capital Flow",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Capital Service",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Security",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Accountability",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Earth Goods",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Resilience",
+   "conditional": false,
+   "clause": "Inscribe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Threshold Passed",
+   "conditional": false,
+   "clause": "Pass Threshold"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Copy",
+   "conditional": true,
+   "clause": "Carry Forward"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Personhood",
+    "Ownership",
+    "Privacy",
+    "Information Flow",
+    "Capital Flow",
+    "Capital Service",
+    "Security",
+    "Accountability",
+    "Earth Goods",
+    "Resilience"
+   ],
+   "predicate": "Covenant Inscribed",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Personhood\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Covenant Inscribed is defined as all ten canon principles declared, so any missing principle breaks the definition (the mutated twin drops Personhood and fails the claim); the Carry Forward gate on Threshold Passed carries the key proverb's structure, copies travel only with those who passed the threshold; omits the Infinite Vault staging and the proverb's wording; zero-party section, First Person holds per the universal cast rule. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

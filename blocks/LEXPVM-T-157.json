@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-157",
+ "term": "Zero-Knowledge Orbit",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Zero-Knowledge Orbit",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Zero Knowledge Orbit.\n\n\"First Person\" is a person.\n\"Moon\" is a person.\n\"Collision\" is a text.\n\"Tide\" is a text.\n\"Orbit\" is this contract.\n\nThe First Person appoints the Moon.\n\nCLAUSE: Orbit.\nThe Moon may fix the Collision, and afterwards certify the Tide.\n\nCLAUSE: Prove.\nThe Moon may send the Tide to the First Person.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Moon",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Moon",
+   "verb": "fix",
+   "o": "Collision",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Orbit"
+  },
+  {
+   "s": "Moon",
+   "verb": "certify",
+   "o": "Tide",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Orbit"
+  },
+  {
+   "s": "Moon",
+   "verb": "send",
+   "o": "Tide",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Prove"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Moon",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Moon",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Collision",
+   "conditional": false,
+   "clause": "Orbit"
+  },
+  {
+   "promiser": "Moon",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Tide",
+   "conditional": false,
+   "clause": "Orbit"
+  },
+  {
+   "promiser": "Moon",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Tide->First Person",
+   "conditional": false,
+   "clause": "Prove"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "First Person",
+   "what": "Collision"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Collision to First Person (send probe)"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Collision to the First Person. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,90 @@
+{
+ "census": "LEXPVM-T-155",
+ "term": "Theia Partition",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Theia Partition",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Theia Partition.\n\n\"Theia\" is a person.\n\"Earth\" is a person.\n\"Moon\" is a person.\n\"Sun\" is a person.\n\"Body\" is data.\n\"Silence\" is a text.\n\"Heat\" is data.\n\nCLAUSE: Partition.\nThe Theia may send the Body to the Earth, send the Silence to the Moon, and afterwards send the Heat to the Sun.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 1,
+  "sentences": 1,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Theia",
+   "verb": "send",
+   "o": "Body",
+   "io": "Earth",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Partition"
+  },
+  {
+   "s": "Theia",
+   "verb": "send",
+   "o": "Silence",
+   "io": "Moon",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Partition"
+  },
+  {
+   "s": "Theia",
+   "verb": "send",
+   "o": "Heat",
+   "io": "Sun",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Partition"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Theia",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Body->Earth",
+   "conditional": false,
+   "clause": "Partition"
+  },
+  {
+   "promiser": "Theia",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Silence->Moon",
+   "conditional": false,
+   "clause": "Partition"
+  },
+  {
+   "promiser": "Theia",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Heat->Sun",
+   "conditional": false,
+   "clause": "Partition"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Partition",
+   "sequence": [
+    "send:Body",
+    "send:Silence",
+    "send:Heat"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: the partition is one distribution chain performed by the section's named impactor (Body to the Earth, then Silence to the Moon, then Heat to the Sun), carrying partition-not-destruction as three outbound routes in canonical order from a single officiant. Deliberately omits the etymology discovery about the distributed letters and the naming proverb; register stays conjectured because the canon marks this a cosmological metaphor. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

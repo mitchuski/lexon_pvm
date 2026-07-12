@@ -1,0 +1,71 @@
+{
+ "census": "LEXPVM-T-105",
+ "term": "Holographic Bound (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Holographic Bound (V5)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Holographic Bound.\n\n\"First Person\" is a person.\n\"Edge Count\" is a number, initially 96.\n\"Vertex Count\" is a number, initially 64.\n\"Boundary Value\" is a text.\n\"Manifold\" is this contract.\n\nThe First Person fixes the Boundary Value.\n\nCLAUSE: Boundary Sufficient.\n\"Boundary Sufficient\" is defined as: the Edge Count is greater than the Vertex Count and the Vertex Count is greater than zero.\n\nCLAUSE: Compute On Boundary.\nThe First Person may, if this Manifold is Boundary Sufficient: certify the Boundary Value.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 2,
+  "promiseEdges": 2
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Boundary Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Boundary Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Manifold is Boundary Sufficient",
+   "clause": "Compute On Boundary"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Boundary Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Boundary Value",
+   "conditional": true,
+   "clause": "Compute On Boundary"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Edge Count",
+    "Vertex Count"
+   ],
+   "predicate": "Boundary Sufficient",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Edge Count\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "carries boundary-encodes-bulk as a defined-as conjunction over the attested counts (Boundary Sufficient requires the Edge Count initially 96 greater than the Vertex Count initially 64, and the Vertex Count greater than zero), with all boundary computation gated on it; zero-actor canon section, so the First Person is the holder by the universal cast rule; omits the differential form on the boundary and the superlinear-exponent speculation. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

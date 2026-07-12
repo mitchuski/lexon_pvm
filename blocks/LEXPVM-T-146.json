@@ -1,0 +1,163 @@
+{
+ "census": "LEXPVM-T-146",
+ "term": "Understanding-as-Key",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Understanding-as-Key",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Understanding as Key.\n\n\"First Person\" is a person.\n\"Participant\" is a person.\n\"Shared Vocabulary\" is a text.\n\"Constellation Path\" is data.\n\"Blade\" is data.\n\"Proverb\" is a text.\n\"Witnessed\" is a binary.\n\nThe First Person appoints the Participant.\n\nCLAUSE: Walk.\nThe First Person may register the Shared Vocabulary, and afterwards certify the Constellation Path, and afterwards fix the Blade, and afterwards file a Proverb.\n\nCLAUSE: Witness.\nThe Participant may, if Proverb is filed, declare Witnessed.\n\nCLAUSE: Trust.\nThe First Person may, if Witnessed is declared, certify the Blade.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Participant",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Shared Vocabulary",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Constellation Path",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Blade",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "Proverb",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "Participant",
+   "verb": "declare",
+   "o": "Witnessed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Proverb is filed",
+   "clause": "Witness"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Blade",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Witnessed is declared",
+   "clause": "Trust"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Participant",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Shared Vocabulary",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Constellation Path",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Blade",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Proverb",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "Participant",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Witnessed",
+   "conditional": true,
+   "clause": "Witness"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Blade",
+   "conditional": true,
+   "clause": "Trust"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Walk",
+   "sequence": [
+    "register:Shared Vocabulary",
+    "certify:Constellation Path",
+    "fix:Blade",
+    "file:Proverb"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "captures the five ceremony steps: the officiant's chain orders vocabulary capture, constellation mapping, blade forging, proverb inscription (the ordering claim), and the fifth step, bilateral witness, is the Participant's separate gated clause closing back into Trust (SG-4 split form for a two-sided rite; Participant is the section's own word for the other side); no credential or stored secret is defined anywhere in the text, comprehension is the only route, which is the term's key insight; omits the post-quantum qubit framing. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

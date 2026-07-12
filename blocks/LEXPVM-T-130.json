@@ -1,0 +1,71 @@
+{
+ "census": "LEXPVM-T-130",
+ "term": "Blade Address",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Blade Address",
+  "register": "glossary · conjectured expression of implemented term"
+ },
+ "lex": "LEX Blade Address.\n\n\"First Person\" is a person.\n\"Blade Address\" is a number, initially 0.\n\"Lattice\" is this contract.\n\"Sovereignty Claimed\" is a binary.\n\nThe First Person sets the Blade Address.\n\nCLAUSE: In Range.\n\"Address In Range\" is defined as: the Blade Address is not greater than 63 and the Blade Address is not less than zero.\n\nCLAUSE: Claim.\nThe First Person may, if this Lattice is Address In Range: declare Sovereignty Claimed.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 2,
+  "promiseEdges": 2
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "set",
+   "o": "Blade Address",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Sovereignty Claimed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Lattice is Address In Range",
+   "clause": "Claim"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "set:Blade Address",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Sovereignty Claimed",
+   "conditional": true,
+   "clause": "Claim"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Blade Address is not greater than 63",
+    "Blade Address is not less than zero"
+   ],
+   "predicate": "Address In Range",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Blade Address is not greater than 63\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Structural: conjunction: Address In Range is defined over BOTH numeric bounds (not greater than 63 and not less than zero), the 6-dimensional sovereignty state's 0 to 63 envelope carried as numeric-layer comparatives, and the sovereignty claim gates on the defined predicate. Universal cast rule applied: the section names no actor, so the First Person sets and claims. The initial literal 0 is the all-dormant address the glossary states. Omits the bit-weight encoding formula (d1 plus 2 times d2 plus 4 times d3 and so on), whose operators are out of subset. Checker: GATE PASS + RELATION PASS (runs/lexr5/lexr5.2/propose-scratch/t130_blade_address.lex). Folded from lexr5.2:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

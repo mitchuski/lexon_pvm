@@ -186,7 +186,7 @@
    "what": "Master Secret"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Master Secret to First Emissary"
+  "mutation": "probe clause appended routing Master Secret to First Emissary (pay probe)"
  },
  "grandfathered": false,
  "notes": "carries dispersal as an impossibility (shards route outward one per emissary, each emissary certifies only its own shard, and no transfer clause routes the Master Secret to any single emissary: the no-single-shard-holds-the-whole property in clause shape); omits the hemispheric-capture origin and the mirror proverb. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",

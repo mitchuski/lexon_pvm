@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-163", name: "Drake Island", cites: "glossary-master-v4 § ### 22.2 Drake Island"})
+MERGE (:Person {name: "First Person", contract: "Drake Island"})
+MERGE (:Data {name: "Island Substrate", contract: "Drake Island"})
+MERGE (:Text {name: "City of Mages", contract: "Drake Island"})
+MERGE (:Binary {name: "Substrate Fixed", contract: "Drake Island"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_FIX {clause: "Ground", object: "Island Substrate"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_DECLARE {clause: "Ground", object: "Substrate Fixed"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_REGISTER {clause: "Build", object: "City of Mages", condition: "Substrate Fixed is declared"}]->(b)

@@ -96,7 +96,7 @@
    "what": "Shared Weights"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Shared Weights to Solver"
+  "mutation": "probe clause appended routing Shared Weights to Solver (pay probe)"
  },
  "grandfathered": false,
  "notes": "impossibility as absence: no transfer clause routes Shared Weights to the Solver. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",

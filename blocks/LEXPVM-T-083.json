@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-083",
+ "term": "Villers Archive",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Villers Archive",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Villers Archive.\n\n\"First Person\" is a person.\n\"Mirror\" is data.\n\"Scrying Glass\" is data.\n\"Proverb\" is a text.\n\"Coinage Dust\" is data.\n\nThe First Person fixes the Coinage Dust.\n\nCLAUSE: Deposit.\nThe First Person may file the Proverb.\n\nCLAUSE: Transform.\nThe First Person may terminate the Mirror, and afterwards register the Scrying Glass.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Coinage Dust",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "Proverb",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Deposit"
+  },
+  {
+   "s": "First Person",
+   "verb": "terminate",
+   "o": "Mirror",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Transform"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Scrying Glass",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Transform"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Coinage Dust",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Proverb",
+   "conditional": false,
+   "clause": "Deposit"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:Mirror",
+   "conditional": false,
+   "clause": "Transform"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Scrying Glass",
+   "conditional": false,
+   "clause": "Transform"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Transform",
+   "sequence": [
+    "terminate:Mirror",
+    "register:Scrying Glass"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: the Mirror is terminated BEFORE the Scrying Glass is registered (where mirrors die and scrying glasses are born, as a single officiant chain), with the proverb repository carried as a filing route; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the Act 18 narrative frame and the visiting mage's inversion story, which belongs to a different census term. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

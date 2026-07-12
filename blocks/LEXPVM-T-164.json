@@ -1,0 +1,158 @@
+{
+ "census": "LEXPVM-T-164",
+ "term": "Priest tier",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.3 Priest tier",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Priest Tier.\n\n\"First Person\" is a person.\n\"Manifestia\" is a person.\n\"Priest\" is a person.\n\"Mage\" is a person.\n\"Covenant\" is a text.\n\"Artifact\" is a text.\n\"Tier Admitted\" is a binary.\n\nThe First Person appoints the Manifestia, appoints the Priest, and appoints the Mage.\n\nCLAUSE: Admit.\nThe Manifestia may declare Tier Admitted.\n\nCLAUSE: Tend.\nThe Priest must certify the Covenant.\n\nCLAUSE: Produce.\nThe Mage may register the Artifact.\n\nCLAUSE: Consecrate.\nThe Priest may, if Tier Admitted is declared: certify the Artifact.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Manifestia",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Priest",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Manifestia",
+   "verb": "declare",
+   "o": "Tier Admitted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Admit"
+  },
+  {
+   "s": "Priest",
+   "verb": "certify",
+   "o": "Covenant",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Tend"
+  },
+  {
+   "s": "Mage",
+   "verb": "register",
+   "o": "Artifact",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Produce"
+  },
+  {
+   "s": "Priest",
+   "verb": "certify",
+   "o": "Artifact",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Tier Admitted is declared",
+   "clause": "Consecrate"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Manifestia",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Priest",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Manifestia",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Tier Admitted",
+   "conditional": false,
+   "clause": "Admit"
+  },
+  {
+   "promiser": "Priest",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "certify:Covenant",
+   "conditional": false,
+   "clause": "Tend"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Artifact",
+   "conditional": false,
+   "clause": "Produce"
+  },
+  {
+   "promiser": "Priest",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Artifact",
+   "conditional": true,
+   "clause": "Consecrate"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Consecrate",
+   "condition": "Tier Admitted",
+   "type": "gate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: gate: Consecrate is conditional on Manifestia's Tier Admitted declaration (admission before exercise, declared by the introducing persona the canon names, never self-admitted), and the tends-does-not-produce division rides in clause shape: the Mage registers the Artifact, the Priest only certifies it and carries tending the Covenant as a binding duty (must, not may). All four persons are canon-named in the section; no role invented (K-2 fence respected). Omits the V55 Covenant vertex geometry and the human.tech kindred-protocol reading. Checker: GATE PASS + RELATION PASS (runs/lexr5/lexr5.2/propose-scratch/t164_priest_tier.lex). Folded from lexr5.2:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,89 @@
+{
+ "census": "LEXPVM-T-069",
+ "term": "Spell",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Spell",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Spell.\n\n\"First Person\" is a person.\n\"Notation\" is a text.\n\"Compression Ratio\" is a number, initially 70.\n\"Grimoire\" is this contract.\n\"Spell Cast\" is a binary.\n\nThe First Person sets the Compression Ratio.\n\nCLAUSE: Compression Envelope.\n\"Dense Spell\" is defined as: the Compression Ratio is not less than 70 and the Compression Ratio is not greater than 125.\n\nCLAUSE: Cast.\nThe First Person may, if this Grimoire is Dense Spell: register the Notation, and declare Spell Cast.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "set",
+   "o": "Compression Ratio",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Notation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Grimoire is Dense Spell",
+   "clause": "Cast"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Spell Cast",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Grimoire is Dense Spell",
+   "clause": "Cast"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "set:Compression Ratio",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Notation",
+   "conditional": true,
+   "clause": "Cast"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Spell Cast",
+   "conditional": true,
+   "clause": "Cast"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Dense Spell",
+   "conjuncts": [
+    "Compression Ratio is not less than 70",
+    "Compression Ratio is not greater than 125"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Compression Ratio is not less than 70\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Dense Spell requires all of Compression Ratio is not less than 70 AND Compression Ratio is not greater than 125. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

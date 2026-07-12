@@ -1,0 +1,158 @@
+{
+ "census": "LEXPVM-T-140",
+ "term": "Ceremony Channel",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Ceremony Channel",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Ceremony Channel.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Peer Identity\" is a text.\n\"Handshake\" is a text.\n\"Slash Message\" is a text.\n\"Inscribe Message\" is a text.\n\"Channel Open\" is a binary.\n\nThe First Person appoints the Swordsman, and appoints the Mage.\n\nCLAUSE: Discover.\nThe Swordsman may register the Peer Identity, and afterwards send the Handshake to the Mage.\n\nCLAUSE: Acknowledge.\nThe Mage may declare Channel Open.\n\nCLAUSE: Carry Slash.\nThe Swordsman may, if Channel Open is declared, send the Slash Message to the Mage.\n\nCLAUSE: Carry Inscribe.\nThe Mage may, if Channel Open is declared, send the Inscribe Message to the Swordsman.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "register",
+   "o": "Peer Identity",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Discover"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Handshake",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Discover"
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Channel Open",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Acknowledge"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Slash Message",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": "Channel Open is declared",
+   "clause": "Carry Slash"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Inscribe Message",
+   "io": "Swordsman",
+   "as": null,
+   "modal": "may",
+   "condition": "Channel Open is declared",
+   "clause": "Carry Inscribe"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Peer Identity",
+   "conditional": false,
+   "clause": "Discover"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Handshake->Mage",
+   "conditional": false,
+   "clause": "Discover"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Channel Open",
+   "conditional": false,
+   "clause": "Acknowledge"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Slash Message->Mage",
+   "conditional": true,
+   "clause": "Carry Slash"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Inscribe Message->Swordsman",
+   "conditional": true,
+   "clause": "Carry Inscribe"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Carry Slash",
+   "condition": "Channel Open",
+   "type": "gate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "captures the handshake-before-carriage structure: both directional message clauses (Swordsman to Mage, Mage to Swordsman, matching the section's two message-grammar directions) gate on the responding side's Channel Open declaration, and discovery is an ordered chain (peer identity stored, then handshake sent); omits the named message vocabulary, the position sync rate, and the two-second solo-operation timeout. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

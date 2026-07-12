@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-070",
+ "term": "Master Inscription",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Master Inscription",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Master Inscription.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Observation\" is data.\n\"Projection\" is a text.\n\"Authorized\" is a binary.\n\nThe First Person appoints the Swordsman, and appoints the Mage.\n\nCLAUSE: Observe.\nThe Swordsman may certify the Observation.\n\nCLAUSE: Authorize.\nThe First Person may declare Authorized.\n\nCLAUSE: Project.\nThe Mage may, if Authorized is declared, send the Projection to the First Person.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Observation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Authorized",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Authorize"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Projection",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "Authorized is declared",
+   "clause": "Project"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Observation",
+   "conditional": false,
+   "clause": "Observe"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Authorized",
+   "conditional": false,
+   "clause": "Authorize"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Projection->First Person",
+   "conditional": true,
+   "clause": "Project"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "to": "Mage",
+   "type": "absence",
+   "what": "Observation"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Observation to Mage (send probe)"
+ },
+ "grandfathered": false,
+ "notes": "captures the separation reading of the inscription as an impossibility: no clause routes the Swordsman's Observation to the Mage, while the Mage's Projection gates on the First Person's Authorized declaration (the irreducible promise of conditional independence given First Person authorization, as clause structure); omits the emoji notation form and the compression-ratio framing. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

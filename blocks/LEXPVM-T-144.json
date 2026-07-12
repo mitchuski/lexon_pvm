@@ -1,0 +1,86 @@
+{
+ "census": "LEXPVM-T-144",
+ "term": "Universe Blade",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Universe Blade",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Universe Blade.\n\n\"First Person\" is a person.\n\"Universe Blade\" is data.\n\"Empirical Data Point\" is data.\n\"Blade Forged\" is a binary.\n\nCLAUSE: Forge.\nThe First Person may fix the Universe Blade, and afterwards declare Blade Forged.\n\nCLAUSE: Record.\nThe First Person may, if Blade Forged is declared: register the Empirical Data Point.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Universe Blade",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Forge"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Blade Forged",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Forge"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Empirical Data Point",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Blade Forged is declared",
+   "clause": "Record"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Universe Blade",
+   "conditional": false,
+   "clause": "Forge"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Blade Forged",
+   "conditional": false,
+   "clause": "Forge"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Empirical Data Point",
+   "conditional": true,
+   "clause": "Record"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Record",
+   "condition": "Blade Forged"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Record clause is reachable only under the Blade Forged condition. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

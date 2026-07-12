@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-105", name: "Holographic Bound (V5)", cites: "glossary-master-v4 § ### Holographic Bound (V5)"})
+MERGE (:Person {name: "First Person", contract: "Holographic Bound (V5)"})
+MERGE (:Number {name: "Edge Count", contract: "Holographic Bound (V5)"})
+MERGE (:Number {name: "Vertex Count", contract: "Holographic Bound (V5)"})
+MERGE (:Text {name: "Boundary Value", contract: "Holographic Bound (V5)"})
+MERGE (:Contract {name: "Manifold", contract: "Holographic Bound (V5)"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:FIX {clause: "recital", object: "Boundary Value"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_CERTIFY {clause: "Compute On Boundary", object: "Boundary Value", condition: "this Manifold is Boundary Sufficient"}]->(b)

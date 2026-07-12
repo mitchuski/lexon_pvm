@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-169",
+ "term": "The Seventh Capital",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.8 The Seventh Capital",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX The Seventh Capital.\n\n\"First Person\" is a person.\n\"Privacy\" is an amount.\n\"Six Capitals\" is a text.\n\"Wealth\" is an amount.\n\"Privacy Founded\" is a binary.\n\nThe First Person fixes the Privacy.\n\nCLAUSE: Found.\nThe First Person may declare Privacy Founded.\n\nCLAUSE: Build.\nThe First Person may, if Privacy Founded is declared, register the Six Capitals, and certify the Wealth.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Privacy",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Privacy Founded",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Found"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Six Capitals",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Privacy Founded is declared",
+   "clause": "Build"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Wealth",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Privacy Founded is declared",
+   "clause": "Build"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Privacy",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Privacy Founded",
+   "conditional": false,
+   "clause": "Found"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Six Capitals",
+   "conditional": true,
+   "clause": "Build"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Wealth",
+   "conditional": true,
+   "clause": "Build"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Build",
+   "condition": "Privacy Founded",
+   "type": "gate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: every action in clause Build (registering the Six Capitals, certifying the Wealth) is conditional on Privacy Founded declared: foundation, not graft, as clause shape (a value cannot be added on; it is foundation, or it is absence). Section names no actor, so the First Person holds every clause (universal cast rule). Omits the watched-world litany, the proem naming, and the conjecture-register formalisation pointer. Folded from lexr5.3:zero-party-story-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

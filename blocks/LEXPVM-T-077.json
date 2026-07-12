@@ -1,0 +1,127 @@
+{
+ "census": "LEXPVM-T-077",
+ "term": "Platox",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Platox",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Platox.\n\n\"Platox\" is a person.\n\"Platox Charter\" is this contract.\n\"Form Taught\" is a binary.\n\"Compression Taught\" is a binary.\n\"Right Word Taught\" is a binary.\n\"Redundancy Taught\" is a binary.\n\"Dark Forest Teaching\" is data.\n\nCLAUSE: Teach Form.\nThe Platox may declare Form Taught.\n\nCLAUSE: Teach Compression.\nThe Platox may declare Compression Taught.\n\nCLAUSE: Teach Right Word.\nThe Platox may declare Right Word Taught.\n\nCLAUSE: Teach Redundancy.\nThe Platox may declare Redundancy Taught.\n\nCLAUSE: Paradox Curriculum.\n\"Curriculum Complete\" is defined as: Form Taught is declared and Compression Taught is declared and Right Word Taught is declared and Redundancy Taught is declared.\n\nCLAUSE: Study Beneath Magic.\nThe Platox may, if this Platox Charter is Curriculum Complete: certify the Dark Forest Teaching.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 6,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Platox",
+   "verb": "declare",
+   "o": "Form Taught",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Teach Form"
+  },
+  {
+   "s": "Platox",
+   "verb": "declare",
+   "o": "Compression Taught",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Teach Compression"
+  },
+  {
+   "s": "Platox",
+   "verb": "declare",
+   "o": "Right Word Taught",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Teach Right Word"
+  },
+  {
+   "s": "Platox",
+   "verb": "declare",
+   "o": "Redundancy Taught",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Teach Redundancy"
+  },
+  {
+   "s": "Platox",
+   "verb": "certify",
+   "o": "Dark Forest Teaching",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Platox Charter is Curriculum Complete",
+   "clause": "Study Beneath Magic"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Platox",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Form Taught",
+   "conditional": false,
+   "clause": "Teach Form"
+  },
+  {
+   "promiser": "Platox",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Compression Taught",
+   "conditional": false,
+   "clause": "Teach Compression"
+  },
+  {
+   "promiser": "Platox",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Right Word Taught",
+   "conditional": false,
+   "clause": "Teach Right Word"
+  },
+  {
+   "promiser": "Platox",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Redundancy Taught",
+   "conditional": false,
+   "clause": "Teach Redundancy"
+  },
+  {
+   "promiser": "Platox",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Dark Forest Teaching",
+   "conditional": true,
+   "clause": "Study Beneath Magic"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Curriculum Complete",
+   "conjuncts": [
+    "Form Taught",
+    "Compression Taught",
+    "Right Word Taught",
+    "Redundancy Taught"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Form Taught\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Curriculum Complete requires all of Form Taught AND Compression Taught AND Right Word Taught AND Redundancy Taught. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

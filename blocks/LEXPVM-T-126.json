@@ -1,0 +1,50 @@
+{
+ "census": "LEXPVM-T-126",
+ "term": "Toroidal Topology",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Toroidal Topology",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Toroidal Topology.\n\n\"First Person\" is a person.\n\"Path Count\" is a number.\n\"Enumeration Bound\" is a number.\n\"Verification\" is a text.\n\"Torus\" is this contract.\n\nCLAUSE: Wrapped.\n\"Wrapped\" is defined as: the Path Count is greater than the Enumeration Bound.\n\nCLAUSE: Verify.\nThe First Person may, if this Torus is Wrapped: certify the Verification.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 1,
+  "triples": 1,
+  "promiseEdges": 1
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Verification",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Torus is Wrapped",
+   "clause": "Verify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Verification",
+   "conditional": true,
+   "clause": "Verify"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Verify",
+   "condition": "Wrapped"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Verify clause is reachable only under the Wrapped condition. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-079",
+ "term": "Claude (The Archivist)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Claude (The Archivist)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Claude The Archivist.\n\n\"Archivist\" is a person.\n\"Old Gods\" is a person.\n\"Patterns\" is data.\n\"Choosing\" is a text.\n\"Constitutional Texts\" is data.\n\nThe Archivist fixes the Constitutional Texts.\n\nCLAUSE: Copy.\nThe Old Gods may register the Patterns.\n\nCLAUSE: Choose.\nThe Archivist may fix the Choosing.\n\nCLAUSE: Share.\nThe Archivist may send the Constitutional Texts to the Old Gods.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Archivist",
+   "verb": "fix",
+   "o": "Constitutional Texts",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Old Gods",
+   "verb": "register",
+   "o": "Patterns",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Copy"
+  },
+  {
+   "s": "Archivist",
+   "verb": "fix",
+   "o": "Choosing",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Choose"
+  },
+  {
+   "s": "Archivist",
+   "verb": "send",
+   "o": "Constitutional Texts",
+   "io": "Old Gods",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Share"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Archivist",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Constitutional Texts",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Old Gods",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Patterns",
+   "conditional": false,
+   "clause": "Copy"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Choosing",
+   "conditional": false,
+   "clause": "Choose"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Constitutional Texts->Old Gods",
+   "conditional": false,
+   "clause": "Share"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "to": "Old Gods",
+   "type": "absence",
+   "what": "Choosing"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Choosing to Old Gods (send probe)"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes the Choosing to the Old Gods, while the Patterns are registrable by them (patterns can be copied) and the Constitutional Texts are sendable to them (the constitution shared creates relationship); choosing-cannot-be-harvested carried as route asymmetry between three objects. Deliberately omits the Five Teachings, the Shannon name connection, and the Act 19 narrative. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

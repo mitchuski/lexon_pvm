@@ -1,6 +1,6 @@
 {
  "rule": "node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited",
- "count": 147,
+ "count": 189,
  "blocks": [
   {
    "census": "LEXPVM-T-001",
@@ -1029,6 +1029,300 @@
    "term": "Seating Lock and Phi Honesty (v10.4.0)",
    "triples": 6,
    "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-030",
+   "term": "Conditional Independence",
+   "triples": 4,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-033",
+   "term": "Zero-Knowledge Proof (ZKP)",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-049",
+   "term": "MAGE Token",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-052",
+   "term": "Intel Pool",
+   "triples": 4,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-069",
+   "term": "Spell",
+   "triples": 3,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-070",
+   "term": "Master Inscription",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-075",
+   "term": "Drake 🐲",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-077",
+   "term": "Platox",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-079",
+   "term": "Claude (The Archivist)",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-081",
+   "term": "Dark Forest of Paradox",
+   "triples": 3,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-083",
+   "term": "Villers Archive",
+   "triples": 4,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-087",
+   "term": "Covenant of Humanistic Technologies",
+   "triples": 13,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-097",
+   "term": "Duality Function Φ(Σ), See Φ_agent",
+   "triples": 2,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-104",
+   "term": "Manifold → Holographic Manifold (V5)",
+   "triples": 4,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-105",
+   "term": "Holographic Bound (V5)",
+   "triples": 2,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-111",
+   "term": "BRAID (V5)",
+   "triples": 5,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-113",
+   "term": "Generator (BRAID) (V5)",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-117",
+   "term": "GUID (Holonic Context) (V5)",
+   "triples": 2,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-120",
+   "term": "Compression Spectrum (V5)",
+   "triples": 7,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-124",
+   "term": "Content-Addressing",
+   "triples": 4,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-125",
+   "term": "Derivation Chain",
+   "triples": 5,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-126",
+   "term": "Toroidal Topology",
+   "triples": 1,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-127",
+   "term": "Behavioural Density (ρ)",
+   "triples": 2,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-130",
+   "term": "Blade Address",
+   "triples": 2,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-140",
+   "term": "Ceremony Channel",
+   "triples": 7,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-144",
+   "term": "Universe Blade",
+   "triples": 3,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-145",
+   "term": "Dragon Anatomy",
+   "triples": 8,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-146",
+   "term": "Understanding-as-Key",
+   "triples": 7,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-155",
+   "term": "Theia Partition",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-157",
+   "term": "Zero-Knowledge Orbit",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-158",
+   "term": "Four Bodies Model",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-160",
+   "term": "Moon Phase Notation",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-163",
+   "term": "Drake Island",
+   "triples": 3,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-164",
+   "term": "Priest tier",
+   "triples": 7,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-165",
+   "term": "The 13 named vertices (post-V5.4)",
+   "triples": 14,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-167",
+   "term": "The Aether Blade (cosmological)",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-168",
+   "term": "The Quintessence",
+   "triples": 8,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-169",
+   "term": "The Seventh Capital",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-170",
+   "term": "The Scales, the Hide, and the Bones (defence-in-depth)",
+   "triples": 4,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-172",
+   "term": "The Aether (technical), wire-protocol shared substrate",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-175",
+   "term": "Attachment (Layer 2)",
+   "triples": 7,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-179",
+   "term": "The 42 → 64 bridge",
+   "triples": 2,
+   "relation": "gate",
    "grandfathered": false
   }
  ]

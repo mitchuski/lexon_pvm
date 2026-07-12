@@ -1,0 +1,7 @@
+MERGE (c:LexContract {census: "LEXPVM-T-117", name: "GUID (Holonic Context) (V5)", cites: "glossary-master-v4 § ### GUID (Holonic Context) (V5)"})
+MERGE (:Person {name: "First Person", contract: "GUID (Holonic Context) (V5)"})
+MERGE (:Data {name: "Content", contract: "GUID (Holonic Context) (V5)"})
+MERGE (:Text {name: "Identifier", contract: "GUID (Holonic Context) (V5)"})
+MERGE (:Contract {name: "Holon", contract: "GUID (Holonic Context) (V5)"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_FIX {clause: "Address", object: "Content"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_CERTIFY {clause: "Address", object: "Identifier"}]->(b)

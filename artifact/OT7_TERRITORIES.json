@@ -1,0 +1,18 @@
+{
+ "rule": "OT-7 (lexr5): round-level disjointness by construction. The 64-term residue partitioned into three disjoint territories, one per proposer; a lever's entries may target ONLY its own territory's ids (an entry outside it is invalid regardless of gate result), and its held-out draw comes from the same territory. Six C-series bundle terms are KEYSTONE-RESERVED pending the operator's naming convention (CORPUS_COVERAGE_PLAN.md Phase 1.4) and are not lever food. Partition drawn 2026-07-12 from node tools/coverage.mjs uncovered ids.",
+ "reserved": ["LEXPVM-T-195", "LEXPVM-T-196", "LEXPVM-T-197", "LEXPVM-T-198", "LEXPVM-T-199", "LEXPVM-T-203"],
+ "territories": {
+  "formula-numeric": {
+   "note": "quantitative and geometric terms, expressible since the 2026-07-12 numeric layer (CR-22): number/account defs, initially-literals, comparative defined-as; NO percent literals",
+   "ids": ["LEXPVM-T-030", "LEXPVM-T-033", "LEXPVM-T-097", "LEXPVM-T-100", "LEXPVM-T-104", "LEXPVM-T-105", "LEXPVM-T-106", "LEXPVM-T-111", "LEXPVM-T-113", "LEXPVM-T-114", "LEXPVM-T-115", "LEXPVM-T-117", "LEXPVM-T-120", "LEXPVM-T-126", "LEXPVM-T-127", "LEXPVM-T-157", "LEXPVM-T-160", "LEXPVM-T-161", "LEXPVM-T-179"]
+  },
+  "zero-party-story": {
+   "note": "cosmological and story-canon terms whose sections often name no actor: the universal cast rule applies (no named actor means the First Person is the holder; NEVER invent other roles, K-2/T-105 precedent)",
+   "ids": ["LEXPVM-T-075", "LEXPVM-T-077", "LEXPVM-T-079", "LEXPVM-T-081", "LEXPVM-T-083", "LEXPVM-T-087", "LEXPVM-T-144", "LEXPVM-T-145", "LEXPVM-T-155", "LEXPVM-T-158", "LEXPVM-T-163", "LEXPVM-T-165", "LEXPVM-T-166", "LEXPVM-T-167", "LEXPVM-T-168", "LEXPVM-T-169", "LEXPVM-T-170", "LEXPVM-T-171", "LEXPVM-T-184"]
+  },
+  "cast-and-infrastructure": {
+   "ids": ["LEXPVM-T-049", "LEXPVM-T-052", "LEXPVM-T-069", "LEXPVM-T-070", "LEXPVM-T-119", "LEXPVM-T-121", "LEXPVM-T-124", "LEXPVM-T-125", "LEXPVM-T-130", "LEXPVM-T-138", "LEXPVM-T-140", "LEXPVM-T-142", "LEXPVM-T-146", "LEXPVM-T-164", "LEXPVM-T-172", "LEXPVM-T-175", "LEXPVM-T-177", "LEXPVM-T-180", "LEXPVM-T-190", "LEXPVM-T-191"],
+   "note": "named cast, tokens, registries, and technical infrastructure terms; T-146 (Understanding-as-Key) returns as ordinary food after its lexr4 refusal was about ONE lever's pre-answered recipe, not the term"
+  }
+ }
+}

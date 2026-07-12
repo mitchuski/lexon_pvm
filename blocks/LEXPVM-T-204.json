@@ -114,7 +114,7 @@
    "what": "Assessment"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Assessment to Neighbor"
+  "mutation": "probe clause appended routing Assessment to Neighbor (pay probe)"
  },
  "grandfathered": false,
  "notes": "Structural: independent assessment as impossibility (no transfer clause routes the Assessment to the Neighbor: an agent's assessment is local and never transfers, so trust is not transitive), plus the Autonomy Axiom in recital shape (each person fixes only its own conduct, and the only promise route to the Neighbor carries the Agent's Own Conduct). Omits: the assessment function alpha(pi) semantics and multi-neighbor topology; modeled minimally with one neighbor. Anchor: ## Quick Reference: Concept Mappings. Folded from pt-primitive-polarity-charter (canon-forward, run lexr3).",

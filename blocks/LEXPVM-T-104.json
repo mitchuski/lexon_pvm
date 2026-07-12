@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-104",
+ "term": "Manifold → Holographic Manifold (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Manifold → Holographic Manifold (V5)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Holographic Manifold.\n\n\"First Person\" is a person.\n\"Vertex Count\" is a number, initially 64.\n\"Edge Count\" is a number, initially 96.\n\"Boundary Computed\" is a binary.\n\"Bulk Value\" is an amount.\n\nThe First Person sets the Vertex Count, sets the Edge Count, and fixes the Bulk Value.\n\nCLAUSE: Encode.\nThe First Person may declare Boundary Computed.\n\nCLAUSE: Holographic.\n\"Holographic\" is defined as: the Edge Count is greater than the Vertex Count and Boundary Computed is declared.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "set",
+   "o": "Vertex Count",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "set",
+   "o": "Edge Count",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Bulk Value",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Boundary Computed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Encode"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "set:Vertex Count",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "set:Edge Count",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Bulk Value",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Boundary Computed",
+   "conditional": false,
+   "clause": "Encode"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Edge Count",
+    "Boundary Computed"
+   ],
+   "predicate": "Holographic",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Edge Count\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Carries the conjunction: Holographic requires BOTH the boundary count exceeding the bulk count (Edge Count initially 96 greater than Vertex Count initially 64, the canonical constants as initial literals) AND the declared boundary computation; drop either conjunct and the predicate fails, so boundary-encodes-bulk is clause shape, not a name string; omits the differential form on the boundary and the superlinear-exponent speculation. Folded from lexr5.2:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,145 @@
+{
+ "census": "LEXPVM-T-158",
+ "term": "Four Bodies Model",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Four Bodies Model",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Four Bodies Model.\n\n\"Sun\" is a person.\n\"Earth\" is a person.\n\"Moon\" is a person.\n\"Human\" is a person.\n\"Protection\" is a binary.\n\"Delegation\" is a binary.\n\"Reflection\" is a binary.\n\"Connection\" is a binary.\n\nThe Sun appoints the Moon.\nThe Earth appoints the Human.\n\n\"Quaternion Complete\" is defined as: Protection is declared and Delegation is declared and Reflection is declared and Connection is declared.\n\nCLAUSE: Protect.\nThe Sun may declare Protection.\n\nCLAUSE: Delegate.\nThe Earth may declare Delegation.\n\nCLAUSE: Reflect.\nThe Moon may declare Reflection.\n\nCLAUSE: Connect.\nThe Human may declare Connection.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 4,
+  "sentences": 6,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Sun",
+   "verb": "appoint",
+   "o": "Moon",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Earth",
+   "verb": "appoint",
+   "o": "Human",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sun",
+   "verb": "declare",
+   "o": "Protection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Protect"
+  },
+  {
+   "s": "Earth",
+   "verb": "declare",
+   "o": "Delegation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Delegate"
+  },
+  {
+   "s": "Moon",
+   "verb": "declare",
+   "o": "Reflection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reflect"
+  },
+  {
+   "s": "Human",
+   "verb": "declare",
+   "o": "Connection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Connect"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Moon",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Earth",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Human",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sun",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protection",
+   "conditional": false,
+   "clause": "Protect"
+  },
+  {
+   "promiser": "Earth",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Delegation",
+   "conditional": false,
+   "clause": "Delegate"
+  },
+  {
+   "promiser": "Moon",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Reflection",
+   "conditional": false,
+   "clause": "Reflect"
+  },
+  {
+   "promiser": "Human",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Connection",
+   "conditional": false,
+   "clause": "Connect"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Protection",
+    "Delegation",
+    "Reflection",
+    "Connection"
+   ],
+   "predicate": "Quaternion Complete",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Protection\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Quaternion Complete requires all four bodies' aspects declared (Protection, Delegation, Reflection, Connection), the quaternion as a four-way joint requirement; the recitals carry the two-generator structure, Sun appoints Moon and Earth appoints Human, with each declaration held by its own body; omits the instant-versus-four-billion-years production asymmetry and the persisting Moon-to-Human gap. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

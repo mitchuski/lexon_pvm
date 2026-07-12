@@ -1,0 +1,298 @@
+{
+ "census": "LEXPVM-T-165",
+ "term": "The 13 named vertices (post-V5.4)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.4 The 13 named vertices (post-V5.4)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Thirteen Named Vertices.\n\n\"First Person\" is a person.\n\"Vertex Charter\" is this contract.\n\"V41 Named\" is a binary.\n\"V12 Named\" is a binary.\n\"V15 Named\" is a binary.\n\"V19 Named\" is a binary.\n\"V20 Named\" is a binary.\n\"V24 Named\" is a binary.\n\"V38 Named\" is a binary.\n\"V28 Named\" is a binary.\n\"V31 Named\" is a binary.\n\"V49 Named\" is a binary.\n\"V51 Named\" is a binary.\n\"V55 Named\" is a binary.\n\"V63 Named\" is a binary.\n\"Sovereignty Lattice\" is data.\n\nCLAUSE: Name V41.\nThe First Person may declare V41 Named.\n\nCLAUSE: Name V12.\nThe First Person may declare V12 Named.\n\nCLAUSE: Name V15.\nThe First Person may declare V15 Named.\n\nCLAUSE: Name V19.\nThe First Person may declare V19 Named.\n\nCLAUSE: Name V20.\nThe First Person may declare V20 Named.\n\nCLAUSE: Name V24.\nThe First Person may declare V24 Named.\n\nCLAUSE: Name V38.\nThe First Person may declare V38 Named.\n\nCLAUSE: Name V28.\nThe First Person may declare V28 Named.\n\nCLAUSE: Name V31.\nThe First Person may declare V31 Named.\n\nCLAUSE: Name V49.\nThe First Person may declare V49 Named.\n\nCLAUSE: Name V51.\nThe First Person may declare V51 Named.\n\nCLAUSE: Name V55.\nThe First Person may declare V55 Named.\n\nCLAUSE: Name V63.\nThe First Person may declare V63 Named.\n\nCLAUSE: Inhabited.\n\"Thirteen Named\" is defined as: V41 Named is declared and V12 Named is declared and V15 Named is declared and V19 Named is declared and V20 Named is declared and V24 Named is declared and V38 Named is declared and V28 Named is declared and V31 Named is declared and V49 Named is declared and V51 Named is declared and V55 Named is declared and V63 Named is declared.\n\nCLAUSE: Register Lattice.\nThe First Person may, if this Vertex Charter is Thirteen Named: register the Sovereignty Lattice.",
+ "counts": {
+  "definitions": 16,
+  "clauses": 15,
+  "sentences": 14,
+  "triples": 14,
+  "promiseEdges": 14
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V41 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V41"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V12 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V12"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V15 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V15"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V19 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V19"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V20 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V20"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V24 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V24"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V38 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V38"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V28 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V28"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V31 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V31"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V49 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V49"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V51 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V51"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V55 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V55"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "V63 Named",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name V63"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Sovereignty Lattice",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Vertex Charter is Thirteen Named",
+   "clause": "Register Lattice"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V41 Named",
+   "conditional": false,
+   "clause": "Name V41"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V12 Named",
+   "conditional": false,
+   "clause": "Name V12"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V15 Named",
+   "conditional": false,
+   "clause": "Name V15"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V19 Named",
+   "conditional": false,
+   "clause": "Name V19"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V20 Named",
+   "conditional": false,
+   "clause": "Name V20"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V24 Named",
+   "conditional": false,
+   "clause": "Name V24"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V38 Named",
+   "conditional": false,
+   "clause": "Name V38"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V28 Named",
+   "conditional": false,
+   "clause": "Name V28"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V31 Named",
+   "conditional": false,
+   "clause": "Name V31"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V49 Named",
+   "conditional": false,
+   "clause": "Name V49"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V51 Named",
+   "conditional": false,
+   "clause": "Name V51"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V55 Named",
+   "conditional": false,
+   "clause": "Name V55"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:V63 Named",
+   "conditional": false,
+   "clause": "Name V63"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Sovereignty Lattice",
+   "conditional": true,
+   "clause": "Register Lattice"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Thirteen Named",
+   "conjuncts": [
+    "V41 Named",
+    "V12 Named",
+    "V15 Named",
+    "V19 Named",
+    "V20 Named",
+    "V24 Named",
+    "V38 Named",
+    "V28 Named",
+    "V31 Named",
+    "V49 Named",
+    "V51 Named",
+    "V55 Named",
+    "V63 Named"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"V41 Named\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Thirteen Named requires all of V41 Named AND V12 Named AND V15 Named AND V19 Named AND V20 Named AND V24 Named AND V38 Named AND V28 Named AND V31 Named AND V49 Named AND V51 Named AND V55 Named AND V63 Named. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

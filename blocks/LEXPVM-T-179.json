@@ -1,0 +1,68 @@
+{
+ "census": "LEXPVM-T-179",
+ "term": "The 42 → 64 bridge",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 23.6 The 42 → 64 bridge",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Bridge From Forty Two To Sixty Four.\n\n\"First Person\" is a person.\n\"Vertex Count\" is a number, initially 64.\n\"Primary Count\" is a number, initially 42.\n\"Attachment Slots\" is a number, initially 22.\n\"Attachment Record\" is a text.\n\"Lattice\" is this contract.\n\nThe First Person fixes the Attachment Record.\n\nCLAUSE: Open Slotted.\n\"Open Slotted\" is defined as: the Vertex Count is greater than the Primary Count and the Attachment Slots is greater than zero.\n\nCLAUSE: Attach.\nThe First Person may, if this Lattice is Open Slotted: register the Attachment Record.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 2,
+  "promiseEdges": 2
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Attachment Record",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Attachment Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Lattice is Open Slotted",
+   "clause": "Attach"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Attachment Record",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Attachment Record",
+   "conditional": true,
+   "clause": "Attach"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Attach",
+   "condition": "Open Slotted",
+   "type": "gate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the bridge arithmetic as a gate (registering an Attachment Record is conditional on Open Slotted, itself the conjunction of the Vertex Count initially 64 greater than the Primary Count initially 42 and the Attachment Slots initially 22 greater than zero: the sixty-four minus forty-two equals twenty-two accounting in clause shape); the only registrable object is an attachment record, never a new primary; zero-actor canon section, First Person holder; omits per-city attachment multiplicity and the inhabited-vertex tallies. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

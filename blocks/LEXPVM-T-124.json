@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-124",
+ "term": "Content-Addressing",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Content-Addressing",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Content Addressing.\n\n\"First Person\" is a person.\n\"Address\" is a contract.\n\"Object\" is data.\n\"Identifier\" is a text.\n\"Arrival Path\" is data.\n\"Addressed\" is defined as: Object is fixed and Identifier is fixed.\n\nThe First Person fixes the Object.\n\nCLAUSE: Walk.\nThe First Person may certify the Arrival Path.\n\nCLAUSE: Name.\nThe First Person may fix the Identifier.\n\nCLAUSE: Verify.\nThe First Person may, if this Address is Addressed, certify the Identifier.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Object",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Arrival Path",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Identifier",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Name"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Identifier",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Address is Addressed",
+   "clause": "Verify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Object",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Arrival Path",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Identifier",
+   "conditional": false,
+   "clause": "Name"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Identifier",
+   "conditional": true,
+   "clause": "Verify"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Object",
+    "Identifier"
+   ],
+   "predicate": "Addressed",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Object\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "captures same-object-same-identifier as a defined-as conjunction: Addressed requires exactly Object fixed and Identifier fixed, and the Arrival Path is deliberately not a conjunct, which is the path-independence of verification (the ZK separation of verify from witness); the section names no actor, so the First Person holds every capability (universal cast rule); omits hash mechanics and the UOR lattice context. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -114,7 +114,7 @@
    "what": "Stake"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Stake to Guardian"
+  "mutation": "probe clause appended routing Stake to Guardian (pay probe)"
  },
  "grandfathered": false,
  "notes": "carries the stake's irreversibility as an impossibility by absence: no transfer clause routes the Stake back to the Guardian, so the valency commitment cannot be reclaimed from the guardian's side; staking is gated on the City's Dragon Tier declaration and validation is a binding duty (must, not may). Direction is load-bearing: slashing routes the escrowed Stake to the City on a declared breach, never back. Omits the stake denomination and the signal threshold, and the source section is WIP status so the register stays documented. Folded from promise-bundle-spell (spell-grammar, run lexr3).",

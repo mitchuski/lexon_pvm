@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-097", name: "Duality Function Φ(Σ), See Φ_agent", cites: "glossary-master-v4 § ### Duality Function Φ(Σ), See Φ_agent"})
+MERGE (:Person {name: "First Person", contract: "Duality Function Φ(Σ), See Φ_agent"})
+MERGE (:Data {name: "Agent Axis", contract: "Duality Function Φ(Σ), See Φ_agent"})
+MERGE (:Number {name: "Axis Count", contract: "Duality Function Φ(Σ), See Φ_agent"})
+MERGE (:Text {name: "Separation", contract: "Duality Function Φ(Σ), See Φ_agent"})
+MERGE (:Contract {name: "Duality", contract: "Duality Function Φ(Σ), See Φ_agent"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:FIX {clause: "recital", object: "Agent Axis"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_CERTIFY {clause: "Certify Separation", object: "Separation", condition: "this Duality is Duality Preserved"}]->(b)

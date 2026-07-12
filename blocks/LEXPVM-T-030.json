@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-030",
+ "term": "Conditional Independence",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Conditional Independence",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Conditional Independence.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Private State\" is data.\n\"Shared Information\" is a number, initially 0.\n\"Separation\" is a text.\n\"Pact\" is this contract.\n\nThe First Person appoints the Swordsman, appoints the Mage, and fixes the Private State.\n\nCLAUSE: Conditionally Independent.\n\"Conditionally Independent\" is defined as: the Private State is fixed and the Shared Information is not greater than zero.\n\nCLAUSE: Certify Separation.\nThe First Person may, if this Pact is Conditionally Independent: certify the Separation.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Private State",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Separation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Pact is Conditionally Independent",
+   "clause": "Certify Separation"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Private State",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Separation",
+   "conditional": true,
+   "clause": "Certify Separation"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Private State",
+    "Shared Information"
+   ],
+   "predicate": "Conditionally Independent",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Private State\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "carries conditional independence as a defined-as conjunction (Conditionally Independent requires the Private State fixed AND the Shared Information not greater than zero: the given-the-conditioning-variable condition and the zero-shared-information bound as joint conjuncts, the number initially 0 as the quantitative anchor), with certification of Separation gated on it; omits the probabilistic definition over distributions and the epsilon form of the bound. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

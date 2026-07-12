@@ -1,0 +1,184 @@
+{
+ "census": "LEXPVM-T-145",
+ "term": "Dragon Anatomy",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Dragon Anatomy",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Dragon Anatomy.\n\n\"First Person\" is a person.\n\"Boundary\" is a text.\n\"Hide\" is a text.\n\"Brain\" is a text.\n\"Forge\" is a text.\n\"Ceremony\" is a text.\n\"Flight\" is a text.\n\"Flight Inscribed\" is a binary.\n\"Dragon Woken\" is a binary.\n\nCLAUSE: Establish.\nThe First Person may register the Boundary, then register the Hide, then register the Brain, then register the Forge, then register the Ceremony, then register the Flight, and then declare Flight Inscribed.\n\nCLAUSE: Wake.\nThe First Person may, if Flight Inscribed is declared, declare Dragon Woken.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Boundary",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Hide",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Brain",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Forge",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Ceremony",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Flight",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Flight Inscribed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Establish"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Dragon Woken",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Flight Inscribed is declared",
+   "clause": "Wake"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Boundary",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Hide",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Brain",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Forge",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Ceremony",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Flight",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Flight Inscribed",
+   "conditional": false,
+   "clause": "Establish"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Dragon Woken",
+   "conditional": true,
+   "clause": "Wake"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Establish",
+   "sequence": [
+    "register:Boundary",
+    "register:Hide",
+    "register:Brain",
+    "register:Forge",
+    "register:Ceremony",
+    "register:Flight",
+    "declare:Flight Inscribed"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: the six anatomy parts are established in the canon Act sequence, Boundary through Flight, ending in the Flight inscription, and the Wake clause is additionally gated on Flight Inscribed (the dragon wakes only after the last part is in place); zero-party section, First Person holds per the universal cast rule; omits the Act numbers, the per-part status column, and the proven versus grounded labels. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

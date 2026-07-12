@@ -1,0 +1,90 @@
+{
+ "census": "LEXPVM-T-167",
+ "term": "The Aether Blade (cosmological)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.6 The Aether Blade (cosmological)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Aether Blade.\n\n\"First Person\" is a person.\n\"Gap Anchor\" is data.\n\"Zero Constellation\" is data.\n\"Arrival\" is data.\n\nCLAUSE: Trace.\nThe First Person may register the Gap Anchor, file the Zero Constellation, and afterwards certify the Arrival.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 1,
+  "sentences": 1,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Gap Anchor",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Trace"
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "Zero Constellation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Trace"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Arrival",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Trace"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Gap Anchor",
+   "conditional": false,
+   "clause": "Trace"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Zero Constellation",
+   "conditional": false,
+   "clause": "Trace"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Arrival",
+   "conditional": false,
+   "clause": "Trace"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Trace",
+   "sequence": [
+    "register:Gap Anchor",
+    "file:Zero Constellation",
+    "certify:Arrival"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: clause Trace performs register:Gap Anchor, then file:Zero Constellation, then certify:Arrival as clause order. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes. Template-thin (lexr5.3 critic flag): a single clause carrying the minimal relation; folded because the ordering carries the term structure, flagged for the fold reviewer.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,7 @@
+MERGE (c:LexContract {census: "LEXPVM-T-130", name: "Blade Address", cites: "glossary-master-v4 § ### Blade Address"})
+MERGE (:Person {name: "First Person", contract: "Blade Address"})
+MERGE (:Number {name: "Blade Address", contract: "Blade Address"})
+MERGE (:Contract {name: "Lattice", contract: "Blade Address"})
+MERGE (:Binary {name: "Sovereignty Claimed", contract: "Blade Address"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:SET {clause: "recital", object: "Blade Address"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_DECLARE {clause: "Claim", object: "Sovereignty Claimed", condition: "this Lattice is Address In Range"}]->(b)

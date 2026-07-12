@@ -1,0 +1,127 @@
+{
+ "census": "LEXPVM-T-125",
+ "term": "Derivation Chain",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Derivation Chain",
+  "register": "glossary · conjectured expression of convergent-preliminary term"
+ },
+ "lex": "LEX Derivation Chain.\n\n\"First Person\" is a person.\n\"Certificate\" is a text.\n\"Chain\" is data.\n\"Chain Identifier\" is a text.\n\"Endpoint\" is data.\n\nThe First Person fixes the Endpoint.\n\nCLAUSE: Derive.\nThe First Person may register a Certificate, and afterwards fix the Chain, and afterwards fix the Chain Identifier, and afterwards certify the Endpoint.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Endpoint",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "register",
+   "o": "Certificate",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Derive"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Chain",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Derive"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Chain Identifier",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Derive"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Endpoint",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Derive"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Endpoint",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Certificate",
+   "conditional": false,
+   "clause": "Derive"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Chain",
+   "conditional": false,
+   "clause": "Derive"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Chain Identifier",
+   "conditional": false,
+   "clause": "Derive"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Endpoint",
+   "conditional": false,
+   "clause": "Derive"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Derive",
+   "sequence": [
+    "register:Certificate",
+    "fix:Chain",
+    "fix:Chain Identifier",
+    "certify:Endpoint"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "captures the chain as a single-officiant ordering: certificate registered, then the chain fixed, then the chain's own first-class identity fixed (the path is content-addressed too), then endpoint verification last; the section names no actor, so the First Person walks the chain (universal cast rule); omits path multiplicity (different chains reaching the one recital-fixed Endpoint) beyond the Endpoint's immutability. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

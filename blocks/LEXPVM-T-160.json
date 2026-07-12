@@ -1,0 +1,89 @@
+{
+ "census": "LEXPVM-T-160",
+ "term": "Moon Phase Notation",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Moon Phase Notation",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Moon Phase Notation.\n\n\"Swordsman\" is a person.\n\"Stratum Count\" is a number, initially 6.\n\"Active Dimensions\" is a number, initially 0.\n\"Phase\" is a text.\n\"Blade\" is this contract.\n\nCLAUSE: Full Moon.\n\"Full Moon\" is defined as: the Active Dimensions is not less than the Stratum Count.\n\nCLAUSE: Show Phase.\nThe Swordsman may set the Active Dimensions, and afterwards certify the Phase.\n\nCLAUSE: Reflect All.\nThe Swordsman may, if this Blade is Full Moon: certify the Phase.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Swordsman",
+   "verb": "set",
+   "o": "Active Dimensions",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Show Phase"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Phase",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Show Phase"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Phase",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Blade is Full Moon",
+   "clause": "Reflect All"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "set:Active Dimensions",
+   "conditional": false,
+   "clause": "Show Phase"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Phase",
+   "conditional": false,
+   "clause": "Show Phase"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Phase",
+   "conditional": true,
+   "clause": "Reflect All"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Show Phase",
+   "sequence": [
+    "set:Active Dimensions",
+    "certify:Phase"
+   ],
+   "type": "ordering"
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the boundary-made-visible sequence as an ordering (the Swordsman sets the Active Dimensions and only afterwards certifies the Phase: the stratum determines the phase, reversal-falsifiable) plus the Full Moon comparative (Active Dimensions not less than the Stratum Count initially 6, the all-six-dimensions ceiling); the Swordsman is the canon-named holder; omits the per-phase emoji table and the lit-versus-dark proverb. Folded from lexr5.1:numeric-anchor-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

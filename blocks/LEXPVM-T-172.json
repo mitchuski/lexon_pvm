@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-172",
+ "term": "The Aether (technical), wire-protocol shared substrate",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.11 The Aether (technical), wire-protocol shared substrate",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX The Aether.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Aether\" is a contract.\n\"Blade Copy\" is a text.\n\"Spell Copy\" is a text.\n\"Message\" is a text.\n\"In Sync\" is defined as: Blade Copy is fixed and Spell Copy is fixed.\n\nThe First Person appoints the Swordsman, and appoints the Mage.\n\nCLAUSE: Keep Blade Side.\nThe Swordsman may fix the Blade Copy.\n\nCLAUSE: Keep Spell Side.\nThe Mage may fix the Spell Copy.\n\nCLAUSE: Carry.\nThe Swordsman may, if this Aether is In Sync, send the Message to the Mage.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "fix",
+   "o": "Blade Copy",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Keep Blade Side"
+  },
+  {
+   "s": "Mage",
+   "verb": "fix",
+   "o": "Spell Copy",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Keep Spell Side"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Message",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": "this Aether is In Sync",
+   "clause": "Carry"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Blade Copy",
+   "conditional": false,
+   "clause": "Keep Blade Side"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Spell Copy",
+   "conditional": false,
+   "clause": "Keep Spell Side"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Message->Mage",
+   "conditional": true,
+   "clause": "Carry"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Blade Copy",
+    "Spell Copy"
+   ],
+   "predicate": "In Sync",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Blade Copy\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "captures kept-in-sync as a conjunction: In Sync is defined as both extensions' copies fixed, each fixed by its own side in its own clause (SG-6 independent production), and wire carriage gates on the in-sync substrate; omits the TypeScript type, storage, crypto, and meaning contract contents, and the cosmological Aether Blade is deliberately out of scope (the section itself draws that distinction). Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

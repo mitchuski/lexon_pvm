@@ -1,0 +1,108 @@
+{
+ "census": "LEXPVM-T-170",
+ "term": "The Scales, the Hide, and the Bones (defence-in-depth)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.9 The Scales, the Hide, and the Bones (defence-in-depth)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Scales the Hide and the Bones.\n\n\"Defence\" is this contract.\n\"First Person\" is a person.\n\"Blow\" is a text.\n\"Scales Held\" is a binary.\n\"Hide Held\" is a binary.\n\"Bones Held\" is a binary.\n\nCLAUSE: Enforce Policy.\nThe First Person may declare Scales Held.\n\nCLAUSE: Separate Process.\nThe First Person may declare Hide Held.\n\nCLAUSE: Ground Algebra.\nThe First Person may declare Bones Held.\n\nCLAUSE: Defended.\n\"Defended\" is defined as: Scales Held is declared and Hide Held is declared and Bones Held is declared.\n\nCLAUSE: Absorb.\nThe First Person may, if this Defence is Defended, file the Blow.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 5,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Scales Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Enforce Policy"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Hide Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Separate Process"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Bones Held",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Ground Algebra"
+  },
+  {
+   "s": "First Person",
+   "verb": "file",
+   "o": "Blow",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Defence is Defended",
+   "clause": "Absorb"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Scales Held",
+   "conditional": false,
+   "clause": "Enforce Policy"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Hide Held",
+   "conditional": false,
+   "clause": "Separate Process"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Bones Held",
+   "conditional": false,
+   "clause": "Ground Algebra"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Blow",
+   "conditional": true,
+   "clause": "Absorb"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "conjuncts": [
+    "Scales Held",
+    "Hide Held",
+    "Bones Held"
+   ],
+   "predicate": "Defended",
+   "type": "conjunction"
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Scales Held\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Defended requires all three layers (Scales Held, Hide Held, Bones Held) and absorbing the Blow is gated on Defended: the layers gate multiplicatively as a joint requirement, any layer missing and the defence is not Defended. Section names no acting party, so the First Person holds every clause (universal cast rule). Omits the vendor toolkit example, the epsilon failure-mode terms, and the three separation-axes mapping. Folded from lexr5.3:zero-party-story-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

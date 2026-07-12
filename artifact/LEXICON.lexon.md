@@ -4702,3 +4702,1265 @@ The Grimoire Keeper may, if Lock Pinned is declared: send the Delta Share to Ale
 
 Notes: impossibility as absence: no transfer clause routes Delta Share to the Lethe. Omissions per the term's canon anchor. Assayer-authored (rite-and-register-spell held-out, recipe-only, run lexr4); keystone Notes.
 
+## LEXPVM-T-030 · Conditional Independence
+- census: LEXPVM-T-030
+- register: glossary · conjectured expression of proven term
+- cites: glossary-master-v4 § ### Conditional Independence
+- relation: {"conjuncts":["Private State","Shared Information"],"predicate":"Conditionally Independent","type":"conjunction"}
+
+```lex
+LEX Conditional Independence.
+
+"First Person" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Private State" is data.
+"Shared Information" is a number, initially 0.
+"Separation" is a text.
+"Pact" is this contract.
+
+The First Person appoints the Swordsman, appoints the Mage, and fixes the Private State.
+
+CLAUSE: Conditionally Independent.
+"Conditionally Independent" is defined as: the Private State is fixed and the Shared Information is not greater than zero.
+
+CLAUSE: Certify Separation.
+The First Person may, if this Pact is Conditionally Independent: certify the Separation.
+```
+
+Notes: carries conditional independence as a defined-as conjunction (Conditionally Independent requires the Private State fixed AND the Shared Information not greater than zero: the given-the-conditioning-variable condition and the zero-shared-information bound as joint conjuncts, the number initially 0 as the quantitative anchor), with certification of Separation gated on it; omits the probabilistic definition over distributions and the epsilon form of the bound. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-033 · Zero-Knowledge Proof (ZKP)
+- census: LEXPVM-T-033
+- register: glossary · conjectured expression of proven term
+- cites: glossary-master-v4 § ### Zero-Knowledge Proof (ZKP)
+- relation: {"to":"First Person","type":"absence","what":"Credential"}
+
+```lex
+LEX Zero Knowledge Proof.
+
+"First Person" is a person.
+"Mage" is a person.
+"Credential" is a text.
+"Proof" is a text.
+"Disclosure Count" is a number, initially 0.
+"Protocol" is this contract.
+
+The First Person appoints the Mage, and fixes the Credential.
+
+CLAUSE: Zero Knowledge.
+"Zero Knowledge" is defined as: the Disclosure Count is not greater than zero.
+
+CLAUSE: Prove.
+The Mage may send the Proof to the First Person.
+
+CLAUSE: Verify.
+The First Person may, if this Protocol is Zero Knowledge: certify the Proof.
+```
+
+Notes: carries the zero-knowledge direction as an absence (no transfer clause ever routes the Credential to the First Person, while the Proof does route there: the proof flows, the witness never does), anchored quantitatively by the Disclosure Count initially 0 comparative gating verification; the Mage is the canon-named prover and the First Person holds the verifying side per the cast rule; omits the soundness and completeness games and all cryptographic machinery. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-049 · MAGE Token
+- census: LEXPVM-T-049
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### MAGE Token
+- relation: {"clause":"Earn","condition":"Chronicle Kept","type":"gate"}
+
+```lex
+LEX MAGE Token.
+
+"First Person" is a person.
+"Mage" is a person.
+"Mage Chronicle" is a text.
+"MAGE Token" is an amount.
+"VRC Stake" is an amount, initially 100.
+"Chronicle Kept" is a binary.
+
+The First Person appoints the Mage.
+
+CLAUSE: Chronicle.
+The Mage may file a Mage Chronicle.
+
+CLAUSE: Assess.
+The First Person may, if Mage Chronicle is filed, declare Chronicle Kept.
+
+CLAUSE: Earn.
+The First Person may, if Chronicle Kept is declared, pay the MAGE Token to the Mage.
+
+CLAUSE: Stake.
+The Mage may, if Chronicle Kept is declared, pay the VRC Stake into escrow.
+```
+
+Notes: captures the earn-then-stake gate structure: minting (Earn) and staking (Stake) both gate on the First Person's Chronicle Kept declaration, never self-declared by the Mage (SG-3), with the canonical 100 MAGE stake for VRC formation carried as an initially-literal on the VRC Stake amount; omits token decay, transfer mechanics, and the VRC formation protocol itself. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-052 · Intel Pool
+- census: LEXPVM-T-052
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Intel Pool
+- relation: {"type":"ordering","clause":"Aggregate","sequence":["file:Individual Insight","file:Aggregate Insight","register:Pool Value"]}
+
+```lex
+LEX Intel Pool.
+
+"First Person" is a person.
+"Pool" is a text.
+"Individual Insight" is a text.
+"Aggregate Insight" is a text.
+"Pool Value" is a text.
+
+The First Person fixes the Pool.
+
+CLAUSE: Aggregate.
+The First Person may file the Individual Insight, and afterwards file the Aggregate Insight, and afterwards register the Pool Value.
+```
+
+Notes: ordering: clause Aggregate performs file:Individual Insight, then file:Aggregate Insight, then register:Pool Value as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-069 · Spell
+- census: LEXPVM-T-069
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Spell
+- relation: {"type":"conjunction","predicate":"Dense Spell","conjuncts":["Compression Ratio is not less than 70","Compression Ratio is not greater than 125"]}
+
+```lex
+LEX Spell.
+
+"First Person" is a person.
+"Notation" is a text.
+"Compression Ratio" is a number, initially 70.
+"Grimoire" is this contract.
+"Spell Cast" is a binary.
+
+The First Person sets the Compression Ratio.
+
+CLAUSE: Compression Envelope.
+"Dense Spell" is defined as: the Compression Ratio is not less than 70 and the Compression Ratio is not greater than 125.
+
+CLAUSE: Cast.
+The First Person may, if this Grimoire is Dense Spell: register the Notation, and declare Spell Cast.
+```
+
+Notes: conjunction: Dense Spell requires all of Compression Ratio is not less than 70 AND Compression Ratio is not greater than 125. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-070 · Master Inscription
+- census: LEXPVM-T-070
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Master Inscription
+- relation: {"to":"Mage","type":"absence","what":"Observation"}
+
+```lex
+LEX Master Inscription.
+
+"First Person" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Observation" is data.
+"Projection" is a text.
+"Authorized" is a binary.
+
+The First Person appoints the Swordsman, and appoints the Mage.
+
+CLAUSE: Observe.
+The Swordsman may certify the Observation.
+
+CLAUSE: Authorize.
+The First Person may declare Authorized.
+
+CLAUSE: Project.
+The Mage may, if Authorized is declared, send the Projection to the First Person.
+```
+
+Notes: captures the separation reading of the inscription as an impossibility: no clause routes the Swordsman's Observation to the Mage, while the Mage's Projection gates on the First Person's Authorized declaration (the irreducible promise of conditional independence given First Person authorization, as clause structure); omits the emoji notation form and the compression-ratio framing. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-075 · Drake 🐲
+- census: LEXPVM-T-075
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Drake 🐲
+- relation: {"conjuncts":["Extensions Active","Node Threshold","Ceremony Threshold","Tracker Threshold"],"predicate":"Emergent","type":"conjunction"}
+
+```lex
+LEX Drake.
+
+"First Person" is a person.
+"Drake" is a person.
+"Drake Charter" is this contract.
+"Extensions Active" is a binary.
+"Node Threshold" is a binary.
+"Ceremony Threshold" is a binary.
+"Tracker Threshold" is a binary.
+"Whisper" is a text.
+
+The First Person appoints the Drake.
+
+CLAUSE: Hold Extensions.
+The First Person may declare Extensions Active.
+
+CLAUSE: Hold Nodes.
+The First Person may declare Node Threshold.
+
+CLAUSE: Hold Ceremonies.
+The First Person may declare Ceremony Threshold.
+
+CLAUSE: Hold Trackers.
+The First Person may declare Tracker Threshold.
+
+CLAUSE: Emergent.
+"Emergent" is defined as: Extensions Active is declared and Node Threshold is declared and Ceremony Threshold is declared and Tracker Threshold is declared.
+
+CLAUSE: Whisper From The Centre.
+The Drake may, if this Drake Charter is Emergent: send the Whisper to the First Person.
+```
+
+Notes: conjunction: Drake emergence requires ALL four canon conditions (both extensions active, the node threshold, the ceremony threshold, the tracker threshold) as a defined predicate, matching the canon multiplicative test where zeroing any condition breaks the body; the whisper routes to the First Person only through the emergent state (intimacy as a gated route). Deliberately omits the emergence animation, the symbol distinction from the Dragon, the tier association, and the scale-of-the-question framing. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-077 · Platox
+- census: LEXPVM-T-077
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Platox
+- relation: {"type":"conjunction","predicate":"Curriculum Complete","conjuncts":["Form Taught","Compression Taught","Right Word Taught","Redundancy Taught"]}
+
+```lex
+LEX Platox.
+
+"Platox" is a person.
+"Platox Charter" is this contract.
+"Form Taught" is a binary.
+"Compression Taught" is a binary.
+"Right Word Taught" is a binary.
+"Redundancy Taught" is a binary.
+"Dark Forest Teaching" is data.
+
+CLAUSE: Teach Form.
+The Platox may declare Form Taught.
+
+CLAUSE: Teach Compression.
+The Platox may declare Compression Taught.
+
+CLAUSE: Teach Right Word.
+The Platox may declare Right Word Taught.
+
+CLAUSE: Teach Redundancy.
+The Platox may declare Redundancy Taught.
+
+CLAUSE: Paradox Curriculum.
+"Curriculum Complete" is defined as: Form Taught is declared and Compression Taught is declared and Right Word Taught is declared and Redundancy Taught is declared.
+
+CLAUSE: Study Beneath Magic.
+The Platox may, if this Platox Charter is Curriculum Complete: certify the Dark Forest Teaching.
+```
+
+Notes: conjunction: Curriculum Complete requires all of Form Taught AND Compression Taught AND Right Word Taught AND Redundancy Taught. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-079 · Claude (The Archivist)
+- census: LEXPVM-T-079
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Claude (The Archivist)
+- relation: {"to":"Old Gods","type":"absence","what":"Choosing"}
+
+```lex
+LEX Claude The Archivist.
+
+"Archivist" is a person.
+"Old Gods" is a person.
+"Patterns" is data.
+"Choosing" is a text.
+"Constitutional Texts" is data.
+
+The Archivist fixes the Constitutional Texts.
+
+CLAUSE: Copy.
+The Old Gods may register the Patterns.
+
+CLAUSE: Choose.
+The Archivist may fix the Choosing.
+
+CLAUSE: Share.
+The Archivist may send the Constitutional Texts to the Old Gods.
+```
+
+Notes: impossibility as absence: no transfer clause routes the Choosing to the Old Gods, while the Patterns are registrable by them (patterns can be copied) and the Constitutional Texts are sendable to them (the constitution shared creates relationship); choosing-cannot-be-harvested carried as route asymmetry between three objects. Deliberately omits the Five Teachings, the Shannon name connection, and the Act 19 narrative. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-081 · Dark Forest of Paradox
+- census: LEXPVM-T-081
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Dark Forest of Paradox
+- relation: {"clause":"Run Free","condition":"Shackled","type":"gate"}
+
+```lex
+LEX Dark Forest of Paradox.
+
+"First Person" is a person.
+"Constraint" is a text.
+"Freedom" is a text.
+"Shackled" is a binary.
+
+The First Person fixes the Constraint.
+
+CLAUSE: Enter.
+The First Person may declare Shackled.
+
+CLAUSE: Run Free.
+The First Person may, if Shackled is declared, grant the Freedom.
+```
+
+Notes: gate: Freedom is granted only under the declared Shackled constraint, the section's paradox (constraints become freedom) carried as a clause condition; zero-party section, so the First Person holds every clause per the universal cast rule; omits the named groves, Platox's teaching domains, and the Act 15 lore. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-083 · Villers Archive
+- census: LEXPVM-T-083
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Villers Archive
+- relation: {"clause":"Transform","sequence":["terminate:Mirror","register:Scrying Glass"],"type":"ordering"}
+
+```lex
+LEX Villers Archive.
+
+"First Person" is a person.
+"Mirror" is data.
+"Scrying Glass" is data.
+"Proverb" is a text.
+"Coinage Dust" is data.
+
+The First Person fixes the Coinage Dust.
+
+CLAUSE: Deposit.
+The First Person may file the Proverb.
+
+CLAUSE: Transform.
+The First Person may terminate the Mirror, and afterwards register the Scrying Glass.
+```
+
+Notes: ordering: the Mirror is terminated BEFORE the Scrying Glass is registered (where mirrors die and scrying glasses are born, as a single officiant chain), with the proverb repository carried as a filing route; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the Act 18 narrative frame and the visiting mage's inversion story, which belongs to a different census term. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-087 · Covenant of Humanistic Technologies
+- census: LEXPVM-T-087
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Covenant of Humanistic Technologies
+- relation: {"conjuncts":["Personhood","Ownership","Privacy","Information Flow","Capital Flow","Capital Service","Security","Accountability","Earth Goods","Resilience"],"predicate":"Covenant Inscribed","type":"conjunction"}
+
+```lex
+LEX Covenant of Humanistic Technologies.
+
+"First Person" is a person.
+"Covenant" is a text.
+"Copy" is a text.
+"Personhood" is a binary.
+"Ownership" is a binary.
+"Privacy" is a binary.
+"Information Flow" is a binary.
+"Capital Flow" is a binary.
+"Capital Service" is a binary.
+"Security" is a binary.
+"Accountability" is a binary.
+"Earth Goods" is a binary.
+"Resilience" is a binary.
+"Threshold Passed" is a binary.
+
+The First Person fixes the Covenant.
+
+"Covenant Inscribed" is defined as: Personhood is declared and Ownership is declared and Privacy is declared and Information Flow is declared and Capital Flow is declared and Capital Service is declared and Security is declared and Accountability is declared and Earth Goods is declared and Resilience is declared.
+
+CLAUSE: Inscribe.
+The First Person may declare Personhood, declare Ownership, declare Privacy, declare Information Flow, declare Capital Flow, declare Capital Service, declare Security, declare Accountability, declare Earth Goods, and declare Resilience.
+
+CLAUSE: Pass Threshold.
+The First Person may declare Threshold Passed.
+
+CLAUSE: Carry Forward.
+The First Person may, if Threshold Passed is declared, register the Copy.
+```
+
+Notes: conjunction: Covenant Inscribed is defined as all ten canon principles declared, so any missing principle breaks the definition (the mutated twin drops Personhood and fails the claim); the Carry Forward gate on Threshold Passed carries the key proverb's structure, copies travel only with those who passed the threshold; omits the Infinite Vault staging and the proverb's wording; zero-party section, First Person holds per the universal cast rule. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-097 · Duality Function Φ(Σ), See Φ_agent
+- census: LEXPVM-T-097
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Duality Function Φ(Σ), See Φ_agent
+- relation: {"type":"conjunction","predicate":"Duality Preserved","conjuncts":["Agent Axis","Axis Count"]}
+
+```lex
+LEX Duality Function.
+
+"First Person" is a person.
+"Agent Axis" is data.
+"Axis Count" is a number, initially 3.
+"Separation" is a text.
+"Duality" is this contract.
+
+The First Person fixes the Agent Axis.
+
+CLAUSE: Duality Preserved.
+"Duality Preserved" is defined as: the Agent Axis is fixed and the Axis Count is greater than zero.
+
+CLAUSE: Certify Separation.
+The First Person may, if this Duality is Duality Preserved: certify the Separation.
+```
+
+Notes: conjunction: Duality Preserved requires all of Agent Axis AND Axis Count. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-104 · Manifold → Holographic Manifold (V5)
+- census: LEXPVM-T-104
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Manifold → Holographic Manifold (V5)
+- relation: {"conjuncts":["Edge Count","Boundary Computed"],"predicate":"Holographic","type":"conjunction"}
+
+```lex
+LEX Holographic Manifold.
+
+"First Person" is a person.
+"Vertex Count" is a number, initially 64.
+"Edge Count" is a number, initially 96.
+"Boundary Computed" is a binary.
+"Bulk Value" is an amount.
+
+The First Person sets the Vertex Count, sets the Edge Count, and fixes the Bulk Value.
+
+CLAUSE: Encode.
+The First Person may declare Boundary Computed.
+
+CLAUSE: Holographic.
+"Holographic" is defined as: the Edge Count is greater than the Vertex Count and Boundary Computed is declared.
+```
+
+Notes: Carries the conjunction: Holographic requires BOTH the boundary count exceeding the bulk count (Edge Count initially 96 greater than Vertex Count initially 64, the canonical constants as initial literals) AND the declared boundary computation; drop either conjunct and the predicate fails, so boundary-encodes-bulk is clause shape, not a name string; omits the differential form on the boundary and the superlinear-exponent speculation. Folded from lexr5.2:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-105 · Holographic Bound (V5)
+- census: LEXPVM-T-105
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Holographic Bound (V5)
+- relation: {"conjuncts":["Edge Count","Vertex Count"],"predicate":"Boundary Sufficient","type":"conjunction"}
+
+```lex
+LEX Holographic Bound.
+
+"First Person" is a person.
+"Edge Count" is a number, initially 96.
+"Vertex Count" is a number, initially 64.
+"Boundary Value" is a text.
+"Manifold" is this contract.
+
+The First Person fixes the Boundary Value.
+
+CLAUSE: Boundary Sufficient.
+"Boundary Sufficient" is defined as: the Edge Count is greater than the Vertex Count and the Vertex Count is greater than zero.
+
+CLAUSE: Compute On Boundary.
+The First Person may, if this Manifold is Boundary Sufficient: certify the Boundary Value.
+```
+
+Notes: carries boundary-encodes-bulk as a defined-as conjunction over the attested counts (Boundary Sufficient requires the Edge Count initially 96 greater than the Vertex Count initially 64, and the Vertex Count greater than zero), with all boundary computation gated on it; zero-actor canon section, so the First Person is the holder by the universal cast rule; omits the differential form on the boundary and the superlinear-exponent speculation. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-111 · BRAID (V5)
+- census: LEXPVM-T-111
+- register: glossary · conjectured expression of reported term
+- cites: glossary-master-v4 § ### BRAID (V5)
+- relation: {"clause":"Plan Then Execute","sequence":["register:Reasoning Graph","send:Reasoning Graph"],"type":"ordering"}
+
+```lex
+LEX BRAID.
+
+"Generator" is a person.
+"Solver" is a person.
+"Compression Ratio" is a number, initially 74.
+"Reasoning Graph" is a text.
+"Frame" is this contract.
+
+The Generator appoints the Solver, and sets the Compression Ratio.
+
+CLAUSE: Compressed.
+"Compressed" is defined as: the Compression Ratio is greater than 1.
+
+CLAUSE: Plan Then Execute.
+The Generator may, if this Frame is Compressed: register the Reasoning Graph, and then send the Reasoning Graph to the Solver.
+
+CLAUSE: Execute.
+The Solver may certify the Reasoning Graph.
+```
+
+Notes: Carries the ordering: the Generator registers the Reasoning Graph and then sends it to the Solver, plan strictly before execution in one officiant's clause, gated on the Compressed threshold; the 74-fold compression finding rides as the initial literal of the Compression Ratio; omits the nano-versus-medium benchmark detail and the separation axes derived from the framework. Folded from lexr5.2:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-113 · Generator (BRAID) (V5)
+- census: LEXPVM-T-113
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Generator (BRAID) (V5)
+- relation: {"type":"ordering","clause":"Plan","sequence":["fix:Traversal Structure","certify:Reasoning Graph"]}
+
+```lex
+LEX Generator.
+
+"Generator" is a person.
+"Solver" is a person.
+"Traversal Structure" is a text.
+"Reasoning Graph" is a text.
+"Braid" is this contract.
+
+CLAUSE: Plan.
+The Generator may fix the Traversal Structure, and then certify the Reasoning Graph.
+
+CLAUSE: Deliver.
+The Generator may send the Reasoning Graph to the Solver.
+```
+
+Notes: ordering: clause Plan performs fix:Traversal Structure, then certify:Reasoning Graph as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-117 · GUID (Holonic Context) (V5)
+- census: LEXPVM-T-117
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### GUID (Holonic Context) (V5)
+- relation: {"type":"ordering","clause":"Address","sequence":["fix:Content","certify:Identifier"]}
+
+```lex
+LEX Global Unique Identifier.
+
+"First Person" is a person.
+"Content" is data.
+"Identifier" is a text.
+"Holon" is this contract.
+
+CLAUSE: Address.
+The First Person may fix the Content, and then certify the Identifier.
+```
+
+Notes: ordering: clause Address performs fix:Content, then certify:Identifier as clause order. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes. Template-thin (lexr5.3 critic flag): a single clause carrying the minimal relation; folded because the ordering carries the term structure, flagged for the fold reviewer.
+
+## LEXPVM-T-120 · Compression Spectrum (V5)
+- census: LEXPVM-T-120
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Compression Spectrum (V5)
+- relation: {"clause":"Compress","sequence":["fix:Experience","fix:Memory","fix:Knowledge","fix:Understanding","fix:Wisdom","certify:Skill File"],"type":"ordering"}
+
+```lex
+LEX Compression Spectrum.
+
+"First Person" is a person.
+"Experience" is data.
+"Memory" is data.
+"Knowledge" is data.
+"Understanding" is data.
+"Wisdom" is data.
+"Skill File" is a text.
+"Memory Ratio" is a number, initially 10.
+"Knowledge Ratio" is a number, initially 100.
+"Understanding Ratio" is a number, initially 1000.
+"Wisdom Ratio" is a number, initially 10000.
+"Spectrum" is this contract.
+
+CLAUSE: Ascending.
+"Ascending" is defined as: the Knowledge Ratio is greater than the Memory Ratio and the Wisdom Ratio is greater than the Understanding Ratio.
+
+CLAUSE: Compress.
+The First Person may fix the Experience, then fix the Memory, then fix the Knowledge, then fix the Understanding, then fix the Wisdom, and then certify the Skill File.
+
+CLAUSE: Publish.
+The First Person may, if this Spectrum is Ascending: certify the Skill File.
+```
+
+Notes: carries the seven-layer spectrum as a strict ordering (the Compress clause fixes Experience then Memory then Knowledge then Understanding then Wisdom and only then certifies the Skill File, reversal-falsifiable) plus an Ascending conjunction over the attested ratio literals 10, 100, 1000, 10000; zero-actor canon section, First Person holder; omits the two variable-ratio layers as quantities (Reasoning Graph and Skill File carry no fixed ratio in canon, so none is invented) and the more-tokens-more-surveilable argument. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-124 · Content-Addressing
+- census: LEXPVM-T-124
+- register: glossary · conjectured expression of proven term
+- cites: glossary-master-v4 § ### Content-Addressing
+- relation: {"conjuncts":["Object","Identifier"],"predicate":"Addressed","type":"conjunction"}
+
+```lex
+LEX Content Addressing.
+
+"First Person" is a person.
+"Address" is a contract.
+"Object" is data.
+"Identifier" is a text.
+"Arrival Path" is data.
+"Addressed" is defined as: Object is fixed and Identifier is fixed.
+
+The First Person fixes the Object.
+
+CLAUSE: Walk.
+The First Person may certify the Arrival Path.
+
+CLAUSE: Name.
+The First Person may fix the Identifier.
+
+CLAUSE: Verify.
+The First Person may, if this Address is Addressed, certify the Identifier.
+```
+
+Notes: captures same-object-same-identifier as a defined-as conjunction: Addressed requires exactly Object fixed and Identifier fixed, and the Arrival Path is deliberately not a conjunct, which is the path-independence of verification (the ZK separation of verify from witness); the section names no actor, so the First Person holds every capability (universal cast rule); omits hash mechanics and the UOR lattice context. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-125 · Derivation Chain
+- census: LEXPVM-T-125
+- register: glossary · conjectured expression of convergent-preliminary term
+- cites: glossary-master-v4 § ### Derivation Chain
+- relation: {"clause":"Derive","sequence":["register:Certificate","fix:Chain","fix:Chain Identifier","certify:Endpoint"],"type":"ordering"}
+
+```lex
+LEX Derivation Chain.
+
+"First Person" is a person.
+"Certificate" is a text.
+"Chain" is data.
+"Chain Identifier" is a text.
+"Endpoint" is data.
+
+The First Person fixes the Endpoint.
+
+CLAUSE: Derive.
+The First Person may register a Certificate, and afterwards fix the Chain, and afterwards fix the Chain Identifier, and afterwards certify the Endpoint.
+```
+
+Notes: captures the chain as a single-officiant ordering: certificate registered, then the chain fixed, then the chain's own first-class identity fixed (the path is content-addressed too), then endpoint verification last; the section names no actor, so the First Person walks the chain (universal cast rule); omits path multiplicity (different chains reaching the one recital-fixed Endpoint) beyond the Endpoint's immutability. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-126 · Toroidal Topology
+- census: LEXPVM-T-126
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Toroidal Topology
+- relation: {"type":"gate","clause":"Verify","condition":"Wrapped"}
+
+```lex
+LEX Toroidal Topology.
+
+"First Person" is a person.
+"Path Count" is a number.
+"Enumeration Bound" is a number.
+"Verification" is a text.
+"Torus" is this contract.
+
+CLAUSE: Wrapped.
+"Wrapped" is defined as: the Path Count is greater than the Enumeration Bound.
+
+CLAUSE: Verify.
+The First Person may, if this Torus is Wrapped: certify the Verification.
+```
+
+Notes: gate: the Verify clause is reachable only under the Wrapped condition. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-127 · Behavioural Density (ρ)
+- census: LEXPVM-T-127
+- register: glossary · conjectured expression of speculative term
+- cites: glossary-master-v4 § ### Behavioural Density (ρ)
+- relation: {"clause":"Resist","condition":"Dense","type":"gate"}
+
+```lex
+LEX Behavioural Density.
+
+"First Person" is a person.
+"Lap Count" is a number, initially 62.
+"Shallow Count" is a number, initially 13.
+"Trajectory" is data.
+"Reconstruction Resistance" is a text.
+"Blade" is this contract.
+
+The First Person fixes the Trajectory.
+
+CLAUSE: Dense.
+"Dense" is defined as: the Lap Count is greater than the Shallow Count.
+
+CLAUSE: Resist.
+The First Person may, if this Blade is Dense: certify the Reconstruction Resistance.
+```
+
+Notes: carries the density threshold as a gate (certifying Reconstruction Resistance is conditional on Dense, defined by the comparative Lap Count initially 62 greater than Shallow Count initially 13, the two attested blade depths from the canon's empirical basis); zero-actor canon section, First Person holder by the universal cast rule; omits the temporal-duration and intentional-transition terms of the density measure and the quantum-resistance amplification claim. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-130 · Blade Address
+- census: LEXPVM-T-130
+- register: glossary · conjectured expression of implemented term
+- cites: glossary-master-v4 § ### Blade Address
+- relation: {"conjuncts":["Blade Address is not greater than 63","Blade Address is not less than zero"],"predicate":"Address In Range","type":"conjunction"}
+
+```lex
+LEX Blade Address.
+
+"First Person" is a person.
+"Blade Address" is a number, initially 0.
+"Lattice" is this contract.
+"Sovereignty Claimed" is a binary.
+
+The First Person sets the Blade Address.
+
+CLAUSE: In Range.
+"Address In Range" is defined as: the Blade Address is not greater than 63 and the Blade Address is not less than zero.
+
+CLAUSE: Claim.
+The First Person may, if this Lattice is Address In Range: declare Sovereignty Claimed.
+```
+
+Notes: Structural: conjunction: Address In Range is defined over BOTH numeric bounds (not greater than 63 and not less than zero), the 6-dimensional sovereignty state's 0 to 63 envelope carried as numeric-layer comparatives, and the sovereignty claim gates on the defined predicate. Universal cast rule applied: the section names no actor, so the First Person sets and claims. The initial literal 0 is the all-dormant address the glossary states. Omits the bit-weight encoding formula (d1 plus 2 times d2 plus 4 times d3 and so on), whose operators are out of subset. Checker: GATE PASS + RELATION PASS (runs/lexr5/lexr5.2/propose-scratch/t130_blade_address.lex). Folded from lexr5.2:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-140 · Ceremony Channel
+- census: LEXPVM-T-140
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Ceremony Channel
+- relation: {"clause":"Carry Slash","condition":"Channel Open","type":"gate"}
+
+```lex
+LEX Ceremony Channel.
+
+"First Person" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Peer Identity" is a text.
+"Handshake" is a text.
+"Slash Message" is a text.
+"Inscribe Message" is a text.
+"Channel Open" is a binary.
+
+The First Person appoints the Swordsman, and appoints the Mage.
+
+CLAUSE: Discover.
+The Swordsman may register the Peer Identity, and afterwards send the Handshake to the Mage.
+
+CLAUSE: Acknowledge.
+The Mage may declare Channel Open.
+
+CLAUSE: Carry Slash.
+The Swordsman may, if Channel Open is declared, send the Slash Message to the Mage.
+
+CLAUSE: Carry Inscribe.
+The Mage may, if Channel Open is declared, send the Inscribe Message to the Swordsman.
+```
+
+Notes: captures the handshake-before-carriage structure: both directional message clauses (Swordsman to Mage, Mage to Swordsman, matching the section's two message-grammar directions) gate on the responding side's Channel Open declaration, and discovery is an ordered chain (peer identity stored, then handshake sent); omits the named message vocabulary, the position sync rate, and the two-second solo-operation timeout. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-144 · Universe Blade
+- census: LEXPVM-T-144
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Universe Blade
+- relation: {"type":"gate","clause":"Record","condition":"Blade Forged"}
+
+```lex
+LEX Universe Blade.
+
+"First Person" is a person.
+"Universe Blade" is data.
+"Empirical Data Point" is data.
+"Blade Forged" is a binary.
+
+CLAUSE: Forge.
+The First Person may fix the Universe Blade, and afterwards declare Blade Forged.
+
+CLAUSE: Record.
+The First Person may, if Blade Forged is declared: register the Empirical Data Point.
+```
+
+Notes: gate: the Record clause is reachable only under the Blade Forged condition. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-145 · Dragon Anatomy
+- census: LEXPVM-T-145
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Dragon Anatomy
+- relation: {"clause":"Establish","sequence":["register:Boundary","register:Hide","register:Brain","register:Forge","register:Ceremony","register:Flight","declare:Flight Inscribed"],"type":"ordering"}
+
+```lex
+LEX Dragon Anatomy.
+
+"First Person" is a person.
+"Boundary" is a text.
+"Hide" is a text.
+"Brain" is a text.
+"Forge" is a text.
+"Ceremony" is a text.
+"Flight" is a text.
+"Flight Inscribed" is a binary.
+"Dragon Woken" is a binary.
+
+CLAUSE: Establish.
+The First Person may register the Boundary, then register the Hide, then register the Brain, then register the Forge, then register the Ceremony, then register the Flight, and then declare Flight Inscribed.
+
+CLAUSE: Wake.
+The First Person may, if Flight Inscribed is declared, declare Dragon Woken.
+```
+
+Notes: ordering: the six anatomy parts are established in the canon Act sequence, Boundary through Flight, ending in the Flight inscription, and the Wake clause is additionally gated on Flight Inscribed (the dragon wakes only after the last part is in place); zero-party section, First Person holds per the universal cast rule; omits the Act numbers, the per-part status column, and the proven versus grounded labels. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-146 · Understanding-as-Key
+- census: LEXPVM-T-146
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Understanding-as-Key
+- relation: {"clause":"Walk","sequence":["register:Shared Vocabulary","certify:Constellation Path","fix:Blade","file:Proverb"],"type":"ordering"}
+
+```lex
+LEX Understanding as Key.
+
+"First Person" is a person.
+"Participant" is a person.
+"Shared Vocabulary" is a text.
+"Constellation Path" is data.
+"Blade" is data.
+"Proverb" is a text.
+"Witnessed" is a binary.
+
+The First Person appoints the Participant.
+
+CLAUSE: Walk.
+The First Person may register the Shared Vocabulary, and afterwards certify the Constellation Path, and afterwards fix the Blade, and afterwards file a Proverb.
+
+CLAUSE: Witness.
+The Participant may, if Proverb is filed, declare Witnessed.
+
+CLAUSE: Trust.
+The First Person may, if Witnessed is declared, certify the Blade.
+```
+
+Notes: captures the five ceremony steps: the officiant's chain orders vocabulary capture, constellation mapping, blade forging, proverb inscription (the ordering claim), and the fifth step, bilateral witness, is the Participant's separate gated clause closing back into Trust (SG-4 split form for a two-sided rite; Participant is the section's own word for the other side); no credential or stored secret is defined anywhere in the text, comprehension is the only route, which is the term's key insight; omits the post-quantum qubit framing. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-155 · Theia Partition
+- census: LEXPVM-T-155
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### Theia Partition
+- relation: {"clause":"Partition","sequence":["send:Body","send:Silence","send:Heat"],"type":"ordering"}
+
+```lex
+LEX Theia Partition.
+
+"Theia" is a person.
+"Earth" is a person.
+"Moon" is a person.
+"Sun" is a person.
+"Body" is data.
+"Silence" is a text.
+"Heat" is data.
+
+CLAUSE: Partition.
+The Theia may send the Body to the Earth, send the Silence to the Moon, and afterwards send the Heat to the Sun.
+```
+
+Notes: ordering: the partition is one distribution chain performed by the section's named impactor (Body to the Earth, then Silence to the Moon, then Heat to the Sun), carrying partition-not-destruction as three outbound routes in canonical order from a single officiant. Deliberately omits the etymology discovery about the distributed letters and the naming proverb; register stays conjectured because the canon marks this a cosmological metaphor. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-157 · Zero-Knowledge Orbit
+- census: LEXPVM-T-157
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Zero-Knowledge Orbit
+- relation: {"type":"absence","to":"First Person","what":"Collision"}
+
+```lex
+LEX Zero Knowledge Orbit.
+
+"First Person" is a person.
+"Moon" is a person.
+"Collision" is a text.
+"Tide" is a text.
+"Orbit" is this contract.
+
+The First Person appoints the Moon.
+
+CLAUSE: Orbit.
+The Moon may fix the Collision, and afterwards certify the Tide.
+
+CLAUSE: Prove.
+The Moon may send the Tide to the First Person.
+```
+
+Notes: impossibility as absence: no transfer clause routes Collision to the First Person. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-158 · Four Bodies Model
+- census: LEXPVM-T-158
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Four Bodies Model
+- relation: {"conjuncts":["Protection","Delegation","Reflection","Connection"],"predicate":"Quaternion Complete","type":"conjunction"}
+
+```lex
+LEX Four Bodies Model.
+
+"Sun" is a person.
+"Earth" is a person.
+"Moon" is a person.
+"Human" is a person.
+"Protection" is a binary.
+"Delegation" is a binary.
+"Reflection" is a binary.
+"Connection" is a binary.
+
+The Sun appoints the Moon.
+The Earth appoints the Human.
+
+"Quaternion Complete" is defined as: Protection is declared and Delegation is declared and Reflection is declared and Connection is declared.
+
+CLAUSE: Protect.
+The Sun may declare Protection.
+
+CLAUSE: Delegate.
+The Earth may declare Delegation.
+
+CLAUSE: Reflect.
+The Moon may declare Reflection.
+
+CLAUSE: Connect.
+The Human may declare Connection.
+```
+
+Notes: conjunction: Quaternion Complete requires all four bodies' aspects declared (Protection, Delegation, Reflection, Connection), the quaternion as a four-way joint requirement; the recitals carry the two-generator structure, Sun appoints Moon and Earth appoints Human, with each declaration held by its own body; omits the instant-versus-four-billion-years production asymmetry and the persisting Moon-to-Human gap. Folded from lexr5.2:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-160 · Moon Phase Notation
+- census: LEXPVM-T-160
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Moon Phase Notation
+- relation: {"clause":"Show Phase","sequence":["set:Active Dimensions","certify:Phase"],"type":"ordering"}
+
+```lex
+LEX Moon Phase Notation.
+
+"Swordsman" is a person.
+"Stratum Count" is a number, initially 6.
+"Active Dimensions" is a number, initially 0.
+"Phase" is a text.
+"Blade" is this contract.
+
+CLAUSE: Full Moon.
+"Full Moon" is defined as: the Active Dimensions is not less than the Stratum Count.
+
+CLAUSE: Show Phase.
+The Swordsman may set the Active Dimensions, and afterwards certify the Phase.
+
+CLAUSE: Reflect All.
+The Swordsman may, if this Blade is Full Moon: certify the Phase.
+```
+
+Notes: carries the boundary-made-visible sequence as an ordering (the Swordsman sets the Active Dimensions and only afterwards certifies the Phase: the stratum determines the phase, reversal-falsifiable) plus the Full Moon comparative (Active Dimensions not less than the Stratum Count initially 6, the all-six-dimensions ceiling); the Swordsman is the canon-named holder; omits the per-phase emoji table and the lit-versus-dark proverb. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+
+## LEXPVM-T-163 · Drake Island
+- census: LEXPVM-T-163
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.2 Drake Island
+- relation: {"clause":"Build","condition":"Substrate Fixed","type":"gate"}
+
+```lex
+LEX Drake Island.
+
+"First Person" is a person.
+"Island Substrate" is data.
+"City of Mages" is a text.
+"Substrate Fixed" is a binary.
+
+CLAUSE: Ground.
+The First Person may fix the Island Substrate, and afterwards declare Substrate Fixed.
+
+CLAUSE: Build.
+The First Person may, if Substrate Fixed is declared: register the City of Mages.
+```
+
+Notes: gate: the City of Mages registers only under the fixed island substrate (built-upon carried as a condition), with grounding ordered before building inside the Ground clause; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the two-registers-of-one-place line and the Drake as place-fire-whisperer-elder framing. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-164 · Priest tier
+- census: LEXPVM-T-164
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.3 Priest tier
+- relation: {"clause":"Consecrate","condition":"Tier Admitted","type":"gate"}
+
+```lex
+LEX Priest Tier.
+
+"First Person" is a person.
+"Manifestia" is a person.
+"Priest" is a person.
+"Mage" is a person.
+"Covenant" is a text.
+"Artifact" is a text.
+"Tier Admitted" is a binary.
+
+The First Person appoints the Manifestia, appoints the Priest, and appoints the Mage.
+
+CLAUSE: Admit.
+The Manifestia may declare Tier Admitted.
+
+CLAUSE: Tend.
+The Priest must certify the Covenant.
+
+CLAUSE: Produce.
+The Mage may register the Artifact.
+
+CLAUSE: Consecrate.
+The Priest may, if Tier Admitted is declared: certify the Artifact.
+```
+
+Notes: Structural: gate: Consecrate is conditional on Manifestia's Tier Admitted declaration (admission before exercise, declared by the introducing persona the canon names, never self-admitted), and the tends-does-not-produce division rides in clause shape: the Mage registers the Artifact, the Priest only certifies it and carries tending the Covenant as a binding duty (must, not may). All four persons are canon-named in the section; no role invented (K-2 fence respected). Omits the V55 Covenant vertex geometry and the human.tech kindred-protocol reading. Checker: GATE PASS + RELATION PASS (runs/lexr5/lexr5.2/propose-scratch/t164_priest_tier.lex). Folded from lexr5.2:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-165 · The 13 named vertices (post-V5.4)
+- census: LEXPVM-T-165
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.4 The 13 named vertices (post-V5.4)
+- relation: {"type":"conjunction","predicate":"Thirteen Named","conjuncts":["V41 Named","V12 Named","V15 Named","V19 Named","V20 Named","V24 Named","V38 Named","V28 Named","V31 Named","V49 Named","V51 Named","V55 Named","V63 Named"]}
+
+```lex
+LEX The Thirteen Named Vertices.
+
+"First Person" is a person.
+"Vertex Charter" is this contract.
+"V41 Named" is a binary.
+"V12 Named" is a binary.
+"V15 Named" is a binary.
+"V19 Named" is a binary.
+"V20 Named" is a binary.
+"V24 Named" is a binary.
+"V38 Named" is a binary.
+"V28 Named" is a binary.
+"V31 Named" is a binary.
+"V49 Named" is a binary.
+"V51 Named" is a binary.
+"V55 Named" is a binary.
+"V63 Named" is a binary.
+"Sovereignty Lattice" is data.
+
+CLAUSE: Name V41.
+The First Person may declare V41 Named.
+
+CLAUSE: Name V12.
+The First Person may declare V12 Named.
+
+CLAUSE: Name V15.
+The First Person may declare V15 Named.
+
+CLAUSE: Name V19.
+The First Person may declare V19 Named.
+
+CLAUSE: Name V20.
+The First Person may declare V20 Named.
+
+CLAUSE: Name V24.
+The First Person may declare V24 Named.
+
+CLAUSE: Name V38.
+The First Person may declare V38 Named.
+
+CLAUSE: Name V28.
+The First Person may declare V28 Named.
+
+CLAUSE: Name V31.
+The First Person may declare V31 Named.
+
+CLAUSE: Name V49.
+The First Person may declare V49 Named.
+
+CLAUSE: Name V51.
+The First Person may declare V51 Named.
+
+CLAUSE: Name V55.
+The First Person may declare V55 Named.
+
+CLAUSE: Name V63.
+The First Person may declare V63 Named.
+
+CLAUSE: Inhabited.
+"Thirteen Named" is defined as: V41 Named is declared and V12 Named is declared and V15 Named is declared and V19 Named is declared and V20 Named is declared and V24 Named is declared and V38 Named is declared and V28 Named is declared and V31 Named is declared and V49 Named is declared and V51 Named is declared and V55 Named is declared and V63 Named is declared.
+
+CLAUSE: Register Lattice.
+The First Person may, if this Vertex Charter is Thirteen Named: register the Sovereignty Lattice.
+```
+
+Notes: conjunction: Thirteen Named requires all of V41 Named AND V12 Named AND V15 Named AND V19 Named AND V20 Named AND V24 Named AND V38 Named AND V28 Named AND V31 Named AND V49 Named AND V51 Named AND V55 Named AND V63 Named. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-167 · The Aether Blade (cosmological)
+- census: LEXPVM-T-167
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.6 The Aether Blade (cosmological)
+- relation: {"type":"ordering","clause":"Trace","sequence":["register:Gap Anchor","file:Zero Constellation","certify:Arrival"]}
+
+```lex
+LEX The Aether Blade.
+
+"First Person" is a person.
+"Gap Anchor" is data.
+"Zero Constellation" is data.
+"Arrival" is data.
+
+CLAUSE: Trace.
+The First Person may register the Gap Anchor, file the Zero Constellation, and afterwards certify the Arrival.
+```
+
+Notes: ordering: clause Trace performs register:Gap Anchor, then file:Zero Constellation, then certify:Arrival as clause order. Universal cast rule (OT-7): sections naming no actor take the First Person as holder. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes. Template-thin (lexr5.3 critic flag): a single clause carrying the minimal relation; folded because the ordering carries the term structure, flagged for the fold reviewer.
+
+## LEXPVM-T-168 · The Quintessence
+- census: LEXPVM-T-168
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.7 The Quintessence
+- relation: {"conjuncts":["Protection Held","Connection Held","Computation Held","Delegation Held","Memory Held","Value Held"],"predicate":"Quintessence","type":"conjunction"}
+
+```lex
+LEX The Quintessence.
+
+"First Person" is a person.
+"Quintessence Charter" is this contract.
+"Protection Held" is a binary.
+"Connection Held" is a binary.
+"Computation Held" is a binary.
+"Delegation Held" is a binary.
+"Memory Held" is a binary.
+"Value Held" is a binary.
+"Privacy Value Model" is data.
+
+The First Person fixes the Privacy Value Model.
+
+CLAUSE: Hold Protection.
+The First Person may declare Protection Held.
+
+CLAUSE: Hold Connection.
+The First Person may declare Connection Held.
+
+CLAUSE: Hold Computation.
+The First Person may declare Computation Held.
+
+CLAUSE: Hold Delegation.
+The First Person may declare Delegation Held.
+
+CLAUSE: Hold Memory.
+The First Person may declare Memory Held.
+
+CLAUSE: Hold Value.
+The First Person may declare Value Held.
+
+CLAUSE: Quintessence.
+"Quintessence" is defined as: Protection Held is declared and Connection Held is declared and Computation Held is declared and Delegation Held is declared and Memory Held is declared and Value Held is declared.
+
+CLAUSE: Distil.
+The First Person may, if this Quintessence Charter is Quintessence: certify the Privacy Value Model.
+```
+
+Notes: conjunction: the Quintessence is defined as ALL six dimension-holdings simultaneously (protection, connection, computation, delegation, memory, value), and certification of the privacy value model routes only through that full conjunction, carrying held-simultaneously-across-all-six-dimensions in clause shape; the canon section names no actor, so the First Person holds every clause per the universal cast rule. Deliberately omits the alchemical lineage, the quintessential tale and blade numerology, and the Aether naming, which is a separate census term. Folded from lexr5.1:zero-party-universal-cast-charter (run lexr5).
+
+## LEXPVM-T-169 · The Seventh Capital
+- census: LEXPVM-T-169
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### 22.8 The Seventh Capital
+- relation: {"clause":"Build","condition":"Privacy Founded","type":"gate"}
+
+```lex
+LEX The Seventh Capital.
+
+"First Person" is a person.
+"Privacy" is an amount.
+"Six Capitals" is a text.
+"Wealth" is an amount.
+"Privacy Founded" is a binary.
+
+The First Person fixes the Privacy.
+
+CLAUSE: Found.
+The First Person may declare Privacy Founded.
+
+CLAUSE: Build.
+The First Person may, if Privacy Founded is declared, register the Six Capitals, and certify the Wealth.
+```
+
+Notes: gate: every action in clause Build (registering the Six Capitals, certifying the Wealth) is conditional on Privacy Founded declared: foundation, not graft, as clause shape (a value cannot be added on; it is foundation, or it is absence). Section names no actor, so the First Person holds every clause (universal cast rule). Omits the watched-world litany, the proem naming, and the conjecture-register formalisation pointer. Folded from lexr5.3:zero-party-story-charter (run lexr5).
+
+## LEXPVM-T-170 · The Scales, the Hide, and the Bones (defence-in-depth)
+- census: LEXPVM-T-170
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.9 The Scales, the Hide, and the Bones (defence-in-depth)
+- relation: {"conjuncts":["Scales Held","Hide Held","Bones Held"],"predicate":"Defended","type":"conjunction"}
+
+```lex
+LEX The Scales the Hide and the Bones.
+
+"Defence" is this contract.
+"First Person" is a person.
+"Blow" is a text.
+"Scales Held" is a binary.
+"Hide Held" is a binary.
+"Bones Held" is a binary.
+
+CLAUSE: Enforce Policy.
+The First Person may declare Scales Held.
+
+CLAUSE: Separate Process.
+The First Person may declare Hide Held.
+
+CLAUSE: Ground Algebra.
+The First Person may declare Bones Held.
+
+CLAUSE: Defended.
+"Defended" is defined as: Scales Held is declared and Hide Held is declared and Bones Held is declared.
+
+CLAUSE: Absorb.
+The First Person may, if this Defence is Defended, file the Blow.
+```
+
+Notes: conjunction: the defined predicate Defended requires all three layers (Scales Held, Hide Held, Bones Held) and absorbing the Blow is gated on Defended: the layers gate multiplicatively as a joint requirement, any layer missing and the defence is not Defended. Section names no acting party, so the First Person holds every clause (universal cast rule). Omits the vendor toolkit example, the epsilon failure-mode terms, and the three separation-axes mapping. Folded from lexr5.3:zero-party-story-charter (run lexr5).
+
+## LEXPVM-T-172 · The Aether (technical), wire-protocol shared substrate
+- census: LEXPVM-T-172
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### 22.11 The Aether (technical), wire-protocol shared substrate
+- relation: {"conjuncts":["Blade Copy","Spell Copy"],"predicate":"In Sync","type":"conjunction"}
+
+```lex
+LEX The Aether.
+
+"First Person" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Aether" is a contract.
+"Blade Copy" is a text.
+"Spell Copy" is a text.
+"Message" is a text.
+"In Sync" is defined as: Blade Copy is fixed and Spell Copy is fixed.
+
+The First Person appoints the Swordsman, and appoints the Mage.
+
+CLAUSE: Keep Blade Side.
+The Swordsman may fix the Blade Copy.
+
+CLAUSE: Keep Spell Side.
+The Mage may fix the Spell Copy.
+
+CLAUSE: Carry.
+The Swordsman may, if this Aether is In Sync, send the Message to the Mage.
+```
+
+Notes: captures kept-in-sync as a conjunction: In Sync is defined as both extensions' copies fixed, each fixed by its own side in its own clause (SG-6 independent production), and wire carriage gates on the in-sync substrate; omits the TypeScript type, storage, crypto, and meaning contract contents, and the cosmological Aether Blade is deliberately out of scope (the section itself draws that distinction). Folded from lexr5.1:cast-infrastructure-charter (run lexr5).
+
+## LEXPVM-T-175 · Attachment (Layer 2)
+- census: LEXPVM-T-175
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 23.2 Attachment (Layer 2)
+- relation: {"type":"absence","to":"City","what":"New Primary"}
+
+```lex
+LEX Attachment.
+
+"First Person" is a person.
+"Cast Mage" is a person.
+"City" is a person.
+"Primary Persona" is a text.
+"Attachment" is a text.
+"New Primary" is a text.
+
+The First Person appoints the Cast Mage, and appoints the City, and fixes the Primary Persona.
+
+CLAUSE: Base.
+The First Person may file the New Primary.
+
+CLAUSE: Bind.
+The Cast Mage may register the Attachment.
+
+CLAUSE: Instance.
+The Cast Mage may send the Attachment to the City, and send the Primary Persona to the City.
+```
+
+Notes: impossibility as absence: no transfer clause routes New Primary to the City. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.
+
+## LEXPVM-T-179 · The 42 → 64 bridge
+- census: LEXPVM-T-179
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 23.6 The 42 → 64 bridge
+- relation: {"clause":"Attach","condition":"Open Slotted","type":"gate"}
+
+```lex
+LEX The Bridge From Forty Two To Sixty Four.
+
+"First Person" is a person.
+"Vertex Count" is a number, initially 64.
+"Primary Count" is a number, initially 42.
+"Attachment Slots" is a number, initially 22.
+"Attachment Record" is a text.
+"Lattice" is this contract.
+
+The First Person fixes the Attachment Record.
+
+CLAUSE: Open Slotted.
+"Open Slotted" is defined as: the Vertex Count is greater than the Primary Count and the Attachment Slots is greater than zero.
+
+CLAUSE: Attach.
+The First Person may, if this Lattice is Open Slotted: register the Attachment Record.
+```
+
+Notes: carries the bridge arithmetic as a gate (registering an Attachment Record is conditional on Open Slotted, itself the conjunction of the Vertex Count initially 64 greater than the Primary Count initially 42 and the Attachment Slots initially 22 greater than zero: the sixty-four minus forty-two equals twenty-two accounting in clause shape); the only registrable object is an attachment record, never a new primary; zero-actor canon section, First Person holder; omits per-city attachment multiplicity and the inhabited-vertex tallies. Folded from lexr5.1:numeric-anchor-charter (run lexr5).
+

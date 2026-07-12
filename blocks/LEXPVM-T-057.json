@@ -96,7 +96,7 @@
    "what": "Identity"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing Identity to Verifier"
+  "mutation": "probe clause appended routing Identity to Verifier (pay probe)"
  },
  "grandfathered": false,
  "notes": "zero-knowledge shape as an absence: the proof travels to the verifier, the identity itself has no route anywhere (impossibility as the missing clause); ordering = fix the proof, afterwards send it. Omits the ERC mechanics and commitment scheme. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.",

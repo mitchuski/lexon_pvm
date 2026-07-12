@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-081", name: "Dark Forest of Paradox", cites: "glossary-master-v4 § ### Dark Forest of Paradox"})
+MERGE (:Person {name: "First Person", contract: "Dark Forest of Paradox"})
+MERGE (:Text {name: "Constraint", contract: "Dark Forest of Paradox"})
+MERGE (:Text {name: "Freedom", contract: "Dark Forest of Paradox"})
+MERGE (:Binary {name: "Shackled", contract: "Dark Forest of Paradox"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:FIX {clause: "recital", object: "Constraint"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_DECLARE {clause: "Enter", object: "Shackled"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_GRANT {clause: "Run Free", object: "Freedom", condition: "Shackled is declared"}]->(b)

@@ -222,7 +222,7 @@
    "what": "escrow-remainder"
   },
   "status": "RELATION PASS",
-  "mutation": "probe clause appended routing escrow-remainder to Adversary"
+  "mutation": "probe clause appended routing escrow-remainder to Adversary (pay probe)"
  },
  "grandfathered": false,
  "notes": "Structural: conservation as escrow arithmetic (the Sword Channel and Mage Channel payouts plus the returned remainder exhaust the escrowed Total Uncertainty), impossibility as an absent clause (no clause routes the remainder to the Adversary, so residual uncertainty survives any observation strategy), and ordering (the remainder moves only after Observation Complete is declared). Omits logarithms, the bit unit, and the numeric value of H(X). Anchor: ### Entropy H(X). Folded from escrow-conservation-charter (grammar-forward, run lexr2).",

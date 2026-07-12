@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-049",
+ "term": "MAGE Token",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### MAGE Token",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX MAGE Token.\n\n\"First Person\" is a person.\n\"Mage\" is a person.\n\"Mage Chronicle\" is a text.\n\"MAGE Token\" is an amount.\n\"VRC Stake\" is an amount, initially 100.\n\"Chronicle Kept\" is a binary.\n\nThe First Person appoints the Mage.\n\nCLAUSE: Chronicle.\nThe Mage may file a Mage Chronicle.\n\nCLAUSE: Assess.\nThe First Person may, if Mage Chronicle is filed, declare Chronicle Kept.\n\nCLAUSE: Earn.\nThe First Person may, if Chronicle Kept is declared, pay the MAGE Token to the Mage.\n\nCLAUSE: Stake.\nThe Mage may, if Chronicle Kept is declared, pay the VRC Stake into escrow.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "file",
+   "o": "Mage Chronicle",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Chronicle"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Chronicle Kept",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Mage Chronicle is filed",
+   "clause": "Assess"
+  },
+  {
+   "s": "First Person",
+   "verb": "pay",
+   "o": "MAGE Token",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": "Chronicle Kept is declared",
+   "clause": "Earn"
+  },
+  {
+   "s": "Mage",
+   "verb": "pay",
+   "o": "VRC Stake",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Chronicle Kept is declared",
+   "clause": "Stake"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Mage Chronicle",
+   "conditional": false,
+   "clause": "Chronicle"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Chronicle Kept",
+   "conditional": true,
+   "clause": "Assess"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:MAGE Token->Mage",
+   "conditional": true,
+   "clause": "Earn"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:VRC Stake",
+   "conditional": true,
+   "clause": "Stake"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "clause": "Earn",
+   "condition": "Chronicle Kept",
+   "type": "gate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "captures the earn-then-stake gate structure: minting (Earn) and staking (Stake) both gate on the First Person's Chronicle Kept declaration, never self-declared by the Mage (SG-3), with the canonical 100 MAGE stake for VRC formation carried as an initially-literal on the VRC Stake amount; omits token decay, transfer mechanics, and the VRC formation protocol itself. Folded from lexr5.1:cast-infrastructure-charter (run lexr5).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

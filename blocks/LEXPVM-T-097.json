@@ -1,0 +1,71 @@
+{
+ "census": "LEXPVM-T-097",
+ "term": "Duality Function Φ(Σ), See Φ_agent",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Duality Function Φ(Σ), See Φ_agent",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Duality Function.\n\n\"First Person\" is a person.\n\"Agent Axis\" is data.\n\"Axis Count\" is a number, initially 3.\n\"Separation\" is a text.\n\"Duality\" is this contract.\n\nThe First Person fixes the Agent Axis.\n\nCLAUSE: Duality Preserved.\n\"Duality Preserved\" is defined as: the Agent Axis is fixed and the Axis Count is greater than zero.\n\nCLAUSE: Certify Separation.\nThe First Person may, if this Duality is Duality Preserved: certify the Separation.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 2,
+  "promiseEdges": 2
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Agent Axis",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Separation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Duality is Duality Preserved",
+   "clause": "Certify Separation"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Agent Axis",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Separation",
+   "conditional": true,
+   "clause": "Certify Separation"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Duality Preserved",
+   "conjuncts": [
+    "Agent Axis",
+    "Axis Count"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Agent Axis\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: Duality Preserved requires all of Agent Axis AND Axis Count. Omissions per the term canon anchor. Assayer-authored held-out, recipe-only (run lexr5); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-144", name: "Universe Blade", cites: "glossary-master-v4 § ### Universe Blade"})
+MERGE (:Person {name: "First Person", contract: "Universe Blade"})
+MERGE (:Data {name: "Universe Blade", contract: "Universe Blade"})
+MERGE (:Data {name: "Empirical Data Point", contract: "Universe Blade"})
+MERGE (:Binary {name: "Blade Forged", contract: "Universe Blade"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_FIX {clause: "Forge", object: "Universe Blade"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_DECLARE {clause: "Forge", object: "Blade Forged"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:MAY_REGISTER {clause: "Record", object: "Empirical Data Point", condition: "Blade Forged is declared"}]->(b)
