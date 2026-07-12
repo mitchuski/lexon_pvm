@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-185",
+ "term": "Tome VIII, The Library (v1.7.0 · open by design · 2 acts at v1.7.1)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.4 Tome VIII, The Library (v1.7.0 · open by design · 2 acts at v1.7.1)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Tome Eight.\n\n\"Archivist\" is a person.\n\"City\" is a person.\n\"Record\" is this contract.\n\"First Act\" is a text.\n\"Second Act\" is a text.\n\"Future Act\" is a text.\n\nThe Archivist appoints the City.\n\nCLAUSE: Bind First.\nThe Archivist may file the First Act.\n\nCLAUSE: Bind Second.\nThe City may file the Second Act.\n\nCLAUSE: Kept.\n\"Kept\" is defined as: the First Act is filed and the Second Act is filed.\n\nCLAUSE: Admit Future.\nThe Archivist may, if this Record is Kept: register the Future Act.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Archivist",
+   "verb": "appoint",
+   "o": "City",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Archivist",
+   "verb": "file",
+   "o": "First Act",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind First"
+  },
+  {
+   "s": "City",
+   "verb": "file",
+   "o": "Second Act",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Second"
+  },
+  {
+   "s": "Archivist",
+   "verb": "register",
+   "o": "Future Act",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Record is Kept",
+   "clause": "Admit Future"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Archivist",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:City",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:First Act",
+   "conditional": false,
+   "clause": "Bind First"
+  },
+  {
+   "promiser": "City",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Second Act",
+   "conditional": false,
+   "clause": "Bind Second"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Future Act",
+   "conditional": true,
+   "clause": "Admit Future"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Kept",
+   "conjuncts": [
+    "First Act",
+    "Second Act"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"First Act\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Kept requires all of First Act AND Second Act. Omissions per the term's canon anchor. Assayer-authored (myterms-party-charter-spell held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

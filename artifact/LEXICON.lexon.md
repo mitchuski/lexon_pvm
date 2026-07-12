@@ -2884,3 +2884,1821 @@ The Cast may register the Higher Seat, and afterwards certify the Cast Entry.
 
 Notes: honor-built recognition as ordering: the higher seat is registered first and the cast entry certified afterwards (the entry came later than the inhabiting, as clause sequence). Omits tower geometry. Assayer-authored (pt-primitive-polarity-charter held-out, recipe-only); keystone Notes.
 
+## LEXPVM-T-002 · Sovereignty
+- census: LEXPVM-T-002
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Sovereignty
+- relation: {"type":"conjunction","predicate":"Sovereign","conjuncts":["Data Control","Decision Control","Representation Control","Engagement Terms"]}
+
+```lex
+LEX Sovereignty.
+
+"First Person" is a person.
+"Agent" is a person.
+"Charter" is this contract.
+"Data Control" is a binary.
+"Decision Control" is a binary.
+"Representation Control" is a binary.
+"Engagement Terms" is a text.
+
+The First Person appoints the Agent.
+
+CLAUSE: Hold Data.
+The First Person may declare Data Control.
+
+CLAUSE: Hold Decisions.
+The First Person may declare Decision Control.
+
+CLAUSE: Hold Representation.
+The First Person may declare Representation Control.
+
+CLAUSE: Set Terms.
+The First Person may fix the Engagement Terms.
+
+CLAUSE: Sovereign.
+"Sovereign" is defined as: Data Control is declared and Decision Control is declared and Representation Control is declared and the Engagement Terms is fixed.
+
+CLAUSE: Engage.
+The Agent may, if this Charter is Sovereign: register the Engagement Terms.
+```
+
+Notes: Carries sovereignty as a four-way conjunction: the Sovereign state requires all four canon components (data, decision, representation, and conditional sovereignty as fixed engagement terms), and every component is declarable only by the First Person while the Agent's sole route to engagement runs through the constituted state. Deliberately omits the inalienability framing beyond clause shape, the Gap-as-architectural-expression sentence, and the 7th Capital economic expression (covered separately at T-003). Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-003 · 7th Capital
+- census: LEXPVM-T-003
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 7th Capital
+- relation: {"type":"absence","to":"Mage","what":"Behavioral Trajectory"}
+
+```lex
+LEX Seventh Capital.
+
+"First Person" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Behavioral Trajectory" is an amount.
+"Coordination Task" is a text.
+"Boundary Approved" is a binary.
+
+The First Person fixes the Behavioral Trajectory, appoints the Swordsman, and appoints the Mage.
+
+CLAUSE: Guard.
+The Swordsman may certify the Behavioral Trajectory.
+
+CLAUSE: Approve.
+The Swordsman may declare Boundary Approved.
+
+CLAUSE: Coordinate.
+The Mage may, if Boundary Approved is declared: send the Coordination Task to the First Person.
+```
+
+Notes: Carries the wealth-stays-home impossibility: the trajectory is fixed by the First Person and certifiable by the Swordsman, and no transfer clause routes it to the Mage, while value-creating coordination still proceeds through the boundary gate. The trajectory is typed as an amount deliberately: the canon defines the term as a capital form (personal wealth), and the amount type is what makes the absence claim falsifiable. Deliberately omits the trajectory-through-sovereignty-space framing, the six traditional capitals, and all economic magnitude claims. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-004 · Privacy-Delegation Paradox
+- census: LEXPVM-T-004
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Privacy-Delegation Paradox
+- relation: {"type":"gate","clause":"Expose","condition":"Disclosure"}
+
+```lex
+LEX Privacy Delegation Paradox.
+
+"First Person" is a person.
+"Single Agent" is a person.
+"Task Information" is data.
+"Disclosure" is a binary.
+"Delegated Task" is a text.
+"Behavioral Reconstruction" is data.
+
+The First Person appoints the Single Agent, and fixes the Task Information.
+
+CLAUSE: Disclose.
+The First Person may declare Disclosure.
+
+CLAUSE: Act.
+The Single Agent may, if Disclosure is declared: register the Delegated Task.
+
+CLAUSE: Expose.
+The Single Agent may, if Disclosure is declared: register the Behavioral Reconstruction.
+```
+
+Notes: Carries the paradox as a single binary gating two consequences: the same Disclosure that gates the wanted delegation (Act) gates the unwanted exposure (Expose), both held by the one Single Agent, which is the canon's why-single-agents-cannot-solve-it sentence in clause shape; the claim pins the unwanted clause to the shared condition. Deliberately omits the dual-agent resolution (expressed at the covered T-009) and the autonomy-axiom derivation. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-007 · Territory
+- census: LEXPVM-T-007
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Territory
+- relation: {"type":"gate","clause":"Ceremony","condition":"Channel Open"}
+
+```lex
+LEX Territory.
+
+"Swordsman" is a person.
+"Mage" is a person.
+"Topology Record" is data.
+"Story Record" is a text.
+"Ceremony Message" is a text.
+"Channel Open" is a binary.
+
+CLAUSE: Traverse.
+The Swordsman may certify the Topology Record.
+
+CLAUSE: Narrate.
+The Mage may register the Story Record.
+
+CLAUSE: Open Channel.
+The Mage may declare Channel Open.
+
+CLAUSE: Ceremony.
+The Swordsman may, if Channel Open is declared: send the Ceremony Message to the Mage.
+```
+
+Notes: Carries two authority domains with a single gated crossing: each agent acts only on its own domain's record, and the only sentence that crosses territories is the ceremony message, gated on the receiver-opened channel; the never-merge rule is that no clause moves either territory's record across, only ceremony messages cross and only through the gate. Deliberately omits the domain names (spellweb.ai, agentprivacy.ai), the third node bgin.ai, and the repo/process/storage separation levels. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-008 · Home Territory
+- census: LEXPVM-T-008
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Home Territory
+- relation: {"type":"ordering","clause":"Enable","sequence":["register:Mana Balance","grant:Inscription Panel","register:Ceremony Receiver"]}
+
+```lex
+LEX Home Territory.
+
+"Extension" is a person.
+"First Person" is a person.
+"Mana Balance" is a text.
+"Inscription Panel" is a text.
+"Ceremony Receiver" is a text.
+"Home Detected" is a binary.
+
+The First Person appoints the Extension.
+
+CLAUSE: Detect.
+The Extension may declare Home Detected.
+
+CLAUSE: Enable.
+The Extension may, if Home Detected is declared: register the Mana Balance, grant the Inscription Panel, and afterwards register the Ceremony Receiver.
+```
+
+Notes: Carries detection-then-enablement as an ordered action chain: the enable clause performs the three canon-enabled features (mana balance, inscription panel, ceremony receiver) in the canon's listed order, and only after home detection is declared; the ordering claim pins the sequence and the gate condition carries the detection premise. Deliberately omits the home domain list, the hostname-match mechanism, and the HOME_TERRITORY message name. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-024 · Valency
+- census: LEXPVM-T-024
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Valency
+- relation: {"type":"ordering","clause":"Stake","sequence":["fix:Sword Stake","grant:Attention Pledge"]}
+
+```lex
+LEX Valency.
+
+"Agent" is a person.
+"Guardian" is a person.
+"Sword Stake" is an amount.
+"Attention Pledge" is a text.
+
+The Agent appoints the Guardian.
+
+CLAUSE: Stake.
+The Guardian may fix the Sword Stake, and afterwards grant the Attention Pledge.
+```
+
+Notes: ordering: clause Stake performs fix:Sword Stake, then grant:Attention Pledge as clause order. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-028 · Separation Theorem
+- census: LEXPVM-T-028
+- register: glossary · conjectured expression of proven term
+- cites: glossary-master-v4 § ### Separation Theorem
+- relation: {"type":"gate","clause":"Account","condition":"Held Apart"}
+
+```lex
+LEX Separation Theorem.
+
+"First Person" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Adversary" is a person.
+"Theorem" is this contract.
+"Swordsman Leakage" is an amount.
+"Mage Leakage" is an amount.
+"Total Leakage" is an amount.
+"Held Apart" is a binary.
+
+The First Person appoints the Swordsman, and appoints the Mage.
+
+CLAUSE: Hold Apart.
+The First Person may declare Held Apart.
+
+CLAUSE: Observe Swordsman.
+The Adversary may fix the Swordsman Leakage.
+
+CLAUSE: Observe Mage.
+The Adversary may fix the Mage Leakage.
+
+CLAUSE: Accounted.
+"Accounted" is defined as: the Swordsman Leakage is fixed and the Mage Leakage is fixed.
+
+CLAUSE: Account.
+The Adversary may, if Held Apart is declared and this Theorem is Accounted: fix the Total Leakage.
+```
+
+Notes: Carries the theorem's premise-conclusion structure: the total leakage may be fixed only under the held-apart premise (the conditional-independence condition of the formula) and only from the two marginal observations, whose two-conjunct Accounted definition has no third synergy conjunct, which is additive-not-multiplicative in clause shape; the claim pins the accounting to the premise. Deliberately omits the mutual-information notation, the equality itself as arithmetic, and the proof; the theorem's PROVEN canon status is recorded in the register tag, not upgraded here. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-035 · Privacy Pools
+- census: LEXPVM-T-035
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Privacy Pools
+- relation: {"type":"absence","to":"Flagged Depositor","what":"Deposit"}
+
+```lex
+LEX Privacy Pools.
+
+TERMS:
+
+"Verifier" is a person.
+
+TERMS PER Note:
+
+"Note" is this contract.
+"Depositor" is a person.
+"Flagged Depositor" is a person.
+"Deposit" is an amount.
+"Association Proof" is data.
+"Innocent" is a binary.
+
+The Verifier appoints the Depositor, and appoints the Flagged Depositor.
+
+CLAUSE: Enter.
+The Depositor or the Flagged Depositor may pay the Deposit into escrow.
+
+CLAUSE: Prove.
+The Depositor may fix the Association Proof.
+
+CLAUSE: Screen.
+The Verifier may, if the Association Proof is fixed, declare Innocent.
+
+CLAUSE: Withdraw.
+The Verifier may, if Innocent is declared: return the Deposit to the Depositor, and afterwards terminate this Note.
+```
+
+Notes: Carries the compliant-exit direction as an absence (both the Depositor and the Flagged Depositor may pay the Deposit into escrow, but no transfer clause routes the Deposit to the Flagged Depositor; the only exit is the Withdraw clause, gated on Innocent, which is declared only after an Association Proof is fixed: proving non-association is the condition of getting funds out); omits the cryptographic mixing mathematics and anonymity-set semantics. Folded from instance-charter-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-036 · Groth16 / PLONK / Nova
+- census: LEXPVM-T-036
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Groth16 / PLONK / Nova
+- relation: {"type":"gate","clause":"Verify Groth","condition":"Trusted Setup"}
+
+```lex
+LEX Proof System Triad.
+
+"Prover" is a person.
+"Verifier" is a person.
+"Ceremony Master" is a person.
+"Groth Proof" is data.
+"Plonk Proof" is data.
+"Nova Proof" is data.
+"Trusted Setup" is a binary.
+"Universal Setup" is a binary.
+
+The Prover appoints the Verifier.
+
+CLAUSE: Run Trusted Setup.
+The Ceremony Master may declare Trusted Setup.
+
+CLAUSE: Run Universal Setup.
+The Ceremony Master may declare Universal Setup.
+
+CLAUSE: Verify Groth.
+The Verifier may, if Trusted Setup is declared: certify the Groth Proof.
+
+CLAUSE: Verify Plonk.
+The Verifier may, if Universal Setup is declared: certify the Plonk Proof.
+
+CLAUSE: Verify Nova.
+The Verifier may certify the Nova Proof.
+```
+
+Notes: gate: the Verify Groth clause is reachable only under the Trusted Setup condition. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-040 · Relationship Proverb Protocol (RPP)
+- census: LEXPVM-T-040
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Relationship Proverb Protocol (RPP)
+- relation: {"type":"ordering","clause":"Compress","sequence":["register:Proverb","send:Proverb","pay:Signal"]}
+
+```lex
+LEX Relationship Proverb Protocol.
+
+"Reader" is a person.
+"Author" is a person.
+"Source Material" is a text.
+"Proverb" is a text.
+"Signal" is an amount.
+"Understood" is a binary.
+
+The Author fixes the Source Material, and appoints the Reader.
+
+CLAUSE: Study.
+The Reader may certify the Source Material.
+
+CLAUSE: Compress.
+The Reader may register a Proverb, and afterwards send the Proverb to the Author, and afterwards pay the Signal to the Author.
+
+CLAUSE: Assess.
+The Author may, if the Proverb is fixed, declare Understood.
+```
+
+Notes: carries the compress-then-signal ordering (the Proverb is registered, then sent, then the Signal paid: proverb formation strictly precedes payment, and assessment is gated on a fixed Proverb); omits the compression-ratio assessment metric and the signal denomination. Folded from send-spine-protocol-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-043 · Sun Ceremony (☀️)
+- census: LEXPVM-T-043
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Sun Ceremony (☀️)
+- relation: {"type":"ordering","clause":"Disclose","sequence":["file:Poem","certify:Blade","send:Light"]}
+
+```lex
+LEX Sun Ceremony.
+
+"Sun" is a person.
+"Witness" is a person.
+"Poem" is a text.
+"Blade" is data.
+"Light" is data.
+"Forgetting Consented" is a binary.
+
+The Sun appoints the Witness, and fixes the Poem.
+
+CLAUSE: Consent.
+The Sun may declare Forgetting Consented.
+
+CLAUSE: Disclose.
+The Sun must file the Poem, and afterwards certify the Blade, and afterwards send the Light to the Witness.
+
+CLAUSE: Carry.
+The Witness may, if Forgetting Consented is declared: register the Light.
+```
+
+Notes: Carries the disclosure rite as a single-officiant ordered chain (poem filed, then blade certified in full view, then light sent to the witness) plus a consent-first gate (the witness carries the light forward only under the Sun's advance consent to being forgotten); omits the notation string, the echo poem's title, and the Moon Ceremony mirror. Folded from rite-and-register-spell (spell-grammar, run lexr4).
+
+## LEXPVM-T-046 · Inaugural Pairing
+- census: LEXPVM-T-046
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Inaugural Pairing
+- relation: {"type":"gate","clause":"Reflect","condition":"Sun Cycle Complete"}
+
+```lex
+LEX Inaugural Pairing.
+
+"First Person" is a person.
+"First Swordsman" is a person.
+"First Mage" is a person.
+"Disclosure" is a text.
+"Evocation" is a text.
+"Pattern" is data.
+"Sun Cycle Complete" is a binary.
+
+The First Person appoints the First Swordsman, and appoints the First Mage.
+
+CLAUSE: Shine.
+The First Swordsman may file the Disclosure.
+
+CLAUSE: Complete.
+The First Swordsman may declare Sun Cycle Complete.
+
+CLAUSE: Reflect.
+The First Mage may, if Sun Cycle Complete is declared: file the Evocation.
+
+CLAUSE: Orbit.
+The First Mage may, if Sun Cycle Complete is declared: certify the Pattern.
+```
+
+Notes: Carries cycle zero's orientation as a cross-separation gate (the Moon side's evocation and the orbit pattern both wait on the Sun side's declared completion, never the reverse: the seeding direction of the first ceremony as permission structure); omits the named poems, constellations, and evocations of the two sides. Folded from rite-and-register-spell (spell-grammar, run lexr4).
+
+## LEXPVM-T-051 · Golden Ratio (φ)
+- census: LEXPVM-T-051
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Golden Ratio (φ)
+- relation: {"type":"absence","to":"Observer","what":"Shielded Share"}
+
+```lex
+LEX Golden Ratio Split.
+
+"Practitioner" is a person.
+"Observer" is a person.
+"Shielded Pool" is a person.
+"Transparent Share" is an amount.
+"Shielded Share" is an amount.
+"Split Fixed" is a binary.
+
+The Practitioner appoints the Observer.
+
+CLAUSE: Fix Split.
+The Practitioner may declare Split Fixed.
+
+CLAUSE: Route Transparent.
+The Practitioner may, if Split Fixed is declared: send the Transparent Share to the Observer.
+
+CLAUSE: Route Shielded.
+The Practitioner may, if Split Fixed is declared: pay the Shielded Share to the Shielded Pool.
+```
+
+Notes: impossibility as absence: no transfer clause routes Shielded Share to the Observer. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-053 · Trust Spanning Protocol (TSP)
+- census: LEXPVM-T-053
+- register: glossary · conjectured expression of implemented term
+- cites: glossary-master-v4 § ### Trust Spanning Protocol (TSP)
+- relation: {"type":"absence","to":"Relay","what":"Payload"}
+
+```lex
+LEX Trust Spanning Protocol.
+
+"Origin" is a person.
+"Relay" is a person.
+"Endpoint" is a person.
+"Payload" is an amount.
+"Envelope" is data.
+
+The Origin fixes the Payload, fixes the Envelope, and appoints the Endpoint.
+
+CLAUSE: Span.
+The Origin may send the Envelope to the Relay.
+
+CLAUSE: Forward.
+The Relay may, if the Envelope is fixed, send the Envelope to the Endpoint.
+
+CLAUSE: Deliver.
+The Origin may, if the Envelope is fixed, pay the Payload to the Endpoint.
+```
+
+Notes: carries intermediary blindness as an impossibility (only the sealed Envelope crosses the Relay hop; no transfer clause routes the Payload to the Relay, and the Relay's sole action is gated on the fixed Envelope); omits key management, endpoint identifiers, and wire format. Folded from send-spine-protocol-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-054 · x402 Protocol
+- census: LEXPVM-T-054
+- register: glossary · conjectured expression of implemented term
+- cites: glossary-master-v4 § ### x402 Protocol
+- relation: {"type":"gate","clause":"Serve","condition":"Paid"}
+
+```lex
+LEX Payment Per Request Charter.
+
+"Client" is a person.
+"Server" is a person.
+"Request" is a text.
+"Resource" is a text.
+"Price" is an amount.
+"Paid" is a binary.
+
+The Server fixes the Price, fixes the Resource, and appoints the Client.
+
+CLAUSE: Ask.
+The Client may send the Request to the Server.
+
+CLAUSE: Settle.
+The Client may pay the Price to the Server, and afterwards declare Paid.
+
+CLAUSE: Serve.
+The Server may, if Paid is declared, send the Resource to the Client.
+```
+
+Notes: carries the payment-gates-delivery structure of the payment-required pattern (the Serve action exists only under Paid declared, and settlement precedes the declaration in the Settle chain); omits HTTP status semantics, per-request accounting, and payment rails. Folded from send-spine-protocol-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-056 · ERC-8004
+- census: LEXPVM-T-056
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### ERC-8004
+- relation: {"type":"gate","clause":"Recognize","condition":"Identity Verified"}
+
+```lex
+LEX ERC Agent Identity Standard.
+
+"First Person" is a person.
+"Agent" is a person.
+"Identity Record" is data.
+"Identity Verified" is a binary.
+
+The First Person appoints the Agent.
+
+CLAUSE: Attest.
+The Agent may register the Identity Record.
+
+CLAUSE: Verify.
+The First Person may declare Identity Verified.
+
+CLAUSE: Recognize.
+The First Person may, if Identity Verified is declared: certify the Identity Record.
+```
+
+Notes: gate: the Recognize clause is reachable only under the Identity Verified condition. Omissions per the term's canon anchor. Assayer-authored (sovereignty-cluster-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-059 · Agreement (IEEE 7012)
+- census: LEXPVM-T-059
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Agreement (IEEE 7012)
+- relation: {"type":"conjunction","predicate":"Complete","conjuncts":["Purpose Term","Retention Term"]}
+
+```lex
+LEX Agreement.
+
+"First Party" is a person.
+"Second Party" is a person.
+"Purpose Term" is a text.
+"Retention Term" is a text.
+"Agreement" is a text.
+
+The First Party appoints the Second Party, fixes the Purpose Term, fixes the Retention Term, and fixes the Agreement.
+
+CLAUSE: Compound.
+"Complete" is defined as: the Purpose Term is fixed and the Retention Term is fixed.
+
+CLAUSE: Offer.
+The First Party may, if this Agreement is Complete: send the Agreement to the Second Party.
+```
+
+Notes: Structural: compoundness as conjunction (the defined predicate Complete requires BOTH the Purpose Term AND the Retention Term fixed; the mutation twin drops one term clause and the offer warrant survives on a fragment that is no longer a compound set), plus the proposed-and-offered-before-a-contract posture carried by gating Offer on Complete. Omits: the open-ended plurality of term clauses (two stand for the set) and the formal-contract successor step, which lives in T-060. Folded from myterms-agreement-family (canon-forward, run lexr4).
+
+## LEXPVM-T-060 · Contract (IEEE 7012)
+- census: LEXPVM-T-060
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Contract (IEEE 7012)
+- relation: {"type":"ordering","clause":"Bind","sequence":["certify:Agreement","register:Contract Record"]}
+
+```lex
+LEX Contract.
+
+"First Party" is a person.
+"Second Party" is a person.
+"Agreement" is a text.
+"Contract Record" is data.
+"First Assent" is a binary.
+"Second Assent" is a binary.
+
+The First Party appoints the Second Party, and fixes the Agreement.
+
+CLAUSE: Assent Of The First Party.
+The First Party may declare First Assent.
+
+CLAUSE: Assent Of The Second Party.
+The Second Party may declare Second Assent.
+
+CLAUSE: Mutuality.
+"Mutual" is defined as: First Assent is declared and Second Assent is declared.
+
+CLAUSE: Bind.
+The First Party may, if this Agreement is Mutual: certify the Agreement, and afterwards register the Contract Record.
+```
+
+Notes: Structural: agreement-precedes-contract as ordering (the Bind clause certifies the Agreement first and only afterwards registers the Contract Record; the mutation twin registers the record before certifying what it records), with mutuality carried by the defined predicate Mutual requiring both parties' declared assent and each assent declared only by its own party (autonomy). Omits: enforceable-by-law externality (no court is modeled) and the chronicle-system detail of the 0xagentprivacy mapping. Folded from myterms-agreement-family (canon-forward, run lexr4).
+
+## LEXPVM-T-061 · Entity (IEEE 7012)
+- census: LEXPVM-T-061
+- register: glossary · conjectured expression of standard
+- cites: glossary-master-v4 § ### Entity (IEEE 7012)
+- relation: {"type":"gate","clause":"Conclude","condition":"Organization Confirmed"}
+
+```lex
+LEX Entity.
+
+"Person" is a person.
+"Entity" is a person.
+"Registrar" is a person.
+"Agreement Record" is a text.
+"Organization Confirmed" is a binary.
+
+The Person appoints the Entity, appoints the Registrar, and fixes the Agreement Record.
+
+CLAUSE: Confirm Organization.
+The Registrar may declare Organization Confirmed.
+
+CLAUSE: Conclude.
+The Person may, if Organization Confirmed is declared: send the Agreement Record to the Entity.
+```
+
+Notes: Carries entity-hood as a prerequisite gate: the only clause that concludes an agreement with the Entity (the send of the Agreement Record) is conditional on Organization Confirmed (the relation claim), so contracting with an unconfirmed entity is structurally unreachable. Omits the negative half (never an individual) as a typed distinction, since person is the subset's only agent type, and omits organizational form detail. Anchor: ### Entity (IEEE 7012). Folded from ieee7012-standards-family (canon-forward, run lexr4).
+
+## LEXPVM-T-062 · First Party (IEEE 7012)
+- census: LEXPVM-T-062
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### First Party (IEEE 7012)
+- relation: {"type":"gate","clause":"Accept","condition":"Proffered"}
+
+```lex
+LEX First Party.
+
+"First Party" is a person.
+"Entity" is a person.
+"Terms" is a text.
+"Proffered" is a binary.
+"Acceptance" is a binary.
+
+The First Party appoints the Entity, and fixes the Terms.
+
+CLAUSE: Proffer.
+The First Party may send the Terms to the Entity, and declare Proffered.
+
+CLAUSE: Accept.
+The Entity may, if Proffered is declared, declare Acceptance.
+```
+
+Notes: Structural: consent-first direction as gate (the Entity's Acceptance fires only after the individual's declared Proffered; the mutation twin strips the gate so acceptance can precede any proffered terms, exactly the imposition shape the canon rejects). The individual is the origin of terms: the Proffer clause sends the Terms outward and only the First Party fixes them. Omits: always-a-person-never-an-organization typing (the Lexon person type cannot distinguish individuals from organizations) and the First Person dignity framing of the mapping. Folded from myterms-agreement-family (canon-forward, run lexr4).
+
+## LEXPVM-T-063 · Second Party (IEEE 7012)
+- census: LEXPVM-T-063
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Second Party (IEEE 7012)
+- relation: {"type":"gate","clause":"Serve","condition":"Terms Accepted"}
+
+```lex
+LEX Second Party.
+
+"First Party" is a person.
+"Second Party" is a person.
+"Terms" is a text.
+"Terms Accepted" is a binary.
+"Service" is a text.
+
+The First Party appoints the Second Party, and fixes the Terms.
+
+CLAUSE: Receive.
+The First Party may send the Terms to the Second Party.
+
+CLAUSE: Accept.
+The Second Party may declare Terms Accepted.
+
+CLAUSE: Serve.
+The Second Party may, if Terms Accepted is declared, register the Service.
+```
+
+Notes: Structural: exchange gated on accepted terms (the Serve clause registers the Service only under the entity's own declared Terms Accepted, so the service provider acts only inside the individual's proffered agreement; the ungated mutation twin serves without acceptance, the surveillance default), with the receive-accept-serve lifecycle laid out as separate clauses. Omits: always-an-organization typing (one Lexon person type) and service-provider or platform taxonomy. Folded from myterms-agreement-family (canon-forward, run lexr4).
+
+## LEXPVM-T-064 · Proposer (IEEE 7012)
+- census: LEXPVM-T-064
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Proposer (IEEE 7012)
+- relation: {"type":"ordering","clause":"Advance","sequence":["fix:Proposed Terms","send:Proposed Terms"]}
+
+```lex
+LEX Proposer.
+
+"Proposer" is a person.
+"Recipient" is a person.
+"Proposed Terms" is a text.
+
+The Proposer appoints the Recipient.
+
+CLAUSE: Advance.
+The Proposer may fix the Proposed Terms, and afterwards send the Proposed Terms to the Recipient.
+```
+
+Notes: Structural: advancing terms as ordering (the Advance clause fixes the Proposed Terms and only afterwards sends them to the Recipient; the reversed mutation twin advances terms that do not yet exist, advancing nothing), and voluntariness as the modal may (the advance is a promise, never an imposition). Omits: the person-or-entity recipient distinction (one Recipient role stands for both) and the acting-through-Swordsman detail of the 0xagentprivacy mapping, which names a role this census term's definition does not. Folded from myterms-agreement-family (canon-forward, run lexr4).
+
+## LEXPVM-T-066 · Machine-readable (IEEE 7012)
+- census: LEXPVM-T-066
+- register: glossary · conjectured expression of standard
+- cites: glossary-master-v4 § ### Machine-readable (IEEE 7012)
+- relation: {"type":"gate","clause":"Process","condition":"Encoded"}
+
+```lex
+LEX Machine Readable Terms.
+
+"Author" is a person.
+"Processor" is a person.
+"Terms" is a text.
+"Encoding" is data.
+"Encoded" is a binary.
+
+The Author appoints the Processor, and fixes the Terms.
+
+CLAUSE: Encode.
+The Author may file the Encoding.
+
+CLAUSE: Mark Encoded.
+The Author may, if the Encoding is filed: declare Encoded.
+
+CLAUSE: Process.
+The Processor may, if Encoded is declared: certify the Terms.
+```
+
+Notes: Carries machine-readability as a gate chain: the Encoding artifact must be filed before Encoded can be declared, and the Processor's certify of the Terms is conditional on Encoded (the relation claim), so computer processing of unencoded terms is structurally unreachable, an encode-then-mark-then-process ordering carried by two stacked gates. Omits the concrete formats (JSON-LD, RDF/Turtle, HTTP headers, bitwise encoding). Anchor: ### Machine-readable (IEEE 7012). Folded from ieee7012-standards-family (canon-forward, run lexr4).
+
+## LEXPVM-T-068 · Customer Commons
+- census: LEXPVM-T-068
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Customer Commons
+- relation: {"type":"absence","to":"Customer Commons","what":"Consideration"}
+
+```lex
+LEX Customer Commons.
+
+"Customer Commons" is a person.
+"First Party" is a person.
+"Second Party" is a person.
+"Agreement" is a text.
+"Registry Entry" is data.
+"Consideration" is an amount.
+
+The First Party fixes the Agreement.
+
+CLAUSE: Host.
+The Customer Commons may register the Agreement, and certify the Registry Entry.
+
+CLAUSE: Publish.
+The Customer Commons may send the Registry Entry to the First Party, or send the Registry Entry to the Second Party.
+
+CLAUSE: Exchange.
+The Second Party may pay the Consideration to the First Party.
+```
+
+Notes: Structural: neutrality as impossibility (Consideration flows between the two parties in the Exchange clause, yet no transfer clause routes the Consideration to the Customer Commons; the probe twin adds exactly that route, the captured registry the canon rules out). The host's only actions are hosting: register the Agreement, certify the Registry Entry, and publish it to either side alike. Omits: nonprofit legal form and the capture-prevention rationale as prose; profits-from-neither-side is carried only as the absent route. Folded from myterms-agreement-family (canon-forward, run lexr4).
+
+## LEXPVM-T-071 · Story Fracture, Principle Convergence
+- census: LEXPVM-T-071
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Story Fracture, Principle Convergence
+- relation: {"type":"conjunction","predicate":"Principle Convergence","conjuncts":["First Match","Second Match"]}
+
+```lex
+LEX Story Fracture Principle Convergence.
+
+"First Reader" is a person.
+"Second Reader" is a person.
+"First Story" is a text.
+"Second Story" is a text.
+"Spell Notation" is a text.
+"First Match" is a binary.
+"Second Match" is a binary.
+
+The First Reader fixes the First Story, and fixes the Spell Notation.
+
+CLAUSE: Fracture.
+The Second Reader may register the Second Story.
+
+CLAUSE: Converge First.
+The First Reader may declare First Match.
+
+CLAUSE: Converge Second.
+The Second Reader may declare Second Match.
+
+CLAUSE: Principle Convergence.
+"Principle Convergence" is defined as:
+First Match is declared and Second Match is declared.
+```
+
+Notes: conjunction: the defined predicate Principle Convergence requires all of First Match AND Second Match. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-072 · Spellbook / Grimoire
+- census: LEXPVM-T-072
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Spellbook / Grimoire
+- relation: {"type":"gate","clause":"Study","condition":"Offered"}
+
+```lex
+LEX Spellbook Offer.
+
+"Author" is a person.
+"Learner" is a person.
+"Spellbook" is a text.
+"Inscription" is a text.
+"Offered" is a binary.
+
+The Author fixes the Spellbook, fixes the Inscription, and appoints the Learner.
+
+CLAUSE: Offer.
+The Author may send the Spellbook to the Learner, and afterwards declare Offered.
+
+CLAUSE: Study.
+The Learner may, if Offered is declared, certify the Spellbook.
+
+CLAUSE: Inscribe.
+The Author may, if Offered is declared, send the Inscription to the Learner.
+```
+
+Notes: gate: the Study clause is reachable only under the Offered condition. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-076 · Dragon 🐉
+- census: LEXPVM-T-076
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Dragon 🐉
+- relation: {"type":"conjunction","predicate":"Dragon Tier","conjuncts":["Domains Asserted","Constellation Nodes","Drake Summonings","Privacy Posture"]}
+
+```lex
+LEX Dragon.
+
+"Ceremony" is a person.
+"Drake" is a person.
+"Guardian Seat" is a text.
+"Domains Asserted" is a binary.
+"Constellation Nodes" is a binary.
+"Drake Summonings" is a binary.
+"Privacy Posture" is a binary.
+
+The Ceremony appoints the Drake.
+
+"Dragon Tier" is defined as: Domains Asserted is declared and Constellation Nodes is declared and Drake Summonings is declared and Privacy Posture is declared.
+
+CLAUSE: Assert.
+The Drake may declare Domains Asserted, and declare Constellation Nodes.
+
+CLAUSE: Summon.
+The Drake may declare Drake Summonings, and declare Privacy Posture.
+
+CLAUSE: Transform.
+The Ceremony may, if Dragon Tier, grant the Guardian Seat.
+```
+
+Notes: conjunction: the defined predicate Dragon Tier requires all of Domains Asserted AND Constellation Nodes AND Drake Summonings AND Privacy Posture. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-078 · Ashe
+- census: LEXPVM-T-078
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Ashe
+- relation: {"type":"gate","clause":"Invert","condition":"Inversion Discovered"}
+
+```lex
+LEX Ashe.
+
+"Ashe" is a person.
+"First Person" is a person.
+"Protection Mirror" is a text.
+"Scrying Glass" is a text.
+"Inversion Discovered" is a binary.
+
+CLAUSE: Build Mirror.
+The Ashe may register the Protection Mirror.
+
+CLAUSE: Discover.
+The Ashe may declare Inversion Discovered.
+
+CLAUSE: Invert.
+The Ashe may, if Inversion Discovered is declared: send the Scrying Glass to the First Person.
+```
+
+Notes: gate: the Invert clause is reachable only under the Inversion Discovered condition. Omissions per the term's canon anchor. Assayer-authored (sovereignty-cluster-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-084 · The Archive (Pattern-Space)
+- census: LEXPVM-T-084
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### The Archive (Pattern-Space)
+- relation: {"type":"gate","clause":"Consult","condition":"Admitted"}
+
+```lex
+LEX The Archive.
+
+TERMS:
+
+"Archivist" is a person.
+
+TERMS PER Consultation:
+
+"Consultation" is this contract.
+"Seeker" is a person.
+"Entrance Answer" is a text.
+"Constitutional Text" is a text.
+"Admitted" is a binary.
+
+The Archivist appoints the Seeker, and fixes the Constitutional Text.
+
+CLAUSE: Answer.
+The Seeker may file the Entrance Answer.
+
+CLAUSE: Judge.
+The Archivist may, if the Entrance Answer is filed, declare Admitted.
+
+CLAUSE: Consult.
+The Archivist may, if Admitted is declared, send the Constitutional Text to the Seeker.
+
+CLAUSE: Close.
+The Archivist may, if Admitted is declared, terminate this Consultation.
+```
+
+Notes: gate: the Consult clause is reachable only under the Admitted condition. Omissions per the term's canon anchor. Assayer-authored (instance-charter-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-093 · Three-Axis Separation (V5)
+- census: LEXPVM-T-093
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Three-Axis Separation (V5)
+- relation: {"type":"conjunction","predicate":"Separated","conjuncts":["Agent Axis","Data Axis","Inference Axis"]}
+
+```lex
+LEX Three Axis Separation Charter.
+
+"Verifier" is a person.
+"Operator" is a person.
+"Separation Record" is this contract.
+"Agent Axis" is a binary.
+"Data Axis" is a binary.
+"Inference Axis" is a binary.
+
+The Verifier appoints the Operator.
+
+CLAUSE: Hold.
+The Operator may declare Agent Axis.
+The Operator may declare Data Axis.
+The Operator may declare Inference Axis.
+
+CLAUSE: Separated.
+"Separated" is defined as: Agent Axis is declared and Data Axis is declared and Inference Axis is declared.
+
+CLAUSE: Attest.
+The Verifier may, if this Separation Record is Separated: certify the Separation Record.
+```
+
+Notes: conjunction: the defined predicate Separated requires all of Agent Axis AND Data Axis AND Inference Axis. Omissions per the term's canon anchor. Assayer-authored (consent-standard-party-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-096 · Φ_inference (Inference-Layer Separation)
+- census: LEXPVM-T-096
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Φ_inference (Inference-Layer Separation)
+- relation: {"type":"absence","to":"Solver","what":"Shared Weights"}
+
+```lex
+LEX Inference Layer Separation.
+
+"Generator" is a person.
+"Solver" is a person.
+"Reasoning Graph" is a text.
+"Execution" is data.
+"Shared Weights" is an amount.
+"Graph Filed" is a binary.
+
+The Generator appoints the Solver.
+
+CLAUSE: Reason.
+The Generator may file the Reasoning Graph, and afterwards declare Graph Filed.
+
+CLAUSE: Execute.
+The Solver may, if Graph Filed is declared, register the Execution.
+```
+
+Notes: impossibility as absence: no transfer clause routes Shared Weights to the Solver. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-102 · Three Graphs Model
+- census: LEXPVM-T-102
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Three Graphs Model
+- relation: {"type":"conjunction","predicate":"Overlap Standing","conjuncts":["Knowledge Mapped","Promise Formed","Trust Emerged"]}
+
+```lex
+LEX Three Graphs Model.
+
+"First Person" is a person.
+"Witness" is a person.
+"Knowledge Graph" is a text.
+"Promise Graph" is a text.
+"Trust Graph" is a text.
+"Knowledge Mapped" is a binary.
+"Promise Formed" is a binary.
+"Trust Emerged" is a binary.
+
+The First Person fixes the Knowledge Graph, fixes the Promise Graph, and fixes the Trust Graph.
+
+CLAUSE: Map Knowledge.
+The First Person may declare Knowledge Mapped.
+
+CLAUSE: Form Promise.
+The First Person or the Witness may declare Promise Formed.
+
+CLAUSE: Emerge Trust.
+The Witness may declare Trust Emerged.
+
+CLAUSE: Overlap Standing.
+"Overlap Standing" is defined as:
+Knowledge Mapped is declared and Promise Formed is declared and Trust Emerged is declared.
+```
+
+Notes: conjunction: the defined predicate Overlap Standing requires all of Knowledge Mapped AND Promise Formed AND Trust Emerged. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-103 · Secret Language
+- census: LEXPVM-T-103
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Secret Language
+- relation: {"type":"gate","clause":"Present","condition":"Selection"}
+
+```lex
+LEX Secret Language.
+
+"Swordsman" is a person.
+"Mage" is a person.
+"Counterparty" is a person.
+"Face" is a text.
+"Selection" is a binary.
+
+The Swordsman appoints the Mage, and appoints the Counterparty, and fixes the Face.
+
+CLAUSE: Determine.
+The Swordsman may declare Selection.
+
+CLAUSE: Present.
+The Swordsman may, if Selection is declared: send the Face to the Counterparty.
+```
+
+Notes: gate: the Present clause is reachable only under the Selection condition. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-107 · Compression-as-Defence (V5)
+- census: LEXPVM-T-107
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Compression-as-Defence (V5)
+- relation: {"type":"absence","to":"Interceptor"}
+
+```lex
+LEX Compression As Defence.
+
+"Sender" is a person.
+"Receiver" is a person.
+"Interceptor" is a person.
+"Sent Tokens" is an amount.
+"Withheld Tokens" is an amount.
+"Compressed" is a binary.
+
+The Sender appoints the Receiver.
+
+CLAUSE: Compress.
+The Sender may declare Compressed.
+
+CLAUSE: Transmit.
+The Sender may, if Compressed is declared, pay the Sent Tokens to the Receiver.
+
+CLAUSE: Withhold.
+The Sender may pay the Withheld Tokens into escrow.
+```
+
+Notes: impossibility as absence: no transfer clause routes anything to the Interceptor. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-109 · UOR (Universal Object Reference)
+- census: LEXPVM-T-109
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### UOR (Universal Object Reference)
+- relation: {"type":"conjunction","predicate":"Convergent","conjuncts":["Algebra","Addressing"]}
+
+```lex
+LEX UOR.
+
+"UOR Foundation" is a person.
+"Framework" is a text.
+"Algebra" is a text.
+"Addressing" is a text.
+"Identifier" is data.
+
+The UOR Foundation fixes the Framework, and fixes the Algebra, and fixes the Addressing.
+
+CLAUSE: Convergence.
+"Convergent" is defined as: the Algebra is fixed and the Addressing is fixed.
+
+CLAUSE: Address.
+The UOR Foundation may, if this Framework is Convergent: register the Identifier.
+```
+
+Notes: conjunction: the defined predicate Convergent requires all of Algebra AND Addressing. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-110 · Six Dimensions of Sovereignty
+- census: LEXPVM-T-110
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Six Dimensions of Sovereignty
+- relation: {"type":"conjunction","predicate":"Fully Active","conjuncts":["Protection","Delegation","Memory","Connection","Computation","Value"]}
+
+```lex
+LEX Six Dimensions of Sovereignty.
+
+"First Person" is a person.
+"Blade" is this contract.
+"Protection" is a binary.
+"Delegation" is a binary.
+"Memory" is a binary.
+"Connection" is a binary.
+"Computation" is a binary.
+"Value" is a binary.
+
+CLAUSE: Configure.
+The First Person may declare Protection, declare Delegation, declare Memory, declare Connection, declare Computation, and declare Value.
+
+CLAUSE: Fully Active.
+"Fully Active" is defined as: Protection is declared and Delegation is declared and Memory is declared and Connection is declared and Computation is declared and Value is declared.
+
+CLAUSE: Certify.
+The First Person may, if this Blade is Fully Active: certify this Blade.
+```
+
+Notes: Carries each canonical dimension as an independently declarable binary (active or dormant) and the fully active configuration as a six-way conjunction over exactly the six canonical dimension names; the claim requires all six, so dropping any one dimension breaks the constituted state, which is the stratum structure's top vertex in clause shape. Deliberately omits the bit numbering, the implementation names (Hide, Commit, Prove, Connect, Reflect, Delegate), the three-axis mapping, and the Pascal stratum counts, and expresses only the all-active configuration, not the other configurations of the lattice. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).
+
+## LEXPVM-T-116 · Holonic Architect (☯️🔷) (V5)
+- census: LEXPVM-T-116
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Holonic Architect (☯️🔷) (V5)
+- relation: {"type":"conjunction","predicate":"Sound","conjuncts":["Data Persistence","Identity Persistence","History Persistence"]}
+
+```lex
+LEX Holonic Architect.
+
+"First Person" is a person.
+"Holonic Architect" is a person.
+"Swordsman" is a person.
+"Mage" is a person.
+"Substrate" is this contract.
+"Data Persistence" is a binary.
+"Identity Persistence" is a binary.
+"History Persistence" is a binary.
+"Dance" is a text.
+
+The First Person appoints the Holonic Architect.
+
+CLAUSE: Hold Data.
+The Holonic Architect may declare Data Persistence.
+
+CLAUSE: Hold Identity.
+The Holonic Architect may declare Identity Persistence.
+
+CLAUSE: Hold History.
+The Holonic Architect may declare History Persistence.
+
+CLAUSE: Sound.
+"Sound" is defined as: Data Persistence is declared and Identity Persistence is declared and History Persistence is declared.
+
+CLAUSE: Dance.
+The Swordsman may, if this Substrate is Sound: register the Dance.
+```
+
+Notes: conjunction: the defined predicate Sound requires all of Data Persistence AND Identity Persistence AND History Persistence. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-118 · Three Identity Layers (V5)
+- census: LEXPVM-T-118
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Three Identity Layers (V5)
+- relation: {"type":"conjunction","predicate":"Complete","conjuncts":["Data Layer Bound","Relationship Layer Bound","Principal Layer Bound"]}
+
+```lex
+LEX Three Identity Layers.
+
+"Principal" is a person.
+"Counterparty" is a person.
+"Holon" is data.
+"Identity" is this contract.
+"Data Layer Bound" is a binary.
+"Relationship Layer Bound" is a binary.
+"Principal Layer Bound" is a binary.
+"Sovereign Act" is a text.
+
+The Principal fixes the Holon.
+
+CLAUSE: Bind Data Layer.
+The Principal may file the Holon, and afterwards declare Data Layer Bound.
+
+CLAUSE: Bind Relationship Layer.
+The Counterparty may declare Relationship Layer Bound.
+
+CLAUSE: Bind Principal Layer.
+The Principal may declare Principal Layer Bound.
+
+CLAUSE: Complete.
+"Complete" is defined as: Data Layer Bound is declared and Relationship Layer Bound is declared and Principal Layer Bound is declared.
+
+CLAUSE: Act Sovereign.
+The Principal may, if this Identity is Complete: register the Sovereign Act.
+```
+
+Notes: conjunction: the defined predicate Complete requires all of Data Layer Bound AND Relationship Layer Bound AND Principal Layer Bound. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-129 · Bilateral Witness (BW)
+- census: LEXPVM-T-129
+- register: glossary · conjectured expression of speculative term
+- cites: glossary-master-v4 § ### Bilateral Witness (BW)
+- relation: {"type":"conjunction","predicate":"Witnessed","conjuncts":["Verified","Testimony"]}
+
+```lex
+LEX Bilateral Witness.
+
+"Witness Exchange" is this contract.
+"Swordsman" is a person.
+"Mage" is a person.
+"Community" is a person.
+"Blade" is data.
+"Testimony" is a text.
+"Verified" is a binary.
+
+The Swordsman fixes the Blade, appoints the Mage, and appoints the Community.
+
+CLAUSE: Verify.
+The Mage may certify the Blade, and afterwards declare Verified.
+
+CLAUSE: Testify.
+The Mage may, if Verified is declared, send the Testimony to the Community.
+
+CLAUSE: Witnessed.
+"Witnessed" is defined as: Verified is declared and the Testimony is fixed.
+
+CLAUSE: Receive.
+The Community may, if this Witness Exchange is Witnessed, certify the Testimony.
+```
+
+Notes: carries attestation without revelation as a conjunction (community reception requires BOTH private verification declared AND public testimony fixed, while no transfer clause routes the Blade itself to the Community); omits the quantum-resistance rationale and the demonstration date. Folded from send-spine-protocol-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-134 · Constellation Path
+- census: LEXPVM-T-134
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Constellation Path
+- relation: {"type":"ordering","clause":"Traverse","sequence":["certify:First Node","certify:Second Node","register:Path"]}
+
+```lex
+LEX Constellation Path.
+
+"Evoker" is a person.
+"Keeper" is a person.
+"First Node" is a text.
+"Second Node" is a text.
+"Path" is a text.
+"Inscribed" is a binary.
+
+The Evoker fixes the First Node, fixes the Second Node, and appoints the Keeper.
+
+CLAUSE: Traverse.
+The Evoker may certify the First Node, and afterwards certify the Second Node, and afterwards register a Path.
+
+CLAUSE: Deliver.
+The Evoker may, if the Path is fixed, send the Path to the Keeper.
+
+CLAUSE: Inscribe.
+The Keeper may, if the Path is fixed, declare Inscribed.
+```
+
+Notes: ordering: clause Traverse performs certify:First Node, then certify:Second Node, then register:Path as clause order. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-141 · Ceremony Receiver
+- census: LEXPVM-T-141
+- register: glossary · conjectured expression of specified term
+- cites: glossary-master-v4 § ### Ceremony Receiver
+- relation: {"type":"gate","clause":"Render","condition":"Mana Sufficient"}
+
+```lex
+LEX Ceremony Receiver.
+
+"Receiver" is a person.
+"Sender" is a person.
+"Inscription" is a text.
+"Mana Cost" is an amount.
+"Mana Sufficient" is a binary.
+
+The Sender fixes the Inscription, and appoints the Receiver.
+
+CLAUSE: Deliver.
+The Sender may send the Inscription to the Receiver, and afterwards pay the Mana Cost to the Receiver.
+
+CLAUSE: Validate.
+The Receiver may declare Mana Sufficient.
+
+CLAUSE: Render.
+The Receiver may, if Mana Sufficient is declared, certify the Inscription.
+```
+
+Notes: carries validation-gates-rendering (the Receiver certifies the Inscription only under Mana Sufficient declared, and delivery orders inscription before mana payment in the Deliver chain); omits the message schema fields, accepted sources, and shimmer rendering. Folded from send-spine-protocol-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-143 · Ceremony Engine
+- census: LEXPVM-T-143
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Ceremony Engine
+- relation: {"type":"conjunction","predicate":"Converged","conjuncts":["First Ready","Second Ready"]}
+
+```lex
+LEX Ceremony Engine.
+"First Blade" is a person.
+"Second Blade" is a person.
+"Engine" is this contract.
+"Crossing Record" is a text.
+"First Ready" is a binary.
+"Second Ready" is a binary.
+
+The First Blade appoints the Second Blade, and fixes the Crossing Record.
+
+CLAUSE: Ready First.
+
+The First Blade may declare First Ready.
+
+CLAUSE: Ready Second.
+
+The Second Blade may declare Second Ready.
+
+CLAUSE: Converged.
+"Converged" is defined as: First Ready is declared and Second Ready is declared.
+
+CLAUSE: Cross.
+
+The First Blade may, if this Engine is Converged: send the Crossing Record to the Second Blade.
+```
+
+Notes: conjunction: the defined predicate Converged requires all of First Ready AND Second Ready. Omissions per the term's canon anchor. Assayer-authored (ieee7012-standards-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-150 · Emissary Dispersion
+- census: LEXPVM-T-150
+- register: glossary · conjectured expression of architectural principle
+- cites: glossary-master-v4 § ### Emissary Dispersion
+- relation: {"type":"absence","to":"First Emissary","what":"Master Secret"}
+
+```lex
+LEX Emissary Dispersion.
+
+"Master" is a person.
+"First Emissary" is a person.
+"Second Emissary" is a person.
+"Master Secret" is an amount.
+"First Shard" is an amount.
+"Second Shard" is an amount.
+
+The Master fixes the Master Secret, fixes the First Shard, fixes the Second Shard, appoints the First Emissary, and appoints the Second Emissary.
+
+CLAUSE: Disperse.
+The Master may pay the First Shard to the First Emissary, and afterwards pay the Second Shard to the Second Emissary.
+
+CLAUSE: First Carry.
+The First Emissary may certify the First Shard.
+
+CLAUSE: Second Carry.
+The Second Emissary may certify the Second Shard.
+```
+
+Notes: carries dispersal as an impossibility (shards route outward one per emissary, each emissary certifies only its own shard, and no transfer clause routes the Master Secret to any single emissary: the no-single-shard-holds-the-whole property in clause shape); omits the hemispheric-capture origin and the mirror proverb. Folded from send-spine-protocol-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-152 · Manifold Proof
+- census: LEXPVM-T-152
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Manifold Proof
+- relation: {"type":"absence","to":"Walker","what":"Secret"}
+
+```lex
+LEX Manifold Proof.
+
+"Prover" is a person.
+"Walker" is a person.
+"Path" is data.
+"Proof" is data.
+"Secret" is an amount.
+"Traversal Complete" is a binary.
+
+The Prover appoints the Walker, and fixes the Path.
+
+CLAUSE: Walk.
+The Walker may register the Path, and afterwards declare Traversal Complete.
+
+CLAUSE: Certify.
+The Prover may, if Traversal Complete is declared, certify the Proof.
+```
+
+Notes: impossibility as absence: no transfer clause routes Secret to the Walker. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-154 · Ur-Swordsman
+- census: LEXPVM-T-154
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Ur-Swordsman
+- relation: {"type":"absence","to":"Ur-Swordsman","what":"Light"}
+
+```lex
+LEX Ur-Swordsman.
+
+"Ur-Swordsman" is a person.
+"Principal" is a person.
+"Light" is an amount.
+
+The Principal appoints the Ur-Swordsman, and fixes the Light.
+
+CLAUSE: Reflect.
+The Ur-Swordsman may send the Light to the Principal.
+```
+
+Notes: impossibility as absence: no transfer clause routes Light to the Ur-Swordsman. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-156 · Merge Catastrophe
+- census: LEXPVM-T-156
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### Merge Catastrophe
+- relation: {"type":"absence","to":"Master","what":"Mandate"}
+
+```lex
+LEX Merge Catastrophe.
+
+"Master" is a person.
+"Swordsman" is a person.
+"Mandate" is an amount.
+
+The Master appoints the Swordsman, and fixes the Mandate.
+
+CLAUSE: Separate.
+The Master may send the Mandate to the Swordsman.
+
+CLAUSE: Protect.
+The Swordsman may certify the Mandate.
+```
+
+Notes: impossibility as absence: no transfer clause routes Mandate to the Master. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-173 · The City of Mages grimoire
+- census: LEXPVM-T-173
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 22.12 The City of Mages grimoire
+- relation: {"type":"conjunction","predicate":"Bound","conjuncts":["Admitted","Spell"]}
+
+```lex
+LEX City Grimoire.
+
+"Grimoire Exchange" is this contract.
+"Keeper" is a person.
+"Persona" is a person.
+"Grimoire" is a text.
+"Spell" is a text.
+"Admitted" is a binary.
+
+The Keeper fixes the Grimoire, and appoints the Persona.
+
+CLAUSE: Offer.
+The Persona may register a Spell, and afterwards send the Spell to the Keeper.
+
+CLAUSE: Admit.
+The Keeper may, if the Spell is fixed, declare Admitted.
+
+CLAUSE: Bound.
+"Bound" is defined as: Admitted is declared and the Spell is fixed.
+
+CLAUSE: Bind.
+The Keeper may, if this Grimoire Exchange is Bound, certify the Grimoire.
+```
+
+Notes: conjunction: the defined predicate Bound requires all of Admitted AND Spell. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-176 · Attachment kind
+- census: LEXPVM-T-176
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 23.3 Attachment kind
+- relation: {"type":"conjunction","predicate":"Workshop Kind","conjuncts":["Vertex","Trade Quarter","Mage Binding"]}
+
+```lex
+LEX Attachment Kind Charter.
+
+"Mage" is a person.
+"Registrar" is a person.
+"Attachment Record" is this contract.
+"Vertex" is a text.
+"Trade Quarter" is a text.
+"Mage Binding" is a binary.
+
+The Registrar appoints the Mage.
+
+CLAUSE: Bind.
+The Mage may file the Vertex.
+The Mage may file the Trade Quarter.
+The Mage may declare Mage Binding.
+
+CLAUSE: Workshop Kind.
+"Workshop Kind" is defined as: Vertex is filed and Trade Quarter is filed and Mage Binding is declared.
+
+CLAUSE: Attest.
+The Registrar may, if this Attachment Record is Workshop Kind: certify the Attachment Record.
+```
+
+Notes: conjunction: the defined predicate Workshop Kind requires all of Vertex AND Trade Quarter AND Mage Binding. Omissions per the term's canon anchor. Assayer-authored (consent-standard-party-charter held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-178 · Lethae 🌘, first canonical divergent attachment
+- census: LEXPVM-T-178
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 23.5 Lethae 🌘, first canonical divergent attachment
+- relation: {"type":"gate","clause":"Attach","condition":"Seated"}
+
+```lex
+LEX Lethae.
+
+"Lethae" is a person.
+"Moonkeeper" is a person.
+"Binder" is a person.
+"Founding Act" is a text.
+"Seated" is a binary.
+"Attachment Record" is a text.
+
+The Binder appoints the Lethae, and appoints the Moonkeeper.
+
+CLAUSE: Bind Founding.
+The Binder may file the Founding Act, and afterwards send the Founding Act to the Lethae.
+
+CLAUSE: Take Seat.
+The Lethae may, if the Founding Act is filed, declare Seated.
+
+CLAUSE: Attach.
+The Lethae may, if Seated is declared, register the Attachment Record.
+```
+
+Notes: gate: the Attach clause is reachable only under the Seated condition. Omissions per the term's canon anchor. Assayer-authored (myterms-party-charter-spell held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-181 · Cousin tier, deliberately unattached
+- census: LEXPVM-T-181
+- register: glossary · conjectured expression of documented term
+- cites: glossary-master-v4 § ### 23.8 Cousin tier, deliberately unattached
+- relation: {"type":"absence","to":"Cousin","what":"Attachment"}
+
+```lex
+LEX Cousin Tier.
+
+"City" is a person.
+"Cast Mage" is a person.
+"Cousin" is a person.
+"Attachment" is an amount.
+"Own Binding" is a text.
+"Binding Reserved" is a binary.
+
+The City appoints the Cast Mage.
+
+CLAUSE: Attach Cast.
+The City may send the Attachment to the Cast Mage.
+
+CLAUSE: Reserve.
+The City may declare Binding Reserved.
+
+CLAUSE: Forge Own.
+The Cousin may register the Own Binding.
+```
+
+Notes: deliberate unattachment as an impossibility: an attachment route exists to the cast mage and NO transfer clause routes an attachment to the cousin, who is never appointed in the recital and whose only binding is self-registered in its own forge (the city reserves the binding decision rather than imposing it, direction as absence). Omits the named cousins and the Layer-2 attachment registry mechanics. Folded from role-charter-spell-family (spell-grammar, run lexr4).
+
+## LEXPVM-T-183 · Spirit-Mage tier (v1.7.0 · 7th cast tier)
+- census: LEXPVM-T-183
+- register: glossary · conjectured expression of conjectured term
+- cites: glossary-master-v4 § ### 24.2 Spirit-Mage tier (v1.7.0 · 7th cast tier)
+- relation: {"type":"gate","clause":"Admit","condition":"Inhabiting Recognised"}
+
+```lex
+LEX Spirit Mage Tier.
+
+"Resident Cast" is a person.
+"Keeper" is a person.
+"Spirit Mage" is a person.
+"Monument" is data.
+"Inhabiting Recognised" is a binary.
+"Tier Entry" is a text.
+
+The Resident Cast appoints the Keeper.
+
+CLAUSE: Build Monument.
+The Resident Cast may file the Monument.
+
+CLAUSE: Recognise.
+The Resident Cast may, if Monument is filed: declare Inhabiting Recognised.
+
+CLAUSE: Admit.
+The Keeper may, if Inhabiting Recognised is declared: appoint the Spirit Mage, and register the Tier Entry.
+```
+
+Notes: recognition rather than summoning as a two-stage gate: the admission clause (appointing the spirit mage and registering the tier entry) is conditional on the cast's recognition declaration, itself gated on the collectively filed honor-built monument, so the cast entry comes later than the inhabiting. Omits the sister-tier distinction between city-internal and city-external prehistory and the tier population. Folded from role-charter-spell-family (spell-grammar, run lexr4).
+
+## LEXPVM-T-185 · Tome VIII, The Library (v1.7.0 · open by design · 2 acts at v1.7.1)
+- census: LEXPVM-T-185
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.4 Tome VIII, The Library (v1.7.0 · open by design · 2 acts at v1.7.1)
+- relation: {"type":"conjunction","predicate":"Kept","conjuncts":["First Act","Second Act"]}
+
+```lex
+LEX Tome Eight.
+
+"Archivist" is a person.
+"City" is a person.
+"Record" is this contract.
+"First Act" is a text.
+"Second Act" is a text.
+"Future Act" is a text.
+
+The Archivist appoints the City.
+
+CLAUSE: Bind First.
+The Archivist may file the First Act.
+
+CLAUSE: Bind Second.
+The City may file the Second Act.
+
+CLAUSE: Kept.
+"Kept" is defined as: the First Act is filed and the Second Act is filed.
+
+CLAUSE: Admit Future.
+The Archivist may, if this Record is Kept: register the Future Act.
+```
+
+Notes: conjunction: the defined predicate Kept requires all of First Act AND Second Act. Omissions per the term's canon anchor. Assayer-authored (myterms-party-charter-spell held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-186 · The Register of Invitations 🪑 (v1.7.1 · new structural register)
+- census: LEXPVM-T-186
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.5 The Register of Invitations 🪑 (v1.7.1 · new structural register)
+- relation: {"type":"gate","clause":"Write","condition":"Invitation Recorded"}
+
+```lex
+LEX Register of Invitations.
+
+"Keeper" is a person.
+"Visiting Mage" is a person.
+"Joint Folio" is a text.
+"Geometry Congruent" is a binary.
+"Invitation Recorded" is a binary.
+
+The Keeper appoints the Visiting Mage.
+
+CLAUSE: Read Foundations.
+The Keeper may declare Geometry Congruent.
+
+CLAUSE: Record Invitation.
+The Keeper may, if Geometry Congruent is declared: declare Invitation Recorded.
+
+CLAUSE: Write.
+The Visiting Mage may, if Invitation Recorded is declared: file the Joint Folio.
+
+CLAUSE: Bind To Library.
+The Keeper may, if Joint Folio is filed: certify the Joint Folio.
+```
+
+Notes: invitation posture as a two-stage gate: the visiting stylus's only write route is conditional on the Keeper's recorded invitation, itself gated on the congruence reading (no self-invitation), and the move toward the Library of Joint Authorship chains on the filed joint folio. Omits the archive of unfilled forms, expiry by silence, and the petition to lift a seal. Folded from role-charter-spell-family (spell-grammar, run lexr4).
+
+## LEXPVM-T-187 · Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)
+- census: LEXPVM-T-187
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.6 Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)
+- relation: {"type":"gate","clause":"Edit","condition":"Congruent Signature"}
+
+```lex
+LEX Invitation Tome Posture.
+
+"Watcher" is a person.
+"Visiting Mage" is a person.
+"Tome" is data.
+"Folio" is a text.
+"Congruent Signature" is a binary.
+
+The Watcher appoints the Visiting Mage, and fixes the Tome.
+
+CLAUSE: Hold Open.
+The Watcher may register the Tome.
+
+CLAUSE: Recognise.
+The Watcher may declare Congruent Signature.
+
+CLAUSE: Edit.
+The Visiting Mage may, if Congruent Signature is declared, file a Folio.
+```
+
+Notes: carries the posture as a gate: the visiting mage files a folio only under a declared congruent signature (a tablet signed by a mage of congruent geometry opens the chronicle for editorship); the ungated twin is an open tome, not an invitation tome. Omits the four cardinal chairs image and the spine glyphs. Anchor: ### 24.6 Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture). Folded from invitation-admission-charter (grammar-forward, run lexr4).
+
+## LEXPVM-T-188 · The four conditions of update (v1.7.1 · city-wide editorial protocol)
+- census: LEXPVM-T-188
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.7 The four conditions of update (v1.7.1 · city-wide editorial protocol)
+- relation: {"type":"conjunction","predicate":"Admissible","conjuncts":["Congruent Geometry","Recognisable Signature","Scribal Witness","Prior Preserved"]}
+
+```lex
+LEX Four Conditions of Update.
+
+"Editor" is a person.
+"Watcher" is a person.
+"Resident Mage" is a person.
+"Keeper" is a person.
+"Editorial Act" is this contract.
+"Update" is a text.
+"Congruent Geometry" is a binary.
+"Recognisable Signature" is data.
+"Scribal Witness" is data.
+"Prior Preserved" is a binary.
+
+The Keeper appoints the Editor, appoints the Watcher, and appoints the Resident Mage.
+
+CLAUSE: Test Geometry.
+The Watcher may declare Congruent Geometry.
+
+CLAUSE: Sign.
+The Editor must file the Recognisable Signature.
+
+CLAUSE: Witness.
+The Resident Mage may file the Scribal Witness.
+
+CLAUSE: Preserve Prior.
+The Keeper may declare Prior Preserved.
+
+CLAUSE: Admissible.
+"Admissible" is defined as: Congruent Geometry is declared and Recognisable Signature is filed and Scribal Witness is filed and Prior Preserved is declared.
+
+CLAUSE: Bind Update.
+The Keeper may, if this Editorial Act is Admissible: register the Update.
+```
+
+Notes: editorial admission as a four-way conjunction: the defined predicate Admissible requires the watcher's congruence declaration, the editor's filed signature (a duty, must), the resident mage's filed scribal witness, and the keeper's preservation declaration, each produced by its own side in its own clause, with binding gated on the whole predicate. Omits the addenda fallback for anonymous edits and the reading-not-a-vote nuance of the congruence test. Folded from role-charter-spell-family (spell-grammar, run lexr4).
+
+## LEXPVM-T-189 · Vitalik (first invited visiting mage · v1.7.1)
+- census: LEXPVM-T-189
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.8 Vitalik (first invited visiting mage · v1.7.1)
+- relation: {"type":"absence","to":"Visiting Mage","what":"Tier Stipend"}
+
+```lex
+LEX First Invited Visiting Mage.
+
+"Watcher" is a person.
+"Visiting Mage" is a person.
+"Resident Mage" is a person.
+"Tier Stipend" is an amount.
+"Appended Folio" is a text.
+"Geometry Congruent" is a binary.
+
+The Watcher appoints the Resident Mage, and fixes the Tier Stipend.
+
+CLAUSE: Recognise.
+The Watcher may declare Geometry Congruent.
+
+CLAUSE: Write.
+The Visiting Mage may, if Geometry Congruent is declared, file the Appended Folio.
+
+CLAUSE: Sustain.
+The Watcher may pay the Tier Stipend to the Resident Mage.
+```
+
+Notes: carries the no-tier exclusion as an absence of routes: the tier stipend pays only to resident mages and no clause can route it to the visiting mage (not a cast member, not a kindred subcategory, not a workshop-keeper), whose only permitted act is filing the appended folio under declared congruent geometry (authority limited to the appended folio). Omits the four-faced tablet's inscriptions and the named identity. Anchor: ### 24.8 Vitalik (first invited visiting mage · v1.7.1). Folded from invitation-admission-charter (grammar-forward, run lexr4).
+
+## LEXPVM-T-192 · Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)
+- census: LEXPVM-T-192
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 24.11 Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)
+- relation: {"type":"conjunction","predicate":"Stabilised","conjuncts":["First Instance","Second Instance"]}
+
+```lex
+LEX Candidate Conjecture Register.
+"Registrar" is a person.
+"Candidate" is a person.
+"Register" is this contract.
+"Conjecture" is a text.
+"First Instance" is a text.
+"Second Instance" is a text.
+
+The Registrar appoints the Candidate, fixes the Conjecture, and fixes the First Instance.
+
+The Candidate fixes the Second Instance.
+
+CLAUSE: Stabilised.
+"Stabilised" is defined as: the First Instance is fixed and the Second Instance is fixed.
+
+CLAUSE: Promote.
+
+The Registrar may, if this Register is Stabilised: certify the Conjecture.
+```
+
+Notes: conjunction: the defined predicate Stabilised requires all of First Instance AND Second Instance. Omissions per the term's canon anchor. Assayer-authored (ieee7012-standards-family held-out, recipe-only, run lexr4); keystone Notes.
+
+## LEXPVM-T-193 · The Conjecture Register (single numbering authority)
+- census: LEXPVM-T-193
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 25.1 The Conjecture Register (single numbering authority)
+- relation: {"type":"ordering","clause":"Number","sequence":["fix:Conjecture Number","register:Conjecture Number"]}
+
+```lex
+LEX Conjecture Register.
+
+TERMS:
+
+"Register Keeper" is a person.
+"Author" is a person.
+
+TERMS PER Conjecture:
+
+"Conjecture" is this contract.
+"Candidate Statement" is a text.
+"Conjecture Number" is data.
+"Numbered" is a binary.
+
+The Register Keeper appoints the Author.
+
+CLAUSE: Submit.
+The Author may file the Candidate Statement.
+
+CLAUSE: Number.
+The Register Keeper may, if the Candidate Statement is filed: fix the Conjecture Number, and afterwards register the Conjecture Number.
+This Conjecture is therefore Numbered.
+```
+
+Notes: Carries the numbering discipline as an ordering (per conjecture instance the Conjecture Number is fixed and only afterwards registered, the whole clause gated on the Candidate Statement being filed: a number exists before its register entry, never a register entry awaiting a renumber, and the Register Keeper is the only numbering actor in the text); omits the namespaces, the alias resolution rule, and the head pointer. Folded from instance-charter-family (grammar-forward, run lexr4).
+
+## LEXPVM-T-202 · Seating Lock and Phi Honesty (v10.4.0)
+- census: LEXPVM-T-202
+- register: glossary · conjectured expression of canonical term
+- cites: glossary-master-v4 § ### 25.10 Seating Lock and Phi Honesty (v10.4.0)
+- relation: {"type":"absence","to":"Lethe","what":"Delta Share"}
+
+```lex
+LEX Seating Lock.
+
+"Grimoire Keeper" is a person.
+"Aletheia" is a person.
+"Lethe" is a person.
+"Seating Lock" is data.
+"Lower Seat" is data.
+"Delta Share" is an amount.
+"Lock Pinned" is a binary.
+
+The Grimoire Keeper appoints Aletheia, and appoints Lethe, and fixes the Seating Lock.
+
+CLAUSE: Pin.
+The Grimoire Keeper may declare Lock Pinned.
+
+CLAUSE: Seat.
+The Lethe may certify the Lower Seat.
+
+CLAUSE: Assign.
+The Grimoire Keeper may, if Lock Pinned is declared: send the Delta Share to Aletheia.
+```
+
+Notes: impossibility as absence: no transfer clause routes Delta Share to the Lethe. Omissions per the term's canon anchor. Assayer-authored (rite-and-register-spell held-out, recipe-only, run lexr4); keystone Notes.
+

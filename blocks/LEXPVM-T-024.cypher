@@ -1,0 +1,8 @@
+MERGE (c:LexContract {census: "LEXPVM-T-024", name: "Valency", cites: "glossary-master-v4 § ### Valency"})
+MERGE (:Person {name: "Agent", contract: "Valency"})
+MERGE (:Person {name: "Guardian", contract: "Valency"})
+MERGE (:Amount {name: "Sword Stake", contract: "Valency"})
+MERGE (:Text {name: "Attention Pledge", contract: "Valency"})
+MATCH (a {name: "Agent"}), (b {name: "Agent"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Guardian"}]->(b)
+MATCH (a {name: "Guardian"}), (b {name: "Guardian"}) CREATE (a)-[:MAY_FIX {clause: "Stake", object: "Sword Stake"}]->(b)
+MATCH (a {name: "Guardian"}), (b {name: "Guardian"}) CREATE (a)-[:MAY_GRANT {clause: "Stake", object: "Attention Pledge"}]->(b)

@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-062",
+ "term": "First Party (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### First Party (IEEE 7012)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX First Party.\n\n\"First Party\" is a person.\n\"Entity\" is a person.\n\"Terms\" is a text.\n\"Proffered\" is a binary.\n\"Acceptance\" is a binary.\n\nThe First Party appoints the Entity, and fixes the Terms.\n\nCLAUSE: Proffer.\nThe First Party may send the Terms to the Entity, and declare Proffered.\n\nCLAUSE: Accept.\nThe Entity may, if Proffered is declared, declare Acceptance.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Party",
+   "verb": "appoint",
+   "o": "Entity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Terms",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "send",
+   "o": "Terms",
+   "io": "Entity",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Proffer"
+  },
+  {
+   "s": "First Party",
+   "verb": "declare",
+   "o": "Proffered",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Proffer"
+  },
+  {
+   "s": "Entity",
+   "verb": "declare",
+   "o": "Acceptance",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Proffered is declared",
+   "clause": "Accept"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Entity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Terms",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Terms->Entity",
+   "conditional": false,
+   "clause": "Proffer"
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Proffered",
+   "conditional": false,
+   "clause": "Proffer"
+  },
+  {
+   "promiser": "Entity",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Acceptance",
+   "conditional": true,
+   "clause": "Accept"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Accept",
+   "condition": "Proffered"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: consent-first direction as gate (the Entity's Acceptance fires only after the individual's declared Proffered; the mutation twin strips the gate so acceptance can precede any proffered terms, exactly the imposition shape the canon rejects). The individual is the origin of terms: the Proffer clause sends the Terms outward and only the First Party fixes them. Omits: always-a-person-never-an-organization typing (the Lexon person type cannot distinguish individuals from organizations) and the First Person dignity framing of the mapping. Folded from myterms-agreement-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

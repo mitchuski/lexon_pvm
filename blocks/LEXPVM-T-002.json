@@ -1,0 +1,145 @@
+{
+ "census": "LEXPVM-T-002",
+ "term": "Sovereignty",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Sovereignty",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Sovereignty.\n\n\"First Person\" is a person.\n\"Agent\" is a person.\n\"Charter\" is this contract.\n\"Data Control\" is a binary.\n\"Decision Control\" is a binary.\n\"Representation Control\" is a binary.\n\"Engagement Terms\" is a text.\n\nThe First Person appoints the Agent.\n\nCLAUSE: Hold Data.\nThe First Person may declare Data Control.\n\nCLAUSE: Hold Decisions.\nThe First Person may declare Decision Control.\n\nCLAUSE: Hold Representation.\nThe First Person may declare Representation Control.\n\nCLAUSE: Set Terms.\nThe First Person may fix the Engagement Terms.\n\nCLAUSE: Sovereign.\n\"Sovereign\" is defined as: Data Control is declared and Decision Control is declared and Representation Control is declared and the Engagement Terms is fixed.\n\nCLAUSE: Engage.\nThe Agent may, if this Charter is Sovereign: register the Engagement Terms.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Data Control",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Data"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Decision Control",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Decisions"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Representation Control",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Representation"
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Engagement Terms",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Set Terms"
+  },
+  {
+   "s": "Agent",
+   "verb": "register",
+   "o": "Engagement Terms",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Charter is Sovereign",
+   "clause": "Engage"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Data Control",
+   "conditional": false,
+   "clause": "Hold Data"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Decision Control",
+   "conditional": false,
+   "clause": "Hold Decisions"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Representation Control",
+   "conditional": false,
+   "clause": "Hold Representation"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Engagement Terms",
+   "conditional": false,
+   "clause": "Set Terms"
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Engagement Terms",
+   "conditional": true,
+   "clause": "Engage"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Sovereign",
+   "conjuncts": [
+    "Data Control",
+    "Decision Control",
+    "Representation Control",
+    "Engagement Terms"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Data Control\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Carries sovereignty as a four-way conjunction: the Sovereign state requires all four canon components (data, decision, representation, and conditional sovereignty as fixed engagement terms), and every component is declarable only by the First Person while the Agent's sole route to engagement runs through the constituted state. Deliberately omits the inalienability framing beyond clause shape, the Gap-as-architectural-expression sentence, and the 7th Capital economic expression (covered separately at T-003). Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

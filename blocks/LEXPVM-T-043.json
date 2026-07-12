@@ -1,0 +1,162 @@
+{
+ "census": "LEXPVM-T-043",
+ "term": "Sun Ceremony (☀️)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Sun Ceremony (☀️)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Sun Ceremony.\n\n\"Sun\" is a person.\n\"Witness\" is a person.\n\"Poem\" is a text.\n\"Blade\" is data.\n\"Light\" is data.\n\"Forgetting Consented\" is a binary.\n\nThe Sun appoints the Witness, and fixes the Poem.\n\nCLAUSE: Consent.\nThe Sun may declare Forgetting Consented.\n\nCLAUSE: Disclose.\nThe Sun must file the Poem, and afterwards certify the Blade, and afterwards send the Light to the Witness.\n\nCLAUSE: Carry.\nThe Witness may, if Forgetting Consented is declared: register the Light.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Sun",
+   "verb": "appoint",
+   "o": "Witness",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sun",
+   "verb": "fix",
+   "o": "Poem",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sun",
+   "verb": "declare",
+   "o": "Forgetting Consented",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Consent"
+  },
+  {
+   "s": "Sun",
+   "verb": "file",
+   "o": "Poem",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Disclose"
+  },
+  {
+   "s": "Sun",
+   "verb": "certify",
+   "o": "Blade",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Disclose"
+  },
+  {
+   "s": "Sun",
+   "verb": "send",
+   "o": "Light",
+   "io": "Witness",
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Disclose"
+  },
+  {
+   "s": "Witness",
+   "verb": "register",
+   "o": "Light",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Forgetting Consented is declared",
+   "clause": "Carry"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Witness",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Poem",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sun",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Forgetting Consented",
+   "conditional": false,
+   "clause": "Consent"
+  },
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "file:Poem",
+   "conditional": false,
+   "clause": "Disclose"
+  },
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "certify:Blade",
+   "conditional": false,
+   "clause": "Disclose"
+  },
+  {
+   "promiser": "Sun",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "send:Light->Witness",
+   "conditional": false,
+   "clause": "Disclose"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Light",
+   "conditional": true,
+   "clause": "Carry"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Disclose",
+   "sequence": [
+    "file:Poem",
+    "certify:Blade",
+    "send:Light"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries the disclosure rite as a single-officiant ordered chain (poem filed, then blade certified in full view, then light sent to the witness) plus a consent-first gate (the witness carries the light forward only under the Sun's advance consent to being forgotten); omits the notation string, the echo poem's title, and the Moon Ceremony mirror. Folded from rite-and-register-spell (spell-grammar, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

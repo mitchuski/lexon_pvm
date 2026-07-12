@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-152",
+ "term": "Manifold Proof",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Manifold Proof",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Manifold Proof.\n\n\"Prover\" is a person.\n\"Walker\" is a person.\n\"Path\" is data.\n\"Proof\" is data.\n\"Secret\" is an amount.\n\"Traversal Complete\" is a binary.\n\nThe Prover appoints the Walker, and fixes the Path.\n\nCLAUSE: Walk.\nThe Walker may register the Path, and afterwards declare Traversal Complete.\n\nCLAUSE: Certify.\nThe Prover may, if Traversal Complete is declared, certify the Proof.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Prover",
+   "verb": "appoint",
+   "o": "Walker",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Prover",
+   "verb": "fix",
+   "o": "Path",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Walker",
+   "verb": "register",
+   "o": "Path",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "Walker",
+   "verb": "declare",
+   "o": "Traversal Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Walk"
+  },
+  {
+   "s": "Prover",
+   "verb": "certify",
+   "o": "Proof",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Traversal Complete is declared",
+   "clause": "Certify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Prover",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Walker",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Prover",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Path",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Walker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Path",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "Walker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Traversal Complete",
+   "conditional": false,
+   "clause": "Walk"
+  },
+  {
+   "promiser": "Prover",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Proof",
+   "conditional": true,
+   "clause": "Certify"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Walker",
+   "what": "Secret"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Secret to Walker"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Secret to the Walker. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

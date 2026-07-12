@@ -1,0 +1,176 @@
+{
+ "census": "LEXPVM-T-035",
+ "term": "Privacy Pools",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Privacy Pools",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Privacy Pools.\n\nTERMS:\n\n\"Verifier\" is a person.\n\nTERMS PER Note:\n\n\"Note\" is this contract.\n\"Depositor\" is a person.\n\"Flagged Depositor\" is a person.\n\"Deposit\" is an amount.\n\"Association Proof\" is data.\n\"Innocent\" is a binary.\n\nThe Verifier appoints the Depositor, and appoints the Flagged Depositor.\n\nCLAUSE: Enter.\nThe Depositor or the Flagged Depositor may pay the Deposit into escrow.\n\nCLAUSE: Prove.\nThe Depositor may fix the Association Proof.\n\nCLAUSE: Screen.\nThe Verifier may, if the Association Proof is fixed, declare Innocent.\n\nCLAUSE: Withdraw.\nThe Verifier may, if Innocent is declared: return the Deposit to the Depositor, and afterwards terminate this Note.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Verifier",
+   "verb": "appoint",
+   "o": "Depositor",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Verifier",
+   "verb": "appoint",
+   "o": "Flagged Depositor",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Depositor",
+   "verb": "pay",
+   "o": "Deposit",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Enter"
+  },
+  {
+   "s": "Flagged Depositor",
+   "verb": "pay",
+   "o": "Deposit",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Enter"
+  },
+  {
+   "s": "Depositor",
+   "verb": "fix",
+   "o": "Association Proof",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Prove"
+  },
+  {
+   "s": "Verifier",
+   "verb": "declare",
+   "o": "Innocent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Association Proof is fixed",
+   "clause": "Screen"
+  },
+  {
+   "s": "Verifier",
+   "verb": "return",
+   "o": "Deposit",
+   "io": "Depositor",
+   "as": null,
+   "modal": "may",
+   "condition": "Innocent is declared",
+   "clause": "Withdraw"
+  },
+  {
+   "s": "Verifier",
+   "verb": "terminate",
+   "o": "Note",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Innocent is declared",
+   "clause": "Withdraw"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Depositor",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Flagged Depositor",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Depositor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Deposit",
+   "conditional": false,
+   "clause": "Enter"
+  },
+  {
+   "promiser": "Flagged Depositor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Deposit",
+   "conditional": false,
+   "clause": "Enter"
+  },
+  {
+   "promiser": "Depositor",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Association Proof",
+   "conditional": false,
+   "clause": "Prove"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Innocent",
+   "conditional": true,
+   "clause": "Screen"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "return:Deposit->Depositor",
+   "conditional": true,
+   "clause": "Withdraw"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:Note",
+   "conditional": true,
+   "clause": "Withdraw"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Flagged Depositor",
+   "what": "Deposit"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Deposit to Flagged Depositor"
+ },
+ "grandfathered": false,
+ "notes": "Carries the compliant-exit direction as an absence (both the Depositor and the Flagged Depositor may pay the Deposit into escrow, but no transfer clause routes the Deposit to the Flagged Depositor; the only exit is the Withdraw clause, gated on Innocent, which is declared only after an Association Proof is fixed: proving non-association is the condition of getting funds out); omits the cryptographic mixing mathematics and anonymity-set semantics. Folded from instance-charter-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,181 @@
+{
+ "census": "LEXPVM-T-188",
+ "term": "The four conditions of update (v1.7.1 · city-wide editorial protocol)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.7 The four conditions of update (v1.7.1 · city-wide editorial protocol)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Four Conditions of Update.\n\n\"Editor\" is a person.\n\"Watcher\" is a person.\n\"Resident Mage\" is a person.\n\"Keeper\" is a person.\n\"Editorial Act\" is this contract.\n\"Update\" is a text.\n\"Congruent Geometry\" is a binary.\n\"Recognisable Signature\" is data.\n\"Scribal Witness\" is data.\n\"Prior Preserved\" is a binary.\n\nThe Keeper appoints the Editor, appoints the Watcher, and appoints the Resident Mage.\n\nCLAUSE: Test Geometry.\nThe Watcher may declare Congruent Geometry.\n\nCLAUSE: Sign.\nThe Editor must file the Recognisable Signature.\n\nCLAUSE: Witness.\nThe Resident Mage may file the Scribal Witness.\n\nCLAUSE: Preserve Prior.\nThe Keeper may declare Prior Preserved.\n\nCLAUSE: Admissible.\n\"Admissible\" is defined as: Congruent Geometry is declared and Recognisable Signature is filed and Scribal Witness is filed and Prior Preserved is declared.\n\nCLAUSE: Bind Update.\nThe Keeper may, if this Editorial Act is Admissible: register the Update.",
+ "counts": {
+  "definitions": 10,
+  "clauses": 6,
+  "sentences": 6,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Editor",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Watcher",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Resident Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Watcher",
+   "verb": "declare",
+   "o": "Congruent Geometry",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Test Geometry"
+  },
+  {
+   "s": "Editor",
+   "verb": "file",
+   "o": "Recognisable Signature",
+   "io": null,
+   "as": null,
+   "modal": "must",
+   "condition": null,
+   "clause": "Sign"
+  },
+  {
+   "s": "Resident Mage",
+   "verb": "file",
+   "o": "Scribal Witness",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Witness"
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Prior Preserved",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Preserve Prior"
+  },
+  {
+   "s": "Keeper",
+   "verb": "register",
+   "o": "Update",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Editorial Act is Admissible",
+   "clause": "Bind Update"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Editor",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Watcher",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Resident Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Watcher",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Congruent Geometry",
+   "conditional": false,
+   "clause": "Test Geometry"
+  },
+  {
+   "promiser": "Editor",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "file:Recognisable Signature",
+   "conditional": false,
+   "clause": "Sign"
+  },
+  {
+   "promiser": "Resident Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Scribal Witness",
+   "conditional": false,
+   "clause": "Witness"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Prior Preserved",
+   "conditional": false,
+   "clause": "Preserve Prior"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Update",
+   "conditional": true,
+   "clause": "Bind Update"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Admissible",
+   "conjuncts": [
+    "Congruent Geometry",
+    "Recognisable Signature",
+    "Scribal Witness",
+    "Prior Preserved"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Congruent Geometry\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "editorial admission as a four-way conjunction: the defined predicate Admissible requires the watcher's congruence declaration, the editor's filed signature (a duty, must), the resident mage's filed scribal witness, and the keeper's preservation declaration, each produced by its own side in its own clause, with binding gated on the whole predicate. Omits the addenda fallback for anonymous edits and the reading-not-a-vote nuance of the congruence test. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

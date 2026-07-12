@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-003",
+ "term": "7th Capital",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 7th Capital",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Seventh Capital.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Behavioral Trajectory\" is an amount.\n\"Coordination Task\" is a text.\n\"Boundary Approved\" is a binary.\n\nThe First Person fixes the Behavioral Trajectory, appoints the Swordsman, and appoints the Mage.\n\nCLAUSE: Guard.\nThe Swordsman may certify the Behavioral Trajectory.\n\nCLAUSE: Approve.\nThe Swordsman may declare Boundary Approved.\n\nCLAUSE: Coordinate.\nThe Mage may, if Boundary Approved is declared: send the Coordination Task to the First Person.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Behavioral Trajectory",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Behavioral Trajectory",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Guard"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Boundary Approved",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Approve"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Coordination Task",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "Boundary Approved is declared",
+   "clause": "Coordinate"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Behavioral Trajectory",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Behavioral Trajectory",
+   "conditional": false,
+   "clause": "Guard"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Boundary Approved",
+   "conditional": false,
+   "clause": "Approve"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Coordination Task->First Person",
+   "conditional": true,
+   "clause": "Coordinate"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Mage",
+   "what": "Behavioral Trajectory"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Behavioral Trajectory to Mage"
+ },
+ "grandfathered": false,
+ "notes": "Carries the wealth-stays-home impossibility: the trajectory is fixed by the First Person and certifiable by the Swordsman, and no transfer clause routes it to the Mage, while value-creating coordination still proceeds through the boundary gate. The trajectory is typed as an amount deliberately: the canon defines the term as a capital form (personal wealth), and the amount type is what makes the absence claim falsifiable. Deliberately omits the trajectory-through-sovereignty-space framing, the six traditional capitals, and all economic magnitude claims. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

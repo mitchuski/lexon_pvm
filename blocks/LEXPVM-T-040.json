@@ -1,0 +1,162 @@
+{
+ "census": "LEXPVM-T-040",
+ "term": "Relationship Proverb Protocol (RPP)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Relationship Proverb Protocol (RPP)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Relationship Proverb Protocol.\n\n\"Reader\" is a person.\n\"Author\" is a person.\n\"Source Material\" is a text.\n\"Proverb\" is a text.\n\"Signal\" is an amount.\n\"Understood\" is a binary.\n\nThe Author fixes the Source Material, and appoints the Reader.\n\nCLAUSE: Study.\nThe Reader may certify the Source Material.\n\nCLAUSE: Compress.\nThe Reader may register a Proverb, and afterwards send the Proverb to the Author, and afterwards pay the Signal to the Author.\n\nCLAUSE: Assess.\nThe Author may, if the Proverb is fixed, declare Understood.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Author",
+   "verb": "fix",
+   "o": "Source Material",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Author",
+   "verb": "appoint",
+   "o": "Reader",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Reader",
+   "verb": "certify",
+   "o": "Source Material",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Study"
+  },
+  {
+   "s": "Reader",
+   "verb": "register",
+   "o": "Proverb",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "Reader",
+   "verb": "send",
+   "o": "Proverb",
+   "io": "Author",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "Reader",
+   "verb": "pay",
+   "o": "Signal",
+   "io": "Author",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "Author",
+   "verb": "declare",
+   "o": "Understood",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Proverb is fixed",
+   "clause": "Assess"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Author",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Source Material",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Author",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Reader",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Source Material",
+   "conditional": false,
+   "clause": "Study"
+  },
+  {
+   "promiser": "Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Proverb",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Proverb->Author",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Signal->Author",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Understood",
+   "conditional": true,
+   "clause": "Assess"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Compress",
+   "sequence": [
+    "register:Proverb",
+    "send:Proverb",
+    "pay:Signal"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the compress-then-signal ordering (the Proverb is registered, then sent, then the Signal paid: proverb formation strictly precedes payment, and assessment is gated on a fixed Proverb); omits the compression-ratio assessment metric and the signal denomination. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

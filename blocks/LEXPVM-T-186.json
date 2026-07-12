@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-186",
+ "term": "The Register of Invitations 🪑 (v1.7.1 · new structural register)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.5 The Register of Invitations 🪑 (v1.7.1 · new structural register)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Register of Invitations.\n\n\"Keeper\" is a person.\n\"Visiting Mage\" is a person.\n\"Joint Folio\" is a text.\n\"Geometry Congruent\" is a binary.\n\"Invitation Recorded\" is a binary.\n\nThe Keeper appoints the Visiting Mage.\n\nCLAUSE: Read Foundations.\nThe Keeper may declare Geometry Congruent.\n\nCLAUSE: Record Invitation.\nThe Keeper may, if Geometry Congruent is declared: declare Invitation Recorded.\n\nCLAUSE: Write.\nThe Visiting Mage may, if Invitation Recorded is declared: file the Joint Folio.\n\nCLAUSE: Bind To Library.\nThe Keeper may, if Joint Folio is filed: certify the Joint Folio.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Visiting Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Geometry Congruent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Read Foundations"
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Invitation Recorded",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Geometry Congruent is declared",
+   "clause": "Record Invitation"
+  },
+  {
+   "s": "Visiting Mage",
+   "verb": "file",
+   "o": "Joint Folio",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Invitation Recorded is declared",
+   "clause": "Write"
+  },
+  {
+   "s": "Keeper",
+   "verb": "certify",
+   "o": "Joint Folio",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Joint Folio is filed",
+   "clause": "Bind To Library"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Visiting Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Geometry Congruent",
+   "conditional": false,
+   "clause": "Read Foundations"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Invitation Recorded",
+   "conditional": true,
+   "clause": "Record Invitation"
+  },
+  {
+   "promiser": "Visiting Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Joint Folio",
+   "conditional": true,
+   "clause": "Write"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Joint Folio",
+   "conditional": true,
+   "clause": "Bind To Library"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Write",
+   "condition": "Invitation Recorded"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "invitation posture as a two-stage gate: the visiting stylus's only write route is conditional on the Keeper's recorded invitation, itself gated on the congruence reading (no self-invitation), and the move toward the Library of Joint Authorship chains on the filed joint folio. Omits the archive of unfilled forms, expiry by silence, and the petition to lift a seal. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

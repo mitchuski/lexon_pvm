@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-007",
+ "term": "Territory",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Territory",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Territory.\n\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Topology Record\" is data.\n\"Story Record\" is a text.\n\"Ceremony Message\" is a text.\n\"Channel Open\" is a binary.\n\nCLAUSE: Traverse.\nThe Swordsman may certify the Topology Record.\n\nCLAUSE: Narrate.\nThe Mage may register the Story Record.\n\nCLAUSE: Open Channel.\nThe Mage may declare Channel Open.\n\nCLAUSE: Ceremony.\nThe Swordsman may, if Channel Open is declared: send the Ceremony Message to the Mage.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Topology Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Traverse"
+  },
+  {
+   "s": "Mage",
+   "verb": "register",
+   "o": "Story Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Narrate"
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Channel Open",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Open Channel"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Ceremony Message",
+   "io": "Mage",
+   "as": null,
+   "modal": "may",
+   "condition": "Channel Open is declared",
+   "clause": "Ceremony"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Topology Record",
+   "conditional": false,
+   "clause": "Traverse"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Story Record",
+   "conditional": false,
+   "clause": "Narrate"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Channel Open",
+   "conditional": false,
+   "clause": "Open Channel"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Ceremony Message->Mage",
+   "conditional": true,
+   "clause": "Ceremony"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Ceremony",
+   "condition": "Channel Open"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries two authority domains with a single gated crossing: each agent acts only on its own domain's record, and the only sentence that crosses territories is the ceremony message, gated on the receiver-opened channel; the never-merge rule is that no clause moves either territory's record across, only ceremony messages cross and only through the gate. Deliberately omits the domain names (spellweb.ai, agentprivacy.ai), the third node bgin.ai, and the repo/process/storage separation levels. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

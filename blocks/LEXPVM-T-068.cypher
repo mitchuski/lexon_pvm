@@ -1,0 +1,15 @@
+MERGE (c:LexContract {census: "LEXPVM-T-068", name: "Customer Commons", cites: "glossary-master-v4 § ### Customer Commons"})
+MERGE (:Person {name: "Customer Commons", contract: "Customer Commons"})
+MERGE (:Person {name: "First Party", contract: "Customer Commons"})
+MERGE (:Person {name: "Second Party", contract: "Customer Commons"})
+MERGE (:Text {name: "Agreement", contract: "Customer Commons"})
+MERGE (:Data {name: "Registry Entry", contract: "Customer Commons"})
+MERGE (:Amount {name: "Consideration", contract: "Customer Commons"})
+MATCH (a {name: "First Party"}), (b {name: "First Party"}) CREATE (a)-[:FIX {clause: "recital", object: "Agreement"}]->(b)
+MATCH (a {name: "Customer Commons"}), (b {name: "Customer Commons"}) CREATE (a)-[:MAY_REGISTER {clause: "Host", object: "Agreement"}]->(b)
+MATCH (a {name: "Customer Commons"}), (b {name: "Customer Commons"}) CREATE (a)-[:MAY_CERTIFY {clause: "Host", object: "Registry Entry"}]->(b)
+MATCH (a {name: "Customer Commons"}), (b {name: "First Party"}) CREATE (a)-[:MAY_SEND {clause: "Publish", object: "Registry Entry"}]->(b)
+MATCH (a {name: "Customer Commons"}), (b {name: "Second Party"}) CREATE (a)-[:MAY_SEND {clause: "Publish", object: "Registry Entry"}]->(b)
+MATCH (a {name: "Second Party"}), (b {name: "First Party"}) CREATE (a)-[:MAY_PAY {clause: "Exchange", object: "Consideration"}]->(b)
+// claim (re-runnable): NOTHING routes Consideration to Customer Commons; any row falsifies the block
+MATCH (x)-[e]->(f {name: "Customer Commons"}) WHERE e.object = "Consideration" RETURN count(e) AS mustBeZero

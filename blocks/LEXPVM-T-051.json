@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-051",
+ "term": "Golden Ratio (φ)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Golden Ratio (φ)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Golden Ratio Split.\n\n\"Practitioner\" is a person.\n\"Observer\" is a person.\n\"Shielded Pool\" is a person.\n\"Transparent Share\" is an amount.\n\"Shielded Share\" is an amount.\n\"Split Fixed\" is a binary.\n\nThe Practitioner appoints the Observer.\n\nCLAUSE: Fix Split.\nThe Practitioner may declare Split Fixed.\n\nCLAUSE: Route Transparent.\nThe Practitioner may, if Split Fixed is declared: send the Transparent Share to the Observer.\n\nCLAUSE: Route Shielded.\nThe Practitioner may, if Split Fixed is declared: pay the Shielded Share to the Shielded Pool.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Practitioner",
+   "verb": "appoint",
+   "o": "Observer",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Practitioner",
+   "verb": "declare",
+   "o": "Split Fixed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Fix Split"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "send",
+   "o": "Transparent Share",
+   "io": "Observer",
+   "as": null,
+   "modal": "may",
+   "condition": "Split Fixed is declared",
+   "clause": "Route Transparent"
+  },
+  {
+   "s": "Practitioner",
+   "verb": "pay",
+   "o": "Shielded Share",
+   "io": "Shielded Pool",
+   "as": null,
+   "modal": "may",
+   "condition": "Split Fixed is declared",
+   "clause": "Route Shielded"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Practitioner",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Observer",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Split Fixed",
+   "conditional": false,
+   "clause": "Fix Split"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Transparent Share->Observer",
+   "conditional": true,
+   "clause": "Route Transparent"
+  },
+  {
+   "promiser": "Practitioner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Shielded Share->Shielded Pool",
+   "conditional": true,
+   "clause": "Route Shielded"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Observer",
+   "what": "Shielded Share"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Shielded Share to Observer"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Shielded Share to the Observer. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

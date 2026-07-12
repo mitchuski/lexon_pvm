@@ -1,0 +1,86 @@
+{
+ "census": "LEXPVM-T-078",
+ "term": "Ashe",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Ashe",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Ashe.\n\n\"Ashe\" is a person.\n\"First Person\" is a person.\n\"Protection Mirror\" is a text.\n\"Scrying Glass\" is a text.\n\"Inversion Discovered\" is a binary.\n\nCLAUSE: Build Mirror.\nThe Ashe may register the Protection Mirror.\n\nCLAUSE: Discover.\nThe Ashe may declare Inversion Discovered.\n\nCLAUSE: Invert.\nThe Ashe may, if Inversion Discovered is declared: send the Scrying Glass to the First Person.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 3,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Ashe",
+   "verb": "register",
+   "o": "Protection Mirror",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Build Mirror"
+  },
+  {
+   "s": "Ashe",
+   "verb": "declare",
+   "o": "Inversion Discovered",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Discover"
+  },
+  {
+   "s": "Ashe",
+   "verb": "send",
+   "o": "Scrying Glass",
+   "io": "First Person",
+   "as": null,
+   "modal": "may",
+   "condition": "Inversion Discovered is declared",
+   "clause": "Invert"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Ashe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Protection Mirror",
+   "conditional": false,
+   "clause": "Build Mirror"
+  },
+  {
+   "promiser": "Ashe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Inversion Discovered",
+   "conditional": false,
+   "clause": "Discover"
+  },
+  {
+   "promiser": "Ashe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Scrying Glass->First Person",
+   "conditional": true,
+   "clause": "Invert"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Invert",
+   "condition": "Inversion Discovered"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Invert clause is reachable only under the Inversion Discovered condition. Omissions per the term's canon anchor. Assayer-authored (sovereignty-cluster-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

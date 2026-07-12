@@ -1,0 +1,158 @@
+{
+ "census": "LEXPVM-T-054",
+ "term": "x402 Protocol",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### x402 Protocol",
+  "register": "glossary · conjectured expression of implemented term"
+ },
+ "lex": "LEX Payment Per Request Charter.\n\n\"Client\" is a person.\n\"Server\" is a person.\n\"Request\" is a text.\n\"Resource\" is a text.\n\"Price\" is an amount.\n\"Paid\" is a binary.\n\nThe Server fixes the Price, fixes the Resource, and appoints the Client.\n\nCLAUSE: Ask.\nThe Client may send the Request to the Server.\n\nCLAUSE: Settle.\nThe Client may pay the Price to the Server, and afterwards declare Paid.\n\nCLAUSE: Serve.\nThe Server may, if Paid is declared, send the Resource to the Client.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Server",
+   "verb": "fix",
+   "o": "Price",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Server",
+   "verb": "fix",
+   "o": "Resource",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Server",
+   "verb": "appoint",
+   "o": "Client",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Client",
+   "verb": "send",
+   "o": "Request",
+   "io": "Server",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Ask"
+  },
+  {
+   "s": "Client",
+   "verb": "pay",
+   "o": "Price",
+   "io": "Server",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Settle"
+  },
+  {
+   "s": "Client",
+   "verb": "declare",
+   "o": "Paid",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Settle"
+  },
+  {
+   "s": "Server",
+   "verb": "send",
+   "o": "Resource",
+   "io": "Client",
+   "as": null,
+   "modal": "may",
+   "condition": "Paid is declared",
+   "clause": "Serve"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Server",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Price",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Server",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Resource",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Server",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Client",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Client",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Request->Server",
+   "conditional": false,
+   "clause": "Ask"
+  },
+  {
+   "promiser": "Client",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Price->Server",
+   "conditional": false,
+   "clause": "Settle"
+  },
+  {
+   "promiser": "Client",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Paid",
+   "conditional": false,
+   "clause": "Settle"
+  },
+  {
+   "promiser": "Server",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Resource->Client",
+   "conditional": true,
+   "clause": "Serve"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Serve",
+   "condition": "Paid"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the payment-gates-delivery structure of the payment-required pattern (the Serve action exists only under Paid declared, and settlement precedes the declaration in the Settle chain); omits HTTP status semantics, per-request accounting, and payment rails. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

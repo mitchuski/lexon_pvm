@@ -1,0 +1,18 @@
+MERGE (c:LexContract {census: "LEXPVM-T-150", name: "Emissary Dispersion", cites: "glossary-master-v4 § ### Emissary Dispersion"})
+MERGE (:Person {name: "Master", contract: "Emissary Dispersion"})
+MERGE (:Person {name: "First Emissary", contract: "Emissary Dispersion"})
+MERGE (:Person {name: "Second Emissary", contract: "Emissary Dispersion"})
+MERGE (:Amount {name: "Master Secret", contract: "Emissary Dispersion"})
+MERGE (:Amount {name: "First Shard", contract: "Emissary Dispersion"})
+MERGE (:Amount {name: "Second Shard", contract: "Emissary Dispersion"})
+MATCH (a {name: "Master"}), (b {name: "Master"}) CREATE (a)-[:FIX {clause: "recital", object: "Master Secret"}]->(b)
+MATCH (a {name: "Master"}), (b {name: "Master"}) CREATE (a)-[:FIX {clause: "recital", object: "First Shard"}]->(b)
+MATCH (a {name: "Master"}), (b {name: "Master"}) CREATE (a)-[:FIX {clause: "recital", object: "Second Shard"}]->(b)
+MATCH (a {name: "Master"}), (b {name: "Master"}) CREATE (a)-[:APPOINT {clause: "recital", object: "First Emissary"}]->(b)
+MATCH (a {name: "Master"}), (b {name: "Master"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Second Emissary"}]->(b)
+MATCH (a {name: "Master"}), (b {name: "First Emissary"}) CREATE (a)-[:MAY_PAY {clause: "Disperse", object: "First Shard"}]->(b)
+MATCH (a {name: "Master"}), (b {name: "Second Emissary"}) CREATE (a)-[:MAY_PAY {clause: "Disperse", object: "Second Shard"}]->(b)
+MATCH (a {name: "First Emissary"}), (b {name: "First Emissary"}) CREATE (a)-[:MAY_CERTIFY {clause: "First Carry", object: "First Shard"}]->(b)
+MATCH (a {name: "Second Emissary"}), (b {name: "Second Emissary"}) CREATE (a)-[:MAY_CERTIFY {clause: "Second Carry", object: "Second Shard"}]->(b)
+// claim (re-runnable): NOTHING routes Master Secret to First Emissary; any row falsifies the block
+MATCH (x)-[e]->(f {name: "First Emissary"}) WHERE e.object = "Master Secret" RETURN count(e) AS mustBeZero

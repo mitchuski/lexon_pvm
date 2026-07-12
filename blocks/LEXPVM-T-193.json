@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-193",
+ "term": "The Conjecture Register (single numbering authority)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 25.1 The Conjecture Register (single numbering authority)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Conjecture Register.\n\nTERMS:\n\n\"Register Keeper\" is a person.\n\"Author\" is a person.\n\nTERMS PER Conjecture:\n\n\"Conjecture\" is this contract.\n\"Candidate Statement\" is a text.\n\"Conjecture Number\" is data.\n\"Numbered\" is a binary.\n\nThe Register Keeper appoints the Author.\n\nCLAUSE: Submit.\nThe Author may file the Candidate Statement.\n\nCLAUSE: Number.\nThe Register Keeper may, if the Candidate Statement is filed: fix the Conjecture Number, and afterwards register the Conjecture Number.\nThis Conjecture is therefore Numbered.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Register Keeper",
+   "verb": "appoint",
+   "o": "Author",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Author",
+   "verb": "file",
+   "o": "Candidate Statement",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Submit"
+  },
+  {
+   "s": "Register Keeper",
+   "verb": "fix",
+   "o": "Conjecture Number",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Candidate Statement is filed",
+   "clause": "Number"
+  },
+  {
+   "s": "Register Keeper",
+   "verb": "register",
+   "o": "Conjecture Number",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Candidate Statement is filed",
+   "clause": "Number"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Register Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Author",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Candidate Statement",
+   "conditional": false,
+   "clause": "Submit"
+  },
+  {
+   "promiser": "Register Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Conjecture Number",
+   "conditional": true,
+   "clause": "Number"
+  },
+  {
+   "promiser": "Register Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Conjecture Number",
+   "conditional": true,
+   "clause": "Number"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Number",
+   "sequence": [
+    "fix:Conjecture Number",
+    "register:Conjecture Number"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries the numbering discipline as an ordering (per conjecture instance the Conjecture Number is fixed and only afterwards registered, the whole clause gated on the Candidate Statement being filed: a number exists before its register entry, never a register entry awaiting a renumber, and the Register Keeper is the only numbering actor in the text); omits the namespaces, the alias resolution rule, and the head pointer. Folded from instance-charter-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

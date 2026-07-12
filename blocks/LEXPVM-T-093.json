@@ -1,0 +1,126 @@
+{
+ "census": "LEXPVM-T-093",
+ "term": "Three-Axis Separation (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Three-Axis Separation (V5)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Three Axis Separation Charter.\n\n\"Verifier\" is a person.\n\"Operator\" is a person.\n\"Separation Record\" is this contract.\n\"Agent Axis\" is a binary.\n\"Data Axis\" is a binary.\n\"Inference Axis\" is a binary.\n\nThe Verifier appoints the Operator.\n\nCLAUSE: Hold.\nThe Operator may declare Agent Axis.\nThe Operator may declare Data Axis.\nThe Operator may declare Inference Axis.\n\nCLAUSE: Separated.\n\"Separated\" is defined as: Agent Axis is declared and Data Axis is declared and Inference Axis is declared.\n\nCLAUSE: Attest.\nThe Verifier may, if this Separation Record is Separated: certify the Separation Record.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Verifier",
+   "verb": "appoint",
+   "o": "Operator",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Operator",
+   "verb": "declare",
+   "o": "Agent Axis",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold"
+  },
+  {
+   "s": "Operator",
+   "verb": "declare",
+   "o": "Data Axis",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold"
+  },
+  {
+   "s": "Operator",
+   "verb": "declare",
+   "o": "Inference Axis",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold"
+  },
+  {
+   "s": "Verifier",
+   "verb": "certify",
+   "o": "Separation Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Separation Record is Separated",
+   "clause": "Attest"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Verifier",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Operator",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Operator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Agent Axis",
+   "conditional": false,
+   "clause": "Hold"
+  },
+  {
+   "promiser": "Operator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Data Axis",
+   "conditional": false,
+   "clause": "Hold"
+  },
+  {
+   "promiser": "Operator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Inference Axis",
+   "conditional": false,
+   "clause": "Hold"
+  },
+  {
+   "promiser": "Verifier",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Separation Record",
+   "conditional": true,
+   "clause": "Attest"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Separated",
+   "conjuncts": [
+    "Agent Axis",
+    "Data Axis",
+    "Inference Axis"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Agent Axis\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Separated requires all of Agent Axis AND Data Axis AND Inference Axis. Omissions per the term's canon anchor. Assayer-authored (consent-standard-party-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

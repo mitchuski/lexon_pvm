@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-028",
+ "term": "Separation Theorem",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Separation Theorem",
+  "register": "glossary · conjectured expression of proven term"
+ },
+ "lex": "LEX Separation Theorem.\n\n\"First Person\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Adversary\" is a person.\n\"Theorem\" is this contract.\n\"Swordsman Leakage\" is an amount.\n\"Mage Leakage\" is an amount.\n\"Total Leakage\" is an amount.\n\"Held Apart\" is a binary.\n\nThe First Person appoints the Swordsman, and appoints the Mage.\n\nCLAUSE: Hold Apart.\nThe First Person may declare Held Apart.\n\nCLAUSE: Observe Swordsman.\nThe Adversary may fix the Swordsman Leakage.\n\nCLAUSE: Observe Mage.\nThe Adversary may fix the Mage Leakage.\n\nCLAUSE: Accounted.\n\"Accounted\" is defined as: the Swordsman Leakage is fixed and the Mage Leakage is fixed.\n\nCLAUSE: Account.\nThe Adversary may, if Held Apart is declared and this Theorem is Accounted: fix the Total Leakage.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Held Apart",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Apart"
+  },
+  {
+   "s": "Adversary",
+   "verb": "fix",
+   "o": "Swordsman Leakage",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe Swordsman"
+  },
+  {
+   "s": "Adversary",
+   "verb": "fix",
+   "o": "Mage Leakage",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Observe Mage"
+  },
+  {
+   "s": "Adversary",
+   "verb": "fix",
+   "o": "Total Leakage",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Held Apart is declared and this Theorem is Accounted",
+   "clause": "Account"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Held Apart",
+   "conditional": false,
+   "clause": "Hold Apart"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Swordsman Leakage",
+   "conditional": false,
+   "clause": "Observe Swordsman"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Mage Leakage",
+   "conditional": false,
+   "clause": "Observe Mage"
+  },
+  {
+   "promiser": "Adversary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Total Leakage",
+   "conditional": true,
+   "clause": "Account"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Account",
+   "condition": "Held Apart"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries the theorem's premise-conclusion structure: the total leakage may be fixed only under the held-apart premise (the conditional-independence condition of the formula) and only from the two marginal observations, whose two-conjunct Accounted definition has no third synergy conjunct, which is additive-not-multiplicative in clause shape; the claim pins the accounting to the premise. Deliberately omits the mutual-information notation, the equality itself as arithmetic, and the proof; the theorem's PROVEN canon status is recorded in the register tag, not upgraded here. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

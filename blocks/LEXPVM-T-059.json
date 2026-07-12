@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-059",
+ "term": "Agreement (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Agreement (IEEE 7012)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Agreement.\n\n\"First Party\" is a person.\n\"Second Party\" is a person.\n\"Purpose Term\" is a text.\n\"Retention Term\" is a text.\n\"Agreement\" is a text.\n\nThe First Party appoints the Second Party, fixes the Purpose Term, fixes the Retention Term, and fixes the Agreement.\n\nCLAUSE: Compound.\n\"Complete\" is defined as: the Purpose Term is fixed and the Retention Term is fixed.\n\nCLAUSE: Offer.\nThe First Party may, if this Agreement is Complete: send the Agreement to the Second Party.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Party",
+   "verb": "appoint",
+   "o": "Second Party",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Purpose Term",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Retention Term",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Agreement",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "send",
+   "o": "Agreement",
+   "io": "Second Party",
+   "as": null,
+   "modal": "may",
+   "condition": "this Agreement is Complete",
+   "clause": "Offer"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Party",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Purpose Term",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Retention Term",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Agreement",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Agreement->Second Party",
+   "conditional": true,
+   "clause": "Offer"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Complete",
+   "conjuncts": [
+    "Purpose Term",
+    "Retention Term"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Purpose Term\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Structural: compoundness as conjunction (the defined predicate Complete requires BOTH the Purpose Term AND the Retention Term fixed; the mutation twin drops one term clause and the offer warrant survives on a fragment that is no longer a compound set), plus the proposed-and-offered-before-a-contract posture carried by gating Offer on Complete. Omits: the open-ended plurality of term clauses (two stand for the set) and the formal-contract successor step, which lives in T-060. Folded from myterms-agreement-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

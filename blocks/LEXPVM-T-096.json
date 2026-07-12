@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-096",
+ "term": "Φ_inference (Inference-Layer Separation)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Φ_inference (Inference-Layer Separation)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Inference Layer Separation.\n\n\"Generator\" is a person.\n\"Solver\" is a person.\n\"Reasoning Graph\" is a text.\n\"Execution\" is data.\n\"Shared Weights\" is an amount.\n\"Graph Filed\" is a binary.\n\nThe Generator appoints the Solver.\n\nCLAUSE: Reason.\nThe Generator may file the Reasoning Graph, and afterwards declare Graph Filed.\n\nCLAUSE: Execute.\nThe Solver may, if Graph Filed is declared, register the Execution.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Generator",
+   "verb": "appoint",
+   "o": "Solver",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Generator",
+   "verb": "file",
+   "o": "Reasoning Graph",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reason"
+  },
+  {
+   "s": "Generator",
+   "verb": "declare",
+   "o": "Graph Filed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reason"
+  },
+  {
+   "s": "Solver",
+   "verb": "register",
+   "o": "Execution",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Graph Filed is declared",
+   "clause": "Execute"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Generator",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Solver",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Reasoning Graph",
+   "conditional": false,
+   "clause": "Reason"
+  },
+  {
+   "promiser": "Generator",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Graph Filed",
+   "conditional": false,
+   "clause": "Reason"
+  },
+  {
+   "promiser": "Solver",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Execution",
+   "conditional": true,
+   "clause": "Execute"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Solver",
+   "what": "Shared Weights"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Shared Weights to Solver"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Shared Weights to the Solver. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

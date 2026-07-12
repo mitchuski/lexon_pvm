@@ -1,0 +1,126 @@
+{
+ "census": "LEXPVM-T-008",
+ "term": "Home Territory",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Home Territory",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Home Territory.\n\n\"Extension\" is a person.\n\"First Person\" is a person.\n\"Mana Balance\" is a text.\n\"Inscription Panel\" is a text.\n\"Ceremony Receiver\" is a text.\n\"Home Detected\" is a binary.\n\nThe First Person appoints the Extension.\n\nCLAUSE: Detect.\nThe Extension may declare Home Detected.\n\nCLAUSE: Enable.\nThe Extension may, if Home Detected is declared: register the Mana Balance, grant the Inscription Panel, and afterwards register the Ceremony Receiver.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Extension",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Extension",
+   "verb": "declare",
+   "o": "Home Detected",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Detect"
+  },
+  {
+   "s": "Extension",
+   "verb": "register",
+   "o": "Mana Balance",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Home Detected is declared",
+   "clause": "Enable"
+  },
+  {
+   "s": "Extension",
+   "verb": "grant",
+   "o": "Inscription Panel",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Home Detected is declared",
+   "clause": "Enable"
+  },
+  {
+   "s": "Extension",
+   "verb": "register",
+   "o": "Ceremony Receiver",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Home Detected is declared",
+   "clause": "Enable"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Extension",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Extension",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Home Detected",
+   "conditional": false,
+   "clause": "Detect"
+  },
+  {
+   "promiser": "Extension",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Mana Balance",
+   "conditional": true,
+   "clause": "Enable"
+  },
+  {
+   "promiser": "Extension",
+   "type": "promise",
+   "polarity": "+",
+   "body": "grant:Inscription Panel",
+   "conditional": true,
+   "clause": "Enable"
+  },
+  {
+   "promiser": "Extension",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Ceremony Receiver",
+   "conditional": true,
+   "clause": "Enable"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Enable",
+   "sequence": [
+    "register:Mana Balance",
+    "grant:Inscription Panel",
+    "register:Ceremony Receiver"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries detection-then-enablement as an ordered action chain: the enable clause performs the three canon-enabled features (mana balance, inscription panel, ceremony receiver) in the canon's listed order, and only after home detection is declared; the ordering claim pins the sequence and the gate condition carries the detection premise. Deliberately omits the home domain list, the hostname-match mechanism, and the HOME_TERRITORY message name. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

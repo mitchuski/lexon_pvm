@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-181",
+ "term": "Cousin tier, deliberately unattached",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 23.8 Cousin tier, deliberately unattached",
+  "register": "glossary · conjectured expression of documented term"
+ },
+ "lex": "LEX Cousin Tier.\n\n\"City\" is a person.\n\"Cast Mage\" is a person.\n\"Cousin\" is a person.\n\"Attachment\" is an amount.\n\"Own Binding\" is a text.\n\"Binding Reserved\" is a binary.\n\nThe City appoints the Cast Mage.\n\nCLAUSE: Attach Cast.\nThe City may send the Attachment to the Cast Mage.\n\nCLAUSE: Reserve.\nThe City may declare Binding Reserved.\n\nCLAUSE: Forge Own.\nThe Cousin may register the Own Binding.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "City",
+   "verb": "appoint",
+   "o": "Cast Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "City",
+   "verb": "send",
+   "o": "Attachment",
+   "io": "Cast Mage",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Attach Cast"
+  },
+  {
+   "s": "City",
+   "verb": "declare",
+   "o": "Binding Reserved",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reserve"
+  },
+  {
+   "s": "Cousin",
+   "verb": "register",
+   "o": "Own Binding",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Forge Own"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "City",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Cast Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "City",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Attachment->Cast Mage",
+   "conditional": false,
+   "clause": "Attach Cast"
+  },
+  {
+   "promiser": "City",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Binding Reserved",
+   "conditional": false,
+   "clause": "Reserve"
+  },
+  {
+   "promiser": "Cousin",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Own Binding",
+   "conditional": false,
+   "clause": "Forge Own"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Cousin",
+   "what": "Attachment"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Attachment to Cousin"
+ },
+ "grandfathered": false,
+ "notes": "deliberate unattachment as an impossibility: an attachment route exists to the cast mage and NO transfer clause routes an attachment to the cousin, who is never appointed in the recital and whose only binding is self-registered in its own forge (the city reserves the binding decision rather than imposing it, direction as absence). Omits the named cousins and the Layer-2 attachment registry mechanics. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

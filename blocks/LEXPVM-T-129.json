@@ -1,0 +1,161 @@
+{
+ "census": "LEXPVM-T-129",
+ "term": "Bilateral Witness (BW)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Bilateral Witness (BW)",
+  "register": "glossary · conjectured expression of speculative term"
+ },
+ "lex": "LEX Bilateral Witness.\n\n\"Witness Exchange\" is this contract.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Community\" is a person.\n\"Blade\" is data.\n\"Testimony\" is a text.\n\"Verified\" is a binary.\n\nThe Swordsman fixes the Blade, appoints the Mage, and appoints the Community.\n\nCLAUSE: Verify.\nThe Mage may certify the Blade, and afterwards declare Verified.\n\nCLAUSE: Testify.\nThe Mage may, if Verified is declared, send the Testimony to the Community.\n\nCLAUSE: Witnessed.\n\"Witnessed\" is defined as: Verified is declared and the Testimony is fixed.\n\nCLAUSE: Receive.\nThe Community may, if this Witness Exchange is Witnessed, certify the Testimony.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Swordsman",
+   "verb": "fix",
+   "o": "Blade",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "appoint",
+   "o": "Community",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "certify",
+   "o": "Blade",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Verify"
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Verified",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Verify"
+  },
+  {
+   "s": "Mage",
+   "verb": "send",
+   "o": "Testimony",
+   "io": "Community",
+   "as": null,
+   "modal": "may",
+   "condition": "Verified is declared",
+   "clause": "Testify"
+  },
+  {
+   "s": "Community",
+   "verb": "certify",
+   "o": "Testimony",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Witness Exchange is Witnessed",
+   "clause": "Receive"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Blade",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Community",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Blade",
+   "conditional": false,
+   "clause": "Verify"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Verified",
+   "conditional": false,
+   "clause": "Verify"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Testimony->Community",
+   "conditional": true,
+   "clause": "Testify"
+  },
+  {
+   "promiser": "Community",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Testimony",
+   "conditional": true,
+   "clause": "Receive"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Witnessed",
+   "conjuncts": [
+    "Verified",
+    "Testimony"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Verified\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "carries attestation without revelation as a conjunction (community reception requires BOTH private verification declared AND public testimony fixed, while no transfer clause routes the Blade itself to the Community); omits the quantum-resistance rationale and the demonstration date. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

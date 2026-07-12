@@ -1,0 +1,126 @@
+{
+ "census": "LEXPVM-T-116",
+ "term": "Holonic Architect (☯️🔷) (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Holonic Architect (☯️🔷) (V5)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Holonic Architect.\n\n\"First Person\" is a person.\n\"Holonic Architect\" is a person.\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Substrate\" is this contract.\n\"Data Persistence\" is a binary.\n\"Identity Persistence\" is a binary.\n\"History Persistence\" is a binary.\n\"Dance\" is a text.\n\nThe First Person appoints the Holonic Architect.\n\nCLAUSE: Hold Data.\nThe Holonic Architect may declare Data Persistence.\n\nCLAUSE: Hold Identity.\nThe Holonic Architect may declare Identity Persistence.\n\nCLAUSE: Hold History.\nThe Holonic Architect may declare History Persistence.\n\nCLAUSE: Sound.\n\"Sound\" is defined as: Data Persistence is declared and Identity Persistence is declared and History Persistence is declared.\n\nCLAUSE: Dance.\nThe Swordsman may, if this Substrate is Sound: register the Dance.",
+ "counts": {
+  "definitions": 9,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Holonic Architect",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Holonic Architect",
+   "verb": "declare",
+   "o": "Data Persistence",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Data"
+  },
+  {
+   "s": "Holonic Architect",
+   "verb": "declare",
+   "o": "Identity Persistence",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Identity"
+  },
+  {
+   "s": "Holonic Architect",
+   "verb": "declare",
+   "o": "History Persistence",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold History"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "register",
+   "o": "Dance",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Substrate is Sound",
+   "clause": "Dance"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Holonic Architect",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Holonic Architect",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Data Persistence",
+   "conditional": false,
+   "clause": "Hold Data"
+  },
+  {
+   "promiser": "Holonic Architect",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Identity Persistence",
+   "conditional": false,
+   "clause": "Hold Identity"
+  },
+  {
+   "promiser": "Holonic Architect",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:History Persistence",
+   "conditional": false,
+   "clause": "Hold History"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Dance",
+   "conditional": true,
+   "clause": "Dance"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Sound",
+   "conjuncts": [
+    "Data Persistence",
+    "Identity Persistence",
+    "History Persistence"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Data Persistence\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Sound requires all of Data Persistence AND Identity Persistence AND History Persistence. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,7 @@
+MERGE (c:LexContract {census: "LEXPVM-T-064", name: "Proposer (IEEE 7012)", cites: "glossary-master-v4 § ### Proposer (IEEE 7012)"})
+MERGE (:Person {name: "Proposer", contract: "Proposer (IEEE 7012)"})
+MERGE (:Person {name: "Recipient", contract: "Proposer (IEEE 7012)"})
+MERGE (:Text {name: "Proposed Terms", contract: "Proposer (IEEE 7012)"})
+MATCH (a {name: "Proposer"}), (b {name: "Proposer"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Recipient"}]->(b)
+MATCH (a {name: "Proposer"}), (b {name: "Proposer"}) CREATE (a)-[:MAY_FIX {clause: "Advance", object: "Proposed Terms"}]->(b)
+MATCH (a {name: "Proposer"}), (b {name: "Recipient"}) CREATE (a)-[:MAY_SEND {clause: "Advance", object: "Proposed Terms"}]->(b)

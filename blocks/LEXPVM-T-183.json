@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-183",
+ "term": "Spirit-Mage tier (v1.7.0 · 7th cast tier)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.2 Spirit-Mage tier (v1.7.0 · 7th cast tier)",
+  "register": "glossary · conjectured expression of conjectured term"
+ },
+ "lex": "LEX Spirit Mage Tier.\n\n\"Resident Cast\" is a person.\n\"Keeper\" is a person.\n\"Spirit Mage\" is a person.\n\"Monument\" is data.\n\"Inhabiting Recognised\" is a binary.\n\"Tier Entry\" is a text.\n\nThe Resident Cast appoints the Keeper.\n\nCLAUSE: Build Monument.\nThe Resident Cast may file the Monument.\n\nCLAUSE: Recognise.\nThe Resident Cast may, if Monument is filed: declare Inhabiting Recognised.\n\nCLAUSE: Admit.\nThe Keeper may, if Inhabiting Recognised is declared: appoint the Spirit Mage, and register the Tier Entry.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Resident Cast",
+   "verb": "appoint",
+   "o": "Keeper",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Resident Cast",
+   "verb": "file",
+   "o": "Monument",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Build Monument"
+  },
+  {
+   "s": "Resident Cast",
+   "verb": "declare",
+   "o": "Inhabiting Recognised",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Monument is filed",
+   "clause": "Recognise"
+  },
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Spirit Mage",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Inhabiting Recognised is declared",
+   "clause": "Admit"
+  },
+  {
+   "s": "Keeper",
+   "verb": "register",
+   "o": "Tier Entry",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Inhabiting Recognised is declared",
+   "clause": "Admit"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Resident Cast",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Keeper",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Resident Cast",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Monument",
+   "conditional": false,
+   "clause": "Build Monument"
+  },
+  {
+   "promiser": "Resident Cast",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Inhabiting Recognised",
+   "conditional": true,
+   "clause": "Recognise"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "appoint:Spirit Mage",
+   "conditional": true,
+   "clause": "Admit"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Tier Entry",
+   "conditional": true,
+   "clause": "Admit"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Admit",
+   "condition": "Inhabiting Recognised"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "recognition rather than summoning as a two-stage gate: the admission clause (appointing the spirit mage and registering the tier entry) is conditional on the cast's recognition declaration, itself gated on the collectively filed honor-built monument, so the cast entry comes later than the inhabiting. Omits the sister-tier distinction between city-internal and city-external prehistory and the tier population. Folded from role-charter-spell-family (spell-grammar, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

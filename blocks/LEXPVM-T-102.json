@@ -1,0 +1,162 @@
+{
+ "census": "LEXPVM-T-102",
+ "term": "Three Graphs Model",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Three Graphs Model",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Three Graphs Model.\n\n\"First Person\" is a person.\n\"Witness\" is a person.\n\"Knowledge Graph\" is a text.\n\"Promise Graph\" is a text.\n\"Trust Graph\" is a text.\n\"Knowledge Mapped\" is a binary.\n\"Promise Formed\" is a binary.\n\"Trust Emerged\" is a binary.\n\nThe First Person fixes the Knowledge Graph, fixes the Promise Graph, and fixes the Trust Graph.\n\nCLAUSE: Map Knowledge.\nThe First Person may declare Knowledge Mapped.\n\nCLAUSE: Form Promise.\nThe First Person or the Witness may declare Promise Formed.\n\nCLAUSE: Emerge Trust.\nThe Witness may declare Trust Emerged.\n\nCLAUSE: Overlap Standing.\n\"Overlap Standing\" is defined as:\nKnowledge Mapped is declared and Promise Formed is declared and Trust Emerged is declared.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Knowledge Graph",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Promise Graph",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Trust Graph",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Knowledge Mapped",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Map Knowledge"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Promise Formed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Form Promise"
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Promise Formed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Form Promise"
+  },
+  {
+   "s": "Witness",
+   "verb": "declare",
+   "o": "Trust Emerged",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Emerge Trust"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Knowledge Graph",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Promise Graph",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Trust Graph",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Knowledge Mapped",
+   "conditional": false,
+   "clause": "Map Knowledge"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Promise Formed",
+   "conditional": false,
+   "clause": "Form Promise"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Promise Formed",
+   "conditional": false,
+   "clause": "Form Promise"
+  },
+  {
+   "promiser": "Witness",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Trust Emerged",
+   "conditional": false,
+   "clause": "Emerge Trust"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Overlap Standing",
+   "conjuncts": [
+    "Knowledge Mapped",
+    "Promise Formed",
+    "Trust Emerged"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Knowledge Mapped\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Overlap Standing requires all of Knowledge Mapped AND Promise Formed AND Trust Emerged. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

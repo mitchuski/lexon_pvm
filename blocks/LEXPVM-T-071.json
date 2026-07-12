@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-071",
+ "term": "Story Fracture, Principle Convergence",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Story Fracture, Principle Convergence",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Story Fracture Principle Convergence.\n\n\"First Reader\" is a person.\n\"Second Reader\" is a person.\n\"First Story\" is a text.\n\"Second Story\" is a text.\n\"Spell Notation\" is a text.\n\"First Match\" is a binary.\n\"Second Match\" is a binary.\n\nThe First Reader fixes the First Story, and fixes the Spell Notation.\n\nCLAUSE: Fracture.\nThe Second Reader may register the Second Story.\n\nCLAUSE: Converge First.\nThe First Reader may declare First Match.\n\nCLAUSE: Converge Second.\nThe Second Reader may declare Second Match.\n\nCLAUSE: Principle Convergence.\n\"Principle Convergence\" is defined as:\nFirst Match is declared and Second Match is declared.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Reader",
+   "verb": "fix",
+   "o": "First Story",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Reader",
+   "verb": "fix",
+   "o": "Spell Notation",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Second Reader",
+   "verb": "register",
+   "o": "Second Story",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Fracture"
+  },
+  {
+   "s": "First Reader",
+   "verb": "declare",
+   "o": "First Match",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Converge First"
+  },
+  {
+   "s": "Second Reader",
+   "verb": "declare",
+   "o": "Second Match",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Converge Second"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Reader",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Story",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Reader",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Spell Notation",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Second Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Second Story",
+   "conditional": false,
+   "clause": "Fracture"
+  },
+  {
+   "promiser": "First Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Match",
+   "conditional": false,
+   "clause": "Converge First"
+  },
+  {
+   "promiser": "Second Reader",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Match",
+   "conditional": false,
+   "clause": "Converge Second"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Principle Convergence",
+   "conjuncts": [
+    "First Match",
+    "Second Match"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"First Match\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Principle Convergence requires all of First Match AND Second Match. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

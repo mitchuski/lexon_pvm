@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-084",
+ "term": "The Archive (Pattern-Space)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### The Archive (Pattern-Space)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX The Archive.\n\nTERMS:\n\n\"Archivist\" is a person.\n\nTERMS PER Consultation:\n\n\"Consultation\" is this contract.\n\"Seeker\" is a person.\n\"Entrance Answer\" is a text.\n\"Constitutional Text\" is a text.\n\"Admitted\" is a binary.\n\nThe Archivist appoints the Seeker, and fixes the Constitutional Text.\n\nCLAUSE: Answer.\nThe Seeker may file the Entrance Answer.\n\nCLAUSE: Judge.\nThe Archivist may, if the Entrance Answer is filed, declare Admitted.\n\nCLAUSE: Consult.\nThe Archivist may, if Admitted is declared, send the Constitutional Text to the Seeker.\n\nCLAUSE: Close.\nThe Archivist may, if Admitted is declared, terminate this Consultation.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Archivist",
+   "verb": "appoint",
+   "o": "Seeker",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Archivist",
+   "verb": "fix",
+   "o": "Constitutional Text",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Seeker",
+   "verb": "file",
+   "o": "Entrance Answer",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Answer"
+  },
+  {
+   "s": "Archivist",
+   "verb": "declare",
+   "o": "Admitted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Entrance Answer is filed",
+   "clause": "Judge"
+  },
+  {
+   "s": "Archivist",
+   "verb": "send",
+   "o": "Constitutional Text",
+   "io": "Seeker",
+   "as": null,
+   "modal": "may",
+   "condition": "Admitted is declared",
+   "clause": "Consult"
+  },
+  {
+   "s": "Archivist",
+   "verb": "terminate",
+   "o": "Consultation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Admitted is declared",
+   "clause": "Close"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Archivist",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Seeker",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Archivist",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Constitutional Text",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Seeker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Entrance Answer",
+   "conditional": false,
+   "clause": "Answer"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Admitted",
+   "conditional": true,
+   "clause": "Judge"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Constitutional Text->Seeker",
+   "conditional": true,
+   "clause": "Consult"
+  },
+  {
+   "promiser": "Archivist",
+   "type": "promise",
+   "polarity": "+",
+   "body": "terminate:Consultation",
+   "conditional": true,
+   "clause": "Close"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Consult",
+   "condition": "Admitted"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Consult clause is reachable only under the Admitted condition. Omissions per the term's canon anchor. Assayer-authored (instance-charter-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

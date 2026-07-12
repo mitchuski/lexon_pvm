@@ -1,0 +1,145 @@
+{
+ "census": "LEXPVM-T-076",
+ "term": "Dragon 🐉",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Dragon 🐉",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Dragon.\n\n\"Ceremony\" is a person.\n\"Drake\" is a person.\n\"Guardian Seat\" is a text.\n\"Domains Asserted\" is a binary.\n\"Constellation Nodes\" is a binary.\n\"Drake Summonings\" is a binary.\n\"Privacy Posture\" is a binary.\n\nThe Ceremony appoints the Drake.\n\n\"Dragon Tier\" is defined as: Domains Asserted is declared and Constellation Nodes is declared and Drake Summonings is declared and Privacy Posture is declared.\n\nCLAUSE: Assert.\nThe Drake may declare Domains Asserted, and declare Constellation Nodes.\n\nCLAUSE: Summon.\nThe Drake may declare Drake Summonings, and declare Privacy Posture.\n\nCLAUSE: Transform.\nThe Ceremony may, if Dragon Tier, grant the Guardian Seat.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Ceremony",
+   "verb": "appoint",
+   "o": "Drake",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Drake",
+   "verb": "declare",
+   "o": "Domains Asserted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assert"
+  },
+  {
+   "s": "Drake",
+   "verb": "declare",
+   "o": "Constellation Nodes",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assert"
+  },
+  {
+   "s": "Drake",
+   "verb": "declare",
+   "o": "Drake Summonings",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Summon"
+  },
+  {
+   "s": "Drake",
+   "verb": "declare",
+   "o": "Privacy Posture",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Summon"
+  },
+  {
+   "s": "Ceremony",
+   "verb": "grant",
+   "o": "Guardian Seat",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Dragon Tier",
+   "clause": "Transform"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Ceremony",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Drake",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Drake",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Domains Asserted",
+   "conditional": false,
+   "clause": "Assert"
+  },
+  {
+   "promiser": "Drake",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Constellation Nodes",
+   "conditional": false,
+   "clause": "Assert"
+  },
+  {
+   "promiser": "Drake",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Drake Summonings",
+   "conditional": false,
+   "clause": "Summon"
+  },
+  {
+   "promiser": "Drake",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Privacy Posture",
+   "conditional": false,
+   "clause": "Summon"
+  },
+  {
+   "promiser": "Ceremony",
+   "type": "promise",
+   "polarity": "+",
+   "body": "grant:Guardian Seat",
+   "conditional": true,
+   "clause": "Transform"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Dragon Tier",
+   "conjuncts": [
+    "Domains Asserted",
+    "Constellation Nodes",
+    "Drake Summonings",
+    "Privacy Posture"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Domains Asserted\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Dragon Tier requires all of Domains Asserted AND Constellation Nodes AND Drake Summonings AND Privacy Posture. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

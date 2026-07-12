@@ -1,0 +1,143 @@
+{
+ "census": "LEXPVM-T-173",
+ "term": "The City of Mages grimoire",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 22.12 The City of Mages grimoire",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX City Grimoire.\n\n\"Grimoire Exchange\" is this contract.\n\"Keeper\" is a person.\n\"Persona\" is a person.\n\"Grimoire\" is a text.\n\"Spell\" is a text.\n\"Admitted\" is a binary.\n\nThe Keeper fixes the Grimoire, and appoints the Persona.\n\nCLAUSE: Offer.\nThe Persona may register a Spell, and afterwards send the Spell to the Keeper.\n\nCLAUSE: Admit.\nThe Keeper may, if the Spell is fixed, declare Admitted.\n\nCLAUSE: Bound.\n\"Bound\" is defined as: Admitted is declared and the Spell is fixed.\n\nCLAUSE: Bind.\nThe Keeper may, if this Grimoire Exchange is Bound, certify the Grimoire.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Keeper",
+   "verb": "fix",
+   "o": "Grimoire",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Keeper",
+   "verb": "appoint",
+   "o": "Persona",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Persona",
+   "verb": "register",
+   "o": "Spell",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer"
+  },
+  {
+   "s": "Persona",
+   "verb": "send",
+   "o": "Spell",
+   "io": "Keeper",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer"
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Admitted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Spell is fixed",
+   "clause": "Admit"
+  },
+  {
+   "s": "Keeper",
+   "verb": "certify",
+   "o": "Grimoire",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Grimoire Exchange is Bound",
+   "clause": "Bind"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Grimoire",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Persona",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Persona",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Spell",
+   "conditional": false,
+   "clause": "Offer"
+  },
+  {
+   "promiser": "Persona",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Spell->Keeper",
+   "conditional": false,
+   "clause": "Offer"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Admitted",
+   "conditional": true,
+   "clause": "Admit"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Grimoire",
+   "conditional": true,
+   "clause": "Bind"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Bound",
+   "conjuncts": [
+    "Admitted",
+    "Spell"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Admitted\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Bound requires all of Admitted AND Spell. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

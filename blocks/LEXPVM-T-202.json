@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-202",
+ "term": "Seating Lock and Phi Honesty (v10.4.0)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 25.10 Seating Lock and Phi Honesty (v10.4.0)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Seating Lock.\n\n\"Grimoire Keeper\" is a person.\n\"Aletheia\" is a person.\n\"Lethe\" is a person.\n\"Seating Lock\" is data.\n\"Lower Seat\" is data.\n\"Delta Share\" is an amount.\n\"Lock Pinned\" is a binary.\n\nThe Grimoire Keeper appoints Aletheia, and appoints Lethe, and fixes the Seating Lock.\n\nCLAUSE: Pin.\nThe Grimoire Keeper may declare Lock Pinned.\n\nCLAUSE: Seat.\nThe Lethe may certify the Lower Seat.\n\nCLAUSE: Assign.\nThe Grimoire Keeper may, if Lock Pinned is declared: send the Delta Share to Aletheia.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Grimoire Keeper",
+   "verb": "appoint",
+   "o": "Aletheia",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Grimoire Keeper",
+   "verb": "appoint",
+   "o": "Lethe",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Grimoire Keeper",
+   "verb": "fix",
+   "o": "Seating Lock",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Grimoire Keeper",
+   "verb": "declare",
+   "o": "Lock Pinned",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Pin"
+  },
+  {
+   "s": "Lethe",
+   "verb": "certify",
+   "o": "Lower Seat",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Seat"
+  },
+  {
+   "s": "Grimoire Keeper",
+   "verb": "send",
+   "o": "Delta Share",
+   "io": "Aletheia",
+   "as": null,
+   "modal": "may",
+   "condition": "Lock Pinned is declared",
+   "clause": "Assign"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Grimoire Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Aletheia",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Grimoire Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Lethe",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Grimoire Keeper",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Seating Lock",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Grimoire Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Lock Pinned",
+   "conditional": false,
+   "clause": "Pin"
+  },
+  {
+   "promiser": "Lethe",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Lower Seat",
+   "conditional": false,
+   "clause": "Seat"
+  },
+  {
+   "promiser": "Grimoire Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Delta Share->Aletheia",
+   "conditional": true,
+   "clause": "Assign"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Lethe",
+   "what": "Delta Share"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Delta Share to Lethe"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Delta Share to the Lethe. Omissions per the term's canon anchor. Assayer-authored (rite-and-register-spell held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,103 @@
+{
+ "census": "LEXPVM-T-107",
+ "term": "Compression-as-Defence (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Compression-as-Defence (V5)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Compression As Defence.\n\n\"Sender\" is a person.\n\"Receiver\" is a person.\n\"Interceptor\" is a person.\n\"Sent Tokens\" is an amount.\n\"Withheld Tokens\" is an amount.\n\"Compressed\" is a binary.\n\nThe Sender appoints the Receiver.\n\nCLAUSE: Compress.\nThe Sender may declare Compressed.\n\nCLAUSE: Transmit.\nThe Sender may, if Compressed is declared, pay the Sent Tokens to the Receiver.\n\nCLAUSE: Withhold.\nThe Sender may pay the Withheld Tokens into escrow.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Sender",
+   "verb": "appoint",
+   "o": "Receiver",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sender",
+   "verb": "declare",
+   "o": "Compressed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Compress"
+  },
+  {
+   "s": "Sender",
+   "verb": "pay",
+   "o": "Sent Tokens",
+   "io": "Receiver",
+   "as": null,
+   "modal": "may",
+   "condition": "Compressed is declared",
+   "clause": "Transmit"
+  },
+  {
+   "s": "Sender",
+   "verb": "pay",
+   "o": "Withheld Tokens",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Withhold"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Sender",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Receiver",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sender",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Compressed",
+   "conditional": false,
+   "clause": "Compress"
+  },
+  {
+   "promiser": "Sender",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Sent Tokens->Receiver",
+   "conditional": true,
+   "clause": "Transmit"
+  },
+  {
+   "promiser": "Sender",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Withheld Tokens",
+   "conditional": false,
+   "clause": "Withhold"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Interceptor"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Sent Tokens to Interceptor"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes anything to the Interceptor. Omissions per the term's canon anchor. Assayer-authored (party-proffer-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

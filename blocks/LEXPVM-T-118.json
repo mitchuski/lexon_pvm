@@ -1,0 +1,144 @@
+{
+ "census": "LEXPVM-T-118",
+ "term": "Three Identity Layers (V5)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Three Identity Layers (V5)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Three Identity Layers.\n\n\"Principal\" is a person.\n\"Counterparty\" is a person.\n\"Holon\" is data.\n\"Identity\" is this contract.\n\"Data Layer Bound\" is a binary.\n\"Relationship Layer Bound\" is a binary.\n\"Principal Layer Bound\" is a binary.\n\"Sovereign Act\" is a text.\n\nThe Principal fixes the Holon.\n\nCLAUSE: Bind Data Layer.\nThe Principal may file the Holon, and afterwards declare Data Layer Bound.\n\nCLAUSE: Bind Relationship Layer.\nThe Counterparty may declare Relationship Layer Bound.\n\nCLAUSE: Bind Principal Layer.\nThe Principal may declare Principal Layer Bound.\n\nCLAUSE: Complete.\n\"Complete\" is defined as: Data Layer Bound is declared and Relationship Layer Bound is declared and Principal Layer Bound is declared.\n\nCLAUSE: Act Sovereign.\nThe Principal may, if this Identity is Complete: register the Sovereign Act.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 5,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Holon",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "file",
+   "o": "Holon",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Data Layer"
+  },
+  {
+   "s": "Principal",
+   "verb": "declare",
+   "o": "Data Layer Bound",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Data Layer"
+  },
+  {
+   "s": "Counterparty",
+   "verb": "declare",
+   "o": "Relationship Layer Bound",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Relationship Layer"
+  },
+  {
+   "s": "Principal",
+   "verb": "declare",
+   "o": "Principal Layer Bound",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Principal Layer"
+  },
+  {
+   "s": "Principal",
+   "verb": "register",
+   "o": "Sovereign Act",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Identity is Complete",
+   "clause": "Act Sovereign"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Holon",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Holon",
+   "conditional": false,
+   "clause": "Bind Data Layer"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Data Layer Bound",
+   "conditional": false,
+   "clause": "Bind Data Layer"
+  },
+  {
+   "promiser": "Counterparty",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Relationship Layer Bound",
+   "conditional": false,
+   "clause": "Bind Relationship Layer"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Principal Layer Bound",
+   "conditional": false,
+   "clause": "Bind Principal Layer"
+  },
+  {
+   "promiser": "Principal",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Sovereign Act",
+   "conditional": true,
+   "clause": "Act Sovereign"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Complete",
+   "conjuncts": [
+    "Data Layer Bound",
+    "Relationship Layer Bound",
+    "Principal Layer Bound"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Data Layer Bound\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Complete requires all of Data Layer Bound AND Relationship Layer Bound AND Principal Layer Bound. Omissions per the term's canon anchor. Assayer-authored (role-charter-spell-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

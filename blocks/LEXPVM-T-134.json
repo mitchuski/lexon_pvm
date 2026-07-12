@@ -1,0 +1,180 @@
+{
+ "census": "LEXPVM-T-134",
+ "term": "Constellation Path",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Constellation Path",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Constellation Path.\n\n\"Evoker\" is a person.\n\"Keeper\" is a person.\n\"First Node\" is a text.\n\"Second Node\" is a text.\n\"Path\" is a text.\n\"Inscribed\" is a binary.\n\nThe Evoker fixes the First Node, fixes the Second Node, and appoints the Keeper.\n\nCLAUSE: Traverse.\nThe Evoker may certify the First Node, and afterwards certify the Second Node, and afterwards register a Path.\n\nCLAUSE: Deliver.\nThe Evoker may, if the Path is fixed, send the Path to the Keeper.\n\nCLAUSE: Inscribe.\nThe Keeper may, if the Path is fixed, declare Inscribed.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 8,
+  "promiseEdges": 8
+ },
+ "triples": [
+  {
+   "s": "Evoker",
+   "verb": "fix",
+   "o": "First Node",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Evoker",
+   "verb": "fix",
+   "o": "Second Node",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Evoker",
+   "verb": "appoint",
+   "o": "Keeper",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Evoker",
+   "verb": "certify",
+   "o": "First Node",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Traverse"
+  },
+  {
+   "s": "Evoker",
+   "verb": "certify",
+   "o": "Second Node",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Traverse"
+  },
+  {
+   "s": "Evoker",
+   "verb": "register",
+   "o": "Path",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Traverse"
+  },
+  {
+   "s": "Evoker",
+   "verb": "send",
+   "o": "Path",
+   "io": "Keeper",
+   "as": null,
+   "modal": "may",
+   "condition": "the Path is fixed",
+   "clause": "Deliver"
+  },
+  {
+   "s": "Keeper",
+   "verb": "declare",
+   "o": "Inscribed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Path is fixed",
+   "clause": "Inscribe"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Evoker",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Node",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Evoker",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Second Node",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Evoker",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Keeper",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Evoker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:First Node",
+   "conditional": false,
+   "clause": "Traverse"
+  },
+  {
+   "promiser": "Evoker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Second Node",
+   "conditional": false,
+   "clause": "Traverse"
+  },
+  {
+   "promiser": "Evoker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Path",
+   "conditional": false,
+   "clause": "Traverse"
+  },
+  {
+   "promiser": "Evoker",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Path->Keeper",
+   "conditional": true,
+   "clause": "Deliver"
+  },
+  {
+   "promiser": "Keeper",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Inscribed",
+   "conditional": true,
+   "clause": "Inscribe"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Traverse",
+   "sequence": [
+    "certify:First Node",
+    "certify:Second Node",
+    "register:Path"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: clause Traverse performs certify:First Node, then certify:Second Node, then register:Path as clause order. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-061",
+ "term": "Entity (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Entity (IEEE 7012)",
+  "register": "glossary · conjectured expression of standard"
+ },
+ "lex": "LEX Entity.\n\n\"Person\" is a person.\n\"Entity\" is a person.\n\"Registrar\" is a person.\n\"Agreement Record\" is a text.\n\"Organization Confirmed\" is a binary.\n\nThe Person appoints the Entity, appoints the Registrar, and fixes the Agreement Record.\n\nCLAUSE: Confirm Organization.\nThe Registrar may declare Organization Confirmed.\n\nCLAUSE: Conclude.\nThe Person may, if Organization Confirmed is declared: send the Agreement Record to the Entity.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Person",
+   "verb": "appoint",
+   "o": "Entity",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Person",
+   "verb": "appoint",
+   "o": "Registrar",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Person",
+   "verb": "fix",
+   "o": "Agreement Record",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Registrar",
+   "verb": "declare",
+   "o": "Organization Confirmed",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Confirm Organization"
+  },
+  {
+   "s": "Person",
+   "verb": "send",
+   "o": "Agreement Record",
+   "io": "Entity",
+   "as": null,
+   "modal": "may",
+   "condition": "Organization Confirmed is declared",
+   "clause": "Conclude"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Entity",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Registrar",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Agreement Record",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Registrar",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Organization Confirmed",
+   "conditional": false,
+   "clause": "Confirm Organization"
+  },
+  {
+   "promiser": "Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Agreement Record->Entity",
+   "conditional": true,
+   "clause": "Conclude"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Conclude",
+   "condition": "Organization Confirmed"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries entity-hood as a prerequisite gate: the only clause that concludes an agreement with the Entity (the send of the Agreement Record) is conditional on Organization Confirmed (the relation claim), so contracting with an unconfirmed entity is structurally unreachable. Omits the negative half (never an individual) as a typed distinction, since person is the subset's only agent type, and omits organizational form detail. Anchor: ### Entity (IEEE 7012). Folded from ieee7012-standards-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,18 @@
+MERGE (c:LexContract {census: "LEXPVM-T-035", name: "Privacy Pools", cites: "glossary-master-v4 § ### Privacy Pools"})
+MERGE (:Person {name: "Verifier", contract: "Privacy Pools"})
+MERGE (:Contract {name: "Note", contract: "Privacy Pools"})
+MERGE (:Person {name: "Depositor", contract: "Privacy Pools"})
+MERGE (:Person {name: "Flagged Depositor", contract: "Privacy Pools"})
+MERGE (:Amount {name: "Deposit", contract: "Privacy Pools"})
+MERGE (:Data {name: "Association Proof", contract: "Privacy Pools"})
+MERGE (:Binary {name: "Innocent", contract: "Privacy Pools"})
+MATCH (a {name: "Verifier"}), (b {name: "Verifier"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Depositor"}]->(b)
+MATCH (a {name: "Verifier"}), (b {name: "Verifier"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Flagged Depositor"}]->(b)
+MATCH (a {name: "Depositor"}), (b {name: "Depositor"}) CREATE (a)-[:MAY_PAY {clause: "Enter", object: "Deposit"}]->(b)
+MATCH (a {name: "Flagged Depositor"}), (b {name: "Flagged Depositor"}) CREATE (a)-[:MAY_PAY {clause: "Enter", object: "Deposit"}]->(b)
+MATCH (a {name: "Depositor"}), (b {name: "Depositor"}) CREATE (a)-[:MAY_FIX {clause: "Prove", object: "Association Proof"}]->(b)
+MATCH (a {name: "Verifier"}), (b {name: "Verifier"}) CREATE (a)-[:MAY_DECLARE {clause: "Screen", object: "Innocent", condition: "the Association Proof is fixed"}]->(b)
+MATCH (a {name: "Verifier"}), (b {name: "Depositor"}) CREATE (a)-[:MAY_RETURN {clause: "Withdraw", object: "Deposit", condition: "Innocent is declared"}]->(b)
+MATCH (a {name: "Verifier"}), (b {name: "Verifier"}) CREATE (a)-[:MAY_TERMINATE {clause: "Withdraw", object: "Note", condition: "Innocent is declared"}]->(b)
+// claim (re-runnable): NOTHING routes Deposit to Flagged Depositor; any row falsifies the block
+MATCH (x)-[e]->(f {name: "Flagged Depositor"}) WHERE e.object = "Deposit" RETURN count(e) AS mustBeZero

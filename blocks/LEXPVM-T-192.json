@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-192",
+ "term": "Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.11 Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Candidate Conjecture Register.\n\"Registrar\" is a person.\n\"Candidate\" is a person.\n\"Register\" is this contract.\n\"Conjecture\" is a text.\n\"First Instance\" is a text.\n\"Second Instance\" is a text.\n\nThe Registrar appoints the Candidate, fixes the Conjecture, and fixes the First Instance.\n\nThe Candidate fixes the Second Instance.\n\nCLAUSE: Stabilised.\n\"Stabilised\" is defined as: the First Instance is fixed and the Second Instance is fixed.\n\nCLAUSE: Promote.\n\nThe Registrar may, if this Register is Stabilised: certify the Conjecture.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Registrar",
+   "verb": "appoint",
+   "o": "Candidate",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Registrar",
+   "verb": "fix",
+   "o": "Conjecture",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Registrar",
+   "verb": "fix",
+   "o": "First Instance",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Candidate",
+   "verb": "fix",
+   "o": "Second Instance",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Registrar",
+   "verb": "certify",
+   "o": "Conjecture",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Register is Stabilised",
+   "clause": "Promote"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Registrar",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Candidate",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Registrar",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Conjecture",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Registrar",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Instance",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Candidate",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Second Instance",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Registrar",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Conjecture",
+   "conditional": true,
+   "clause": "Promote"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Stabilised",
+   "conjuncts": [
+    "First Instance",
+    "Second Instance"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"First Instance\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Stabilised requires all of First Instance AND Second Instance. Omissions per the term's canon anchor. Assayer-authored (ieee7012-standards-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

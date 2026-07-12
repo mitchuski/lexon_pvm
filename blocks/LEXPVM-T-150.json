@@ -1,0 +1,194 @@
+{
+ "census": "LEXPVM-T-150",
+ "term": "Emissary Dispersion",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Emissary Dispersion",
+  "register": "glossary · conjectured expression of architectural principle"
+ },
+ "lex": "LEX Emissary Dispersion.\n\n\"Master\" is a person.\n\"First Emissary\" is a person.\n\"Second Emissary\" is a person.\n\"Master Secret\" is an amount.\n\"First Shard\" is an amount.\n\"Second Shard\" is an amount.\n\nThe Master fixes the Master Secret, fixes the First Shard, fixes the Second Shard, appoints the First Emissary, and appoints the Second Emissary.\n\nCLAUSE: Disperse.\nThe Master may pay the First Shard to the First Emissary, and afterwards pay the Second Shard to the Second Emissary.\n\nCLAUSE: First Carry.\nThe First Emissary may certify the First Shard.\n\nCLAUSE: Second Carry.\nThe Second Emissary may certify the Second Shard.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 9,
+  "promiseEdges": 9
+ },
+ "triples": [
+  {
+   "s": "Master",
+   "verb": "fix",
+   "o": "Master Secret",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "fix",
+   "o": "First Shard",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "fix",
+   "o": "Second Shard",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "appoint",
+   "o": "First Emissary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "appoint",
+   "o": "Second Emissary",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "pay",
+   "o": "First Shard",
+   "io": "First Emissary",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Disperse"
+  },
+  {
+   "s": "Master",
+   "verb": "pay",
+   "o": "Second Shard",
+   "io": "Second Emissary",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Disperse"
+  },
+  {
+   "s": "First Emissary",
+   "verb": "certify",
+   "o": "First Shard",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "First Carry"
+  },
+  {
+   "s": "Second Emissary",
+   "verb": "certify",
+   "o": "Second Shard",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Second Carry"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Master Secret",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:First Shard",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Second Shard",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Emissary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Emissary",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:First Shard->First Emissary",
+   "conditional": false,
+   "clause": "Disperse"
+  },
+  {
+   "promiser": "Master",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Second Shard->Second Emissary",
+   "conditional": false,
+   "clause": "Disperse"
+  },
+  {
+   "promiser": "First Emissary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:First Shard",
+   "conditional": false,
+   "clause": "First Carry"
+  },
+  {
+   "promiser": "Second Emissary",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Second Shard",
+   "conditional": false,
+   "clause": "Second Carry"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "First Emissary",
+   "what": "Master Secret"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Master Secret to First Emissary"
+ },
+ "grandfathered": false,
+ "notes": "carries dispersal as an impossibility (shards route outward one per emissary, each emissary certifies only its own shard, and no transfer clause routes the Master Secret to any single emissary: the no-single-shard-holds-the-whole property in clause shape); omits the hemispheric-capture origin and the mirror proverb. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

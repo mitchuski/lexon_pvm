@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-046",
+ "term": "Inaugural Pairing",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Inaugural Pairing",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Inaugural Pairing.\n\n\"First Person\" is a person.\n\"First Swordsman\" is a person.\n\"First Mage\" is a person.\n\"Disclosure\" is a text.\n\"Evocation\" is a text.\n\"Pattern\" is data.\n\"Sun Cycle Complete\" is a binary.\n\nThe First Person appoints the First Swordsman, and appoints the First Mage.\n\nCLAUSE: Shine.\nThe First Swordsman may file the Disclosure.\n\nCLAUSE: Complete.\nThe First Swordsman may declare Sun Cycle Complete.\n\nCLAUSE: Reflect.\nThe First Mage may, if Sun Cycle Complete is declared: file the Evocation.\n\nCLAUSE: Orbit.\nThe First Mage may, if Sun Cycle Complete is declared: certify the Pattern.",
+ "counts": {
+  "definitions": 7,
+  "clauses": 4,
+  "sentences": 5,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "First Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "First Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Swordsman",
+   "verb": "file",
+   "o": "Disclosure",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Shine"
+  },
+  {
+   "s": "First Swordsman",
+   "verb": "declare",
+   "o": "Sun Cycle Complete",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Complete"
+  },
+  {
+   "s": "First Mage",
+   "verb": "file",
+   "o": "Evocation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Sun Cycle Complete is declared",
+   "clause": "Reflect"
+  },
+  {
+   "s": "First Mage",
+   "verb": "certify",
+   "o": "Pattern",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Sun Cycle Complete is declared",
+   "clause": "Orbit"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:First Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Disclosure",
+   "conditional": false,
+   "clause": "Shine"
+  },
+  {
+   "promiser": "First Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Sun Cycle Complete",
+   "conditional": false,
+   "clause": "Complete"
+  },
+  {
+   "promiser": "First Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Evocation",
+   "conditional": true,
+   "clause": "Reflect"
+  },
+  {
+   "promiser": "First Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Pattern",
+   "conditional": true,
+   "clause": "Orbit"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Reflect",
+   "condition": "Sun Cycle Complete"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries cycle zero's orientation as a cross-separation gate (the Moon side's evocation and the orbit pattern both wait on the Sun side's declared completion, never the reverse: the seeding direction of the first ceremony as permission structure); omits the named poems, constellations, and evocations of the two sides. Folded from rite-and-register-spell (spell-grammar, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,126 @@
+{
+ "census": "LEXPVM-T-176",
+ "term": "Attachment kind",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 23.3 Attachment kind",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Attachment Kind Charter.\n\n\"Mage\" is a person.\n\"Registrar\" is a person.\n\"Attachment Record\" is this contract.\n\"Vertex\" is a text.\n\"Trade Quarter\" is a text.\n\"Mage Binding\" is a binary.\n\nThe Registrar appoints the Mage.\n\nCLAUSE: Bind.\nThe Mage may file the Vertex.\nThe Mage may file the Trade Quarter.\nThe Mage may declare Mage Binding.\n\nCLAUSE: Workshop Kind.\n\"Workshop Kind\" is defined as: Vertex is filed and Trade Quarter is filed and Mage Binding is declared.\n\nCLAUSE: Attest.\nThe Registrar may, if this Attachment Record is Workshop Kind: certify the Attachment Record.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 5,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Registrar",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Mage",
+   "verb": "file",
+   "o": "Vertex",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind"
+  },
+  {
+   "s": "Mage",
+   "verb": "file",
+   "o": "Trade Quarter",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind"
+  },
+  {
+   "s": "Mage",
+   "verb": "declare",
+   "o": "Mage Binding",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind"
+  },
+  {
+   "s": "Registrar",
+   "verb": "certify",
+   "o": "Attachment Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Attachment Record is Workshop Kind",
+   "clause": "Attest"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Registrar",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Vertex",
+   "conditional": false,
+   "clause": "Bind"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Trade Quarter",
+   "conditional": false,
+   "clause": "Bind"
+  },
+  {
+   "promiser": "Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Mage Binding",
+   "conditional": false,
+   "clause": "Bind"
+  },
+  {
+   "promiser": "Registrar",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Attachment Record",
+   "conditional": true,
+   "clause": "Attest"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Workshop Kind",
+   "conjuncts": [
+    "Vertex",
+    "Trade Quarter",
+    "Mage Binding"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Vertex\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Workshop Kind requires all of Vertex AND Trade Quarter AND Mage Binding. Omissions per the term's canon anchor. Assayer-authored (consent-standard-party-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,143 @@
+{
+ "census": "LEXPVM-T-060",
+ "term": "Contract (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Contract (IEEE 7012)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Contract.\n\n\"First Party\" is a person.\n\"Second Party\" is a person.\n\"Agreement\" is a text.\n\"Contract Record\" is data.\n\"First Assent\" is a binary.\n\"Second Assent\" is a binary.\n\nThe First Party appoints the Second Party, and fixes the Agreement.\n\nCLAUSE: Assent Of The First Party.\nThe First Party may declare First Assent.\n\nCLAUSE: Assent Of The Second Party.\nThe Second Party may declare Second Assent.\n\nCLAUSE: Mutuality.\n\"Mutual\" is defined as: First Assent is declared and Second Assent is declared.\n\nCLAUSE: Bind.\nThe First Party may, if this Agreement is Mutual: certify the Agreement, and afterwards register the Contract Record.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Party",
+   "verb": "appoint",
+   "o": "Second Party",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Agreement",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "declare",
+   "o": "First Assent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assent Of The First Party"
+  },
+  {
+   "s": "Second Party",
+   "verb": "declare",
+   "o": "Second Assent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Assent Of The Second Party"
+  },
+  {
+   "s": "First Party",
+   "verb": "certify",
+   "o": "Agreement",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Agreement is Mutual",
+   "clause": "Bind"
+  },
+  {
+   "s": "First Party",
+   "verb": "register",
+   "o": "Contract Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Agreement is Mutual",
+   "clause": "Bind"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Party",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Agreement",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Assent",
+   "conditional": false,
+   "clause": "Assent Of The First Party"
+  },
+  {
+   "promiser": "Second Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Assent",
+   "conditional": false,
+   "clause": "Assent Of The Second Party"
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Agreement",
+   "conditional": true,
+   "clause": "Bind"
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Contract Record",
+   "conditional": true,
+   "clause": "Bind"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Bind",
+   "sequence": [
+    "certify:Agreement",
+    "register:Contract Record"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: agreement-precedes-contract as ordering (the Bind clause certifies the Agreement first and only afterwards registers the Contract Record; the mutation twin registers the record before certifying what it records), with mutuality carried by the defined predicate Mutual requiring both parties' declared assent and each assent declared only by its own party (autonomy). Omits: enforceable-by-law externality (no court is modeled) and the chronicle-system detail of the 0xagentprivacy mapping. Folded from myterms-agreement-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

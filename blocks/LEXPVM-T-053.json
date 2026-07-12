@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-053",
+ "term": "Trust Spanning Protocol (TSP)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Trust Spanning Protocol (TSP)",
+  "register": "glossary · conjectured expression of implemented term"
+ },
+ "lex": "LEX Trust Spanning Protocol.\n\n\"Origin\" is a person.\n\"Relay\" is a person.\n\"Endpoint\" is a person.\n\"Payload\" is an amount.\n\"Envelope\" is data.\n\nThe Origin fixes the Payload, fixes the Envelope, and appoints the Endpoint.\n\nCLAUSE: Span.\nThe Origin may send the Envelope to the Relay.\n\nCLAUSE: Forward.\nThe Relay may, if the Envelope is fixed, send the Envelope to the Endpoint.\n\nCLAUSE: Deliver.\nThe Origin may, if the Envelope is fixed, pay the Payload to the Endpoint.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Origin",
+   "verb": "fix",
+   "o": "Payload",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Origin",
+   "verb": "fix",
+   "o": "Envelope",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Origin",
+   "verb": "appoint",
+   "o": "Endpoint",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Origin",
+   "verb": "send",
+   "o": "Envelope",
+   "io": "Relay",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Span"
+  },
+  {
+   "s": "Relay",
+   "verb": "send",
+   "o": "Envelope",
+   "io": "Endpoint",
+   "as": null,
+   "modal": "may",
+   "condition": "the Envelope is fixed",
+   "clause": "Forward"
+  },
+  {
+   "s": "Origin",
+   "verb": "pay",
+   "o": "Payload",
+   "io": "Endpoint",
+   "as": null,
+   "modal": "may",
+   "condition": "the Envelope is fixed",
+   "clause": "Deliver"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Origin",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Payload",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Origin",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Envelope",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Origin",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Endpoint",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Origin",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Envelope->Relay",
+   "conditional": false,
+   "clause": "Span"
+  },
+  {
+   "promiser": "Relay",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Envelope->Endpoint",
+   "conditional": true,
+   "clause": "Forward"
+  },
+  {
+   "promiser": "Origin",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Payload->Endpoint",
+   "conditional": true,
+   "clause": "Deliver"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Relay",
+   "what": "Payload"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Payload to Relay"
+ },
+ "grandfathered": false,
+ "notes": "carries intermediary blindness as an impossibility (only the sealed Envelope crosses the Relay hop; no transfer clause routes the Payload to the Relay, and the Relay's sole action is gated on the fixed Envelope); omits key management, endpoint identifiers, and wire format. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

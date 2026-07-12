@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-141",
+ "term": "Ceremony Receiver",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Ceremony Receiver",
+  "register": "glossary · conjectured expression of specified term"
+ },
+ "lex": "LEX Ceremony Receiver.\n\n\"Receiver\" is a person.\n\"Sender\" is a person.\n\"Inscription\" is a text.\n\"Mana Cost\" is an amount.\n\"Mana Sufficient\" is a binary.\n\nThe Sender fixes the Inscription, and appoints the Receiver.\n\nCLAUSE: Deliver.\nThe Sender may send the Inscription to the Receiver, and afterwards pay the Mana Cost to the Receiver.\n\nCLAUSE: Validate.\nThe Receiver may declare Mana Sufficient.\n\nCLAUSE: Render.\nThe Receiver may, if Mana Sufficient is declared, certify the Inscription.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Sender",
+   "verb": "fix",
+   "o": "Inscription",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sender",
+   "verb": "appoint",
+   "o": "Receiver",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Sender",
+   "verb": "send",
+   "o": "Inscription",
+   "io": "Receiver",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Deliver"
+  },
+  {
+   "s": "Sender",
+   "verb": "pay",
+   "o": "Mana Cost",
+   "io": "Receiver",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Deliver"
+  },
+  {
+   "s": "Receiver",
+   "verb": "declare",
+   "o": "Mana Sufficient",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Validate"
+  },
+  {
+   "s": "Receiver",
+   "verb": "certify",
+   "o": "Inscription",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Mana Sufficient is declared",
+   "clause": "Render"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Sender",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Inscription",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sender",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Receiver",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Sender",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Inscription->Receiver",
+   "conditional": false,
+   "clause": "Deliver"
+  },
+  {
+   "promiser": "Sender",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Mana Cost->Receiver",
+   "conditional": false,
+   "clause": "Deliver"
+  },
+  {
+   "promiser": "Receiver",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Mana Sufficient",
+   "conditional": false,
+   "clause": "Validate"
+  },
+  {
+   "promiser": "Receiver",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Inscription",
+   "conditional": true,
+   "clause": "Render"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Render",
+   "condition": "Mana Sufficient"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "carries validation-gates-rendering (the Receiver certifies the Inscription only under Mana Sufficient declared, and delivery orders inscription before mana payment in the Deliver chain); omits the message schema fields, accepted sources, and shimmer rendering. Folded from send-spine-protocol-family (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,0 +1,107 @@
+{
+ "census": "LEXPVM-T-109",
+ "term": "UOR (Universal Object Reference)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### UOR (Universal Object Reference)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX UOR.\n\n\"UOR Foundation\" is a person.\n\"Framework\" is a text.\n\"Algebra\" is a text.\n\"Addressing\" is a text.\n\"Identifier\" is data.\n\nThe UOR Foundation fixes the Framework, and fixes the Algebra, and fixes the Addressing.\n\nCLAUSE: Convergence.\n\"Convergent\" is defined as: the Algebra is fixed and the Addressing is fixed.\n\nCLAUSE: Address.\nThe UOR Foundation may, if this Framework is Convergent: register the Identifier.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 2,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "UOR Foundation",
+   "verb": "fix",
+   "o": "Framework",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "UOR Foundation",
+   "verb": "fix",
+   "o": "Algebra",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "UOR Foundation",
+   "verb": "fix",
+   "o": "Addressing",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "UOR Foundation",
+   "verb": "register",
+   "o": "Identifier",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Framework is Convergent",
+   "clause": "Address"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "UOR Foundation",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Framework",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "UOR Foundation",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Algebra",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "UOR Foundation",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Addressing",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "UOR Foundation",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Identifier",
+   "conditional": true,
+   "clause": "Address"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Convergent",
+   "conjuncts": [
+    "Algebra",
+    "Addressing"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Algebra\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Convergent requires all of Algebra AND Addressing. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

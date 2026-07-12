@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-068",
+ "term": "Customer Commons",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Customer Commons",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Customer Commons.\n\n\"Customer Commons\" is a person.\n\"First Party\" is a person.\n\"Second Party\" is a person.\n\"Agreement\" is a text.\n\"Registry Entry\" is data.\n\"Consideration\" is an amount.\n\nThe First Party fixes the Agreement.\n\nCLAUSE: Host.\nThe Customer Commons may register the Agreement, and certify the Registry Entry.\n\nCLAUSE: Publish.\nThe Customer Commons may send the Registry Entry to the First Party, or send the Registry Entry to the Second Party.\n\nCLAUSE: Exchange.\nThe Second Party may pay the Consideration to the First Party.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Agreement",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Customer Commons",
+   "verb": "register",
+   "o": "Agreement",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Host"
+  },
+  {
+   "s": "Customer Commons",
+   "verb": "certify",
+   "o": "Registry Entry",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Host"
+  },
+  {
+   "s": "Customer Commons",
+   "verb": "send",
+   "o": "Registry Entry",
+   "io": "First Party",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Publish"
+  },
+  {
+   "s": "Customer Commons",
+   "verb": "send",
+   "o": "Registry Entry",
+   "io": "Second Party",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Publish"
+  },
+  {
+   "s": "Second Party",
+   "verb": "pay",
+   "o": "Consideration",
+   "io": "First Party",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Exchange"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Agreement",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Customer Commons",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Agreement",
+   "conditional": false,
+   "clause": "Host"
+  },
+  {
+   "promiser": "Customer Commons",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Registry Entry",
+   "conditional": false,
+   "clause": "Host"
+  },
+  {
+   "promiser": "Customer Commons",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Registry Entry->First Party",
+   "conditional": false,
+   "clause": "Publish"
+  },
+  {
+   "promiser": "Customer Commons",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Registry Entry->Second Party",
+   "conditional": false,
+   "clause": "Publish"
+  },
+  {
+   "promiser": "Second Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Consideration->First Party",
+   "conditional": false,
+   "clause": "Exchange"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Customer Commons",
+   "what": "Consideration"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Consideration to Customer Commons"
+ },
+ "grandfathered": false,
+ "notes": "Structural: neutrality as impossibility (Consideration flows between the two parties in the Exchange clause, yet no transfer clause routes the Consideration to the Customer Commons; the probe twin adds exactly that route, the captured registry the canon rules out). The host's only actions are hosting: register the Agreement, certify the Registry Entry, and publish it to either side alike. Omits: nonprofit legal form and the capture-prevention rationale as prose; profits-from-neither-side is carried only as the absent route. Folded from myterms-agreement-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

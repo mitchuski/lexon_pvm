@@ -1,0 +1,89 @@
+{
+ "census": "LEXPVM-T-064",
+ "term": "Proposer (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Proposer (IEEE 7012)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Proposer.\n\n\"Proposer\" is a person.\n\"Recipient\" is a person.\n\"Proposed Terms\" is a text.\n\nThe Proposer appoints the Recipient.\n\nCLAUSE: Advance.\nThe Proposer may fix the Proposed Terms, and afterwards send the Proposed Terms to the Recipient.",
+ "counts": {
+  "definitions": 3,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Proposer",
+   "verb": "appoint",
+   "o": "Recipient",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Proposer",
+   "verb": "fix",
+   "o": "Proposed Terms",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Advance"
+  },
+  {
+   "s": "Proposer",
+   "verb": "send",
+   "o": "Proposed Terms",
+   "io": "Recipient",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Advance"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Proposer",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Recipient",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Proposer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Proposed Terms",
+   "conditional": false,
+   "clause": "Advance"
+  },
+  {
+   "promiser": "Proposer",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Proposed Terms->Recipient",
+   "conditional": false,
+   "clause": "Advance"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Advance",
+   "sequence": [
+    "fix:Proposed Terms",
+    "send:Proposed Terms"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: advancing terms as ordering (the Advance clause fixes the Proposed Terms and only afterwards sends them to the Recipient; the reversed mutation twin advances terms that do not yet exist, advancing nothing), and voluntariness as the modal may (the advance is a promise, never an imposition). Omits: the person-or-entity recipient distinction (one Recipient role stands for both) and the acting-through-Swordsman detail of the 0xagentprivacy mapping, which names a role this census term's definition does not. Folded from myterms-agreement-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

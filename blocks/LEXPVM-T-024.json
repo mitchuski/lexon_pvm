@@ -1,0 +1,89 @@
+{
+ "census": "LEXPVM-T-024",
+ "term": "Valency",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Valency",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Valency.\n\n\"Agent\" is a person.\n\"Guardian\" is a person.\n\"Sword Stake\" is an amount.\n\"Attention Pledge\" is a text.\n\nThe Agent appoints the Guardian.\n\nCLAUSE: Stake.\nThe Guardian may fix the Sword Stake, and afterwards grant the Attention Pledge.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Agent",
+   "verb": "appoint",
+   "o": "Guardian",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Guardian",
+   "verb": "fix",
+   "o": "Sword Stake",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Stake"
+  },
+  {
+   "s": "Guardian",
+   "verb": "grant",
+   "o": "Attention Pledge",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Stake"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Agent",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Guardian",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Guardian",
+   "type": "promise",
+   "polarity": "+",
+   "body": "fix:Sword Stake",
+   "conditional": false,
+   "clause": "Stake"
+  },
+  {
+   "promiser": "Guardian",
+   "type": "promise",
+   "polarity": "+",
+   "body": "grant:Attention Pledge",
+   "conditional": false,
+   "clause": "Stake"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "ordering",
+   "clause": "Stake",
+   "sequence": [
+    "fix:Sword Stake",
+    "grant:Attention Pledge"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "action order reversed in clause"
+ },
+ "grandfathered": false,
+ "notes": "ordering: clause Stake performs fix:Sword Stake, then grant:Attention Pledge as clause order. Omissions per the term's canon anchor. Assayer-authored (invitation-admission-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

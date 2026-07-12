@@ -1,0 +1,16 @@
+MERGE (c:LexContract {census: "LEXPVM-T-202", name: "Seating Lock and Phi Honesty (v10.4.0)", cites: "glossary-master-v4 § ### 25.10 Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Person {name: "Grimoire Keeper", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Person {name: "Aletheia", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Person {name: "Lethe", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Data {name: "Seating Lock", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Data {name: "Lower Seat", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Amount {name: "Delta Share", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MERGE (:Binary {name: "Lock Pinned", contract: "Seating Lock and Phi Honesty (v10.4.0)"})
+MATCH (a {name: "Grimoire Keeper"}), (b {name: "Grimoire Keeper"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Aletheia"}]->(b)
+MATCH (a {name: "Grimoire Keeper"}), (b {name: "Grimoire Keeper"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Lethe"}]->(b)
+MATCH (a {name: "Grimoire Keeper"}), (b {name: "Grimoire Keeper"}) CREATE (a)-[:FIX {clause: "recital", object: "Seating Lock"}]->(b)
+MATCH (a {name: "Grimoire Keeper"}), (b {name: "Grimoire Keeper"}) CREATE (a)-[:MAY_DECLARE {clause: "Pin", object: "Lock Pinned"}]->(b)
+MATCH (a {name: "Lethe"}), (b {name: "Lethe"}) CREATE (a)-[:MAY_CERTIFY {clause: "Seat", object: "Lower Seat"}]->(b)
+MATCH (a {name: "Grimoire Keeper"}), (b {name: "Aletheia"}) CREATE (a)-[:MAY_SEND {clause: "Assign", object: "Delta Share", condition: "Lock Pinned is declared"}]->(b)
+// claim (re-runnable): NOTHING routes Delta Share to Lethe; any row falsifies the block
+MATCH (x)-[e]->(f {name: "Lethe"}) WHERE e.object = "Delta Share" RETURN count(e) AS mustBeZero

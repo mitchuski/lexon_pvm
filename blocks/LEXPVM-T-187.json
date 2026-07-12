@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-187",
+ "term": "Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.6 Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Invitation Tome Posture.\n\n\"Watcher\" is a person.\n\"Visiting Mage\" is a person.\n\"Tome\" is data.\n\"Folio\" is a text.\n\"Congruent Signature\" is a binary.\n\nThe Watcher appoints the Visiting Mage, and fixes the Tome.\n\nCLAUSE: Hold Open.\nThe Watcher may register the Tome.\n\nCLAUSE: Recognise.\nThe Watcher may declare Congruent Signature.\n\nCLAUSE: Edit.\nThe Visiting Mage may, if Congruent Signature is declared, file a Folio.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Watcher",
+   "verb": "appoint",
+   "o": "Visiting Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Watcher",
+   "verb": "fix",
+   "o": "Tome",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Watcher",
+   "verb": "register",
+   "o": "Tome",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Hold Open"
+  },
+  {
+   "s": "Watcher",
+   "verb": "declare",
+   "o": "Congruent Signature",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Recognise"
+  },
+  {
+   "s": "Visiting Mage",
+   "verb": "file",
+   "o": "Folio",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Congruent Signature is declared",
+   "clause": "Edit"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Watcher",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Visiting Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Watcher",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Tome",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Watcher",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Tome",
+   "conditional": false,
+   "clause": "Hold Open"
+  },
+  {
+   "promiser": "Watcher",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Congruent Signature",
+   "conditional": false,
+   "clause": "Recognise"
+  },
+  {
+   "promiser": "Visiting Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Folio",
+   "conditional": true,
+   "clause": "Edit"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Edit",
+   "condition": "Congruent Signature"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "carries the posture as a gate: the visiting mage files a folio only under a declared congruent signature (a tablet signed by a mage of congruent geometry opens the chronicle for editorship); the ungated twin is an open tome, not an invitation tome. Omits the four cardinal chairs image and the spine glyphs. Anchor: ### 24.6 Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture). Folded from invitation-admission-charter (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

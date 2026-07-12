@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-004",
+ "term": "Privacy-Delegation Paradox",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Privacy-Delegation Paradox",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Privacy Delegation Paradox.\n\n\"First Person\" is a person.\n\"Single Agent\" is a person.\n\"Task Information\" is data.\n\"Disclosure\" is a binary.\n\"Delegated Task\" is a text.\n\"Behavioral Reconstruction\" is data.\n\nThe First Person appoints the Single Agent, and fixes the Task Information.\n\nCLAUSE: Disclose.\nThe First Person may declare Disclosure.\n\nCLAUSE: Act.\nThe Single Agent may, if Disclosure is declared: register the Delegated Task.\n\nCLAUSE: Expose.\nThe Single Agent may, if Disclosure is declared: register the Behavioral Reconstruction.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Single Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "fix",
+   "o": "Task Information",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Disclosure",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Disclose"
+  },
+  {
+   "s": "Single Agent",
+   "verb": "register",
+   "o": "Delegated Task",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Disclosure is declared",
+   "clause": "Act"
+  },
+  {
+   "s": "Single Agent",
+   "verb": "register",
+   "o": "Behavioral Reconstruction",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Disclosure is declared",
+   "clause": "Expose"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Single Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Task Information",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Disclosure",
+   "conditional": false,
+   "clause": "Disclose"
+  },
+  {
+   "promiser": "Single Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Delegated Task",
+   "conditional": true,
+   "clause": "Act"
+  },
+  {
+   "promiser": "Single Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Behavioral Reconstruction",
+   "conditional": true,
+   "clause": "Expose"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Expose",
+   "condition": "Disclosure"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Carries the paradox as a single binary gating two consequences: the same Disclosure that gates the wanted delegation (Act) gates the unwanted exposure (Expose), both held by the one Single Agent, which is the canon's why-single-agents-cannot-solve-it sentence in clause shape; the claim pins the unwanted clause to the shared condition. Deliberately omits the dual-agent resolution (expressed at the covered T-009) and the autonomy-axiom derivation. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

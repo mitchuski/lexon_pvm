@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-063",
+ "term": "Second Party (IEEE 7012)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Second Party (IEEE 7012)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Second Party.\n\n\"First Party\" is a person.\n\"Second Party\" is a person.\n\"Terms\" is a text.\n\"Terms Accepted\" is a binary.\n\"Service\" is a text.\n\nThe First Party appoints the Second Party, and fixes the Terms.\n\nCLAUSE: Receive.\nThe First Party may send the Terms to the Second Party.\n\nCLAUSE: Accept.\nThe Second Party may declare Terms Accepted.\n\nCLAUSE: Serve.\nThe Second Party may, if Terms Accepted is declared, register the Service.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Party",
+   "verb": "appoint",
+   "o": "Second Party",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "fix",
+   "o": "Terms",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Party",
+   "verb": "send",
+   "o": "Terms",
+   "io": "Second Party",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Receive"
+  },
+  {
+   "s": "Second Party",
+   "verb": "declare",
+   "o": "Terms Accepted",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Accept"
+  },
+  {
+   "s": "Second Party",
+   "verb": "register",
+   "o": "Service",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Terms Accepted is declared",
+   "clause": "Serve"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Party",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Terms",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Terms->Second Party",
+   "conditional": false,
+   "clause": "Receive"
+  },
+  {
+   "promiser": "Second Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Terms Accepted",
+   "conditional": false,
+   "clause": "Accept"
+  },
+  {
+   "promiser": "Second Party",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Service",
+   "conditional": true,
+   "clause": "Serve"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Serve",
+   "condition": "Terms Accepted"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "Structural: exchange gated on accepted terms (the Serve clause registers the Service only under the entity's own declared Terms Accepted, so the service provider acts only inside the individual's proffered agreement; the ungated mutation twin serves without acceptance, the surveillance default), with the receive-accept-serve lifecycle laid out as separate clauses. Omits: always-an-organization typing (one Lexon person type) and service-provider or platform taxonomy. Folded from myterms-agreement-family (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

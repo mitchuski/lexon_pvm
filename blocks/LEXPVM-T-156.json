@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-156",
+ "term": "Merge Catastrophe",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Merge Catastrophe",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Merge Catastrophe.\n\n\"Master\" is a person.\n\"Swordsman\" is a person.\n\"Mandate\" is an amount.\n\nThe Master appoints the Swordsman, and fixes the Mandate.\n\nCLAUSE: Separate.\nThe Master may send the Mandate to the Swordsman.\n\nCLAUSE: Protect.\nThe Swordsman may certify the Mandate.",
+ "counts": {
+  "definitions": 3,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "Master",
+   "verb": "appoint",
+   "o": "Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "fix",
+   "o": "Mandate",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Master",
+   "verb": "send",
+   "o": "Mandate",
+   "io": "Swordsman",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Separate"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "certify",
+   "o": "Mandate",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Protect"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Mandate",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Master",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Mandate->Swordsman",
+   "conditional": false,
+   "clause": "Separate"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Mandate",
+   "conditional": false,
+   "clause": "Protect"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Master",
+   "what": "Mandate"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Mandate to Master"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Mandate to the Master. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

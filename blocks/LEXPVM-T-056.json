@@ -1,0 +1,104 @@
+{
+ "census": "LEXPVM-T-056",
+ "term": "ERC-8004",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### ERC-8004",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX ERC Agent Identity Standard.\n\n\"First Person\" is a person.\n\"Agent\" is a person.\n\"Identity Record\" is data.\n\"Identity Verified\" is a binary.\n\nThe First Person appoints the Agent.\n\nCLAUSE: Attest.\nThe Agent may register the Identity Record.\n\nCLAUSE: Verify.\nThe First Person may declare Identity Verified.\n\nCLAUSE: Recognize.\nThe First Person may, if Identity Verified is declared: certify the Identity Record.",
+ "counts": {
+  "definitions": 4,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 4,
+  "promiseEdges": 4
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "appoint",
+   "o": "Agent",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Agent",
+   "verb": "register",
+   "o": "Identity Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Attest"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Identity Verified",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Verify"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Identity Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Identity Verified is declared",
+   "clause": "Recognize"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Agent",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Agent",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Identity Record",
+   "conditional": false,
+   "clause": "Attest"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Identity Verified",
+   "conditional": false,
+   "clause": "Verify"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Identity Record",
+   "conditional": true,
+   "clause": "Recognize"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Recognize",
+   "condition": "Identity Verified"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Recognize clause is reachable only under the Identity Verified condition. Omissions per the term's canon anchor. Assayer-authored (sovereignty-cluster-charter held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

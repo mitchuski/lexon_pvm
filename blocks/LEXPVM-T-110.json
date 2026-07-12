@@ -1,0 +1,165 @@
+{
+ "census": "LEXPVM-T-110",
+ "term": "Six Dimensions of Sovereignty",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Six Dimensions of Sovereignty",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Six Dimensions of Sovereignty.\n\n\"First Person\" is a person.\n\"Blade\" is this contract.\n\"Protection\" is a binary.\n\"Delegation\" is a binary.\n\"Memory\" is a binary.\n\"Connection\" is a binary.\n\"Computation\" is a binary.\n\"Value\" is a binary.\n\nCLAUSE: Configure.\nThe First Person may declare Protection, declare Delegation, declare Memory, declare Connection, declare Computation, and declare Value.\n\nCLAUSE: Fully Active.\n\"Fully Active\" is defined as: Protection is declared and Delegation is declared and Memory is declared and Connection is declared and Computation is declared and Value is declared.\n\nCLAUSE: Certify.\nThe First Person may, if this Blade is Fully Active: certify this Blade.",
+ "counts": {
+  "definitions": 8,
+  "clauses": 3,
+  "sentences": 2,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Protection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Configure"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Delegation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Configure"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Memory",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Configure"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Connection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Configure"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Computation",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Configure"
+  },
+  {
+   "s": "First Person",
+   "verb": "declare",
+   "o": "Value",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Configure"
+  },
+  {
+   "s": "First Person",
+   "verb": "certify",
+   "o": "Blade",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "this Blade is Fully Active",
+   "clause": "Certify"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Protection",
+   "conditional": false,
+   "clause": "Configure"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Delegation",
+   "conditional": false,
+   "clause": "Configure"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Memory",
+   "conditional": false,
+   "clause": "Configure"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Connection",
+   "conditional": false,
+   "clause": "Configure"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Computation",
+   "conditional": false,
+   "clause": "Configure"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Value",
+   "conditional": false,
+   "clause": "Configure"
+  },
+  {
+   "promiser": "First Person",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Blade",
+   "conditional": true,
+   "clause": "Certify"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Fully Active",
+   "conjuncts": [
+    "Protection",
+    "Delegation",
+    "Memory",
+    "Connection",
+    "Computation",
+    "Value"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"Protection\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "Carries each canonical dimension as an independently declarable binary (active or dormant) and the fully active configuration as a six-way conjunction over exactly the six canonical dimension names; the claim requires all six, so dropping any one dimension breaks the constituted state, which is the stratum structure's top vertex in clause shape. Deliberately omits the bit numbering, the implementation names (Hide, Commit, Prove, Connect, Reflect, Delegate), the three-axis mapping, and the Pascal stratum counts, and expresses only the all-active configuration, not the other configurations of the lattice. Folded from sovereignty-cluster-charter (canon-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

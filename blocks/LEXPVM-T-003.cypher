@@ -1,0 +1,15 @@
+MERGE (c:LexContract {census: "LEXPVM-T-003", name: "7th Capital", cites: "glossary-master-v4 § ### 7th Capital"})
+MERGE (:Person {name: "First Person", contract: "7th Capital"})
+MERGE (:Person {name: "Swordsman", contract: "7th Capital"})
+MERGE (:Person {name: "Mage", contract: "7th Capital"})
+MERGE (:Amount {name: "Behavioral Trajectory", contract: "7th Capital"})
+MERGE (:Text {name: "Coordination Task", contract: "7th Capital"})
+MERGE (:Binary {name: "Boundary Approved", contract: "7th Capital"})
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:FIX {clause: "recital", object: "Behavioral Trajectory"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Swordsman"}]->(b)
+MATCH (a {name: "First Person"}), (b {name: "First Person"}) CREATE (a)-[:APPOINT {clause: "recital", object: "Mage"}]->(b)
+MATCH (a {name: "Swordsman"}), (b {name: "Swordsman"}) CREATE (a)-[:MAY_CERTIFY {clause: "Guard", object: "Behavioral Trajectory"}]->(b)
+MATCH (a {name: "Swordsman"}), (b {name: "Swordsman"}) CREATE (a)-[:MAY_DECLARE {clause: "Approve", object: "Boundary Approved"}]->(b)
+MATCH (a {name: "Mage"}), (b {name: "First Person"}) CREATE (a)-[:MAY_SEND {clause: "Coordinate", object: "Coordination Task", condition: "Boundary Approved is declared"}]->(b)
+// claim (re-runnable): NOTHING routes Behavioral Trajectory to Mage; any row falsifies the block
+MATCH (x)-[e]->(f {name: "Mage"}) WHERE e.object = "Behavioral Trajectory" RETURN count(e) AS mustBeZero

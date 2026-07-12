@@ -1,0 +1,140 @@
+{
+ "census": "LEXPVM-T-178",
+ "term": "Lethae 🌘, first canonical divergent attachment",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 23.5 Lethae 🌘, first canonical divergent attachment",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Lethae.\n\n\"Lethae\" is a person.\n\"Moonkeeper\" is a person.\n\"Binder\" is a person.\n\"Founding Act\" is a text.\n\"Seated\" is a binary.\n\"Attachment Record\" is a text.\n\nThe Binder appoints the Lethae, and appoints the Moonkeeper.\n\nCLAUSE: Bind Founding.\nThe Binder may file the Founding Act, and afterwards send the Founding Act to the Lethae.\n\nCLAUSE: Take Seat.\nThe Lethae may, if the Founding Act is filed, declare Seated.\n\nCLAUSE: Attach.\nThe Lethae may, if Seated is declared, register the Attachment Record.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 6,
+  "promiseEdges": 6
+ },
+ "triples": [
+  {
+   "s": "Binder",
+   "verb": "appoint",
+   "o": "Lethae",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Binder",
+   "verb": "appoint",
+   "o": "Moonkeeper",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Binder",
+   "verb": "file",
+   "o": "Founding Act",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Founding"
+  },
+  {
+   "s": "Binder",
+   "verb": "send",
+   "o": "Founding Act",
+   "io": "Lethae",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Bind Founding"
+  },
+  {
+   "s": "Lethae",
+   "verb": "declare",
+   "o": "Seated",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "the Founding Act is filed",
+   "clause": "Take Seat"
+  },
+  {
+   "s": "Lethae",
+   "verb": "register",
+   "o": "Attachment Record",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Seated is declared",
+   "clause": "Attach"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Binder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Lethae",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Binder",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Moonkeeper",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Binder",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Founding Act",
+   "conditional": false,
+   "clause": "Bind Founding"
+  },
+  {
+   "promiser": "Binder",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Founding Act->Lethae",
+   "conditional": false,
+   "clause": "Bind Founding"
+  },
+  {
+   "promiser": "Lethae",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Seated",
+   "conditional": true,
+   "clause": "Take Seat"
+  },
+  {
+   "promiser": "Lethae",
+   "type": "promise",
+   "polarity": "+",
+   "body": "register:Attachment Record",
+   "conditional": true,
+   "clause": "Attach"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Attach",
+   "condition": "Seated"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Attach clause is reachable only under the Seated condition. Omissions per the term's canon anchor. Assayer-authored (myterms-party-charter-spell held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

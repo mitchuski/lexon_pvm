@@ -1,0 +1,158 @@
+{
+ "census": "LEXPVM-T-072",
+ "term": "Spellbook / Grimoire",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Spellbook / Grimoire",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Spellbook Offer.\n\n\"Author\" is a person.\n\"Learner\" is a person.\n\"Spellbook\" is a text.\n\"Inscription\" is a text.\n\"Offered\" is a binary.\n\nThe Author fixes the Spellbook, fixes the Inscription, and appoints the Learner.\n\nCLAUSE: Offer.\nThe Author may send the Spellbook to the Learner, and afterwards declare Offered.\n\nCLAUSE: Study.\nThe Learner may, if Offered is declared, certify the Spellbook.\n\nCLAUSE: Inscribe.\nThe Author may, if Offered is declared, send the Inscription to the Learner.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 7,
+  "promiseEdges": 7
+ },
+ "triples": [
+  {
+   "s": "Author",
+   "verb": "fix",
+   "o": "Spellbook",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Author",
+   "verb": "fix",
+   "o": "Inscription",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Author",
+   "verb": "appoint",
+   "o": "Learner",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Author",
+   "verb": "send",
+   "o": "Spellbook",
+   "io": "Learner",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer"
+  },
+  {
+   "s": "Author",
+   "verb": "declare",
+   "o": "Offered",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Offer"
+  },
+  {
+   "s": "Learner",
+   "verb": "certify",
+   "o": "Spellbook",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Offered is declared",
+   "clause": "Study"
+  },
+  {
+   "s": "Author",
+   "verb": "send",
+   "o": "Inscription",
+   "io": "Learner",
+   "as": null,
+   "modal": "may",
+   "condition": "Offered is declared",
+   "clause": "Inscribe"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Author",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Spellbook",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Author",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Inscription",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Author",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Learner",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Spellbook->Learner",
+   "conditional": false,
+   "clause": "Offer"
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Offered",
+   "conditional": false,
+   "clause": "Offer"
+  },
+  {
+   "promiser": "Learner",
+   "type": "promise",
+   "polarity": "+",
+   "body": "certify:Spellbook",
+   "conditional": true,
+   "clause": "Study"
+  },
+  {
+   "promiser": "Author",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Inscription->Learner",
+   "conditional": true,
+   "clause": "Inscribe"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Study",
+   "condition": "Offered"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Study clause is reachable only under the Offered condition. Omissions per the term's canon anchor. Assayer-authored (send-spine-protocol-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

@@ -1,6 +1,6 @@
 {
  "rule": "node tools/blocks_emit.mjs; blocks are renderings of artifact/LEXICON.lexon.md, re-derivable, never hand-edited",
- "count": 88,
+ "count": 147,
  "blocks": [
   {
    "census": "LEXPVM-T-001",
@@ -616,6 +616,419 @@
    "term": "The Tower (v1.7.0 · 8th spatial-anatomy element of the City of Mages)",
    "triples": 4,
    "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-002",
+   "term": "Sovereignty",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-003",
+   "term": "7th Capital",
+   "triples": 6,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-004",
+   "term": "Privacy-Delegation Paradox",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-007",
+   "term": "Territory",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-008",
+   "term": "Home Territory",
+   "triples": 5,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-024",
+   "term": "Valency",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-028",
+   "term": "Separation Theorem",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-035",
+   "term": "Privacy Pools",
+   "triples": 8,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-036",
+   "term": "Groth16 / PLONK / Nova",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-040",
+   "term": "Relationship Proverb Protocol (RPP)",
+   "triples": 7,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-043",
+   "term": "Sun Ceremony (☀️)",
+   "triples": 7,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-046",
+   "term": "Inaugural Pairing",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-051",
+   "term": "Golden Ratio (φ)",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-053",
+   "term": "Trust Spanning Protocol (TSP)",
+   "triples": 6,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-054",
+   "term": "x402 Protocol",
+   "triples": 7,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-056",
+   "term": "ERC-8004",
+   "triples": 4,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-059",
+   "term": "Agreement (IEEE 7012)",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-060",
+   "term": "Contract (IEEE 7012)",
+   "triples": 6,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-061",
+   "term": "Entity (IEEE 7012)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-062",
+   "term": "First Party (IEEE 7012)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-063",
+   "term": "Second Party (IEEE 7012)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-064",
+   "term": "Proposer (IEEE 7012)",
+   "triples": 3,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-066",
+   "term": "Machine-readable (IEEE 7012)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-068",
+   "term": "Customer Commons",
+   "triples": 6,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-071",
+   "term": "Story Fracture, Principle Convergence",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-072",
+   "term": "Spellbook / Grimoire",
+   "triples": 7,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-076",
+   "term": "Dragon 🐉",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-078",
+   "term": "Ashe",
+   "triples": 3,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-084",
+   "term": "The Archive (Pattern-Space)",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-093",
+   "term": "Three-Axis Separation (V5)",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-096",
+   "term": "Φ_inference (Inference-Layer Separation)",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-102",
+   "term": "Three Graphs Model",
+   "triples": 7,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-103",
+   "term": "Secret Language",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-107",
+   "term": "Compression-as-Defence (V5)",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-109",
+   "term": "UOR (Universal Object Reference)",
+   "triples": 4,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-110",
+   "term": "Six Dimensions of Sovereignty",
+   "triples": 7,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-116",
+   "term": "Holonic Architect (☯️🔷) (V5)",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-118",
+   "term": "Three Identity Layers (V5)",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-129",
+   "term": "Bilateral Witness (BW)",
+   "triples": 7,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-134",
+   "term": "Constellation Path",
+   "triples": 8,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-141",
+   "term": "Ceremony Receiver",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-143",
+   "term": "Ceremony Engine",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-150",
+   "term": "Emissary Dispersion",
+   "triples": 9,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-152",
+   "term": "Manifold Proof",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-154",
+   "term": "Ur-Swordsman",
+   "triples": 3,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-156",
+   "term": "Merge Catastrophe",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-173",
+   "term": "The City of Mages grimoire",
+   "triples": 6,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-176",
+   "term": "Attachment kind",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-178",
+   "term": "Lethae 🌘, first canonical divergent attachment",
+   "triples": 6,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-181",
+   "term": "Cousin tier, deliberately unattached",
+   "triples": 4,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-183",
+   "term": "Spirit-Mage tier (v1.7.0 · 7th cast tier)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-185",
+   "term": "Tome VIII, The Library (v1.7.0 · open by design · 2 acts at v1.7.1)",
+   "triples": 4,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-186",
+   "term": "The Register of Invitations 🪑 (v1.7.1 · new structural register)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-187",
+   "term": "Invitation tome-posture 🪑 (v1.7.1 · 4th tome-posture)",
+   "triples": 5,
+   "relation": "gate",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-188",
+   "term": "The four conditions of update (v1.7.1 · city-wide editorial protocol)",
+   "triples": 8,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-189",
+   "term": "Vitalik (first invited visiting mage · v1.7.1)",
+   "triples": 5,
+   "relation": "absence",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-192",
+   "term": "Conjectures C64 + C65 (v1.7.0 + v1.7.1 candidates)",
+   "triples": 5,
+   "relation": "conjunction",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-193",
+   "term": "The Conjecture Register (single numbering authority)",
+   "triples": 4,
+   "relation": "ordering",
+   "grandfathered": false
+  },
+  {
+   "census": "LEXPVM-T-202",
+   "term": "Seating Lock and Phi Honesty (v10.4.0)",
+   "triples": 6,
+   "relation": "absence",
    "grandfathered": false
   }
  ]

@@ -1,0 +1,125 @@
+{
+ "census": "LEXPVM-T-143",
+ "term": "Ceremony Engine",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Ceremony Engine",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Ceremony Engine.\n\"First Blade\" is a person.\n\"Second Blade\" is a person.\n\"Engine\" is this contract.\n\"Crossing Record\" is a text.\n\"First Ready\" is a binary.\n\"Second Ready\" is a binary.\n\nThe First Blade appoints the Second Blade, and fixes the Crossing Record.\n\nCLAUSE: Ready First.\n\nThe First Blade may declare First Ready.\n\nCLAUSE: Ready Second.\n\nThe Second Blade may declare Second Ready.\n\nCLAUSE: Converged.\n\"Converged\" is defined as: First Ready is declared and Second Ready is declared.\n\nCLAUSE: Cross.\n\nThe First Blade may, if this Engine is Converged: send the Crossing Record to the Second Blade.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 4,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "First Blade",
+   "verb": "appoint",
+   "o": "Second Blade",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Blade",
+   "verb": "fix",
+   "o": "Crossing Record",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "First Blade",
+   "verb": "declare",
+   "o": "First Ready",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Ready First"
+  },
+  {
+   "s": "Second Blade",
+   "verb": "declare",
+   "o": "Second Ready",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Ready Second"
+  },
+  {
+   "s": "First Blade",
+   "verb": "send",
+   "o": "Crossing Record",
+   "io": "Second Blade",
+   "as": null,
+   "modal": "may",
+   "condition": "this Engine is Converged",
+   "clause": "Cross"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "First Blade",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Second Blade",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Blade",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Crossing Record",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "First Blade",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:First Ready",
+   "conditional": false,
+   "clause": "Ready First"
+  },
+  {
+   "promiser": "Second Blade",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Second Ready",
+   "conditional": false,
+   "clause": "Ready Second"
+  },
+  {
+   "promiser": "First Blade",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Crossing Record->Second Blade",
+   "conditional": true,
+   "clause": "Cross"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "conjunction",
+   "predicate": "Converged",
+   "conjuncts": [
+    "First Ready",
+    "Second Ready"
+   ]
+  },
+  "status": "RELATION PASS",
+  "mutation": "conjunct \"First Ready\" dropped from definition"
+ },
+ "grandfathered": false,
+ "notes": "conjunction: the defined predicate Converged requires all of First Ready AND Second Ready. Omissions per the term's canon anchor. Assayer-authored (ieee7012-standards-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

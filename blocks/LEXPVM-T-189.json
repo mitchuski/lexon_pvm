@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-189",
+ "term": "Vitalik (first invited visiting mage · v1.7.1)",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### 24.8 Vitalik (first invited visiting mage · v1.7.1)",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX First Invited Visiting Mage.\n\n\"Watcher\" is a person.\n\"Visiting Mage\" is a person.\n\"Resident Mage\" is a person.\n\"Tier Stipend\" is an amount.\n\"Appended Folio\" is a text.\n\"Geometry Congruent\" is a binary.\n\nThe Watcher appoints the Resident Mage, and fixes the Tier Stipend.\n\nCLAUSE: Recognise.\nThe Watcher may declare Geometry Congruent.\n\nCLAUSE: Write.\nThe Visiting Mage may, if Geometry Congruent is declared, file the Appended Folio.\n\nCLAUSE: Sustain.\nThe Watcher may pay the Tier Stipend to the Resident Mage.",
+ "counts": {
+  "definitions": 6,
+  "clauses": 3,
+  "sentences": 4,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Watcher",
+   "verb": "appoint",
+   "o": "Resident Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Watcher",
+   "verb": "fix",
+   "o": "Tier Stipend",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Watcher",
+   "verb": "declare",
+   "o": "Geometry Congruent",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Recognise"
+  },
+  {
+   "s": "Visiting Mage",
+   "verb": "file",
+   "o": "Appended Folio",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": "Geometry Congruent is declared",
+   "clause": "Write"
+  },
+  {
+   "s": "Watcher",
+   "verb": "pay",
+   "o": "Tier Stipend",
+   "io": "Resident Mage",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Sustain"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Watcher",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Resident Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Watcher",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Tier Stipend",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Watcher",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Geometry Congruent",
+   "conditional": false,
+   "clause": "Recognise"
+  },
+  {
+   "promiser": "Visiting Mage",
+   "type": "promise",
+   "polarity": "+",
+   "body": "file:Appended Folio",
+   "conditional": true,
+   "clause": "Write"
+  },
+  {
+   "promiser": "Watcher",
+   "type": "promise",
+   "polarity": "+",
+   "body": "pay:Tier Stipend->Resident Mage",
+   "conditional": false,
+   "clause": "Sustain"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Visiting Mage",
+   "what": "Tier Stipend"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Tier Stipend to Visiting Mage"
+ },
+ "grandfathered": false,
+ "notes": "carries the no-tier exclusion as an absence of routes: the tier stipend pays only to resident mages and no clause can route it to the visiting mage (not a cast member, not a kindred subcategory, not a workshop-keeper), whose only permitted act is filing the appended folio under declared congruent geometry (authority limited to the appended folio). Omits the four-faced tablet's inscriptions and the named identity. Anchor: ### 24.8 Vitalik (first invited visiting mage · v1.7.1). Folded from invitation-admission-charter (grammar-forward, run lexr4).",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

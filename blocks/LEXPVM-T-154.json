@@ -1,0 +1,86 @@
+{
+ "census": "LEXPVM-T-154",
+ "term": "Ur-Swordsman",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Ur-Swordsman",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Ur-Swordsman.\n\n\"Ur-Swordsman\" is a person.\n\"Principal\" is a person.\n\"Light\" is an amount.\n\nThe Principal appoints the Ur-Swordsman, and fixes the Light.\n\nCLAUSE: Reflect.\nThe Ur-Swordsman may send the Light to the Principal.",
+ "counts": {
+  "definitions": 3,
+  "clauses": 1,
+  "sentences": 2,
+  "triples": 3,
+  "promiseEdges": 3
+ },
+ "triples": [
+  {
+   "s": "Principal",
+   "verb": "appoint",
+   "o": "Ur-Swordsman",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Principal",
+   "verb": "fix",
+   "o": "Light",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Ur-Swordsman",
+   "verb": "send",
+   "o": "Light",
+   "io": "Principal",
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Reflect"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Ur-Swordsman",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Principal",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Light",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Ur-Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Light->Principal",
+   "conditional": false,
+   "clause": "Reflect"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "absence",
+   "to": "Ur-Swordsman",
+   "what": "Light"
+  },
+  "status": "RELATION PASS",
+  "mutation": "probe clause appended routing Light to Ur-Swordsman"
+ },
+ "grandfathered": false,
+ "notes": "impossibility as absence: no transfer clause routes Light to the Ur-Swordsman. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}

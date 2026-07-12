@@ -1,0 +1,122 @@
+{
+ "census": "LEXPVM-T-103",
+ "term": "Secret Language",
+ "provenance": {
+  "cites": "glossary-master-v4 § ### Secret Language",
+  "register": "glossary · conjectured expression of canonical term"
+ },
+ "lex": "LEX Secret Language.\n\n\"Swordsman\" is a person.\n\"Mage\" is a person.\n\"Counterparty\" is a person.\n\"Face\" is a text.\n\"Selection\" is a binary.\n\nThe Swordsman appoints the Mage, and appoints the Counterparty, and fixes the Face.\n\nCLAUSE: Determine.\nThe Swordsman may declare Selection.\n\nCLAUSE: Present.\nThe Swordsman may, if Selection is declared: send the Face to the Counterparty.",
+ "counts": {
+  "definitions": 5,
+  "clauses": 2,
+  "sentences": 3,
+  "triples": 5,
+  "promiseEdges": 5
+ },
+ "triples": [
+  {
+   "s": "Swordsman",
+   "verb": "appoint",
+   "o": "Mage",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "appoint",
+   "o": "Counterparty",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "fix",
+   "o": "Face",
+   "io": null,
+   "as": null,
+   "modal": null,
+   "condition": null,
+   "clause": null
+  },
+  {
+   "s": "Swordsman",
+   "verb": "declare",
+   "o": "Selection",
+   "io": null,
+   "as": null,
+   "modal": "may",
+   "condition": null,
+   "clause": "Determine"
+  },
+  {
+   "s": "Swordsman",
+   "verb": "send",
+   "o": "Face",
+   "io": "Counterparty",
+   "as": null,
+   "modal": "may",
+   "condition": "Selection is declared",
+   "clause": "Present"
+  }
+ ],
+ "promises": [
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Mage",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "appoint:Counterparty",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "commitment",
+   "polarity": "+",
+   "body": "fix:Face",
+   "conditional": false,
+   "clause": null
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "declare:Selection",
+   "conditional": false,
+   "clause": "Determine"
+  },
+  {
+   "promiser": "Swordsman",
+   "type": "promise",
+   "polarity": "+",
+   "body": "send:Face->Counterparty",
+   "conditional": true,
+   "clause": "Present"
+  }
+ ],
+ "relation": {
+  "claim": {
+   "type": "gate",
+   "clause": "Present",
+   "condition": "Selection"
+  },
+  "status": "RELATION PASS",
+  "mutation": "condition stripped from clause"
+ },
+ "grandfathered": false,
+ "notes": "gate: the Present clause is reachable only under the Selection condition. Omissions per the term's canon anchor. Assayer-authored (myterms-agreement-family held-out, recipe-only, run lexr4); keystone Notes.",
+ "regime": "spec-checker (SOURCES.md lexon-compiler-status); relations are clause-graph properties, not executed semantics (CR-11)"
+}
